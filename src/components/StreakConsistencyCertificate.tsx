@@ -1,4 +1,5 @@
 import { useState, useRef, useCallback, useEffect, lazy, Suspense } from 'react';
+import { useTranslation } from 'react-i18next';
 import { m as motion } from 'framer-motion';
 import { Share2, Edit3, Check, Copy, Flame } from 'lucide-react';
 import { useUserProfile } from '@/hooks/useUserProfile';
