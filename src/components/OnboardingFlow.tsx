@@ -2033,7 +2033,7 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
                 triggerSelectionHaptic();
                 setSelectedDevices(prev => {
                   const next = new Set(prev);
-                  if (val === 'Single device only') {
+                  if (val === t('onboarding.deviceSingle')) {
                     return next.has(val) ? new Set() : new Set([val]);
                   }
                   next.delete('Single device only');
