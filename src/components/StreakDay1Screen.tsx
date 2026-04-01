@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils';
 import { useStreak } from '@/hooks/useStreak';
 import { StreakSocietyBadge } from '@/components/StreakSocietyBadge';
 import { triggerTripleHeavyHaptic } from '@/utils/haptics';
+import { useTranslation } from 'react-i18next';
 
 const ONBOARDING_COLOR = '#3c78f0';
 
