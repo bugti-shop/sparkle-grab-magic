@@ -52,7 +52,7 @@ const Settings = () => {
             >
               <span className="text-sm font-medium flex items-center gap-2" style={{ color: 'hsl(var(--primary))' }}>
                 <Crown className="h-4 w-4" />
-                Upgrade to Flowist Pro
+                {t('settings.upgradeToPro', 'Upgrade to Flowist Pro')}
               </span>
               <ChevronRight className="h-4 w-4" style={{ color: 'hsl(var(--primary))' }} />
             </button>
