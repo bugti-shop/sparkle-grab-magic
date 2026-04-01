@@ -2037,6 +2037,16 @@ export const RichTextEditor = ({
           onTableChange={handleInput}
         />
       )}
+
+      {/* @mention dropdown */}
+      <MentionDropdown
+        isOpen={mentionOpen}
+        mentionType={mentionType}
+        query={mentionQuery}
+        position={mentionPos}
+        onSelect={handleMentionSelect}
+        onClose={() => { setMentionOpen(false); mentionTriggerRef.current = null; }}
+      />
     </div>
   );
 };
