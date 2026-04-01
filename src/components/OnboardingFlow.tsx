@@ -936,14 +936,6 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
       }
     } else if (step === 29) {
       setStep(32); // → devices
-    } else if (step === 10) {
-      setStep(13);
-    } else if (step === 13) {
-      setStep(14);
-    } else if (step === 14) {
-      setStep(25);
-    } else if (step === 25) {
-      setStep(26);
     }
     } catch (error) {
       console.warn('Onboarding goNext error:', error);
