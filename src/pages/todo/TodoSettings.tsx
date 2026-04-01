@@ -489,7 +489,7 @@ const TodoSettings = () => {
                             toast.success(`✅ ${t('calendarSync.noDuplicates', 'No duplicate events found')}`);
                           }
                         } catch (e) {
-                          toast.error('Failed to clear duplicates');
+                          toast.error(t('calendarSync.clearDuplicatesFailed', 'Failed to clear duplicates'));
                         }
                       }}
                     >

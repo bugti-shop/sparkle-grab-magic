@@ -209,7 +209,7 @@ const TaskHistory = () => {
       : task.dueDate ? new Date(task.dueDate) 
       : new Date(parseInt(task.id) || Date.now());
     if (isToday(date)) return format(date, 'h:mm a');
-    if (isYesterday(date)) return 'Yesterday ' + format(date, 'h:mm a');
+    if (isYesterday(date)) return t('common.yesterday', 'Yesterday') + ' ' + format(date, 'h:mm a');
     return format(date, 'MMM d, h:mm a');
   };
 

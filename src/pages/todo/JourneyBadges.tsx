@@ -533,7 +533,7 @@ const JourneyBadges = () => {
                   className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl bg-primary text-primary-foreground text-sm font-semibold disabled:opacity-50"
                 >
                   <Share2 className="h-4 w-4" />
-                  {isSharing ? 'Sharing...' : 'Share Badge'}
+                  {isSharing ? t('common.sharing', 'Sharing...') : t('journey.shareBadge', 'Share Badge')}
                 </button>
                 <button
                   onClick={() => setSelectedBadge(null)}
