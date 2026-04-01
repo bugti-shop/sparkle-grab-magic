@@ -180,7 +180,12 @@
     "streakProtected": "连续记录已保护",
     "tasksCompleted": "已完成任务",
     "todayProgress": "今日进度",
-    "weeklyActivity": "每周活动"
+    "weeklyActivity": "每周活动",
+    "newPersonalBest": "新的个人最佳记录！🎉",
+    "motivationalHint": "每天完成一个任务来建立你的连续记录。坚持越久，解锁的奖励越多！",
+    "letsGo": "开始吧！",
+    "reachStreak": "达到3天连续记录加入连续记录协会",
+    "societyDays": "连续记录协会 · {{count}}天"
   },
   "profile": {
     "title": "个人资料",
@@ -2028,7 +2033,11 @@
     "deviceIPad": "iPad",
     "deviceMac": "Mac",
     "deviceAndroid": "Android",
-    "deviceWindows": "Windows"
+    "deviceWindows": "Windows",
+    "noDueDate": "无截止日期",
+    "tasksReadyToAdd": "{{count}}个任务准备添加",
+    "addCountTasks": "添加{{count}}个任务",
+    "addTasks": "添加任务"
   },
   "toast": {
     "folderCreated": "文件夹已创建",

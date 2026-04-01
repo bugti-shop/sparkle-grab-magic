@@ -180,7 +180,12 @@
     "streakProtected": "स्ट्रीक सुरक्षित",
     "tasksCompleted": "पूरे हुए कार्य",
     "todayProgress": "आज की प्रगति",
-    "weeklyActivity": "साप्ताहिक गतिविधि"
+    "weeklyActivity": "साप्ताहिक गतिविधि",
+    "newPersonalBest": "नया व्यक्तिगत सर्वश्रेष्ठ! 🎉",
+    "motivationalHint": "अपनी लकीर बनाने के लिए हर दिन एक कार्य पूरा करें। जितना लंबा चलेंगे, उतने अधिक पुरस्कार अनलॉक होंगे!",
+    "letsGo": "चलो शुरू करें!",
+    "reachStreak": "स्ट्रीक सोसाइटी में शामिल होने के लिए 3 दिन की लकीर हासिल करें",
+    "societyDays": "स्ट्रीक सोसाइटी · {{count}} दिन"
   },
   "profile": {
     "title": "प्रोफ़ाइल",
@@ -2028,7 +2033,11 @@
     "certificateSubtitle": "अपनी निरंतरता दुनिया के साथ साझा करें!",
     "chooseAdventure": "अपना एडवेंचर चुनें",
     "chooseAdventureSubtitle": "दुनिया भर में यात्रा करने के लिए टास्क पूरे करें! शुरू करने के लिए एक यात्रा चुनें।",
-    "noFoldersEmpty": "अभी तक कोई फोल्डर नहीं — ऊपर एक बनाएं!"
+    "noFoldersEmpty": "अभी तक कोई फोल्डर नहीं — ऊपर एक बनाएं!",
+    "noDueDate": "कोई नियत तिथि नहीं",
+    "tasksReadyToAdd": "{{count}} कार्य जोड़ने के लिए तैयार",
+    "addCountTasks": "{{count}} कार्य जोड़ें",
+    "addTasks": "कार्य जोड़ें"
   },
   "toast": {
     "folderCreated": "फ़ोल्डर बनाया गया",

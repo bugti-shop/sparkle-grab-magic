@@ -180,7 +180,12 @@
     "streakProtected": "السلسلة محمية",
     "tasksCompleted": "المهام المكتملة",
     "todayProgress": "تقدم اليوم",
-    "weeklyActivity": "النشاط الأسبوعي"
+    "weeklyActivity": "النشاط الأسبوعي",
+    "newPersonalBest": "رقم قياسي شخصي جديد! 🎉",
+    "motivationalHint": "أكمل مهمة كل يوم لبناء سلسلتك. كلما استمررت أكثر، كلما فتحت المزيد من المكافآت!",
+    "letsGo": "هيا بنا!",
+    "reachStreak": "حقق سلسلة 3 أيام للانضمام إلى مجتمع السلاسل",
+    "societyDays": "مجتمع السلاسل · {{count}} أيام"
   },
   "profile": {
     "title": "الملف الشخصي",
@@ -2028,7 +2033,11 @@
     "certificateSubtitle": "شارك ثباتك مع العالم!",
     "chooseAdventure": "اختر مغامرتك",
     "chooseAdventureSubtitle": "أكمل المهام للسفر حول العالم! اختر رحلة للبدء.",
-    "noFoldersEmpty": "لا توجد مجلدات بعد — أنشئ واحداً أعلاه!"
+    "noFoldersEmpty": "لا توجد مجلدات بعد — أنشئ واحداً أعلاه!",
+    "noDueDate": "بدون تاريخ استحقاق",
+    "tasksReadyToAdd": "{{count}} مهمة جاهزة للإضافة",
+    "addCountTasks": "إضافة {{count}} مهمة",
+    "addTasks": "إضافة مهام"
   },
   "toast": {
     "folderCreated": "تم إنشاء المجلد",

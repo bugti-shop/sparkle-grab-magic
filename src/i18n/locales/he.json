@@ -180,7 +180,12 @@
     "streakProtected": "הרצף מוגן",
     "tasksCompleted": "משימות שהושלמו",
     "todayProgress": "התקדמות היום",
-    "weeklyActivity": "פעילות שבועית"
+    "weeklyActivity": "פעילות שבועית",
+    "newPersonalBest": "שיא אישי חדש! 🎉",
+    "motivationalHint": "השלם משימה כל יום כדי לבנות את הרצף שלך. ככל שתמשיך יותר, כך תפתח יותר פרסים!",
+    "letsGo": "!בוא נתחיל",
+    "reachStreak": "הגע לרצף של 3 ימים כדי להצטרף לחברת הרצפים",
+    "societyDays": "חברת הרצפים · {{count}} ימים"
   },
   "profile": {
     "title": "פרופיל",
@@ -2010,7 +2015,11 @@
     "deviceIPad": "iPad",
     "deviceMac": "Mac",
     "deviceAndroid": "Android",
-    "deviceWindows": "Windows"
+    "deviceWindows": "Windows",
+    "noDueDate": "ללא תאריך יעד",
+    "tasksReadyToAdd": "{{count}} משימות מוכנות להוספה",
+    "addCountTasks": "הוסף {{count}} משימות",
+    "addTasks": "הוסף משימות"
   },
   "toast": {
     "folderCreated": "התיקייה נוצרה",

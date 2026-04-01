@@ -180,7 +180,12 @@
     "streakProtected": "Racha Protegida",
     "tasksCompleted": "Tareas Completadas",
     "todayProgress": "Progreso de Hoy",
-    "weeklyActivity": "Actividad Semanal"
+    "weeklyActivity": "Actividad Semanal",
+    "newPersonalBest": "¡Nuevo récord personal! 🎉",
+    "motivationalHint": "Completa una tarea cada día para construir tu racha. ¡Cuanto más tiempo, más recompensas desbloqueas!",
+    "letsGo": "¡Vamos!",
+    "reachStreak": "Alcanza una racha de 3 días para unirte a la Sociedad de Rachas",
+    "societyDays": "Sociedad de Rachas · {{count}} días"
   },
   "profile": {
     "title": "Perfil",
@@ -2028,7 +2033,11 @@
     "certificateSubtitle": "¡Comparte tu consistencia con el mundo!",
     "chooseAdventure": "Elige Tu Aventura",
     "chooseAdventureSubtitle": "¡Completa tareas para viajar por el mundo! Elige un viaje para comenzar.",
-    "noFoldersEmpty": "Aún no hay carpetas — ¡crea una arriba!"
+    "noFoldersEmpty": "Aún no hay carpetas — ¡crea una arriba!",
+    "noDueDate": "Sin fecha límite",
+    "tasksReadyToAdd": "{{count}} tarea(s) lista(s) para agregar",
+    "addCountTasks": "Agregar {{count}} tarea(s)",
+    "addTasks": "Agregar tareas"
   },
   "toast": {
     "folderCreated": "Carpeta creada",

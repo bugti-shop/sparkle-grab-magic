@@ -180,7 +180,12 @@
     "streakProtected": "Seri Korundu",
     "tasksCompleted": "Tamamlanan Görevler",
     "todayProgress": "Bugünkü İlerleme",
-    "weeklyActivity": "Haftalık Aktivite"
+    "weeklyActivity": "Haftalık Aktivite",
+    "newPersonalBest": "Yeni Kişisel Rekor! 🎉",
+    "motivationalHint": "Her gün bir görev tamamlayarak serinizi oluşturun. Ne kadar uzun süre devam ederseniz, o kadar çok ödül açarsınız!",
+    "letsGo": "Haydi!",
+    "reachStreak": "Seri Topluluğuna katılmak için 3 günlük seri yapın",
+    "societyDays": "Seri Topluluğu · {{count}} gün"
   },
   "profile": {
     "title": "Profil",
@@ -1865,7 +1870,11 @@
     "deviceIPad": "iPad",
     "deviceMac": "Mac",
     "deviceAndroid": "Android",
-    "deviceWindows": "Windows"
+    "deviceWindows": "Windows",
+    "noDueDate": "Son tarih yok",
+    "tasksReadyToAdd": "{{count}} görev eklenmeye hazır",
+    "addCountTasks": "{{count}} görev ekle",
+    "addTasks": "Görev ekle"
   },
   "toast": {
     "folderCreated": "Klasör oluşturuldu",

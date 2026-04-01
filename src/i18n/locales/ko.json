@@ -180,7 +180,12 @@
     "streakProtected": "연속 기록 보호됨",
     "tasksCompleted": "완료된 작업",
     "todayProgress": "오늘의 진행 상황",
-    "weeklyActivity": "주간 활동"
+    "weeklyActivity": "주간 활동",
+    "newPersonalBest": "새로운 개인 최고 기록! 🎉",
+    "motivationalHint": "매일 작업을 완료하여 연속 기록을 쌓으세요. 오래 갈수록 더 많은 보상을 잠금 해제합니다!",
+    "letsGo": "시작하기!",
+    "reachStreak": "스트릭 소사이어티에 가입하려면 3일 연속을 달성하세요",
+    "societyDays": "스트릭 소사이어티 · {{count}}일"
   },
   "profile": {
     "title": "프로필",
@@ -2028,7 +2033,11 @@
     "deviceIPad": "iPad",
     "deviceMac": "Mac",
     "deviceAndroid": "Android",
-    "deviceWindows": "Windows"
+    "deviceWindows": "Windows",
+    "noDueDate": "마감일 없음",
+    "tasksReadyToAdd": "{{count}}개의 작업 추가 준비 완료",
+    "addCountTasks": "{{count}}개 작업 추가",
+    "addTasks": "작업 추가"
   },
   "toast": {
     "folderCreated": "폴더 생성됨",

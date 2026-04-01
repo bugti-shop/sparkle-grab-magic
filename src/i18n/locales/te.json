@@ -168,7 +168,12 @@
     "atRiskWarning": "మీ స్ట్రీక్‌ను కొనసాగించడానికి ఈరోజు ఒక పనిని పూర్తి చేయండి!",
     "earnFreeze": "ఫ్రీజ్ సంపాదించడానికి ఈరోజు మరో {{remaining}} పనులు పూర్తి చేయండి",
     "freezeEarnedToday": "ఈరోజు ఫ్రీజ్ సంపాదించారు! 🎉",
-    "milestoneReached": "మైలురాయిని చేరుకున్నారు!"
+    "milestoneReached": "మైలురాయిని చేరుకున్నారు!",
+    "newPersonalBest": "కొత్త వ్యక్తిగత ఉత్తమ రికార్డు! 🎉",
+    "motivationalHint": "మీ స్ట్రీక్‌ను నిర్మించడానికి ప్రతిరోజు ఒక పనిని పూర్తి చేయండి. మీరు ఎంత ఎక్కువ కొనసాగిస్తే, అంత ఎక్కువ రివార్డ్‌లు అన్‌లాక్ అవుతాయి!",
+    "letsGo": "ప్రారంభిద్దాం!",
+    "reachStreak": "స్ట్రీక్ సొసైటీలో చేరడానికి 3 రోజుల స్ట్రీక్ సాధించండి",
+    "societyDays": "స్ట్రీక్ సొసైటీ · {{count}} రోజులు"
   },
   "profile": {
     "title": "ప్రొఫైల్",
@@ -1920,7 +1925,11 @@
     "deviceIPad": "iPad",
     "deviceMac": "Mac",
     "deviceAndroid": "Android",
-    "deviceWindows": "Windows"
+    "deviceWindows": "Windows",
+    "noDueDate": "గడువు తేదీ లేదు",
+    "tasksReadyToAdd": "{{count}} పనులు జోడించడానికి సిద్ధంగా ఉన్నాయి",
+    "addCountTasks": "{{count}} పనులు జోడించండి",
+    "addTasks": "పనులు జోడించండి"
   },
   "toast": {
     "folderCreated": "ఫోల్డర్ సృష్టించబడింది",

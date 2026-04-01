@@ -180,7 +180,12 @@
     "streakProtected": "Serie Geschützt",
     "tasksCompleted": "Aufgaben Erledigt",
     "todayProgress": "Heutiger Fortschritt",
-    "weeklyActivity": "Wöchentliche Aktivität"
+    "weeklyActivity": "Wöchentliche Aktivität",
+    "newPersonalBest": "Neuer persönlicher Rekord! 🎉",
+    "motivationalHint": "Erledige jeden Tag eine Aufgabe, um deine Serie aufzubauen. Je länger du durchhältst, desto mehr Belohnungen schaltest du frei!",
+    "letsGo": "Los geht's!",
+    "reachStreak": "Erreiche eine 3-Tage-Serie, um der Serien-Gesellschaft beizutreten",
+    "societyDays": "Serien-Gesellschaft · {{count}} Tage"
   },
   "profile": {
     "title": "Profil",
@@ -2028,7 +2033,11 @@
     "certificateSubtitle": "Teile deine Beständigkeit mit der Welt!",
     "chooseAdventure": "Wähle Dein Abenteuer",
     "chooseAdventureSubtitle": "Erledige Aufgaben, um die Welt zu bereisen! Wähle eine Reise zum Starten.",
-    "noFoldersEmpty": "Noch keine Ordner — erstelle einen oben!"
+    "noFoldersEmpty": "Noch keine Ordner — erstelle einen oben!",
+    "noDueDate": "Kein Fälligkeitsdatum",
+    "tasksReadyToAdd": "{{count}} Aufgabe(n) bereit zum Hinzufügen",
+    "addCountTasks": "{{count}} Aufgabe(n) hinzufügen",
+    "addTasks": "Aufgaben hinzufügen"
   },
   "toast": {
     "folderCreated": "Ordner erstellt",
