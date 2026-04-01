@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -24,6 +25,7 @@ export const TaskDependencySheet = ({
   allTasks,
   onSave,
 }: TaskDependencySheetProps) => {
+  const { t } = useTranslation();
   const [selectedDependencies, setSelectedDependencies] = useState<string[]>(
     task.dependsOn || []
   );
@@ -118,7 +120,7 @@ export const TaskDependencySheet = ({
           <div className="relative">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
             <Input
-              placeholder="Search tasks..."
+              placeholder={t('tasks.searchTasks', 'Search tasks...')}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="pl-10"

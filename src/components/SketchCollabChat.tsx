@@ -1,4 +1,5 @@
 import { memo, useState, useRef, useEffect, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { MessageSquare, Send, X, ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import type { CollabChatMessage } from '@/utils/sketchCollaboration';
@@ -12,6 +13,7 @@ interface SketchCollabChatProps {
 }
 
 export const SketchCollabChat = memo(({ messages, unreadCount, myUserId, onSend, onOpen }: SketchCollabChatProps) => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState('');
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -128,7 +130,7 @@ export const SketchCollabChat = memo(({ messages, unreadCount, myUserId, onSend,
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder="Type a message..."
+            placeholder={t('collab.typeMessage', 'Type a message...')}
             className="flex-1 h-8 px-3 rounded-full text-xs bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary"
             maxLength={500}
           />

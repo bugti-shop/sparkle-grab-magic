@@ -49,6 +49,9 @@
     "switchToTodo": "Switch to To-Do",
     "switchToNotes": "Switch to Notes",
     "restore": "Restore",
+    "tags": "Tags",
+    "enterYourName": "Enter your name",
+    "tapEditName": "Tap Edit to add your name",
     "insertEmoji": "Insert Emoji",
     "taskHistory": "Task History",
     "moreStyles": "More styles",
@@ -621,7 +624,8 @@
     "exportedToMarkdown": "Note exported to Markdown",
     "restoreFromArchive": "Restore from Archive",
     "archiveNote": "Archive Note",
-    "sketchDrawing": "Sketch drawing"
+    "sketchDrawing": "Sketch drawing",
+    "restoreFromTrash": "Restore from Trash"
   },
   "tasks": {
     "title": "Tasks",
@@ -3057,6 +3061,9 @@
     "history": "History",
     "journeysCompleted": "{{count}} journey(s) completed",
     "badgesCount": "{{count}} badges",
+    "badges": "Journey Badges",
+    "shareBadge": "Share Badge",
+    "shareError": "Failed to share badge",
     "nile": {
       "name": "Sail the Nile",
       "description": "Travel 6,650 km along the world's longest river from source to sea",
@@ -3653,7 +3660,9 @@
     "beginnerDesc": "Complete 10 tasks & create 5 notes",
     "intermediateDesc": "Complete 50 tasks & 7-day streak",
     "advancedDesc": "Complete 200 tasks & 30-day streak",
-    "masterDesc": "Complete 500 tasks & 100-day streak"
+    "masterDesc": "Complete 500 tasks & 100-day streak",
+    "yourNameOnCert": "Your Name on Certificate",
+    "nameAppearOnCert": "This name will appear on the shared certificate image"
   },
   "security": {
     "passwordRecovery": "Password Recovery",
@@ -3737,7 +3746,8 @@
     "roomCode": "Room Code:",
     "enterCode": "Enter 6-digit code",
     "addedLayer": "{{name}} added a layer",
-    "deletedLayer": "{{name}} deleted a layer"
+    "deletedLayer": "{{name}} deleted a layer",
+    "typeMessage": "Type a message..."
   },
   "audio": {
     "effectsApplied": "Audio effects applied!",
@@ -3750,7 +3760,7 @@
   "location": {
     "enterLocation": "Enter location...",
     "addMapboxToken": "Add your Mapbox token in settings to enable location search",
-    "searchLocation": "Search location for reminder...",
+    "searchLocation": "Search for a location...",
     "arrive": "Arrive",
     "leave": "Leave",
     "radiusUnit": "{{radius}}m radius"

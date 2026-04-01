@@ -58,7 +58,10 @@
     "selectAllText": "تحديد الكل",
     "bulletList": "قائمة نقطية",
     "numberedList": "قائمة مرقمة",
-    "tasks": "مهام"
+    "tasks": "مهام",
+    "tags": "العلامات",
+    "enterYourName": "أدخل اسمك",
+    "tapEditName": "اضغط على تعديل لإضافة اسمك"
   },
   "folders": {
     "manageFolders": "إدارة المجلدات",
@@ -677,7 +680,8 @@
     "exportedToMarkdown": "تم تصدير الملاحظة إلى Markdown",
     "restoreFromArchive": "استعادة من الأرشيف",
     "archiveNote": "أرشفة الملاحظة",
-    "sketchDrawing": "رسم تخطيطي"
+    "sketchDrawing": "رسم تخطيطي",
+    "restoreFromTrash": "استعادة من سلة المحذوفات"
   },
   "tasks": {
     "title": "المهام",
@@ -3249,7 +3253,10 @@
       "sp_6": "هبوط على المريخ!",
       "sp_6_desc": "قفزة عملاقة! أنت على المريخ!"
     },
-    "tasksCount": "{{count}} مهمة"
+    "tasksCount": "{{count}} مهمة",
+    "badges": "شارات الرحلة",
+    "shareBadge": "مشاركة الشارة",
+    "shareError": "فشل مشاركة الشارة"
   },
   "certificates": {
     "title": "الشهادات",
@@ -3814,7 +3821,9 @@
     "beginnerDesc": "أكمل 10 مهام وأنشئ 5 ملاحظات",
     "intermediateDesc": "أكمل 50 مهمة وسلسلة 7 أيام",
     "advancedDesc": "أكمل 200 مهمة وسلسلة 30 يومًا",
-    "masterDesc": "أكمل 500 مهمة وسلسلة 100 يوم"
+    "masterDesc": "أكمل 500 مهمة وسلسلة 100 يوم",
+    "yourNameOnCert": "اسمك على الشهادة",
+    "nameAppearOnCert": "سيظهر هذا الاسم على صورة الشهادة المشتركة"
   },
   "security": {
     "passwordRecovery": "استعادة كلمة المرور",
@@ -3899,7 +3908,8 @@
     "enterCode": "أدخل رمز من 6 أرقام",
     "addedLayer": "{{name}} أضاف طبقة",
     "deletedLayer": "{{name}} حذف طبقة",
-    "collaborate": "تعاون"
+    "collaborate": "تعاون",
+    "typeMessage": "اكتب رسالة..."
   },
   "audio": {
     "effectsApplied": "تم تطبيق تأثيرات الصوت!",

@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -44,6 +45,7 @@ export const LocationReminderSheet = ({
   onSave,
   onRemove,
 }: LocationReminderSheetProps) => {
+  const { t } = useTranslation();
   const [enabled, setEnabled] = useState(locationReminder?.enabled ?? true);
   const [address, setAddress] = useState(locationReminder?.address ?? '');
   const [latitude, setLatitude] = useState(locationReminder?.latitude ?? 0);
@@ -474,7 +476,7 @@ export const LocationReminderSheet = ({
                   <Input
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    placeholder="Search for a location..."
+                    placeholder={t('location.searchLocation', 'Search for a location...')}
                     className="pl-10 pr-10"
                   />
                   {searchQuery && (

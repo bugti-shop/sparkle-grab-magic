@@ -110,7 +110,7 @@ export const TagManagementSheet = ({
             <div className="rounded-xl border border-border bg-card p-4 space-y-3">
               <div className="flex items-center gap-2">
                 <Input
-                  placeholder="Tag name..."
+                  placeholder={t('tags.tagName', 'Tag name...')}
                   value={newTagName}
                   onChange={(e) => setNewTagName(e.target.value)}
                   className="flex-1"

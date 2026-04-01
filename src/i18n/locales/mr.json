@@ -58,7 +58,10 @@
     "selectAllText": "सर्व निवडा",
     "bulletList": "बुलेट सूची",
     "numberedList": "क्रमांकित सूची",
-    "tasks": "कार्ये"
+    "tasks": "कार्ये",
+    "tags": "टॅग",
+    "enterYourName": "तुमचे नाव प्रविष्ट करा",
+    "tapEditName": "तुमचे नाव जोडण्यासाठी संपादित करा वर टॅप करा"
   },
   "folders": {
     "manageFolders": "फोल्डर व्यवस्थापित करा",
@@ -603,7 +606,8 @@
     "exportedToMarkdown": "टीप Markdown मध्ये निर्यात केली",
     "restoreFromArchive": "आर्काइव्हमधून पुनर्संचयित करा",
     "archiveNote": "टीप आर्काइव्ह करा",
-    "sketchDrawing": "स्केच रेखाचित्र"
+    "sketchDrawing": "स्केच रेखाचित्र",
+    "restoreFromTrash": "कचरापेटीतून पुनर्संचयित करा"
   },
   "tasks": {
     "title": "कार्ये",
@@ -3119,7 +3123,10 @@
       "sp_5_desc": "लाल ग्रह दृष्टीस पडत आहे!",
       "sp_6": "मंगळावर उतरणे!",
       "sp_6_desc": "एक मोठी झेप! तुम्ही मंगळावर आहात!"
-    }
+    },
+    "badges": "प्रवास बॅज",
+    "shareBadge": "बॅज शेअर करा",
+    "shareError": "बॅज शेअर करण्यात अयशस्वी"
   },
   "certificates": {
     "title": "प्रमाणपत्रे",
@@ -3626,7 +3633,9 @@
     "beginnerDesc": "१० कार्ये पूर्ण करा व ५ नोट्स तयार करा",
     "intermediateDesc": "५० कार्ये पूर्ण करा व ७ दिवसांची मालिका",
     "advancedDesc": "२०० कार्ये पूर्ण करा व ३० दिवसांची मालिका",
-    "masterDesc": "५०० कार्ये पूर्ण करा व १०० दिवसांची मालिका"
+    "masterDesc": "५०० कार्ये पूर्ण करा व १०० दिवसांची मालिका",
+    "yourNameOnCert": "प्रमाणपत्रावर तुमचे नाव",
+    "nameAppearOnCert": "हे नाव शेअर केलेल्या प्रमाणपत्र प्रतिमेवर दिसेल"
   },
   "security": {
     "passwordRecovery": "पासवर्ड पुनर्प्राप्ती",
@@ -3711,7 +3720,8 @@
     "enterCode": "6 अंकी कोड प्रविष्ट करा",
     "addedLayer": "{{name}} ने एक स्तर जोडला",
     "deletedLayer": "{{name}} ने एक स्तर हटवला",
-    "collaborate": "सहकार्य"
+    "collaborate": "सहकार्य",
+    "typeMessage": "एक संदेश टाइप करा..."
   },
   "audio": {
     "effectsApplied": "ऑडिओ प्रभाव लागू!",

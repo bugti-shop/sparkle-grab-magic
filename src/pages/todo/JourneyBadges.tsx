@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo, useRef, useCallback, lazy, Suspense } from 'react';
+import { useTranslation } from 'react-i18next';
 import { m as motion, AnimatePresence } from 'framer-motion';
 import { Award, Share2, Edit3, Check } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -26,6 +27,7 @@ const QRCodeSVG = lazy(() => import('qrcode.react').then(m => ({ default: m.QRCo
 const RARITY_ORDER: BadgeRarity[] = ['legendary', 'epic', 'rare', 'uncommon', 'common'];
 
 const JourneyBadges = () => {
+  const { t } = useTranslation();
   const [data, setData] = useState<VirtualJourneyData | null>(null);
   const [filter, setFilter] = useState<'all' | string>('all');
   const [selectedBadge, setSelectedBadge] = useState<JourneyBadge | null>(null);
@@ -122,13 +124,13 @@ const JourneyBadges = () => {
         fileName: `badge-${selectedBadge.id}.png`,
         title: `${selectedBadge.label} Badge`,
         text: `I earned the "${selectedBadge.label}" badge on my ${selectedBadge.journeyName} journey! 🏅`,
-        dialogTitle: 'Share Badge',
+        dialogTitle: t('journey.shareBadge', 'Share Badge'),
       });
       setShareConfetti(true);
       setTimeout(() => setShareConfetti(false), 3500);
     } catch (err) {
       if ((err as Error)?.message !== 'Share canceled') {
-        toast.error('Failed to share badge');
+        toast.error(t('journey.shareError', 'Failed to share badge'));
       }
     } finally {
       setIsSharing(false);
@@ -138,7 +140,7 @@ const JourneyBadges = () => {
   if (!data) return null;
 
   return (
-    <TodoLayout title="Journey Badges">
+    <TodoLayout title={t('journey.badges', 'Journey Badges')}>
       {/* Confetti overlay */}
       {(showConfetti || shareConfetti) && (
         <Confetti
@@ -441,7 +443,7 @@ const JourneyBadges = () => {
                         type="text"
                         value={badgeName}
                         onChange={(e) => setBadgeName(e.target.value)}
-                        placeholder="Enter your name"
+                        placeholder={t('common.enterYourName', 'Enter your name')}
                         className="bg-muted/50 border border-border rounded-lg px-3 py-1.5 text-sm text-foreground text-center w-44 outline-none focus:ring-1 focus:ring-primary"
                         autoFocus
                         maxLength={30}

@@ -58,7 +58,10 @@
     "selectAllText": "Selecionar tudo",
     "bulletList": "Lista com marcadores",
     "numberedList": "Lista numerada",
-    "tasks": "tarefas"
+    "tasks": "tarefas",
+    "tags": "Tags",
+    "enterYourName": "Digite seu nome",
+    "tapEditName": "Toque em Editar para adicionar seu nome"
   },
   "folders": {
     "manageFolders": "Gerenciar pastas",
@@ -677,7 +680,8 @@
     "exportedToMarkdown": "Nota exportada para Markdown",
     "restoreFromArchive": "Restaurar do Arquivo",
     "archiveNote": "Arquivar Nota",
-    "sketchDrawing": "Desenho de esboço"
+    "sketchDrawing": "Desenho de esboço",
+    "restoreFromTrash": "Restaurar da lixeira"
   },
   "tasks": {
     "title": "Tarefas",
@@ -3163,7 +3167,10 @@
       "sp_6": "Pouso em Marte!",
       "sp_6_desc": "Um grande salto! Você está em Marte!"
     },
-    "tasksCount": "{{count}} tarefas"
+    "tasksCount": "{{count}} tarefas",
+    "badges": "Emblemas de jornada",
+    "shareBadge": "Compartilhar emblema",
+    "shareError": "Falha ao compartilhar emblema"
   },
   "certificates": {
     "title": "Certificados",
@@ -3814,7 +3821,9 @@
     "beginnerDesc": "Complete 10 tarefas e crie 5 notas",
     "intermediateDesc": "Complete 50 tarefas e sequência de 7 dias",
     "advancedDesc": "Complete 200 tarefas e sequência de 30 dias",
-    "masterDesc": "Complete 500 tarefas e sequência de 100 dias"
+    "masterDesc": "Complete 500 tarefas e sequência de 100 dias",
+    "yourNameOnCert": "Seu nome no certificado",
+    "nameAppearOnCert": "Este nome aparecerá na imagem do certificado compartilhado"
   },
   "security": {
     "passwordRecovery": "Recuperação de Senha",
@@ -3899,7 +3908,8 @@
     "enterCode": "Digite código de 6 dígitos",
     "addedLayer": "{{name}} adicionou uma camada",
     "deletedLayer": "{{name}} excluiu uma camada",
-    "collaborate": "Colaborar"
+    "collaborate": "Colaborar",
+    "typeMessage": "Digite uma mensagem..."
   },
   "audio": {
     "effectsApplied": "Efeitos de áudio aplicados!",

@@ -58,7 +58,10 @@
     "selectAllText": "Alles auswählen",
     "bulletList": "Aufzählungsliste",
     "numberedList": "Nummerierte Liste",
-    "tasks": "Aufgaben"
+    "tasks": "Aufgaben",
+    "tags": "Tags",
+    "enterYourName": "Geben Sie Ihren Namen ein",
+    "tapEditName": "Tippen Sie auf Bearbeiten, um Ihren Namen hinzuzufügen"
   },
   "folders": {
     "manageFolders": "Ordner verwalten",
@@ -677,7 +680,8 @@
     "exportedToMarkdown": "Notiz nach Markdown exportiert",
     "restoreFromArchive": "Aus Archiv wiederherstellen",
     "archiveNote": "Notiz archivieren",
-    "sketchDrawing": "Skizzenzeichnung"
+    "sketchDrawing": "Skizzenzeichnung",
+    "restoreFromTrash": "Aus dem Papierkorb wiederherstellen"
   },
   "tasks": {
     "title": "Aufgaben",
@@ -3163,7 +3167,10 @@
       "sp_6": "Marslandung!",
       "sp_6_desc": "Ein großer Sprung! Du bist auf dem Mars!"
     },
-    "tasksCount": "{{count}} Aufgaben"
+    "tasksCount": "{{count}} Aufgaben",
+    "badges": "Reise-Abzeichen",
+    "shareBadge": "Abzeichen teilen",
+    "shareError": "Fehler beim Teilen des Abzeichens"
   },
   "certificates": {
     "title": "Zertifikate",
@@ -3814,7 +3821,9 @@
     "beginnerDesc": "Erledige 10 Aufgaben und erstelle 5 Notizen",
     "intermediateDesc": "Erledige 50 Aufgaben und 7-Tage-Serie",
     "advancedDesc": "Erledige 200 Aufgaben und 30-Tage-Serie",
-    "masterDesc": "Erledige 500 Aufgaben und 100-Tage-Serie"
+    "masterDesc": "Erledige 500 Aufgaben und 100-Tage-Serie",
+    "yourNameOnCert": "Ihr Name auf dem Zertifikat",
+    "nameAppearOnCert": "Dieser Name wird auf dem geteilten Zertifikatbild erscheinen"
   },
   "security": {
     "passwordRecovery": "Passwort-Wiederherstellung",
@@ -3899,7 +3908,8 @@
     "enterCode": "6-stelligen Code eingeben",
     "addedLayer": "{{name}} hat eine Ebene hinzugefügt",
     "deletedLayer": "{{name}} hat eine Ebene gelöscht",
-    "collaborate": "Zusammenarbeiten"
+    "collaborate": "Zusammenarbeiten",
+    "typeMessage": "Nachricht eingeben..."
   },
   "audio": {
     "effectsApplied": "Audioeffekte angewendet!",

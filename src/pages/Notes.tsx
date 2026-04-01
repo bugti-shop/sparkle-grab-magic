@@ -362,7 +362,7 @@ const Notes = () => {
                 size="icon"
                 variant="ghost"
                 onClick={() => setShowTagManager(true)}
-                title="Tags"
+                title={t('common.tags', 'Tags')}
                 className="h-7 w-7 xs:h-8 xs:w-8 sm:h-10 sm:w-10 touch-target"
               >
                 <Tag className="h-4 w-4 xs:h-5 xs:w-5 sm:h-5 sm:w-5" />
@@ -609,7 +609,7 @@ const Notes = () => {
                         variant="ghost"
                         onClick={(e) => handleRestoreFromTrash(note.id, e)}
                         className="h-8 w-8 opacity-0 group-hover:opacity-100 transition-opacity z-10"
-                        title="Restore from Trash"
+                        title={t('notes.restoreFromTrash', 'Restore from Trash')}
                       >
                         <RotateCcw className="h-4 w-4" />
                       </Button>

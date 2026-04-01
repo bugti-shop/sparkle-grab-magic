@@ -58,7 +58,10 @@
     "selectAllText": "सब चुनें",
     "bulletList": "बुलेट सूची",
     "numberedList": "क्रमांकित सूची",
-    "tasks": "कार्य"
+    "tasks": "कार्य",
+    "tags": "टैग",
+    "enterYourName": "अपना नाम दर्ज करें",
+    "tapEditName": "अपना नाम जोड़ने के लिए संपादित करें पर टैप करें"
   },
   "folders": {
     "manageFolders": "फ़ोल्डर प्रबंधित करें",
@@ -677,7 +680,8 @@
     "exportedToMarkdown": "नोट Markdown में निर्यात किया गया",
     "restoreFromArchive": "आर्काइव से पुनर्स्थापित करें",
     "archiveNote": "नोट आर्काइव करें",
-    "sketchDrawing": "स्केच चित्र"
+    "sketchDrawing": "स्केच चित्र",
+    "restoreFromTrash": "कचरे से पुनर्स्थापित करें"
   },
   "tasks": {
     "title": "कार्य",
@@ -3249,7 +3253,10 @@
       "sp_6": "मंगल ग्रह पर उतरना!",
       "sp_6_desc": "एक विशाल छलांग! आप मंगल ग्रह पर हैं!"
     },
-    "tasksCount": "{{count}} कार्य"
+    "tasksCount": "{{count}} कार्य",
+    "badges": "यात्रा बैज",
+    "shareBadge": "बैज साझा करें",
+    "shareError": "बैज साझा करने में विफल"
   },
   "certificates": {
     "title": "प्रमाणपत्र",
@@ -3814,7 +3821,9 @@
     "beginnerDesc": "10 कार्य पूरे करें और 5 नोट्स बनाएँ",
     "intermediateDesc": "50 कार्य पूरे करें और 7 दिन की स्ट्रीक",
     "advancedDesc": "200 कार्य पूरे करें और 30 दिन की स्ट्रीक",
-    "masterDesc": "500 कार्य पूरे करें और 100 दिन की स्ट्रीक"
+    "masterDesc": "500 कार्य पूरे करें और 100 दिन की स्ट्रीक",
+    "yourNameOnCert": "प्रमाणपत्र पर आपका नाम",
+    "nameAppearOnCert": "यह नाम साझा प्रमाणपत्र छवि पर दिखाई देगा"
   },
   "security": {
     "passwordRecovery": "पासवर्ड पुनर्प्राप्ति",
@@ -3899,7 +3908,8 @@
     "enterCode": "6 अंकों का कोड दर्ज करें",
     "addedLayer": "{{name}} ने एक परत जोड़ी",
     "deletedLayer": "{{name}} ने एक परत हटाई",
-    "collaborate": "सहयोग"
+    "collaborate": "सहयोग",
+    "typeMessage": "एक संदेश टाइप करें..."
   },
   "audio": {
     "effectsApplied": "ऑडियो प्रभाव लागू!",

@@ -1,4 +1,5 @@
 import { useState, useRef, useCallback, useEffect, lazy, Suspense } from 'react';
+import { useTranslation } from 'react-i18next';
 import { m as motion, AnimatePresence } from 'framer-motion';
 import { X, Share2, Copy, Check } from 'lucide-react';
 import { LazyConfetti as Confetti } from '@/components/LazyConfetti';
@@ -62,6 +63,7 @@ const getLinkedInText = (journey: Journey, userName: string, totalTasks: number,
 };
 
 export const JourneyCertificate = ({ open, onClose, journey, progress }: JourneyCertificateProps) => {
+  const { t } = useTranslation();
   const { profile } = useUserProfile();
   const cardRef = useRef<HTMLDivElement>(null);
   const [isSharing, setIsSharing] = useState(false);
@@ -348,16 +350,16 @@ export const JourneyCertificate = ({ open, onClose, journey, progress }: Journey
 
           {/* Name on certificate */}
           <div className="bg-card border rounded-xl p-4">
-            <h3 className="text-sm font-bold mb-2">Your Name on Certificate</h3>
+            <h3 className="text-sm font-bold mb-2">{t('cert.yourNameOnCert', 'Your Name on Certificate')}</h3>
             <input
               type="text"
               value={cardName}
               onChange={(e) => setCardName(e.target.value)}
-              placeholder="Enter your name"
+              placeholder={t('common.enterYourName', 'Enter your name')}
               maxLength={40}
               className="w-full text-sm bg-muted rounded-lg px-3 py-2 border border-border focus:outline-none focus:ring-2 focus:ring-primary/40"
             />
-            <p className="text-[10px] text-muted-foreground mt-1.5">This name will appear on the shared certificate image</p>
+            <p className="text-[10px] text-muted-foreground mt-1.5">{t('cert.nameAppearOnCert', 'This name will appear on the shared certificate image')}</p>
           </div>
 
           {/* Action Buttons */}

@@ -1,4 +1,5 @@
 import { useState, useRef, useCallback, useEffect, lazy, Suspense } from 'react';
+import { useTranslation } from 'react-i18next';
 import { m as motion } from 'framer-motion';
 import { Share2, Edit3, Check, Copy, Flame } from 'lucide-react';
 import { useUserProfile } from '@/hooks/useUserProfile';
@@ -27,6 +28,7 @@ const getStreakColor = (streak: number) => {
 };
 
 export const StreakConsistencyCertificate = ({ currentStreak, totalCompletions, longestStreak }: StreakConsistencyCertificateProps) => {
+  const { t } = useTranslation();
   const { profile } = useUserProfile();
   const cardRef = useRef<HTMLDivElement>(null);
   const [isSharing, setIsSharing] = useState(false);
@@ -258,13 +260,13 @@ export const StreakConsistencyCertificate = ({ currentStreak, totalCompletions, 
             type="text"
             value={cardName}
             onChange={(e) => setCardName(e.target.value)}
-            placeholder="Enter your name"
+            placeholder={t('common.enterYourName', 'Enter your name')}
             maxLength={40}
             autoFocus
             className="w-full text-sm bg-muted rounded-lg px-3 py-2 border border-border focus:outline-none focus:ring-2 focus:ring-primary/40"
           />
         ) : (
-          <p className="text-sm font-medium truncate">{displayName || 'Tap Edit to add your name'}</p>
+          <p className="text-sm font-medium truncate">{displayName || t('common.tapEditName', 'Tap Edit to add your name')}</p>
         )}
       </div>
 

@@ -58,7 +58,10 @@
     "selectAllText": "Tümünü seç",
     "bulletList": "Madde işaretli liste",
     "numberedList": "Numaralı liste",
-    "tasks": "görev"
+    "tasks": "görev",
+    "tags": "Etiketler",
+    "enterYourName": "Adınızı girin",
+    "tapEditName": "Adınızı eklemek için Düzenle'ye dokunun"
   },
   "folders": {
     "manageFolders": "Klasörleri Yönet",
@@ -677,7 +680,8 @@
     "exportedToMarkdown": "Not Markdown'a aktarıldı",
     "restoreFromArchive": "Arşivden Geri Yükle",
     "archiveNote": "Notu Arşivle",
-    "sketchDrawing": "Eskiz çizimi"
+    "sketchDrawing": "Eskiz çizimi",
+    "restoreFromTrash": "Çöp kutusundan geri yükle"
   },
   "tasks": {
     "title": "Görevler",
@@ -3163,7 +3167,10 @@
       "sp_6": "Mars'a iniş!",
       "sp_6_desc": "Büyük bir adım! Mars'tasınız!"
     },
-    "tasksCount": "{{count}} görev"
+    "tasksCount": "{{count}} görev",
+    "badges": "Yolculuk rozetleri",
+    "shareBadge": "Rozet paylaş",
+    "shareError": "Rozet paylaşılamadı"
   },
   "certificates": {
     "title": "Sertifikalar",
@@ -3814,7 +3821,9 @@
     "beginnerDesc": "10 görevi tamamlayın ve 5 not oluşturun",
     "intermediateDesc": "50 görevi tamamlayın ve 7 gün seri",
     "advancedDesc": "200 görevi tamamlayın ve 30 gün seri",
-    "masterDesc": "500 görevi tamamlayın ve 100 gün seri"
+    "masterDesc": "500 görevi tamamlayın ve 100 gün seri",
+    "yourNameOnCert": "Sertifikadaki adınız",
+    "nameAppearOnCert": "Bu ad paylaşılan sertifika görüntüsünde görünecektir"
   },
   "security": {
     "passwordRecovery": "Şifre Kurtarma",
@@ -3899,7 +3908,8 @@
     "enterCode": "6 haneli kod girin",
     "addedLayer": "{{name}} bir katman ekledi",
     "deletedLayer": "{{name}} bir katman sildi",
-    "collaborate": "İşbirliği"
+    "collaborate": "İşbirliği",
+    "typeMessage": "Bir mesaj yazın..."
   },
   "audio": {
     "effectsApplied": "Ses efektleri uygulandı!",
