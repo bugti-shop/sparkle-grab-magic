@@ -699,12 +699,12 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
 
   // Translated option arrays (must be inside component to access t())
   const tGoalOptions = useMemo(() => [
-    'For Notes Taking',
-    'For Task Management',
-    'For Sketch Book',
-    'For Coding',
-    'For Personal Info Savings',
-  ], []);
+    t('onboarding.goalNoteTaking'),
+    t('onboarding.goalTaskManagement'),
+    t('onboarding.goalSketchBook'),
+    t('onboarding.goalCoding'),
+    t('onboarding.goalPersonalInfo'),
+  ], [t]);
 
   const tSourceOptions = useMemo(() => [
     t('onboarding.sourceInstagram'),
