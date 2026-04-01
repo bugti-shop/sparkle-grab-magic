@@ -921,6 +921,12 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
       setStep(34); // → unfinished tasks
     } else if (step === 6) {
       setStep(13); // → INFO (sketch moved to after devices)
+    } else if (step === 13) {
+      setStep(14); // → create task
+    } else if (step === 14) {
+      setStep(25); // → feature showcase
+    } else if (step === 25) {
+      setStep(26); // → loading screen
     } else if (step === 24) {
       if (selectedJourneyId) {
         startJourney(selectedJourneyId);
