@@ -348,7 +348,7 @@ export const JourneyCertificate = ({ open, onClose, journey, progress }: Journey
 
           {/* Name on certificate */}
           <div className="bg-card border rounded-xl p-4">
-            <h3 className="text-sm font-bold mb-2">Your Name on Certificate</h3>
+            <h3 className="text-sm font-bold mb-2">{t('cert.yourNameOnCert', 'Your Name on Certificate')}</h3>
             <input
               type="text"
               value={cardName}
