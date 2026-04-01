@@ -3765,10 +3765,6 @@
     "leave": "Leave",
     "radiusUnit": "{{radius}}m radius"
   },
-  "cert": {
-    "yourNameOnCert": "Your Name on Certificate",
-    "nameAppearOnCert": "This name will appear on the shared certificate image"
-  },
   "theme": {
     "editTheme": "Edit Theme",
     "themeName": "Theme Name",
