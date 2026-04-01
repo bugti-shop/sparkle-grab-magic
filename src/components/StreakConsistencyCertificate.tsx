@@ -264,7 +264,7 @@ export const StreakConsistencyCertificate = ({ currentStreak, totalCompletions, 
             className="w-full text-sm bg-muted rounded-lg px-3 py-2 border border-border focus:outline-none focus:ring-2 focus:ring-primary/40"
           />
         ) : (
-          <p className="text-sm font-medium truncate">{displayName || 'Tap Edit to add your name'}</p>
+          <p className="text-sm font-medium truncate">{displayName || t('common.tapEditName', 'Tap Edit to add your name')}</p>
         )}
       </div>
 

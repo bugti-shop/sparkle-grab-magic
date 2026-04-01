@@ -609,7 +609,7 @@ const Notes = () => {
                         variant="ghost"
                         onClick={(e) => handleRestoreFromTrash(note.id, e)}
                         className="h-8 w-8 opacity-0 group-hover:opacity-100 transition-opacity z-10"
-                        title="Restore from Trash"
+                        title={t('notes.restoreFromTrash', 'Restore from Trash')}
                       >
                         <RotateCcw className="h-4 w-4" />
                       </Button>

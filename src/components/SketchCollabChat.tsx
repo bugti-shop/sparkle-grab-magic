@@ -128,7 +128,7 @@ export const SketchCollabChat = memo(({ messages, unreadCount, myUserId, onSend,
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder="Type a message..."
+            placeholder={t('collab.typeMessage', 'Type a message...')}
             className="flex-1 h-8 px-3 rounded-full text-xs bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary"
             maxLength={500}
           />

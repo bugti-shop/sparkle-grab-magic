@@ -43,7 +43,7 @@ const JourneyHistory = () => {
   const totalTasks = data.totalTasksEver;
 
   return (
-    <TodoLayout title="Journey History">
+    <TodoLayout title={t('journey.history', 'Journey History')}>
       <div className="container mx-auto px-4 py-6 space-y-5">
 
         {/* Stats Header */}

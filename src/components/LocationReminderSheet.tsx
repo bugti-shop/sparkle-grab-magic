@@ -474,7 +474,7 @@ export const LocationReminderSheet = ({
                   <Input
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    placeholder="Search for a location..."
+                    placeholder={t('location.searchLocation', 'Search for a location...')}
                     className="pl-10 pr-10"
                   />
                   {searchQuery && (

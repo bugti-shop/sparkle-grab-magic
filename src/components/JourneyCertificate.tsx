@@ -357,7 +357,7 @@ export const JourneyCertificate = ({ open, onClose, journey, progress }: Journey
               maxLength={40}
               className="w-full text-sm bg-muted rounded-lg px-3 py-2 border border-border focus:outline-none focus:ring-2 focus:ring-primary/40"
             />
-            <p className="text-[10px] text-muted-foreground mt-1.5">This name will appear on the shared certificate image</p>
+            <p className="text-[10px] text-muted-foreground mt-1.5">{t('cert.nameAppearOnCert', 'This name will appear on the shared certificate image')}</p>
           </div>
 
           {/* Action Buttons */}

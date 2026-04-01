@@ -441,7 +441,7 @@ const JourneyBadges = () => {
                         type="text"
                         value={badgeName}
                         onChange={(e) => setBadgeName(e.target.value)}
-                        placeholder="Enter your name"
+                        placeholder={t('common.enterYourName', 'Enter your name')}
                         className="bg-muted/50 border border-border rounded-lg px-3 py-1.5 text-sm text-foreground text-center w-44 outline-none focus:ring-1 focus:ring-primary"
                         autoFocus
                         maxLength={30}
