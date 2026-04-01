@@ -3753,10 +3753,14 @@
   "location": {
     "enterLocation": "Enter location...",
     "addMapboxToken": "Add your Mapbox token in settings to enable location search",
-    "searchLocation": "Search location for reminder...",
+    "searchLocation": "Search for a location...",
     "arrive": "Arrive",
     "leave": "Leave",
     "radiusUnit": "{{radius}}m radius"
+  },
+  "cert": {
+    "yourNameOnCert": "Your Name on Certificate",
+    "nameAppearOnCert": "This name will appear on the shared certificate image"
   },
   "theme": {
     "editTheme": "Edit Theme",
