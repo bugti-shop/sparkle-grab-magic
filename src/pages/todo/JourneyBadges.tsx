@@ -244,7 +244,7 @@ const JourneyBadges = () => {
               </div>
 
               <motion.h2 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="text-2xl font-bold text-foreground">
-                {celebratingBadge.type === 'journey_complete' ? '🏆 Journey Conquered!' : '🎖️ New Badge!'}
+                {celebratingBadge.type === 'journey_complete' ? t('journey.journeyConquered', '🏆 Journey Conquered!') : t('journey.newBadge', '🎖️ New Badge!')}
               </motion.h2>
               <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.45 }} className="text-lg font-semibold text-warning">
                 {celebratingBadge.label}
