@@ -5,7 +5,7 @@ import { Crown, Unlock, Bell, Gift, Check } from 'lucide-react';
 import { useSubscription, ProductType } from '@/contexts/SubscriptionContext';
 import { Capacitor } from '@capacitor/core';
 import { PurchasesPackage, PACKAGE_TYPE } from '@revenuecat/purchases-capacitor';
-import { triggerHaptic } from '@/utils/haptics';
+import { triggerTripleHeavyHaptic } from '@/utils/haptics';
 import { setSetting } from '@/utils/settingsStorage';
 
 import { m as motion, AnimatePresence } from 'framer-motion';
@@ -226,7 +226,7 @@ function PaywallVariantA({ logic }: { logic: ReturnType<typeof usePaywallLogic> 
         <div className="mt-10 flex flex-col items-center gap-4">
           <div className="flex gap-3 w-full max-w-sm">
             {PLANS.map((plan) => (
-              <button key={plan.id} onClick={() => setSelectedPlan(plan.id)}
+              <button key={plan.id} onClick={() => { triggerTripleHeavyHaptic(); setSelectedPlan(plan.id); }}
                 className={`flex-1 relative rounded-xl p-3 text-center border-2 transition-all ${selectedPlan === plan.id ? 'border-primary' : ''}`}
                 style={{ 
                   background: selectedPlan === plan.id ? 'hsl(0 0% 96.1%)' : 'hsl(0 0% 100%)',
@@ -246,7 +246,7 @@ function PaywallVariantA({ logic }: { logic: ReturnType<typeof usePaywallLogic> 
             <p className="font-normal text-sm text-center mt-4" style={{ color: 'hsl(0 0% 45.1%)' }}>{t('onboarding.paywall.freeTrialThen', { price: currentPlan.price })}</p>
           )}
 
-          <button onClick={handlePurchase} disabled={isPurchasing} className="w-80 mt-2 btn-duo disabled:opacity-50">
+          <button onClick={() => { triggerTripleHeavyHaptic(); handlePurchase(); }} disabled={isPurchasing} className="w-80 mt-2 btn-duo disabled:opacity-50">
             {isPurchasing ? t('onboarding.paywall.processing') : currentPlan.hasTrial ? t('onboarding.paywall.tryForFree', { price: currentPlan.trialPriceString || '$0.00' }) : t('onboarding.paywall.continueWith', { price: currentPlan.price })}
           </button>
 
