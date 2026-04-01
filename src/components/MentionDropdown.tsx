@@ -2,9 +2,24 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { Note, TodoItem } from '@/types/note';
 import { loadNotesFromDB } from '@/utils/noteStorage';
 import { loadTasksFromDB } from '@/utils/taskStorage';
-import { FileText, CheckSquare, Search } from 'lucide-react';
+import { FileText, CheckSquare, Search, Clock } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
+
+const RECENT_MENTIONS_KEY = 'recent_mentions';
+const MAX_RECENT = 3;
+
+const getRecentMentions = (): MentionItem[] => {
+  try {
+    return JSON.parse(localStorage.getItem(RECENT_MENTIONS_KEY) || '[]');
+  } catch { return []; }
+};
+
+const saveRecentMention = (item: MentionItem) => {
+  const recent = getRecentMentions().filter(r => r.id !== item.id);
+  recent.unshift(item);
+  localStorage.setItem(RECENT_MENTIONS_KEY, JSON.stringify(recent.slice(0, MAX_RECENT)));
+};
 
 interface MentionItem {
   id: string;
@@ -65,7 +80,19 @@ export const MentionDropdown = ({
   const [items, setItems] = useState<MentionItem[]>([]);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const [recentMentions, setRecentMentions] = useState<MentionItem[]>([]);
   const [dropdownPos, setDropdownPos] = useState(position || { top: 0, left: 0 });
+
+  // Load recent mentions
+  useEffect(() => {
+    if (isOpen) setRecentMentions(getRecentMentions());
+  }, [isOpen]);
+
+  // Wrap onSelect to save recent
+  const handleSelect = useCallback((item: MentionItem) => {
+    saveRecentMention(item);
+    onSelect(item);
+  }, [onSelect]);
 
   // Load data
   useEffect(() => {
@@ -125,6 +152,16 @@ export const MentionDropdown = ({
     item.title.toLowerCase().includes(query.toLowerCase())
   );
 
+  // Recent items that match query and exist in current items
+  const filteredRecent = !query
+    ? recentMentions.filter(r => items.some(i => i.id === r.id))
+    : recentMentions.filter(r => items.some(i => i.id === r.id) && r.title.toLowerCase().includes(query.toLowerCase()));
+
+  // All selectable items for keyboard nav: recent + filtered (excluding duplicates)
+  const recentIds = new Set(filteredRecent.map(r => r.id));
+  const nonRecentFiltered = filteredItems.filter(i => !recentIds.has(i.id));
+  const allSelectableItems = [...filteredRecent, ...nonRecentFiltered];
+
   // Reset selection on query change
   useEffect(() => {
     setSelectedIndex(0);
@@ -147,20 +184,20 @@ export const MentionDropdown = ({
 
       if (e.key === 'ArrowDown') {
         e.preventDefault();
-        setSelectedIndex((prev) => Math.min(prev + 1, filteredItems.length - 1));
+        setSelectedIndex((prev) => Math.min(prev + 1, allSelectableItems.length - 1));
       } else if (e.key === 'ArrowUp') {
         e.preventDefault();
         setSelectedIndex((prev) => Math.max(prev - 1, 0));
-      } else if ((e.key === 'Enter' || e.key === 'Tab') && filteredItems.length > 0) {
+      } else if ((e.key === 'Enter' || e.key === 'Tab') && allSelectableItems.length > 0) {
         e.preventDefault();
         e.stopPropagation();
-        onSelect(filteredItems[selectedIndex]);
+        handleSelect(allSelectableItems[selectedIndex]);
       } else if (e.key === 'Escape') {
         e.preventDefault();
         onClose();
       }
     },
-    [isOpen, filteredItems, selectedIndex, onSelect, onClose]
+    [isOpen, allSelectableItems, selectedIndex, handleSelect, onClose]
   );
 
   useEffect(() => {
@@ -210,24 +247,38 @@ export const MentionDropdown = ({
           </div>
 
           {/* Items */}
-          {filteredItems.length === 0 ? (
+          {allSelectableItems.length === 0 ? (
             <div className="px-3 py-6 text-center text-sm text-muted-foreground">
               {query ? 'No matches found' : mentionType === 'all' ? 'No notes or tasks available' : `No ${mentionType} available`}
             </div>
           ) : (
             <div className="py-1">
+              {/* Recent mentions section */}
+              {filteredRecent.length > 0 && (
+                <>
+                  <div className="px-3 py-1.5 flex items-center gap-1.5 border-b border-border/50">
+                    <Clock className="h-3 w-3 text-muted-foreground" />
+                    <span className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">Recent</span>
+                  </div>
+                  {filteredRecent.map((item, index) => (
+                    <MentionItemButton key={`recent-${item.id}`} item={item} index={index} selectedIndex={selectedIndex} onSelect={handleSelect} setSelectedIndex={setSelectedIndex} />
+                  ))}
+                </>
+              )}
+
+              {/* Grouped notes & tasks */}
               {mentionType === 'all' ? (
                 <>
                   {(() => {
-                    const noteItems = filteredItems.filter(i => i.type === 'note');
-                    const taskItems = filteredItems.filter(i => i.type === 'task');
-                    let globalIndex = 0;
+                    const noteItems = nonRecentFiltered.filter(i => i.type === 'note');
+                    const taskItems = nonRecentFiltered.filter(i => i.type === 'task');
+                    let globalIndex = filteredRecent.length;
 
                     return (
                       <>
                         {noteItems.length > 0 && (
                           <>
-                            <div className="px-3 py-1.5 flex items-center gap-1.5 border-b border-border/50">
+                            <div className="px-3 py-1.5 flex items-center gap-1.5 border-b border-border/50 mt-1">
                               <FileText className="h-3 w-3 text-muted-foreground" />
                               <span className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">Notes</span>
                               <span className="text-[10px] text-muted-foreground/60 ml-auto">{noteItems.length}</span>
@@ -235,7 +286,7 @@ export const MentionDropdown = ({
                             {noteItems.slice(0, 10).map((item) => {
                               const idx = globalIndex++;
                               return (
-                                <MentionItemButton key={item.id} item={item} index={idx} selectedIndex={selectedIndex} onSelect={onSelect} setSelectedIndex={setSelectedIndex} />
+                                <MentionItemButton key={item.id} item={item} index={idx} selectedIndex={selectedIndex} onSelect={handleSelect} setSelectedIndex={setSelectedIndex} />
                               );
                             })}
                           </>
@@ -250,7 +301,7 @@ export const MentionDropdown = ({
                             {taskItems.slice(0, 10).map((item) => {
                               const idx = globalIndex++;
                               return (
-                                <MentionItemButton key={item.id} item={item} index={idx} selectedIndex={selectedIndex} onSelect={onSelect} setSelectedIndex={setSelectedIndex} />
+                                <MentionItemButton key={item.id} item={item} index={idx} selectedIndex={selectedIndex} onSelect={handleSelect} setSelectedIndex={setSelectedIndex} />
                               );
                             })}
                           </>
@@ -260,8 +311,8 @@ export const MentionDropdown = ({
                   })()}
                 </>
               ) : (
-                filteredItems.slice(0, 20).map((item, index) => (
-                  <MentionItemButton key={item.id} item={item} index={index} selectedIndex={selectedIndex} onSelect={onSelect} setSelectedIndex={setSelectedIndex} />
+                nonRecentFiltered.slice(0, 20).map((item, index) => (
+                  <MentionItemButton key={item.id} item={item} index={index + filteredRecent.length} selectedIndex={selectedIndex} onSelect={handleSelect} setSelectedIndex={setSelectedIndex} />
                 ))
               )}
             </div>
