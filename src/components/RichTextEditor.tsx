@@ -163,7 +163,7 @@ export const RichTextEditor = ({
 
   // @mention state
   const [mentionOpen, setMentionOpen] = useState(false);
-  const [mentionType, setMentionType] = useState<'notes' | 'tasks'>('notes');
+  const [mentionType, setMentionType] = useState<'notes' | 'tasks' | 'all'>('all');
   const [mentionQuery, setMentionQuery] = useState('');
   const [mentionPos, setMentionPos] = useState({ top: 0, left: 0 });
   const mentionTriggerRef = useRef<MentionTrigger | null>(null);
@@ -1289,12 +1289,12 @@ export const RichTextEditor = ({
     let node: Text | null;
     while ((node = walker.nextNode() as Text | null)) {
       const text = node.textContent || '';
-      const triggerPattern = `@${trigger.type}`;
-      const triggerIdx = text.toLowerCase().indexOf(triggerPattern.toLowerCase());
+      const triggerPattern = trigger.searchText;
+      const triggerIdx = text.toLowerCase().lastIndexOf(triggerPattern.toLowerCase());
       if (triggerIdx === -1) continue;
 
       // Calculate end of trigger text (including query)
-      const triggerEnd = triggerIdx + triggerPattern.length + (trigger.query ? trigger.query.length + 1 : 0);
+      const triggerEnd = triggerIdx + triggerPattern.length;
 
       const before = text.substring(0, triggerIdx);
       const after = text.substring(Math.min(triggerEnd, text.length));

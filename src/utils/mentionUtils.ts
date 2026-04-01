@@ -76,45 +76,44 @@ export const htmlToMentions = (html: string): string => {
 
 // Detect if user is typing an @mention trigger
 export interface MentionTrigger {
-  type: 'notes' | 'tasks';
+  type: 'notes' | 'tasks' | 'all';
   query: string;
   startIndex: number;
+  endIndex: number;
+  searchText: string;
 }
 
 export const detectMentionTrigger = (text: string, cursorPosition: number): MentionTrigger | null => {
   const beforeCursor = text.substring(0, cursorPosition);
-  
-  // Check for @notes pattern
-  const notesMatch = beforeCursor.match(/@notes\s+(.*)$/i);
-  if (notesMatch) {
+
+  const typedMatch = beforeCursor.match(/(^|[\s([{])@(notes?|tasks?)(?:\s+([^\n]*))?$/i);
+  if (typedMatch) {
+    const prefix = typedMatch[1] ?? '';
+    const keyword = typedMatch[2].toLowerCase();
+    const query = typedMatch[3] ?? '';
+    const startIndex = beforeCursor.length - typedMatch[0].length + prefix.length;
+
     return {
-      type: 'notes',
-      query: notesMatch[1],
-      startIndex: beforeCursor.lastIndexOf('@notes'),
+      type: keyword.startsWith('task') ? 'tasks' : 'notes',
+      query,
+      startIndex,
+      endIndex: cursorPosition,
+      searchText: beforeCursor.substring(startIndex),
     };
   }
-  
-  // Check for @tasks pattern
-  const tasksMatch = beforeCursor.match(/@tasks\s+(.*)$/i);
-  if (tasksMatch) {
+
+  const allMatch = beforeCursor.match(/(^|[\s([{])@$/);
+  if (allMatch) {
+    const prefix = allMatch[1] ?? '';
+    const startIndex = beforeCursor.length - allMatch[0].length + prefix.length;
+
     return {
-      type: 'tasks',
-      query: tasksMatch[1],
-      startIndex: beforeCursor.lastIndexOf('@tasks'),
+      type: 'all',
+      query: '',
+      startIndex,
+      endIndex: cursorPosition,
+      searchText: '@',
     };
-  }
-  
-  // Check if user just typed @notes or @tasks (no space yet)
-  const partialMatch = beforeCursor.match(/@(notes?|tasks?)$/i);
-  if (partialMatch) {
-    const fullWord = partialMatch[1].toLowerCase();
-    if (fullWord === 'notes' || fullWord === 'tasks') {
-      return {
-        type: fullWord as 'notes' | 'tasks',
-        query: '',
-        startIndex: beforeCursor.lastIndexOf('@'),
-      };
-    }
   }
   
   return null;

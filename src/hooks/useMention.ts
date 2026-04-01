@@ -10,7 +10,7 @@ interface UseMentionOptions {
 
 export const useMention = ({ text, setText, inputRef }: UseMentionOptions) => {
   const [mentionOpen, setMentionOpen] = useState(false);
-  const [mentionType, setMentionType] = useState<'notes' | 'tasks'>('notes');
+  const [mentionType, setMentionType] = useState<'notes' | 'tasks' | 'all'>('all');
   const [mentionQuery, setMentionQuery] = useState('');
   const [mentionTrigger, setMentionTrigger] = useState<MentionTrigger | null>(null);
   const [dropdownPos, setDropdownPos] = useState({ top: 0, left: 0 });
@@ -45,8 +45,7 @@ export const useMention = ({ text, setText, inputRef }: UseMentionOptions) => {
       if (!mentionTrigger) return;
 
       const before = text.substring(0, mentionTrigger.startIndex);
-      const afterTriggerEnd = mentionTrigger.startIndex + `@${mentionTrigger.type}`.length + (mentionTrigger.query ? mentionTrigger.query.length + 1 : 0);
-      const after = text.substring(afterTriggerEnd);
+      const after = text.substring(mentionTrigger.endIndex);
 
       const mentionText = encodeMention(item.type, item.id, item.title);
       const newText = before + mentionText + ' ' + after;

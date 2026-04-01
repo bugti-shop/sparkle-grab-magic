@@ -16,6 +16,7 @@ import { useNavigate } from 'react-router-dom';
 import { AppLogo } from '@/components/AppLogo';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { useDarkMode } from '@/hooks/useDarkMode';
+import { clearPendingMentionNavigation, getPendingMentionNavigation } from '@/hooks/useMentionNavigation';
 import { useTranslation } from 'react-i18next';
 import { useNotes } from '@/contexts/NotesContext';
 
@@ -90,14 +91,27 @@ const Notes = () => {
 
   // Handle mention-navigate: open a specific note by id
   useEffect(() => {
-    const handler = (e: CustomEvent<{ id: string }>) => {
-      const note = notes.find(n => n.id === e.detail.id);
-      if (note) {
-        setSelectedNote(note);
-        setIsEditorOpen(true);
-      }
+    const openMentionedNote = (id: string) => {
+      const note = notes.find(n => n.id === id);
+      if (!note) return false;
+
+      setSelectedNote(note);
+      setIsEditorOpen(true);
+      clearPendingMentionNavigation();
+      return true;
     };
+
+    const handler = (e: CustomEvent<{ id: string }>) => {
+      openMentionedNote(e.detail.id);
+    };
+
     window.addEventListener('open-note', handler as EventListener);
+
+    const pendingMention = getPendingMentionNavigation();
+    if (pendingMention?.type === 'note') {
+      openMentionedNote(pendingMention.id);
+    }
+
     return () => window.removeEventListener('open-note', handler as EventListener);
   }, [notes]);
 

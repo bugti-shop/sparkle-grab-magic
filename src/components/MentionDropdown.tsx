@@ -15,7 +15,7 @@ interface MentionItem {
 
 interface MentionDropdownProps {
   isOpen: boolean;
-  mentionType: 'notes' | 'tasks';
+  mentionType: 'notes' | 'tasks' | 'all';
   query: string;
   onSelect: (item: MentionItem) => void;
   onClose: () => void;
@@ -42,7 +42,27 @@ export const MentionDropdown = ({
     if (!isOpen) return;
 
     const loadItems = async () => {
-      if (mentionType === 'notes') {
+      if (mentionType === 'all') {
+        const [notes, tasks] = await Promise.all([loadNotesFromDB(), loadTasksFromDB()]);
+        const noteItems = notes
+          .filter((n: Note) => !n.isDeleted && !n.isArchived)
+          .map((n: Note) => ({
+            id: n.id,
+            title: n.title || 'Untitled Note',
+            type: 'note' as const,
+            preview: n.content?.replace(/<[^>]*>/g, '').substring(0, 60) || '',
+          }));
+        const taskItems = tasks
+          .filter((t: TodoItem) => !t.completed)
+          .map((t: TodoItem) => ({
+            id: t.id,
+            title: t.text || 'Untitled Task',
+            type: 'task' as const,
+            preview: t.description?.substring(0, 60) || '',
+          }));
+
+        setItems([...noteItems, ...taskItems]);
+      } else if (mentionType === 'notes') {
         const notes = await loadNotesFromDB();
         const filtered = notes
           .filter((n: Note) => !n.isDeleted && !n.isArchived)
@@ -148,7 +168,11 @@ export const MentionDropdown = ({
           <div className="sticky top-0 bg-popover border-b border-border px-3 py-2 flex items-center gap-2">
             <Search className="h-3.5 w-3.5 text-muted-foreground" />
             <span className="text-xs font-medium text-muted-foreground">
-              {mentionType === 'notes' ? 'Mention a Note' : 'Mention a Task'}
+              {mentionType === 'all'
+                ? 'Mention a Note or Task'
+                : mentionType === 'notes'
+                  ? 'Mention a Note'
+                  : 'Mention a Task'}
             </span>
             {query && (
               <span className="text-xs text-primary ml-auto">"{query}"</span>
@@ -158,7 +182,7 @@ export const MentionDropdown = ({
           {/* Items */}
           {filteredItems.length === 0 ? (
             <div className="px-3 py-6 text-center text-sm text-muted-foreground">
-              {query ? 'No matches found' : `No ${mentionType} available`}
+              {query ? 'No matches found' : mentionType === 'all' ? 'No notes or tasks available' : `No ${mentionType} available`}
             </div>
           ) : (
             <div className="py-1">
