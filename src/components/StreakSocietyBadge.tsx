@@ -37,6 +37,7 @@ interface StreakSocietyBadgeProps {
 }
 
 export const StreakSocietyBadge = ({ streak, compact = false }: StreakSocietyBadgeProps) => {
+  const { t } = useTranslation();
   const { data } = useStreak();
   const currentStreak = streak ?? (data?.currentStreak || 0);
   const tier = getStreakTier(currentStreak);
