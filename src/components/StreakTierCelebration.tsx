@@ -4,6 +4,7 @@ import { LazyConfetti as Confetti } from '@/components/LazyConfetti';
 import { Crown } from 'lucide-react';
 import { type StreakTier } from '@/components/StreakSocietyBadge';
 import { playChallengeCompleteSound } from '@/utils/gamificationSounds';
+import { triggerTripleHeavyHaptic } from '@/utils/haptics';
 import { cn } from '@/lib/utils';
 
 export const StreakTierCelebration = () => {
@@ -15,6 +16,7 @@ export const StreakTierCelebration = () => {
       setTier(e.detail.tier);
       setShowConfetti(true);
       playChallengeCompleteSound();
+      triggerTripleHeavyHaptic();
       setTimeout(() => setShowConfetti(false), 6000);
     };
 

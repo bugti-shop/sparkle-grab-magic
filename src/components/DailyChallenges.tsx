@@ -11,6 +11,7 @@ import {
   refreshChallenges,
 } from '@/utils/gamificationStorage';
 import { playChallengeCompleteSound } from '@/utils/gamificationSounds';
+import { triggerTripleHeavyHaptic } from '@/utils/haptics';
 
 export const DailyChallenges = () => {
   const { t } = useTranslation();
@@ -28,8 +29,9 @@ export const DailyChallenges = () => {
     const handleComplete = (e: CustomEvent<{ challenge: DailyChallenge }>) => {
       setCompletedChallenge(e.detail.challenge);
       
-      // Play celebration sound
+      // Play celebration sound and haptic
       playChallengeCompleteSound();
+      triggerTripleHeavyHaptic();
       
       setTimeout(() => setCompletedChallenge(null), 3000);
       loadData();

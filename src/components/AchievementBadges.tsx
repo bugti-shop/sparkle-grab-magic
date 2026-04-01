@@ -10,6 +10,7 @@ import {
   AchievementsData,
 } from '@/utils/gamificationStorage';
 import { playAchievementSound } from '@/utils/gamificationSounds';
+import { triggerTripleHeavyHaptic } from '@/utils/haptics';
 
 import { LazyConfetti as Confetti } from '@/components/LazyConfetti';
 
@@ -49,6 +50,7 @@ export const AchievementBadges = ({ compact = false }: AchievementBadgesProps) =
       
       // Play sound
       playAchievementSound();
+      triggerTripleHeavyHaptic();
       
       // Achievement unlocked!
       

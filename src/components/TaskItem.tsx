@@ -5,7 +5,7 @@ import { useGlobalTags } from '@/hooks/useGlobalTags';
 import { Checkbox } from '@/components/ui/checkbox';
 import { ChevronDown, ChevronRight, Repeat, Tag, Link } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { Haptics, ImpactStyle } from '@capacitor/haptics';
+import { triggerTripleHeavyHaptic } from '@/utils/haptics';
 import { canCompleteTask } from './TaskDependencySheet';
 import { getRepeatLabel } from '@/utils/recurringTasks';
 import { ResolvedTaskImage } from './ResolvedTaskImage';
@@ -83,7 +83,7 @@ export const TaskItem = memo(({
   const isBlocked = hasDependencies && !canComplete;
 
   const handleComplete = () => {
-    Haptics.impact({ style: ImpactStyle.Heavy }).catch(() => {});
+    triggerTripleHeavyHaptic();
     onUpdate(item.id, { completed: true });
   };
 

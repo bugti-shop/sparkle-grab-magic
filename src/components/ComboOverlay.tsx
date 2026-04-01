@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { m as motion, AnimatePresence } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import { Zap } from 'lucide-react';
+import { triggerTripleHeavyHaptic } from '@/utils/haptics';
 
 interface ComboEvent {
   combo: number;
@@ -32,6 +33,7 @@ export const ComboOverlay = () => {
     const handler = (e: CustomEvent<ComboEvent>) => {
       setComboData(e.detail);
       setVisible(true);
+      triggerTripleHeavyHaptic();
       // Auto-hide after 1.5s
       setTimeout(() => setVisible(false), 1500);
     };

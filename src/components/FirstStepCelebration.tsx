@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { m as motion, AnimatePresence } from 'framer-motion';
 import { LazyConfetti } from '@/components/LazyConfetti';
+import { triggerTripleHeavyHaptic } from '@/utils/haptics';
 
 const ONBOARDING_COLOR = '#3c78f0';
 
@@ -10,8 +11,9 @@ interface FirstStepCelebrationProps {
 }
 
 export const FirstStepCelebration = ({ userName, onDismiss }: FirstStepCelebrationProps) => {
-  // Play achievement sound
+  // Play achievement sound and haptic
   useEffect(() => {
+    triggerTripleHeavyHaptic();
     try {
       const ctx = new (window.AudioContext || (window as any).webkitAudioContext)();
       const t = ctx.currentTime;
