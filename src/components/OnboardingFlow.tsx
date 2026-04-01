@@ -546,7 +546,7 @@ const OnboardingBatchTaskForm = ({ sections, folders, onAddTasks, onCancel }: {
                 }}
               >
                 <CalendarDays className="h-4 w-4" />
-                {selectedDate ? format(selectedDate, 'MMM d, yyyy') : 'No due date'}
+                {selectedDate ? format(selectedDate, 'MMM d, yyyy') : t('onboarding.noDueDate', 'No due date')}
                 {selectedDate && (
                   <span
                     className="ml-auto text-[11px] underline"
