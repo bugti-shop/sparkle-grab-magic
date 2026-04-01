@@ -127,15 +127,6 @@ export const TaskDetailPage = ({
   const [descText, setDescText] = useState(task?.description || '');
   const [isEditingDesc, setIsEditingDesc] = useState(false);
 
-  const descMention = useMention({
-    text: descText,
-    setText: (t) => { setDescText(t); onUpdate({ ...task!, description: t }); },
-    inputRef: descriptionRef as React.RefObject<HTMLTextAreaElement>,
-  });
-
-  const handleMentionNavigate = useCallback((type: 'note' | 'task', id: string) => {
-    window.dispatchEvent(new CustomEvent('mention-navigate', { detail: { type, id } }));
-  }, []);
 
   useEffect(() => {
     if (task) {

@@ -151,11 +151,6 @@ export const TaskInputSheet = ({ isOpen, onClose, onAddTask, folders, selectedFo
   const [description, setDescription] = useState('');
   const [location, setLocation] = useState('');
   const descTextareaRef = useRef<HTMLTextAreaElement>(null);
-  const descInputMention = useMention({
-    text: description,
-    setText: setDescription,
-    inputRef: descTextareaRef as React.RefObject<HTMLTextAreaElement>,
-  });
 
   const [showDescriptionInput, setShowDescriptionInput] = useState(false);
   const [showLocationInput, setShowLocationInput] = useState(false);

@@ -177,7 +177,7 @@ export const TaskCommentsSection = ({
             </div>
           )}
 
-          {/* Input area with @mention support */}
+          {/* Input area */}
           <div className="relative">
             <div className="flex items-end gap-2">
               <div className="flex-1 relative">
@@ -185,9 +185,8 @@ export const TaskCommentsSection = ({
                   ref={commentInputRef}
                   value={text}
                   onChange={(e) => setText(e.target.value)}
-                  onInput={() => commentMention.checkForMention()}
                   onKeyDown={handleKeyDown}
-                  placeholder={t('comments.placeholder') + ' (@notes/@tasks)'}
+                  placeholder={t('comments.placeholder')}
                   className="pr-10 rounded-xl"
                 />
                 <button
@@ -206,14 +205,6 @@ export const TaskCommentsSection = ({
                 <Send className="h-4 w-4" />
               </Button>
             </div>
-            <MentionDropdown
-              isOpen={commentMention.mentionOpen}
-              mentionType={commentMention.mentionType}
-              query={commentMention.mentionQuery}
-              position={commentMention.dropdownPos}
-              onSelect={commentMention.handleMentionSelect}
-              onClose={commentMention.closeMention}
-            />
           </div>
 
           <input
