@@ -1561,8 +1561,8 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
           </div>
           <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7 }} className="mt-8 rounded-2xl p-5 relative overflow-hidden flex items-end" style={{ backgroundColor: '#e8faf3', minHeight: '140px' }}>
             <div className="flex-1">
-              <h3 className="text-[17px] font-bold text-[#1a1a1a] font-['Nunito'] leading-tight mb-1">How do I cancel<br />my subscription?</h3>
-              <p className="text-[13px] text-[#5a6065] font-['Nunito_Sans'] leading-relaxed max-w-[200px]">Visit our Help Center for step-by-step instructions on how to cancel your Flowist subscription.</p>
+              <h3 className="text-[17px] font-bold text-[#1a1a1a] font-['Nunito'] leading-tight mb-1">{t('onboarding.readyCancelTitle')}</h3>
+              <p className="text-[13px] text-[#5a6065] font-['Nunito_Sans'] leading-relaxed max-w-[200px]">{t('onboarding.readyCancelDesc')}</p>
             </div>
             
           </motion.div>
