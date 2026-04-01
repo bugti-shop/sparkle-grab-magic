@@ -627,6 +627,7 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
   const [firstStepShown, setFirstStepShown] = useState(false);
   const [showStreakDay1, setShowStreakDay1] = useState(false);
   const [showOnboardingCertificate, setShowOnboardingCertificate] = useState(false);
+  const [showReadyScreen, setShowReadyScreen] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const { openPaywall } = useSubscription();
   
