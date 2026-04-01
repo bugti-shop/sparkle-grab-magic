@@ -3057,6 +3057,9 @@
     "history": "History",
     "journeysCompleted": "{{count}} journey(s) completed",
     "badgesCount": "{{count}} badges",
+    "badges": "Journey Badges",
+    "shareBadge": "Share Badge",
+    "shareError": "Failed to share badge",
     "nile": {
       "name": "Sail the Nile",
       "description": "Travel 6,650 km along the world's longest river from source to sea",
