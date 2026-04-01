@@ -483,7 +483,7 @@ const OnboardingBatchTaskForm = ({ sections, folders, onAddTasks, onCancel }: {
       {/* Folder selector */}
       {folders.length > 0 && (
         <div className="flex flex-col gap-1.5">
-          <span className="text-[12px] font-medium text-[#767b7e]">Folder</span>
+          <span className="text-[12px] font-medium text-[#767b7e]">{t('common.folder', 'Folder')}</span>
           <div className="flex flex-wrap gap-2">
             {folders.map(f => (
               <motion.button
