@@ -68,7 +68,6 @@ export const TaskCommentsSection = ({
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (commentMention.mentionOpen) return; // Let mention dropdown handle Enter
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();
       handleSubmit();
