@@ -1505,10 +1505,7 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
           <motion.button
             onClick={async () => {
               setShowOnboardingCertificate(false);
-              await setSetting('onboarding_completed', true);
-              await setSetting('onboarding_progress_state', null);
-              onComplete();
-              setTimeout(() => openPaywall(), 300);
+              setShowReadyScreen(true);
             }}
             className="w-full py-3 rounded-2xl text-[17px] font-bold"
             style={{ backgroundColor: '#333333', color: '#ffffff', boxShadow: '0 8px 0 0 #000000' }}
