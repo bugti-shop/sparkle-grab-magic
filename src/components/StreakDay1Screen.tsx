@@ -22,6 +22,7 @@ export const StreakDay1Screen = ({ userName, onContinue }: StreakDay1ScreenProps
     const initStreak = async () => {
       if (!streakStarted) {
         setStreakStarted(true);
+        triggerTripleHeavyHaptic();
         await recordTaskCompletion();
       }
     };

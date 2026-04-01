@@ -11,8 +11,9 @@ interface FirstStepCelebrationProps {
 }
 
 export const FirstStepCelebration = ({ userName, onDismiss }: FirstStepCelebrationProps) => {
-  // Play achievement sound
+  // Play achievement sound and haptic
   useEffect(() => {
+    triggerTripleHeavyHaptic();
     try {
       const ctx = new (window.AudioContext || (window as any).webkitAudioContext)();
       const t = ctx.currentTime;
