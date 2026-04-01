@@ -345,7 +345,7 @@ const OnboardingFolderCreation = ({ type, folders, setFolders, progressPercent, 
             className="flex flex-col items-center justify-center py-8 opacity-40"
           >
             <FolderIcon className="h-10 w-10 text-[#ccc] mb-2" />
-            <p className="text-[13px] text-[#aaa]">No folders yet — create one above!</p>
+            <p className="text-[13px] text-[#aaa]">{t('onboarding.noFoldersEmpty')}</p>
           </motion.div>
         )}
       </div>
