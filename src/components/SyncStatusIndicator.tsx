@@ -5,7 +5,6 @@ import { useGoogleAuth } from '@/contexts/GoogleAuthContext';
 import { Button } from '@/components/ui/button';
 import { Capacitor } from '@capacitor/core';
 import i18n from '@/i18n';
-import { useTranslation } from 'react-i18next';
 import { toast } from 'sonner';
 
 type SyncStatus = 'idle' | 'syncing' | 'synced' | 'error' | 'offline' | 'reauth';

@@ -123,7 +123,7 @@ export const SecurityQuestionSetup = ({
               {hasExisting ? t('security.updateSecurityBtn') : t('security.saveSecurityBtn')}
             </Button>
             <Button variant="ghost" onClick={onClose} className="w-full text-muted-foreground">
-              Cancel
+              {t('common.cancel')}
             </Button>
           </div>
         </div>
