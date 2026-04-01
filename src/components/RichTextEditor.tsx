@@ -340,6 +340,19 @@ export const RichTextEditor = ({
     // Event delegation for play/pause, speed, seek, delete buttons, and checklist checkboxes
     const handleEditorClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
+
+      // Handle @mention block clicks
+      const mentionBlock = target.closest('.mention-block') as HTMLElement;
+      if (mentionBlock) {
+        e.preventDefault();
+        e.stopPropagation();
+        const mType = mentionBlock.getAttribute('data-mention-type');
+        const mId = mentionBlock.getAttribute('data-mention-id');
+        if (mType && mId) {
+          window.dispatchEvent(new CustomEvent('mention-navigate', { detail: { type: mType, id: mId } }));
+        }
+        return;
+      }
       
       // Check if clicked on a checklist checkbox
       if (target.classList.contains('checklist-checkbox')) {
