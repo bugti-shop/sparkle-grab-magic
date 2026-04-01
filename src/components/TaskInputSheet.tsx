@@ -1399,6 +1399,7 @@ export const TaskInputSheet = ({ isOpen, onClose, onAddTask, folders, selectedFo
                       <div className="space-y-3">
                         <p className="text-sm font-medium">{t('taskInput.taskDescription')}</p>
                         <textarea
+                          ref={descTextareaRef}
                           value={description}
                           onChange={(e) => setDescription(e.target.value)}
                           onInput={() => descInputMention.checkForMention()}
