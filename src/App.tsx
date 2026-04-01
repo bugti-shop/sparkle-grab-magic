@@ -22,6 +22,7 @@ import { shouldAppBeLocked, updateLastUnlockTime } from "@/utils/appLockStorage"
 import { useJourneyAdvancement } from "@/hooks/useJourneyAdvancement";
 
 import { useAchievementToasts } from "@/hooks/useAchievementToasts";
+import { useMentionNavigation } from "@/hooks/useMentionNavigation";
 import { useCertificateToasts } from "@/hooks/useCertificateToasts";
 import { useSubscriptionExpiry } from "@/hooks/useSubscriptionExpiry";
 const AppLockScreen = lazy(() => import("@/components/AppLockScreen").then(m => ({ default: m.AppLockScreen })));
@@ -259,6 +260,7 @@ const AppContent = () => {
   useJourneyAdvancement();
   useAchievementToasts();
   useCertificateToasts();
+  useMentionNavigation();
   
   // Subscription expiry watcher — warnings + notifications
   useSubscriptionExpiry();

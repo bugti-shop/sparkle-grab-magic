@@ -1,4 +1,6 @@
 import { useState, useEffect, useRef, useMemo, useCallback } from 'react';
+import { MentionDropdown, MentionItem } from './MentionDropdown';
+import { useMention } from '@/hooks/useMention';
 import { useTranslation } from 'react-i18next';
 import { TodoItem, Priority, RepeatType, Folder, VoiceRecording, LocationReminder, TaskAttachment } from '@/types/note';
 import { TagManagementSheet } from '@/components/TagManagementSheet';
@@ -150,6 +152,12 @@ export const TaskInputSheet = ({ isOpen, onClose, onAddTask, folders, selectedFo
   const [deadlineReminderTime, setDeadlineReminderTime] = useState<Date | undefined>();
   const [description, setDescription] = useState('');
   const [location, setLocation] = useState('');
+  const descTextareaRef = useRef<HTMLTextAreaElement>(null);
+  const descInputMention = useMention({
+    text: description,
+    setText: setDescription,
+    inputRef: descTextareaRef as React.RefObject<HTMLTextAreaElement>,
+  });
 
   const [showDescriptionInput, setShowDescriptionInput] = useState(false);
   const [showLocationInput, setShowLocationInput] = useState(false);
@@ -1391,10 +1399,20 @@ export const TaskInputSheet = ({ isOpen, onClose, onAddTask, folders, selectedFo
                       <div className="space-y-3">
                         <p className="text-sm font-medium">{t('taskInput.taskDescription')}</p>
                         <textarea
+                          ref={descTextareaRef}
                           value={description}
                           onChange={(e) => setDescription(e.target.value)}
-                          placeholder={t('taskInput.addMoreDetails')}
+                          onInput={() => descInputMention.checkForMention()}
+                          placeholder={t('taskInput.addMoreDetails') + ' (Type @notes or @tasks)'}
                           className="w-full h-24 px-3 py-2 text-sm rounded-md border border-border bg-background resize-none focus:outline-none focus:ring-2 focus:ring-primary"
+                        />
+                        <MentionDropdown
+                          isOpen={descInputMention.mentionOpen}
+                          mentionType={descInputMention.mentionType}
+                          query={descInputMention.mentionQuery}
+                          position={descInputMention.dropdownPos}
+                          onSelect={descInputMention.handleMentionSelect}
+                          onClose={descInputMention.closeMention}
                         />
                         <Button size="sm" className="w-full" onClick={() => setShowDescriptionInput(false)}>
                           {t('common.done')}

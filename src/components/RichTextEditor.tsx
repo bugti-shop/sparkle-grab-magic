@@ -2,6 +2,8 @@
 import { useCallback, useRef, useState, useEffect } from 'react';
 import { compressImage, isCompressibleImage } from '@/utils/imageCompression';
 import { useTranslation } from 'react-i18next';
+import { MentionDropdown, MentionItem } from './MentionDropdown';
+import { detectMentionTrigger, encodeMention, MentionTrigger } from '@/utils/mentionUtils';
 import { Button } from '@/components/ui/button';
 import {
   Bold,
@@ -156,6 +158,13 @@ export const RichTextEditor = ({
     colIndex: number;
     position: { x: number; y: number };
   } | null>(null);
+
+  // @mention state
+  const [mentionOpen, setMentionOpen] = useState(false);
+  const [mentionType, setMentionType] = useState<'notes' | 'tasks'>('notes');
+  const [mentionQuery, setMentionQuery] = useState('');
+  const [mentionPos, setMentionPos] = useState({ top: 0, left: 0 });
+  const mentionTriggerRef = useRef<MentionTrigger | null>(null);
   
   // Active formatting states
   const [activeStates, setActiveStates] = useState({
@@ -331,6 +340,19 @@ export const RichTextEditor = ({
     // Event delegation for play/pause, speed, seek, delete buttons, and checklist checkboxes
     const handleEditorClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
+
+      // Handle @mention block clicks
+      const mentionBlock = target.closest('.mention-block') as HTMLElement;
+      if (mentionBlock) {
+        e.preventDefault();
+        e.stopPropagation();
+        const mType = mentionBlock.getAttribute('data-mention-type');
+        const mId = mentionBlock.getAttribute('data-mention-id');
+        if (mType && mId) {
+          window.dispatchEvent(new CustomEvent('mention-navigate', { detail: { type: mType, id: mId } }));
+        }
+        return;
+      }
       
       // Check if clicked on a checklist checkbox
       if (target.classList.contains('checklist-checkbox')) {
@@ -1168,6 +1190,31 @@ export const RichTextEditor = ({
             }
           }
         }
+
+        // @mention detection in contentEditable
+        if (selection && selection.rangeCount > 0) {
+          const range = selection.getRangeAt(0);
+          const textNode = range.startContainer;
+          if (textNode.nodeType === Node.TEXT_NODE) {
+            const fullText = textNode.textContent || '';
+            const cursorPos = range.startOffset;
+            const trigger = detectMentionTrigger(fullText, cursorPos);
+            if (trigger) {
+              setMentionType(trigger.type);
+              setMentionQuery(trigger.query);
+              mentionTriggerRef.current = trigger;
+              // Position near cursor
+              const rects = range.getClientRects();
+              if (rects.length > 0) {
+                setMentionPos({ top: rects[0].bottom + 4, left: rects[0].left });
+              }
+              setMentionOpen(true);
+            } else {
+              setMentionOpen(false);
+              mentionTriggerRef.current = null;
+            }
+          }
+        }
         
         // For large content (>50KB), debounce the onChange call
         const isLargeContent = newContent.length > 50000;
@@ -1201,6 +1248,64 @@ export const RichTextEditor = ({
       console.error('Error handling input:', error);
     }
   };
+
+  // Handle @mention selection in contentEditable
+  const handleMentionSelect = useCallback((item: MentionItem) => {
+    const trigger = mentionTriggerRef.current;
+    if (!trigger || !editorRef.current) return;
+
+    const selection = window.getSelection();
+    if (!selection || selection.rangeCount === 0) return;
+
+    // Find the text node with the @trigger and replace it
+    const walker = document.createTreeWalker(editorRef.current, NodeFilter.SHOW_TEXT);
+    let node: Text | null;
+    while ((node = walker.nextNode() as Text | null)) {
+      const text = node.textContent || '';
+      const triggerPattern = `@${trigger.type}`;
+      const triggerIdx = text.toLowerCase().indexOf(triggerPattern.toLowerCase());
+      if (triggerIdx === -1) continue;
+
+      // Calculate end of trigger text (including query)
+      const triggerEnd = triggerIdx + triggerPattern.length + (trigger.query ? trigger.query.length + 1 : 0);
+
+      const before = text.substring(0, triggerIdx);
+      const after = text.substring(Math.min(triggerEnd, text.length));
+
+      // Create mention HTML element
+      const mentionSpan = document.createElement('span');
+      mentionSpan.className = 'mention-block';
+      mentionSpan.setAttribute('data-mention-type', item.type);
+      mentionSpan.setAttribute('data-mention-id', item.id);
+      mentionSpan.setAttribute('contenteditable', 'false');
+      mentionSpan.setAttribute('role', 'button');
+      mentionSpan.setAttribute('tabindex', '0');
+      const icon = item.type === 'note' ? '📝' : '✅';
+      const label = item.type === 'note' ? 'Note' : 'Task';
+      mentionSpan.innerHTML = `${icon} <span class="mention-label">${label}:</span> ${item.title}`;
+
+      // Replace text node
+      const beforeNode = document.createTextNode(before);
+      const afterNode = document.createTextNode(' ' + after);
+      const parent = node.parentNode!;
+      parent.insertBefore(beforeNode, node);
+      parent.insertBefore(mentionSpan, node);
+      parent.insertBefore(afterNode, node);
+      parent.removeChild(node);
+
+      // Move cursor after mention
+      const range = document.createRange();
+      range.setStartAfter(afterNode);
+      range.collapse(true);
+      selection.removeAllRanges();
+      selection.addRange(range);
+      break;
+    }
+
+    setMentionOpen(false);
+    mentionTriggerRef.current = null;
+    handleInput();
+  }, []);
 
   // Handle checklist insertion
   const handleChecklist = useCallback(() => {
@@ -1945,6 +2050,16 @@ export const RichTextEditor = ({
           onTableChange={handleInput}
         />
       )}
+
+      {/* @mention dropdown */}
+      <MentionDropdown
+        isOpen={mentionOpen}
+        mentionType={mentionType}
+        query={mentionQuery}
+        position={mentionPos}
+        onSelect={handleMentionSelect}
+        onClose={() => { setMentionOpen(false); mentionTriggerRef.current = null; }}
+      />
     </div>
   );
 };

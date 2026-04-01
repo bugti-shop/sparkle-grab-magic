@@ -88,6 +88,19 @@ const Notes = () => {
     });
   }, [showTagManager]);
 
+  // Handle mention-navigate: open a specific note by id
+  useEffect(() => {
+    const handler = (e: CustomEvent<{ id: string }>) => {
+      const note = notes.find(n => n.id === e.detail.id);
+      if (note) {
+        setSelectedNote(note);
+        setIsEditorOpen(true);
+      }
+    };
+    window.addEventListener('open-note', handler as EventListener);
+    return () => window.removeEventListener('open-note', handler as EventListener);
+  }, [notes]);
+
   const handleSaveNote = useCallback((note: Note) => {
     setNotes(prevNotes => {
       const existingIndex = prevNotes.findIndex((n) => n.id === note.id);
