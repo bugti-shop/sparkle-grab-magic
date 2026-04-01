@@ -5,7 +5,7 @@ import { Crown, Unlock, Bell, Gift, Check } from 'lucide-react';
 import { useSubscription, ProductType } from '@/contexts/SubscriptionContext';
 import { Capacitor } from '@capacitor/core';
 import { PurchasesPackage, PACKAGE_TYPE } from '@revenuecat/purchases-capacitor';
-import { triggerHaptic } from '@/utils/haptics';
+import { triggerTripleHeavyHaptic } from '@/utils/haptics';
 import { setSetting } from '@/utils/settingsStorage';
 
 import { m as motion, AnimatePresence } from 'framer-motion';
