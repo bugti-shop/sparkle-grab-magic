@@ -64,7 +64,9 @@
     "tapEditName": "तुमचे नाव जोडण्यासाठी संपादित करा वर टॅप करा",
     "section": "विभाग",
     "folder": "फोल्डर",
-    "dueDate": "देय तारीख"
+    "dueDate": "देय तारीख",
+    "sharing": "शेअर होत आहे...",
+    "deleteImage": "प्रतिमा हटवा"
   },
   "folders": {
     "manageFolders": "फोल्डर व्यवस्थापित करा",
@@ -745,7 +747,8 @@
     "imageAdded": "प्रतिमा जोडली",
     "hasDescription": "वर्णन आहे",
     "taskDescription": "कार्य वर्णन",
-    "addMoreDetails": "या कार्याबद्दल अधिक तपशील जोडा..."
+    "addMoreDetails": "या कार्याबद्दल अधिक तपशील जोडा...",
+    "taskMoved": "कार्य हलवले"
   },
   "calendar": {
     "title": "कॅलेंडर",
@@ -2393,7 +2396,12 @@
     "allDay": "पूर्ण दिवस",
     "tapToEnable": "दोन-मार्गी कॅलेंडर सिंक सक्षम करण्यासाठी \"आता सिंक करा\" वर टॅप करा",
     "twoWayDesc": "तुमच्या अॅप आणि सिस्टम कॅलेंडर दरम्यान दोन-मार्गी सिंक",
-    "permissionDenied": "कॅलेंडर परवानगी नाकारली"
+    "permissionDenied": "कॅलेंडर परवानगी नाकारली",
+    "synced": "समक्रमित",
+    "alreadyInSync": "आधीच समक्रमित",
+    "removedDuplicates": "{{count}} डुप्लिकेट इव्हेंट काढले",
+    "noDuplicates": "डुप्लिकेट इव्हेंट आढळले नाहीत",
+    "clearDuplicatesFailed": "डुप्लिकेट साफ करण्यात अयशस्वी"
   },
   "remindersPage": {
     "title": "स्मरणपत्रे",
@@ -2502,7 +2510,8 @@
     "bulkReminderCleared": "{{count}} कार्यांसाठी स्मरणपत्र साफ केले",
     "bulkRepeatSet": "{{count}} कार्यांसाठी पुनरावृत्ती सेट केली",
     "bulkSectionMoved": "{{count}} कार्ये विभागात हलवली",
-    "bulkStatusSet": "{{count}} कार्यांसाठी स्थिती सेट केली"
+    "bulkStatusSet": "{{count}} कार्यांसाठी स्थिती सेट केली",
+    "dateUpdated": "कार्य तारीख अद्यतनित"
   },
   "codeEditor": {
     "untitledCode": "अनामित कोड",
@@ -3735,7 +3744,8 @@
   },
   "audio": {
     "effectsApplied": "ऑडिओ प्रभाव लागू!",
-    "effectsFailed": "प्रभाव लागू करण्यात अयशस्वी, मूळ जतन केले जात आहे"
+    "effectsFailed": "प्रभाव लागू करण्यात अयशस्वी, मूळ जतन केले जात आहे",
+    "processError": "ऑडिओ प्रक्रिया अयशस्वी"
   },
   "image": {
     "selectImageFile": "कृपया एक प्रतिमा फाइल निवडा",
@@ -3758,5 +3768,10 @@
   "versionHistory": {
     "noHistory": "अजून आवृत्ती इतिहास नाही",
     "changesSavedAuto": "बदल स्वयंचलितपणे जतन होतील"
+  },
+  "progress": {
+    "notStarted": "सुरू झाले नाही",
+    "inProgress": "प्रगतीत",
+    "almostDone": "जवळजवळ पूर्ण"
   }
 }

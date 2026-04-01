@@ -64,7 +64,9 @@
     "tapEditName": "Ketuk Edit untuk menambahkan nama Anda",
     "section": "Bagian",
     "folder": "Folder",
-    "dueDate": "Tanggal jatuh tempo"
+    "dueDate": "Tanggal jatuh tempo",
+    "sharing": "Membagikan...",
+    "deleteImage": "Hapus gambar"
   },
   "folders": {
     "manageFolders": "Kelola Folder",
@@ -763,7 +765,8 @@
     "imageAdded": "Gambar Ditambahkan",
     "hasDescription": "Ada Deskripsi",
     "taskDescription": "Deskripsi Tugas",
-    "addMoreDetails": "Tambahkan detail lebih lanjut tentang tugas ini..."
+    "addMoreDetails": "Tambahkan detail lebih lanjut tentang tugas ini...",
+    "taskMoved": "Tugas dipindahkan"
   },
   "calendar": {
     "title": "Kalender",
@@ -2411,7 +2414,12 @@
     "allDay": "Sepanjang Hari",
     "tapToEnable": "Ketuk \"Sinkronkan Sekarang\" untuk mengaktifkan sinkronisasi kalender dua arah",
     "twoWayDesc": "Sinkronisasi dua arah antara aplikasi Anda dan kalender sistem",
-    "permissionDenied": "Izin kalender ditolak"
+    "permissionDenied": "Izin kalender ditolak",
+    "synced": "Disinkronkan",
+    "alreadyInSync": "Sudah sinkron",
+    "removedDuplicates": "{{count}} acara duplikat dihapus",
+    "noDuplicates": "Tidak ada acara duplikat",
+    "clearDuplicatesFailed": "Gagal membersihkan duplikat"
   },
   "remindersPage": {
     "title": "Pengingat",
@@ -2520,7 +2528,8 @@
     "bulkReminderCleared": "Pengingat dihapus untuk {{count}} tugas",
     "bulkRepeatSet": "Pengulangan ditetapkan untuk {{count}} tugas",
     "bulkSectionMoved": "Memindahkan {{count}} tugas ke bagian",
-    "bulkStatusSet": "Status ditetapkan untuk {{count}} tugas"
+    "bulkStatusSet": "Status ditetapkan untuk {{count}} tugas",
+    "dateUpdated": "Tanggal tugas diperbarui"
   },
   "codeEditor": {
     "untitledCode": "Kode Tanpa Judul",
@@ -3753,7 +3762,8 @@
   },
   "audio": {
     "effectsApplied": "Efek audio diterapkan!",
-    "effectsFailed": "Gagal menerapkan efek, menyimpan asli"
+    "effectsFailed": "Gagal menerapkan efek, menyimpan asli",
+    "processError": "Gagal memproses audio"
   },
   "image": {
     "selectImageFile": "Pilih file gambar",
@@ -3776,5 +3786,10 @@
   "versionHistory": {
     "noHistory": "Belum ada riwayat versi",
     "changesSavedAuto": "Perubahan akan disimpan otomatis"
+  },
+  "progress": {
+    "notStarted": "Belum dimulai",
+    "inProgress": "Sedang berlangsung",
+    "almostDone": "Hampir selesai"
   }
 }

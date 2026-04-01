@@ -96,7 +96,9 @@
     "tapEditName": "আপনার নাম যোগ করতে সম্পাদনা ট্যাপ করুন",
     "section": "বিভাগ",
     "folder": "ফোল্ডার",
-    "dueDate": "নির্ধারিত তারিখ"
+    "dueDate": "নির্ধারিত তারিখ",
+    "sharing": "শেয়ার হচ্ছে...",
+    "deleteImage": "ছবি মুছুন"
   },
   "folders": {
     "manageFolders": "Управление папками",
@@ -941,7 +943,8 @@
     "imageAdded": "ছবি যোগ করা হয়েছে",
     "hasDescription": "বর্ণনা আছে",
     "taskDescription": "টাস্কের বিবরণ",
-    "addMoreDetails": "এই টাস্ক সম্পর্কে আরও বিস্তারিত যোগ করুন..."
+    "addMoreDetails": "এই টাস্ক সম্পর্কে আরও বিস্তারিত যোগ করুন...",
+    "taskMoved": "টাস্ক সরানো হয়েছে"
   },
   "calendar": {
     "title": "ক্যালেন্ডার",
@@ -3166,7 +3169,12 @@
     "oneWayExport": "একমুখী রপ্তানি",
     "conflictResolution": "দ্বন্দ্ব সমাধান",
     "autoResolve": "স্বয়ংক্রিয় সমাধান",
-    "askEachTime": "প্রতিবার জিজ্ঞাসা করুন"
+    "askEachTime": "প্রতিবার জিজ্ঞাসা করুন",
+    "synced": "সিঙ্ক হয়েছে",
+    "alreadyInSync": "ইতিমধ্যে সিঙ্ক",
+    "removedDuplicates": "{{count}}টি ডুপ্লিকেট ইভেন্ট মুছে ফেলা হয়েছে",
+    "noDuplicates": "কোনো ডুপ্লিকেট ইভেন্ট পাওয়া যায়নি",
+    "clearDuplicatesFailed": "ডুপ্লিকেট পরিষ্কার ব্যর্থ"
   },
   "remindersPage": {
     "title": "রিমাইন্ডার",
@@ -3373,7 +3381,8 @@
     "optionalTasks": "ঐচ্ছিক কাজ",
     "completionRate": "সম্পন্নতার হার",
     "timeTracked": "ট্র্যাক করা সময়",
-    "tasksPlanned": "পরিকল্পিত কাজ"
+    "tasksPlanned": "পরিকল্পিত কাজ",
+    "dateUpdated": "টাস্কের তারিখ আপডেট হয়েছে"
   },
   "codeEditor": {
     "untitledCode": "শিরোনামহীন কোড",
@@ -5264,7 +5273,8 @@
   },
   "audio": {
     "effectsApplied": "অডিও এফেক্ট প্রয়োগ হয়েছে!",
-    "effectsFailed": "এফেক্ট প্রয়োগ ব্যর্থ, মূল সংরক্ষণ করা হচ্ছে"
+    "effectsFailed": "এফেক্ট প্রয়োগ ব্যর্থ, মূল সংরক্ষণ করা হচ্ছে",
+    "processError": "অডিও প্রক্রিয়া ব্যর্থ"
   },
   "image": {
     "selectImageFile": "একটি ছবি ফাইল নির্বাচন করুন",
@@ -5287,5 +5297,10 @@
   "versionHistory": {
     "noHistory": "এখনো কোনো সংস্করণ ইতিহাস নেই",
     "changesSavedAuto": "পরিবর্তন স্বয়ংক্রিয়ভাবে সংরক্ষিত হবে"
+  },
+  "progress": {
+    "notStarted": "শুরু হয়নি",
+    "inProgress": "চলমান",
+    "almostDone": "প্রায় সম্পন্ন"
   }
 }

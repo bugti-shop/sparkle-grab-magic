@@ -64,7 +64,9 @@
     "tapEditName": "Toque em Editar para adicionar seu nome",
     "section": "Seção",
     "folder": "Pasta",
-    "dueDate": "Data de vencimento"
+    "dueDate": "Data de vencimento",
+    "sharing": "Compartilhando...",
+    "deleteImage": "Excluir imagem"
   },
   "folders": {
     "manageFolders": "Gerenciar pastas",
@@ -819,7 +821,8 @@
     "imageAdded": "Imagem Adicionada",
     "hasDescription": "Tem Descrição",
     "taskDescription": "Descrição da Tarefa",
-    "addMoreDetails": "Adicionar mais detalhes sobre esta tarefa..."
+    "addMoreDetails": "Adicionar mais detalhes sobre esta tarefa...",
+    "taskMoved": "Tarefa movida"
   },
   "calendar": {
     "title": "Calendário",
@@ -2510,7 +2513,12 @@
     "allDay": "Dia inteiro",
     "tapToEnable": "Toque em \"Sincronizar\" para ativar a sincronização bidirecional",
     "twoWayDesc": "Sincronização bidirecional entre seu app e o calendário do sistema",
-    "permissionDenied": "Permissão de calendário negada"
+    "permissionDenied": "Permissão de calendário negada",
+    "synced": "Sincronizado",
+    "alreadyInSync": "Já sincronizado",
+    "removedDuplicates": "{{count}} evento(s) duplicado(s) removido(s)",
+    "noDuplicates": "Nenhum evento duplicado encontrado",
+    "clearDuplicatesFailed": "Falha ao limpar duplicatas"
   },
   "remindersPage": {
     "title": "Lembretes",
@@ -3821,7 +3829,8 @@
     "priority": "Prioridade",
     "folder": "Pasta",
     "search": "Pesquisar",
-    "allTasks": "Todas as tarefas"
+    "allTasks": "Todas as tarefas",
+    "dateUpdated": "Data da tarefa atualizada"
   },
   "cert": {
     "beginner": "Iniciante",
@@ -3923,7 +3932,8 @@
   },
   "audio": {
     "effectsApplied": "Efeitos de áudio aplicados!",
-    "effectsFailed": "Falha ao aplicar efeitos, salvando original"
+    "effectsFailed": "Falha ao aplicar efeitos, salvando original",
+    "processError": "Falha ao processar áudio"
   },
   "image": {
     "selectImageFile": "Selecione um arquivo de imagem",
@@ -3946,5 +3956,10 @@
   "versionHistory": {
     "noHistory": "Sem histórico de versões",
     "changesSavedAuto": "As alterações serão salvas automaticamente"
+  },
+  "progress": {
+    "notStarted": "Não iniciado",
+    "inProgress": "Em andamento",
+    "almostDone": "Quase pronto"
   }
 }

@@ -64,7 +64,9 @@
     "tapEditName": "点击编辑添加你的名字",
     "section": "部分",
     "folder": "文件夹",
-    "dueDate": "截止日期"
+    "dueDate": "截止日期",
+    "sharing": "分享中...",
+    "deleteImage": "删除图片"
   },
   "folders": {
     "manageFolders": "管理文件夹",
@@ -819,7 +821,8 @@
     "imageAdded": "图片已添加",
     "hasDescription": "有描述",
     "taskDescription": "任务描述",
-    "addMoreDetails": "添加更多任务详情..."
+    "addMoreDetails": "添加更多任务详情...",
+    "taskMoved": "任务已移动"
   },
   "calendar": {
     "title": "日历",
@@ -2510,7 +2513,12 @@
     "allDay": "全天",
     "tapToEnable": "点击\"立即同步\"启用双向日历同步",
     "twoWayDesc": "应用与系统日历之间的双向同步",
-    "permissionDenied": "日历权限被拒绝"
+    "permissionDenied": "日历权限被拒绝",
+    "synced": "已同步",
+    "alreadyInSync": "已是最新",
+    "removedDuplicates": "已删除 {{count}} 个重复事件",
+    "noDuplicates": "未发现重复事件",
+    "clearDuplicatesFailed": "清除重复项失败"
   },
   "remindersPage": {
     "title": "提醒",
@@ -3821,7 +3829,8 @@
     "priority": "优先级",
     "folder": "文件夹",
     "search": "搜索",
-    "allTasks": "所有任务"
+    "allTasks": "所有任务",
+    "dateUpdated": "任务日期已更新"
   },
   "cert": {
     "beginner": "初学者",
@@ -3923,7 +3932,8 @@
   },
   "audio": {
     "effectsApplied": "音频效果已应用！",
-    "effectsFailed": "应用效果失败，保存原始文件"
+    "effectsFailed": "应用效果失败，保存原始文件",
+    "processError": "音频处理失败"
   },
   "image": {
     "selectImageFile": "请选择图片文件",
@@ -3946,5 +3956,10 @@
   "versionHistory": {
     "noHistory": "暂无版本历史",
     "changesSavedAuto": "更改将自动保存"
+  },
+  "progress": {
+    "notStarted": "未开始",
+    "inProgress": "进行中",
+    "almostDone": "即将完成"
   }
 }

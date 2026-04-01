@@ -64,7 +64,9 @@
     "tapEditName": "Tippen Sie auf Bearbeiten, um Ihren Namen hinzuzufügen",
     "section": "Abschnitt",
     "folder": "Ordner",
-    "dueDate": "Fälligkeitsdatum"
+    "dueDate": "Fälligkeitsdatum",
+    "sharing": "Teilen...",
+    "deleteImage": "Bild löschen"
   },
   "folders": {
     "manageFolders": "Ordner verwalten",
@@ -819,7 +821,8 @@
     "imageAdded": "Bild Hinzugefügt",
     "hasDescription": "Hat Beschreibung",
     "taskDescription": "Aufgabenbeschreibung",
-    "addMoreDetails": "Mehr Details zu dieser Aufgabe hinzufügen..."
+    "addMoreDetails": "Mehr Details zu dieser Aufgabe hinzufügen...",
+    "taskMoved": "Aufgabe verschoben"
   },
   "calendar": {
     "title": "Kalender",
@@ -2510,7 +2513,12 @@
     "allDay": "Ganztägig",
     "tapToEnable": "Tippe auf \"Jetzt synchronisieren\" um die bidirektionale Synchronisierung zu aktivieren",
     "twoWayDesc": "Bidirektionale Synchronisierung zwischen deiner App und dem Systemkalender",
-    "permissionDenied": "Kalenderberechtigung verweigert"
+    "permissionDenied": "Kalenderberechtigung verweigert",
+    "synced": "Synchronisiert",
+    "alreadyInSync": "Bereits synchronisiert",
+    "removedDuplicates": "{{count}} doppelte(s) Ereignis(se) entfernt",
+    "noDuplicates": "Keine doppelten Ereignisse gefunden",
+    "clearDuplicatesFailed": "Fehler beim Entfernen der Duplikate"
   },
   "remindersPage": {
     "title": "Erinnerungen",
@@ -3821,7 +3829,8 @@
     "priority": "Priorität",
     "folder": "Ordner",
     "search": "Suchen",
-    "allTasks": "Alle Aufgaben"
+    "allTasks": "Alle Aufgaben",
+    "dateUpdated": "Aufgabendatum aktualisiert"
   },
   "cert": {
     "beginner": "Anfänger",
@@ -3923,7 +3932,8 @@
   },
   "audio": {
     "effectsApplied": "Audioeffekte angewendet!",
-    "effectsFailed": "Effekte konnten nicht angewendet werden, Original wird gespeichert"
+    "effectsFailed": "Effekte konnten nicht angewendet werden, Original wird gespeichert",
+    "processError": "Audioverarbeitung fehlgeschlagen"
   },
   "image": {
     "selectImageFile": "Bitte wählen Sie eine Bilddatei",
@@ -3946,5 +3956,10 @@
   "versionHistory": {
     "noHistory": "Noch kein Versionsverlauf",
     "changesSavedAuto": "Änderungen werden automatisch gespeichert"
+  },
+  "progress": {
+    "notStarted": "Nicht gestartet",
+    "inProgress": "In Bearbeitung",
+    "almostDone": "Fast fertig"
   }
 }

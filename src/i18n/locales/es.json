@@ -64,7 +64,9 @@
     "tapEditName": "Toca Editar para agregar tu nombre",
     "section": "Sección",
     "folder": "Carpeta",
-    "dueDate": "Fecha de vencimiento"
+    "dueDate": "Fecha de vencimiento",
+    "sharing": "Compartiendo...",
+    "deleteImage": "Eliminar imagen"
   },
   "folders": {
     "manageFolders": "Gestionar carpetas",
@@ -819,7 +821,8 @@
     "imageAdded": "Imagen Agregada",
     "hasDescription": "Tiene Descripción",
     "taskDescription": "Descripción de Tarea",
-    "addMoreDetails": "Agregar más detalles sobre esta tarea..."
+    "addMoreDetails": "Agregar más detalles sobre esta tarea...",
+    "taskMoved": "Tarea movida"
   },
   "calendar": {
     "title": "Calendario",
@@ -2510,7 +2513,12 @@
     "allDay": "Todo el día",
     "tapToEnable": "Toca \"Sincronizar\" para activar la sincronización bidireccional",
     "twoWayDesc": "Sincronización bidireccional entre tu app y el calendario del sistema",
-    "permissionDenied": "Permiso de calendario denegado"
+    "permissionDenied": "Permiso de calendario denegado",
+    "synced": "Sincronizado",
+    "alreadyInSync": "Ya sincronizado",
+    "removedDuplicates": "Se eliminaron {{count}} evento(s) duplicado(s)",
+    "noDuplicates": "No se encontraron eventos duplicados",
+    "clearDuplicatesFailed": "Error al eliminar duplicados"
   },
   "remindersPage": {
     "title": "Recordatorios",
@@ -3821,7 +3829,8 @@
     "priority": "Prioridad",
     "folder": "Carpeta",
     "search": "Buscar",
-    "allTasks": "Todas las tareas"
+    "allTasks": "Todas las tareas",
+    "dateUpdated": "Fecha de tarea actualizada"
   },
   "cert": {
     "beginner": "Principiante",
@@ -3923,7 +3932,8 @@
   },
   "audio": {
     "effectsApplied": "¡Efectos de audio aplicados!",
-    "effectsFailed": "Error al aplicar efectos, guardando original"
+    "effectsFailed": "Error al aplicar efectos, guardando original",
+    "processError": "Error al procesar audio"
   },
   "image": {
     "selectImageFile": "Por favor selecciona un archivo de imagen",
@@ -3946,5 +3956,10 @@
   "versionHistory": {
     "noHistory": "Sin historial de versiones aún",
     "changesSavedAuto": "Los cambios se guardarán automáticamente"
+  },
+  "progress": {
+    "notStarted": "Sin iniciar",
+    "inProgress": "En progreso",
+    "almostDone": "Casi listo"
   }
 }

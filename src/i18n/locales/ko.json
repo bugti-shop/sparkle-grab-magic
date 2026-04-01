@@ -64,7 +64,9 @@
     "tapEditName": "이름을 추가하려면 편집을 탭하세요",
     "section": "섹션",
     "folder": "폴더",
-    "dueDate": "마감일"
+    "dueDate": "마감일",
+    "sharing": "공유 중...",
+    "deleteImage": "이미지 삭제"
   },
   "folders": {
     "manageFolders": "폴더 관리",
@@ -819,7 +821,8 @@
     "imageAdded": "이미지 추가됨",
     "hasDescription": "설명 있음",
     "taskDescription": "작업 설명",
-    "addMoreDetails": "이 작업에 대한 상세 정보 추가..."
+    "addMoreDetails": "이 작업에 대한 상세 정보 추가...",
+    "taskMoved": "작업 이동됨"
   },
   "calendar": {
     "title": "캘린더",
@@ -2510,7 +2513,12 @@
     "allDay": "종일",
     "tapToEnable": "양방향 캘린더 동기화를 활성화하려면 \"지금 동기화\"를 탭하세요",
     "twoWayDesc": "앱과 시스템 캘린더 간의 양방향 동기화",
-    "permissionDenied": "캘린더 권한이 거부되었습니다"
+    "permissionDenied": "캘린더 권한이 거부되었습니다",
+    "synced": "동기화됨",
+    "alreadyInSync": "이미 동기화됨",
+    "removedDuplicates": "{{count}}개 중복 이벤트 제거됨",
+    "noDuplicates": "중복 이벤트 없음",
+    "clearDuplicatesFailed": "중복 제거 실패"
   },
   "remindersPage": {
     "title": "알림",
@@ -3821,7 +3829,8 @@
     "priority": "우선순위",
     "folder": "폴더",
     "search": "검색",
-    "allTasks": "모든 작업"
+    "allTasks": "모든 작업",
+    "dateUpdated": "작업 날짜 업데이트됨"
   },
   "cert": {
     "beginner": "초보자",
@@ -3923,7 +3932,8 @@
   },
   "audio": {
     "effectsApplied": "오디오 효과 적용됨!",
-    "effectsFailed": "효과 적용 실패, 원본 저장 중"
+    "effectsFailed": "효과 적용 실패, 원본 저장 중",
+    "processError": "오디오 처리 실패"
   },
   "image": {
     "selectImageFile": "이미지 파일을 선택하세요",
@@ -3946,5 +3956,10 @@
   "versionHistory": {
     "noHistory": "아직 버전 기록이 없습니다",
     "changesSavedAuto": "변경사항이 자동으로 저장됩니다"
+  },
+  "progress": {
+    "notStarted": "시작 안 됨",
+    "inProgress": "진행 중",
+    "almostDone": "거의 완료"
   }
 }

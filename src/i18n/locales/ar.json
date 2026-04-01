@@ -64,7 +64,9 @@
     "tapEditName": "اضغط على تعديل لإضافة اسمك",
     "section": "القسم",
     "folder": "المجلد",
-    "dueDate": "تاريخ الاستحقاق"
+    "dueDate": "تاريخ الاستحقاق",
+    "sharing": "جاري المشاركة...",
+    "deleteImage": "حذف الصورة"
   },
   "folders": {
     "manageFolders": "إدارة المجلدات",
@@ -819,7 +821,8 @@
     "imageAdded": "تمت إضافة الصورة",
     "hasDescription": "يحتوي على وصف",
     "taskDescription": "وصف المهمة",
-    "addMoreDetails": "أضف المزيد من التفاصيل حول هذه المهمة..."
+    "addMoreDetails": "أضف المزيد من التفاصيل حول هذه المهمة...",
+    "taskMoved": "تم نقل المهمة"
   },
   "calendar": {
     "title": "التقويم",
@@ -2510,7 +2513,12 @@
     "allDay": "طوال اليوم",
     "tapToEnable": "اضغط \"مزامنة الآن\" لتفعيل المزامنة ثنائية الاتجاه",
     "twoWayDesc": "مزامنة ثنائية بين تطبيقك وتقويم النظام",
-    "permissionDenied": "تم رفض إذن التقويم"
+    "permissionDenied": "تم رفض إذن التقويم",
+    "synced": "تمت المزامنة",
+    "alreadyInSync": "متزامن بالفعل",
+    "removedDuplicates": "تمت إزالة {{count}} حدث(أحداث) مكررة",
+    "noDuplicates": "لم يتم العثور على أحداث مكررة",
+    "clearDuplicatesFailed": "فشل في مسح المكررات"
   },
   "remindersPage": {
     "title": "التذكيرات",
@@ -2632,7 +2640,8 @@
     "priority": "الأولوية",
     "folder": "مجلد",
     "search": "بحث",
-    "allTasks": "جميع المهام"
+    "allTasks": "جميع المهام",
+    "dateUpdated": "تم تحديث تاريخ المهمة"
   },
   "codeEditor": {
     "untitledCode": "كود بدون عنوان",
@@ -3923,7 +3932,8 @@
   },
   "audio": {
     "effectsApplied": "تم تطبيق تأثيرات الصوت!",
-    "effectsFailed": "فشل تطبيق التأثيرات، حفظ الأصل"
+    "effectsFailed": "فشل تطبيق التأثيرات، حفظ الأصل",
+    "processError": "فشل في معالجة الصوت"
   },
   "image": {
     "selectImageFile": "يرجى اختيار ملف صورة",
@@ -3946,5 +3956,10 @@
   "versionHistory": {
     "noHistory": "لا يوجد سجل إصدارات بعد",
     "changesSavedAuto": "سيتم حفظ التغييرات تلقائياً"
+  },
+  "progress": {
+    "notStarted": "لم يبدأ",
+    "inProgress": "قيد التنفيذ",
+    "almostDone": "على وشك الانتهاء"
   }
 }
