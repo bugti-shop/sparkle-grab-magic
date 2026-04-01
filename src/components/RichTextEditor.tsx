@@ -533,8 +533,6 @@ export const RichTextEditor = ({
           editorEl.removeEventListener('click', audioClickHandlerRef.current, true);
         }
         editorEl.removeEventListener('touchend', handleEditorTouch, true);
-        editorEl.removeEventListener('mouseover', handleMentionHover);
-        editorEl.removeEventListener('mouseout', handleMentionLeave);
       }
     };
   }, []);
