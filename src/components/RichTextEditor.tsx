@@ -2087,6 +2087,18 @@ export const RichTextEditor = ({
         onSelect={handleMentionSelect}
         onClose={() => { setMentionOpen(false); mentionTriggerRef.current = null; }}
       />
+
+      {/* @mention hover preview */}
+      <AnimatePresence>
+        {mentionPreview.preview && (
+          <MentionPreviewTooltip
+            type={mentionPreview.preview.type}
+            id={mentionPreview.preview.id}
+            position={mentionPreview.preview.position}
+            onClose={mentionPreview.hidePreview}
+          />
+        )}
+      </AnimatePresence>
     </div>
   );
 };
