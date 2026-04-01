@@ -1,6 +1,7 @@
 import { useStreak } from '@/hooks/useStreak';
 import { cn } from '@/lib/utils';
 import { m as motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 export interface StreakTier {
   id: string;
