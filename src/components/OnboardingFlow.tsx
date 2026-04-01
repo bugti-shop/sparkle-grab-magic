@@ -439,10 +439,10 @@ const OnboardingBatchTaskForm = ({ sections, folders, onAddTasks, onCancel }: {
   };
 
   const priorityOptions = [
-    { value: 'high', label: 'High', color: '#DC2626' },
-    { value: 'medium', label: 'Medium', color: '#F59E0B' },
-    { value: 'low', label: 'Low', color: '#22C55E' },
-    { value: 'none', label: 'None', color: '#9CA3AF' },
+    { value: 'high', label: t('onboarding.priorityHigh', 'High'), color: '#DC2626' },
+    { value: 'medium', label: t('onboarding.priorityMedium', 'Medium'), color: '#F59E0B' },
+    { value: 'low', label: t('onboarding.priorityLow', 'Low'), color: '#22C55E' },
+    { value: 'none', label: t('onboarding.priorityNone', 'None'), color: '#9CA3AF' },
   ];
 
   return (
