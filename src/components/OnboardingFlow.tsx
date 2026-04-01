@@ -1520,7 +1520,7 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
             style={{ backgroundColor: '#333333', color: '#ffffff', boxShadow: '0 8px 0 0 #000000' }}
             whileTap={{ scale: 0.97 }}
           >
-            Continue
+            {t('onboarding.continue')}
           </motion.button>
         </div>
       </div>
