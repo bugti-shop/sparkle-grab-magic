@@ -138,7 +138,7 @@ const JourneyBadges = () => {
   if (!data) return null;
 
   return (
-    <TodoLayout title="Journey Badges">
+    <TodoLayout title={t('journey.badges', 'Journey Badges')}>
       {/* Confetti overlay */}
       {(showConfetti || shareConfetti) && (
         <Confetti
