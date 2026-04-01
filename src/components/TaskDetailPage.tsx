@@ -126,7 +126,10 @@ export const TaskDetailPage = ({
   const [showSubtaskDetailSheet, setShowSubtaskDetailSheet] = useState(false);
   
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const descriptionRef = useRef<HTMLTextAreaElement>(null);
   const [previewAttachment, setPreviewAttachment] = useState<{ url: string; name: string; type: string } | null>(null);
+  const [descText, setDescText] = useState(task?.description || '');
+  const [isEditingDesc, setIsEditingDesc] = useState(false);
 
   useEffect(() => {
     if (task) {
