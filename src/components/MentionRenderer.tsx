@@ -2,6 +2,8 @@ import { useCallback } from 'react';
 import { parseMentions, ParsedMention } from '@/utils/mentionUtils';
 import { FileText, CheckSquare, ExternalLink } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { AnimatePresence } from 'framer-motion';
+import { MentionPreviewTooltip, useMentionPreview } from './MentionPreviewTooltip';
 
 interface MentionRendererProps {
   text: string;
@@ -12,9 +14,11 @@ interface MentionRendererProps {
 /**
  * Renders text with @mentions displayed as styled quote blocks.
  * Notes mentions show with a blue quote style, task mentions with green.
+ * Hover to see a content preview tooltip.
  */
 export const MentionRenderer = ({ text, onMentionClick, className }: MentionRendererProps) => {
   const mentions = parseMentions(text);
+  const { preview, showPreview, hidePreview } = useMentionPreview();
 
   const handleClick = useCallback(
     (mention: ParsedMention) => {
@@ -57,6 +61,11 @@ export const MentionRenderer = ({ text, onMentionClick, className }: MentionRend
           <span
             key={i}
             onClick={() => handleClick(mention)}
+            onMouseEnter={(e) => {
+              const rect = (e.target as HTMLElement).getBoundingClientRect();
+              showPreview(mention.type, mention.id, rect.left, rect.bottom);
+            }}
+            onMouseLeave={hidePreview}
             role="button"
             tabIndex={0}
             onKeyDown={(e) => e.key === 'Enter' && handleClick(mention)}
@@ -78,6 +87,18 @@ export const MentionRenderer = ({ text, onMentionClick, className }: MentionRend
           </span>
         );
       })}
+
+      {/* Hover preview tooltip */}
+      <AnimatePresence>
+        {preview && (
+          <MentionPreviewTooltip
+            type={preview.type}
+            id={preview.id}
+            position={preview.position}
+            onClose={hidePreview}
+          />
+        )}
+      </AnimatePresence>
     </span>
   );
 };
