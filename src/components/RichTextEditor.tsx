@@ -3,6 +3,8 @@ import { useCallback, useRef, useState, useEffect } from 'react';
 import { compressImage, isCompressibleImage } from '@/utils/imageCompression';
 import { useTranslation } from 'react-i18next';
 import { MentionDropdown, MentionItem } from './MentionDropdown';
+import { MentionPreviewTooltip, useMentionPreview } from './MentionPreviewTooltip';
+import { AnimatePresence } from 'framer-motion';
 import { detectMentionTrigger, encodeMention, MentionTrigger } from '@/utils/mentionUtils';
 import { Button } from '@/components/ui/button';
 import {
@@ -165,6 +167,7 @@ export const RichTextEditor = ({
   const [mentionQuery, setMentionQuery] = useState('');
   const [mentionPos, setMentionPos] = useState({ top: 0, left: 0 });
   const mentionTriggerRef = useRef<MentionTrigger | null>(null);
+  const mentionPreview = useMentionPreview();
   
   // Active formatting states
   const [activeStates, setActiveStates] = useState({
@@ -535,6 +538,28 @@ export const RichTextEditor = ({
     // Add event delegation with capture phase to intercept before contenteditable
     editorRef.current.addEventListener('click', handleEditorClick, true);
     editorRef.current.addEventListener('touchend', handleEditorTouch, true);
+
+    // Mention hover preview handler
+    const handleMentionHover = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      const block = target.closest('.mention-block') as HTMLElement;
+      if (block) {
+        const mType = block.getAttribute('data-mention-type') as 'note' | 'task';
+        const mId = block.getAttribute('data-mention-id');
+        if (mType && mId) {
+          const rect = block.getBoundingClientRect();
+          mentionPreview.showPreview(mType, mId, rect.left, rect.bottom);
+        }
+      }
+    };
+    const handleMentionLeave = (e: MouseEvent) => {
+      const target = e.relatedTarget as HTMLElement | null;
+      if (!target?.closest?.('.mention-block')) {
+        mentionPreview.hidePreview();
+      }
+    };
+    editorRef.current.addEventListener('mouseover', handleMentionHover);
+    editorRef.current.addEventListener('mouseout', handleMentionLeave);
     
     // Use MutationObserver to detect new audio elements
     const observer = new MutationObserver(setupAudioListeners);
@@ -551,6 +576,8 @@ export const RichTextEditor = ({
           editorEl.removeEventListener('click', audioClickHandlerRef.current, true);
         }
         editorEl.removeEventListener('touchend', handleEditorTouch, true);
+        editorEl.removeEventListener('mouseover', handleMentionHover);
+        editorEl.removeEventListener('mouseout', handleMentionLeave);
       }
     };
   }, []);
@@ -2060,6 +2087,18 @@ export const RichTextEditor = ({
         onSelect={handleMentionSelect}
         onClose={() => { setMentionOpen(false); mentionTriggerRef.current = null; }}
       />
+
+      {/* @mention hover preview */}
+      <AnimatePresence>
+        {mentionPreview.preview && (
+          <MentionPreviewTooltip
+            type={mentionPreview.preview.type}
+            id={mentionPreview.preview.id}
+            position={mentionPreview.preview.position}
+            onClose={mentionPreview.hidePreview}
+          />
+        )}
+      </AnimatePresence>
     </div>
   );
 };
