@@ -8004,7 +8004,7 @@ export const SketchEditor = memo(({ initialData, onChange, onImageExport, classN
                           forceUpdate(n => n + 1); redrawAll(); emitChange();
                           if (onCollabLayerEvent) onCollabLayerEvent('reorder', { layerOrder: layersRef.current.map(l => l.id) });
                         }
-                      }} title="Move down"><ArrowRight className="h-3 w-3 rotate-90" /></button>
+                      }} title={t('sketch.moveDown', 'Move down')}><ArrowRight className="h-3 w-3 rotate-90" /></button>
                     )}
                     {ri > 0 && (
                       <button className="p-0.5 text-muted-foreground/50 hover:text-foreground" onClick={(e) => {
