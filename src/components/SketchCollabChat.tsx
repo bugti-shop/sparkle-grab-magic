@@ -13,6 +13,7 @@ interface SketchCollabChatProps {
 }
 
 export const SketchCollabChat = memo(({ messages, unreadCount, myUserId, onSend, onOpen }: SketchCollabChatProps) => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState('');
   const scrollRef = useRef<HTMLDivElement>(null);

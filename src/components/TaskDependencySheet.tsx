@@ -25,6 +25,7 @@ export const TaskDependencySheet = ({
   allTasks,
   onSave,
 }: TaskDependencySheetProps) => {
+  const { t } = useTranslation();
   const [selectedDependencies, setSelectedDependencies] = useState<string[]>(
     task.dependsOn || []
   );

@@ -45,6 +45,7 @@ export const LocationReminderSheet = ({
   onSave,
   onRemove,
 }: LocationReminderSheetProps) => {
+  const { t } = useTranslation();
   const [enabled, setEnabled] = useState(locationReminder?.enabled ?? true);
   const [address, setAddress] = useState(locationReminder?.address ?? '');
   const [latitude, setLatitude] = useState(locationReminder?.latitude ?? 0);

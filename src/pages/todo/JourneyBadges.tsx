@@ -27,6 +27,7 @@ const QRCodeSVG = lazy(() => import('qrcode.react').then(m => ({ default: m.QRCo
 const RARITY_ORDER: BadgeRarity[] = ['legendary', 'epic', 'rare', 'uncommon', 'common'];
 
 const JourneyBadges = () => {
+  const { t } = useTranslation();
   const [data, setData] = useState<VirtualJourneyData | null>(null);
   const [filter, setFilter] = useState<'all' | string>('all');
   const [selectedBadge, setSelectedBadge] = useState<JourneyBadge | null>(null);

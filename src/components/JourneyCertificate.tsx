@@ -63,6 +63,7 @@ const getLinkedInText = (journey: Journey, userName: string, totalTasks: number,
 };
 
 export const JourneyCertificate = ({ open, onClose, journey, progress }: JourneyCertificateProps) => {
+  const { t } = useTranslation();
   const { profile } = useUserProfile();
   const cardRef = useRef<HTMLDivElement>(null);
   const [isSharing, setIsSharing] = useState(false);

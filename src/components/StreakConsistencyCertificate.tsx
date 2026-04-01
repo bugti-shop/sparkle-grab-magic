@@ -28,6 +28,7 @@ const getStreakColor = (streak: number) => {
 };
 
 export const StreakConsistencyCertificate = ({ currentStreak, totalCompletions, longestStreak }: StreakConsistencyCertificateProps) => {
+  const { t } = useTranslation();
   const { profile } = useUserProfile();
   const cardRef = useRef<HTMLDivElement>(null);
   const [isSharing, setIsSharing] = useState(false);
