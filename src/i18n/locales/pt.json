@@ -3192,7 +3192,18 @@
     "tasksCount": "{{count}} tarefas",
     "badges": "Emblemas de jornada",
     "shareBadge": "Compartilhar emblema",
-    "shareError": "Falha ao compartilhar emblema"
+    "shareError": "Falha ao compartilhar emblema",
+    "noJourneysYet": "Nenhuma jornada ainda",
+    "startFromProgress": "Inicie uma jornada virtual na página de Progresso para começar sua aventura!",
+    "complete": "Concluído",
+    "inProgress": "Em andamento",
+    "milestonesLabel": "marcos",
+    "journeyConquered": "🏆 Jornada conquistada!",
+    "newBadge": "🎖️ Novo emblema!",
+    "badgeCollection": "Coleção de emblemas",
+    "badgesEarned": "{{count}} emblemas ganhos",
+    "noBadgesYet": "Nenhum emblema ainda",
+    "startJourneyForBadges": "Inicie uma jornada virtual e complete marcos para ganhar emblemas!"
   },
   "certificates": {
     "title": "Certificados",

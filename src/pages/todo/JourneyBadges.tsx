@@ -244,7 +244,7 @@ const JourneyBadges = () => {
               </div>
 
               <motion.h2 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="text-2xl font-bold text-foreground">
-                {celebratingBadge.type === 'journey_complete' ? '🏆 Journey Conquered!' : '🎖️ New Badge!'}
+                {celebratingBadge.type === 'journey_complete' ? t('journey.journeyConquered', '🏆 Journey Conquered!') : t('journey.newBadge', '🎖️ New Badge!')}
               </motion.h2>
               <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.45 }} className="text-lg font-semibold text-warning">
                 {celebratingBadge.label}
@@ -253,7 +253,7 @@ const JourneyBadges = () => {
                 {celebratingBadge.description}
               </motion.p>
               <motion.button initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }} onClick={() => setCelebratingBadge(null)} className="mt-2 text-xs text-muted-foreground">
-                Tap to continue
+                {t('common.tapToContinue', 'Tap to continue')}
               </motion.button>
             </motion.div>
           </motion.div>
@@ -268,8 +268,8 @@ const JourneyBadges = () => {
               <Award className="h-5 w-5 text-primary" />
             </div>
             <div>
-              <h2 className="font-bold text-base">Badge Collection</h2>
-              <p className="text-xs text-muted-foreground">{allBadges.length} badges earned</p>
+              <h2 className="font-bold text-base">{t('journey.badgeCollection', 'Badge Collection')}</h2>
+              <p className="text-xs text-muted-foreground">{t('journey.badgesEarned', '{{count}} badges earned', { count: allBadges.length })}</p>
             </div>
           </div>
           <div className="flex gap-2 flex-wrap">
@@ -290,10 +290,10 @@ const JourneyBadges = () => {
         {/* Journey filter chips */}
         {journeysWithBadges.length > 1 && (
           <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-none">
-            <button onClick={() => setFilter('all')} className={cn('flex-shrink-0 px-3 py-1.5 rounded-full text-xs font-semibold border transition-all', filter === 'all' ? 'bg-primary text-primary-foreground border-primary' : 'bg-card text-muted-foreground border-border')}>All</button>
+            <button onClick={() => setFilter('all')} className={cn('flex-shrink-0 px-3 py-1.5 rounded-full text-xs font-semibold border transition-all', filter === 'all' ? 'bg-primary text-primary-foreground border-primary' : 'bg-card text-muted-foreground border-border')}>{t('common.all', 'All')}</button>
             {journeysWithBadges.map(j => (
               <button key={j.id} onClick={() => setFilter(j.id)} className={cn('flex-shrink-0 px-3 py-1.5 rounded-full text-xs font-semibold border transition-all flex items-center gap-1.5', filter === j.id ? 'bg-primary text-primary-foreground border-primary' : 'bg-card text-muted-foreground border-border')}>
-                <span>{j.emoji}</span><span>{j.name}</span>
+                <span>{j.emoji}</span><span>{t(`journey.${j.id}.name`, j.name)}</span>
               </button>
             ))}
           </div>
@@ -303,8 +303,8 @@ const JourneyBadges = () => {
         {allBadges.length === 0 && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="bg-card rounded-2xl p-8 border text-center">
             <Award className="h-12 w-12 text-muted-foreground/30 mx-auto mb-3" />
-            <h3 className="font-semibold text-sm text-muted-foreground">No badges yet</h3>
-            <p className="text-xs text-muted-foreground/70 mt-1">Start a virtual journey and complete milestones to earn badges!</p>
+            <h3 className="font-semibold text-sm text-muted-foreground">{t('journey.noBadgesYet', 'No badges yet')}</h3>
+            <p className="text-xs text-muted-foreground/70 mt-1">{t('journey.startJourneyForBadges', 'Start a virtual journey and complete milestones to earn badges!')}</p>
           </motion.div>
         )}
 
@@ -319,7 +319,7 @@ const JourneyBadges = () => {
               {filter === 'all' && (
                 <div className="flex items-center gap-2">
                   <span className="text-lg">{journey.emoji}</span>
-                  <h3 className="font-bold text-sm text-foreground">{journey.name}</h3>
+                  <h3 className="font-bold text-sm text-foreground">{t(`journey.${journey.id}.name`, journey.name)}</h3>
                   <span className="text-[10px] text-muted-foreground ml-auto">{badges.length} badge{badges.length !== 1 ? 's' : ''}</span>
                 </div>
               )}

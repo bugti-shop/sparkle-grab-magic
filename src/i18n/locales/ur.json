@@ -3156,7 +3156,18 @@
     "tasksCount": "{{count}} ٹاسک",
     "badges": "سفر کے بیجز",
     "shareBadge": "بیج شیئر کریں",
-    "shareError": "بیج شیئر کرنے میں ناکامی"
+    "shareError": "بیج شیئر کرنے میں ناکامی",
+    "noJourneysYet": "ابھی تک کوئی سفر نہیں",
+    "startFromProgress": "اپنی مہم شروع کرنے کے لیے پروگریس صفحے سے ایک ورچوئل سفر شروع کریں!",
+    "complete": "مکمل",
+    "inProgress": "جاری ہے",
+    "milestonesLabel": "سنگ میل",
+    "journeyConquered": "🏆 سفر فتح!",
+    "newBadge": "🎖️ نیا بیج!",
+    "badgeCollection": "بیج کا مجموعہ",
+    "badgesEarned": "{{count}} بیج حاصل",
+    "noBadgesYet": "ابھی تک کوئی بیج نہیں",
+    "startJourneyForBadges": "بیج حاصل کرنے کے لیے ایک ورچوئل سفر شروع کریں!"
   },
   "certificates": {
     "title": "سرٹیفکیٹس",

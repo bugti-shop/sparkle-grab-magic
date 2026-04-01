@@ -3192,7 +3192,18 @@
     "tasksCount": "{{count}} タスク",
     "badges": "ジャーニーバッジ",
     "shareBadge": "バッジを共有",
-    "shareError": "バッジの共有に失敗"
+    "shareError": "バッジの共有に失敗",
+    "noJourneysYet": "まだ旅がありません",
+    "startFromProgress": "進捗ページからバーチャル旅を始めて冒険を開始しましょう！",
+    "complete": "完了",
+    "inProgress": "進行中",
+    "milestonesLabel": "マイルストーン",
+    "journeyConquered": "🏆 旅を征服！",
+    "newBadge": "🎖️ 新しいバッジ！",
+    "badgeCollection": "バッジコレクション",
+    "badgesEarned": "{{count}}個のバッジ獲得",
+    "noBadgesYet": "まだバッジがありません",
+    "startJourneyForBadges": "バッジを獲得するためにバーチャル旅を始めてマイルストーンを完了しましょう！"
   },
   "certificates": {
     "title": "証明書",

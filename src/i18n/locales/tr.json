@@ -3192,7 +3192,18 @@
     "tasksCount": "{{count}} görev",
     "badges": "Yolculuk rozetleri",
     "shareBadge": "Rozet paylaş",
-    "shareError": "Rozet paylaşılamadı"
+    "shareError": "Rozet paylaşılamadı",
+    "noJourneysYet": "Henüz yolculuk yok",
+    "startFromProgress": "Maceranıza başlamak için İlerleme sayfasından sanal bir yolculuk başlatın!",
+    "complete": "Tamamlandı",
+    "inProgress": "Devam ediyor",
+    "milestonesLabel": "kilometre taşları",
+    "journeyConquered": "🏆 Yolculuk fethedildi!",
+    "newBadge": "🎖️ Yeni Rozet!",
+    "badgeCollection": "Rozet Koleksiyonu",
+    "badgesEarned": "{{count}} rozet kazanıldı",
+    "noBadgesYet": "Henüz rozet yok",
+    "startJourneyForBadges": "Rozet kazanmak için sanal bir yolculuk başlatın ve kilometre taşlarını tamamlayın!"
   },
   "certificates": {
     "title": "Sertifikalar",

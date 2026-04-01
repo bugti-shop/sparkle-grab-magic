@@ -109,9 +109,9 @@ const JourneyHistory = () => {
             className="bg-card rounded-2xl p-8 border text-center"
           >
             <Compass className="h-12 w-12 text-muted-foreground/30 mx-auto mb-3" />
-            <h3 className="font-semibold text-sm text-muted-foreground">No journeys yet</h3>
+            <h3 className="font-semibold text-sm text-muted-foreground">{t('journey.noJourneysYet', 'No journeys yet')}</h3>
             <p className="text-xs text-muted-foreground/70 mt-1">
-              Start a virtual journey from the Progress page to begin your adventure!
+              {t('journey.startFromProgress', 'Start a virtual journey from the Progress page to begin your adventure!')}
             </p>
           </motion.div>
         ) : (
@@ -153,15 +153,15 @@ const JourneyHistory = () => {
                     <div className="flex-1 min-w-0">
                       {/* Title row */}
                       <div className="flex items-center gap-2 mb-1">
-                        <h4 className="font-bold text-sm truncate">{journey.name}</h4>
+                        <h4 className="font-bold text-sm truncate">{t(`journey.${journey.id}.name`, journey.name)}</h4>
                         {isComplete && (
                           <span className="text-[9px] bg-success/15 text-success px-1.5 py-0.5 rounded-full font-bold flex-shrink-0">
-                            ✓ Complete
+                            ✓ {t('journey.complete', 'Complete')}
                           </span>
                         )}
                         {!isComplete && (
                           <span className="text-[9px] bg-warning/15 text-warning px-1.5 py-0.5 rounded-full font-bold flex-shrink-0">
-                            In Progress
+                            {t('journey.inProgress', 'In Progress')}
                           </span>
                         )}
                       </div>
@@ -181,9 +181,9 @@ const JourneyHistory = () => {
                       <div className="flex items-center gap-3 text-[10px] text-muted-foreground">
                         <span className="flex items-center gap-1">
                           <MapPin className="h-2.5 w-2.5" />
-                          {totalDone}/{totalJourneyTasks} tasks
+                          {totalDone}/{totalJourneyTasks} {t('common.tasks', 'tasks')}
                         </span>
-                        <span>{milestonesReached}/{journey.milestones.length} milestones</span>
+                        <span>{milestonesReached}/{journey.milestones.length} {t('journey.milestonesLabel', 'milestones')}</span>
                         {progress.completedAt && (
                           <span>{format(new Date(progress.completedAt), 'MMM d, yyyy')}</span>
                         )}

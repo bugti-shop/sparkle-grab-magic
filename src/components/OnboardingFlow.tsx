@@ -1636,9 +1636,9 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
                   <span className="text-3xl">{journey.emoji}</span>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2">
-                      <h4 className="font-bold text-[15px] text-[#1a1a1a]">{journey.name}</h4>
+                      <h4 className="font-bold text-[15px] text-[#1a1a1a]">{t(`journey.${journey.id}.name`, journey.name)}</h4>
                     </div>
-                    <p className="text-[12px] text-[#767b7e] mt-0.5 leading-relaxed">{journey.description}</p>
+                    <p className="text-[12px] text-[#767b7e] mt-0.5 leading-relaxed">{t(`journey.${journey.id}.description`, journey.description)}</p>
                     <div className="flex items-center gap-3 mt-2">
                       <span className="text-[10px] text-[#767b7e] bg-[#f3f4f6] px-2 py-0.5 rounded-full">
                         {journey.totalTasks} {t('common.tasks', 'tasks')}
@@ -1716,7 +1716,7 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
             transition={{ delay: 0.6, duration: 0.5 }}
             className="text-white/60 text-sm font-['Nunito_Sans'] mt-2 mb-6"
           >
-            {selectedJourney?.name} — {selectedJourney?.totalTasks} {t('common.tasks', 'tasks')}
+            {t(`journey.${selectedJourney?.id}.name`, selectedJourney?.name)} — {selectedJourney?.totalTasks} {t('common.tasks', 'tasks')}
           </motion.p>
 
           {/* Milestone path preview */}
@@ -1750,7 +1750,7 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
               className="mt-6 flex items-center gap-2 text-white/50 text-xs font-['Nunito_Sans']"
             >
               <MapPin className="h-3.5 w-3.5" />
-              <span>{t('journey.firstStop', 'First stop')}: {firstMilestone.name}</span>
+              <span>{t('journey.firstStop', 'First stop')}: {t(`journey.${selectedJourney?.id}.${firstMilestone.id}`, firstMilestone.name)}</span>
             </motion.div>
           )}
 

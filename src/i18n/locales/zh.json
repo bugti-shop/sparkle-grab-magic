@@ -3192,7 +3192,18 @@
     "tasksCount": "{{count}} 个任务",
     "badges": "旅程徽章",
     "shareBadge": "分享徽章",
-    "shareError": "分享徽章失败"
+    "shareError": "分享徽章失败",
+    "noJourneysYet": "还没有旅程",
+    "startFromProgress": "从进度页面开始一段虚拟旅程，开始你的冒险！",
+    "complete": "已完成",
+    "inProgress": "进行中",
+    "milestonesLabel": "里程碑",
+    "journeyConquered": "🏆 旅程征服！",
+    "newBadge": "🎖️ 新徽章！",
+    "badgeCollection": "徽章收藏",
+    "badgesEarned": "{{count}}个徽章已获得",
+    "noBadgesYet": "还没有徽章",
+    "startJourneyForBadges": "开始虚拟旅程并完成里程碑以获得徽章！"
   },
   "certificates": {
     "title": "证书",

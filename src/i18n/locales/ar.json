@@ -3279,7 +3279,18 @@
     "tasksCount": "{{count}} مهمة",
     "badges": "شارات الرحلة",
     "shareBadge": "مشاركة الشارة",
-    "shareError": "فشل مشاركة الشارة"
+    "shareError": "فشل مشاركة الشارة",
+    "noJourneysYet": "لا توجد رحلات بعد",
+    "startFromProgress": "ابدأ رحلة افتراضية من صفحة التقدم لبدء مغامرتك!",
+    "complete": "مكتمل",
+    "inProgress": "قيد التقدم",
+    "milestonesLabel": "معالم",
+    "journeyConquered": "🏆 تم فتح الرحلة!",
+    "newBadge": "🎖️ شارة جديدة!",
+    "badgeCollection": "مجموعة الشارات",
+    "badgesEarned": "{{count}} شارة مكتسبة",
+    "noBadgesYet": "لا توجد شارات بعد",
+    "startJourneyForBadges": "ابدأ رحلة افتراضية وأكمل المعالم لكسب الشارات!"
   },
   "certificates": {
     "title": "الشهادات",

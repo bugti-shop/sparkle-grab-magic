@@ -3174,7 +3174,18 @@
     "tasksCount": "{{count}} משימות",
     "badges": "תגי מסע",
     "shareBadge": "שתף תג",
-    "shareError": "שיתוף התג נכשל"
+    "shareError": "שיתוף התג נכשל",
+    "noJourneysYet": "אין עדיין מסעות",
+    "startFromProgress": "התחילו מסע וירטואלי מדף ההתקדמות כדי להתחיל את ההרפתקה!",
+    "complete": "הושלם",
+    "inProgress": "בתהליך",
+    "milestonesLabel": "אבני דרך",
+    "journeyConquered": "🏆 המסע נכבש!",
+    "newBadge": "🎖️ תג חדש!",
+    "badgeCollection": "אוסף תגים",
+    "badgesEarned": "{{count}} תגים הושגו",
+    "noBadgesYet": "אין עדיין תגים",
+    "startJourneyForBadges": "התחילו מסע וירטואלי והשלימו אבני דרך כדי להרוויח תגים!"
   },
   "certificates": {
     "title": "תעודות",
