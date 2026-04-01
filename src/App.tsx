@@ -260,6 +260,7 @@ const AppContent = () => {
   useJourneyAdvancement();
   useAchievementToasts();
   useCertificateToasts();
+  useMentionNavigation();
   
   // Subscription expiry watcher — warnings + notifications
   useSubscriptionExpiry();
