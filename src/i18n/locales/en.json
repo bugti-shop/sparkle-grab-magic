@@ -624,7 +624,8 @@
     "exportedToMarkdown": "Note exported to Markdown",
     "restoreFromArchive": "Restore from Archive",
     "archiveNote": "Archive Note",
-    "sketchDrawing": "Sketch drawing"
+    "sketchDrawing": "Sketch drawing",
+    "restoreFromTrash": "Restore from Trash"
   },
   "tasks": {
     "title": "Tasks",
