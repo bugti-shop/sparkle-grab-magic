@@ -889,33 +889,41 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
       setShowNotesFolderCreation(true); // INFO → Notes folder creation
     } else if (step === 5 && showNotesFolderCreation) {
       // Save notes folders to settings (same key as Notes page: 'folders')
-      if (notesFolders.length > 0) {
-        const existingFolders = await getSetting<Folder[]>('folders', []);
-        const newFolders: Folder[] = notesFolders.map(f => ({
-          id: f.id,
-          name: f.name,
-          color: f.color,
-          isDefault: false,
-          createdAt: new Date(),
-        }));
-        await setSetting('folders', [...existingFolders, ...newFolders]);
-        window.dispatchEvent(new Event('foldersUpdated'));
+      try {
+        if (notesFolders.length > 0) {
+          const existingFolders = await getSetting<Folder[]>('folders', []);
+          const newFolders: Folder[] = notesFolders.map(f => ({
+            id: f.id,
+            name: f.name,
+            color: f.color,
+            isDefault: false,
+            createdAt: new Date(),
+          }));
+          await setSetting('folders', [...existingFolders, ...newFolders]);
+          window.dispatchEvent(new Event('foldersUpdated'));
+        }
+      } catch (e) {
+        console.warn('Failed to save notes folders:', e);
       }
       setShowNotesFolderCreation(false);
       setShowTasksFolderCreation(true); // → Tasks folder creation
     } else if (step === 5 && showTasksFolderCreation) {
       // Save tasks folders to settings (same key as Tasks page: 'todoFolders')
-      if (tasksFolders.length > 0) {
-        const existingFolders = await getSetting<Folder[]>('todoFolders', []);
-        const newFolders: Folder[] = tasksFolders.map(f => ({
-          id: f.id,
-          name: f.name,
-          color: f.color,
-          isDefault: false,
-          createdAt: new Date(),
-        }));
-        await setSetting('todoFolders', [...existingFolders, ...newFolders]);
-        window.dispatchEvent(new Event('foldersUpdated'));
+      try {
+        if (tasksFolders.length > 0) {
+          const existingFolders = await getSetting<Folder[]>('todoFolders', []);
+          const newFolders: Folder[] = tasksFolders.map(f => ({
+            id: f.id,
+            name: f.name,
+            color: f.color,
+            isDefault: false,
+            createdAt: new Date(),
+          }));
+          await setSetting('todoFolders', [...existingFolders, ...newFolders]);
+          window.dispatchEvent(new Event('foldersUpdated'));
+        }
+      } catch (e) {
+        console.warn('Failed to save task folders:', e);
       }
       setShowTasksFolderCreation(false);
       setStep(34); // → unfinished tasks
