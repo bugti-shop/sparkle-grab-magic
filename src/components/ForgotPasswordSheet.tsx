@@ -175,7 +175,7 @@ export const ForgotPasswordSheet = ({
 
             <div className="flex flex-col gap-2">
               <Button onClick={handleVerifyAnswer} className="w-full">
-                Verify Answer
+                {t('security.verifyAnswer')}
               </Button>
               <Button variant="ghost" onClick={onClose} className="w-full text-muted-foreground">
                 Cancel
