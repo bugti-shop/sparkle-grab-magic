@@ -7964,7 +7964,7 @@ export const SketchEditor = memo(({ initialData, onChange, onImageExport, classN
                       forceUpdate(n => n + 1); redrawAll(); emitChange();
                       if (onCollabLayerEvent) onCollabLayerEvent('delete', { layerId: activeLayerId });
                     }}
-                    title="Delete layer"
+                    title={t('sketch.deleteLayer', 'Delete layer')}
                   ><Trash className="h-3 w-3" /></button>
                 )}
               </div>
