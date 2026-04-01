@@ -2,6 +2,8 @@
 import { useCallback, useRef, useState, useEffect } from 'react';
 import { compressImage, isCompressibleImage } from '@/utils/imageCompression';
 import { useTranslation } from 'react-i18next';
+import { MentionDropdown, MentionItem } from './MentionDropdown';
+import { detectMentionTrigger, encodeMention, MentionTrigger } from '@/utils/mentionUtils';
 import { Button } from '@/components/ui/button';
 import {
   Bold,
