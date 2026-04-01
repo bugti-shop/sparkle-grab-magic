@@ -1177,6 +1177,31 @@ export const RichTextEditor = ({
             }
           }
         }
+
+        // @mention detection in contentEditable
+        if (selection && selection.rangeCount > 0) {
+          const range = selection.getRangeAt(0);
+          const textNode = range.startContainer;
+          if (textNode.nodeType === Node.TEXT_NODE) {
+            const fullText = textNode.textContent || '';
+            const cursorPos = range.startOffset;
+            const trigger = detectMentionTrigger(fullText, cursorPos);
+            if (trigger) {
+              setMentionType(trigger.type);
+              setMentionQuery(trigger.query);
+              mentionTriggerRef.current = trigger;
+              // Position near cursor
+              const rects = range.getClientRects();
+              if (rects.length > 0) {
+                setMentionPos({ top: rects[0].bottom + 4, left: rects[0].left });
+              }
+              setMentionOpen(true);
+            } else {
+              setMentionOpen(false);
+              mentionTriggerRef.current = null;
+            }
+          }
+        }
         
         // For large content (>50KB), debounce the onChange call
         const isLargeContent = newContent.length > 50000;
