@@ -50,6 +50,7 @@ import { Switch } from '@/components/ui/switch';
 import { format } from 'date-fns';
 
 import { saveNoteVersion } from '@/utils/noteVersionHistory';
+import { triggerTripleHeavyHaptic } from '@/utils/haptics';
 import { saveNoteToDBSingle } from '@/utils/noteStorage';
 import { exportNoteToMarkdown } from '@/utils/markdownExport';
 import { insertNoteLink, findBacklinks } from '@/utils/noteLinking';
