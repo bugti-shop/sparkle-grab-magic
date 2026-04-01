@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { m as motion, AnimatePresence } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import { Zap } from 'lucide-react';
+import { triggerTripleHeavyHaptic } from '@/utils/haptics';
 
 interface ComboEvent {
   combo: number;
