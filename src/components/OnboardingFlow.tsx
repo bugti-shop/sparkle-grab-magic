@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import i18n from '@/i18n';
 import { m as motion, AnimatePresence } from 'framer-motion';
 import { ALL_JOURNEYS, startJourney } from '@/utils/virtualJourneyStorage';
-import { ArrowLeft, Camera, User, Check, PenLine, CheckCircle2, CalendarDays, Target, Lightbulb, Bell, BarChart3, Star, Trophy, FlaskConical, Link, Monitor, Rocket, Heart, TrendingUp, Brain, Zap, Palette, Save, Trash2, BookOpen, Briefcase, Activity, Sparkles, MapPin, Plus, Folder as FolderIcon, Gift, Info } from 'lucide-react';
+import { ArrowLeft, Camera, User, Check, PenLine, CheckCircle2, CalendarDays, Target, Lightbulb, Bell, BarChart3, Star, Trophy, FlaskConical, Link, Monitor, Rocket, Heart, TrendingUp, Brain, Zap, Palette, Save, Trash2, BookOpen, Briefcase, Activity, Sparkles, MapPin, Plus, Folder as FolderIcon, Gift, Info, Unlock, Crown } from 'lucide-react';
 import appLogo from '@/assets/app-logo.webp';
 import readyMascot from '@/assets/ready-mascot.png';
 import { MemoryRouter } from 'react-router-dom';
@@ -1522,11 +1522,11 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
 
   // ============ READY TO START JOURNEY SCREEN ============
   if (showReadyScreen) {
-    const journeySteps = [
-      { icon: CheckCircle2, iconBg: '#e0f5ee', iconColor: '#1a1a1a', title: 'Install the app', description: 'You successfully created your profile.', completed: true },
-      { icon: Gift, iconBg: '#ccf5e6', iconColor: '#1a1a1a', title: 'Today', description: 'Select your subscription and reach your productivity goals even faster.', completed: false },
-      { icon: Bell, iconBg: '#f0f0f0', iconColor: '#1a1a1a', title: 'Shortly before renewal', description: "You'll receive a reminder for your upcoming subscription renewal.", completed: false },
-      { icon: Info, iconBg: '#f0f0f0', iconColor: '#1a1a1a', title: 'Renewal day', description: 'Your subscription will be renewed and you can continue your Flowist journey.', completed: false },
+    const featureItems = [
+      { icon: <Unlock size={16} strokeWidth={2} />, title: 'Unlock All Features', desc: 'Dark mode, templates, sync, and more' },
+      { icon: <Bell size={16} strokeWidth={2} />, title: 'Unlimited Everything', desc: 'Unlimited folders, sections, and views' },
+      { icon: <Crown size={16} strokeWidth={2} />, title: 'Pro Member', desc: 'Get access to all current and future features' },
+      { icon: <Gift size={16} strokeWidth={2} />, title: '8 Days Free Trial', desc: 'Try all Pro features free for 8 days' },
     ];
     return (
       <div className="fixed inset-0 z-[300] flex flex-col bg-white" style={{ paddingTop: 'env(safe-area-inset-top, 0px)', paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}>
@@ -1539,24 +1539,17 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
           <motion.h1 initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="text-[32px] font-black text-[#1a1a1a] font-['Nunito'] tracking-tight text-center leading-tight mb-8">
             Ready to start your{'\n'}journey?
           </motion.h1>
-          <div className="relative pl-6">
-            <div className="absolute left-[19px] top-[20px] bottom-[20px] w-[3px] rounded-full bg-gradient-to-b from-[#4EEAB3] via-[#c8f7e6] to-[#e8e8e8]" />
-            <div className="flex flex-col gap-8">
-              {journeySteps.map((s, i) => {
-                const StepIcon = s.icon;
-                return (
-                  <motion.div key={i} initial={{ opacity: 0, x: -16 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2 + i * 0.12 }} className="flex items-start gap-4 relative">
-                    <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 z-10" style={{ backgroundColor: s.iconBg }}>
-                      {s.completed ? <CheckCircle2 size={20} color="#1a1a1a" strokeWidth={2.5} /> : <StepIcon size={18} color={s.iconColor} strokeWidth={2} />}
-                    </div>
-                    <div className="pt-1">
-                      <h3 className="text-[16px] font-bold text-[#1a1a1a] font-['Nunito'] leading-tight">{s.title}</h3>
-                      <p className="text-[14px] text-[#767b7e] font-['Nunito_Sans'] mt-1 leading-relaxed">{s.description}</p>
-                    </div>
-                  </motion.div>
-                );
-              })}
-            </div>
+          <div className="flex flex-col items-start mx-auto w-80 relative">
+            <div className="absolute left-[10.5px] top-[20px] bottom-[20px] w-[11px] rounded-b-full" style={{ background: 'hsl(var(--primary) / 0.2)' }} />
+            {featureItems.map((item, i) => (
+              <motion.div key={i} initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2 + i * 0.1 }} className="flex items-start gap-3 mb-6 relative">
+                <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-primary-foreground z-10 flex-shrink-0">{item.icon}</div>
+                <div>
+                  <p className="font-semibold" style={{ color: 'hsl(0 0% 3.9%)', fontFamily: "'Nunito', sans-serif" }}>{item.title}</p>
+                  <p className="text-sm" style={{ color: 'hsl(0 0% 45.1%)' }}>{item.desc}</p>
+                </div>
+              </motion.div>
+            ))}
           </div>
           <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7 }} className="mt-8 rounded-2xl p-5 relative overflow-hidden flex items-end" style={{ backgroundColor: '#e8faf3', minHeight: '140px' }}>
             <div className="flex-1">
