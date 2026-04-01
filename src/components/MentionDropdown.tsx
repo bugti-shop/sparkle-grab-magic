@@ -2,9 +2,24 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { Note, TodoItem } from '@/types/note';
 import { loadNotesFromDB } from '@/utils/noteStorage';
 import { loadTasksFromDB } from '@/utils/taskStorage';
-import { FileText, CheckSquare, Search } from 'lucide-react';
+import { FileText, CheckSquare, Search, Clock } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
+
+const RECENT_MENTIONS_KEY = 'recent_mentions';
+const MAX_RECENT = 3;
+
+const getRecentMentions = (): MentionItem[] => {
+  try {
+    return JSON.parse(localStorage.getItem(RECENT_MENTIONS_KEY) || '[]');
+  } catch { return []; }
+};
+
+const saveRecentMention = (item: MentionItem) => {
+  const recent = getRecentMentions().filter(r => r.id !== item.id);
+  recent.unshift(item);
+  localStorage.setItem(RECENT_MENTIONS_KEY, JSON.stringify(recent.slice(0, MAX_RECENT)));
+};
 
 interface MentionItem {
   id: string;
