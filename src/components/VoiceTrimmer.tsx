@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { Play, Pause, Check, X, Scissors, RotateCcw, Sparkles, Volume2, AudioWaveform } from 'lucide-react';
 import { cn } from '@/lib/utils';

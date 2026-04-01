@@ -1,4 +1,5 @@
 import { useState, useRef, useCallback, useEffect, forwardRef, useImperativeHandle } from 'react';
+import { useTranslation } from 'react-i18next';
 import { FloatingImage } from '@/types/note';
 import { Trash2, Move } from 'lucide-react';
 import { toast } from 'sonner';

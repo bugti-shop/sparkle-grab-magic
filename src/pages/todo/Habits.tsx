@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { m as motion, AnimatePresence } from 'framer-motion';
 import { format, subDays } from 'date-fns';
 import { Plus, Flame, Trophy, Target, Trash2, BarChart3, Check, ChevronLeft, Bell } from 'lucide-react';

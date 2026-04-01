@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Users, LogOut, Check, Loader2, Crown, UserPlus, Copy, QrCode, Eye, Pencil, ShieldCheck } from 'lucide-react';
