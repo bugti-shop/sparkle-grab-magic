@@ -226,7 +226,7 @@ export const ForgotPasswordSheet = ({
 
             <Button onClick={handleResetPassword} className="w-full">
               <KeyRound className="h-4 w-4 mr-2" />
-              Reset Password
+              {t('security.resetPassword')}
             </Button>
           </div>
         )}
