@@ -2036,7 +2036,7 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
                   if (val === t('onboarding.deviceSingle')) {
                     return next.has(val) ? new Set() : new Set([val]);
                   }
-                  next.delete('Single device only');
+                  next.delete(t('onboarding.deviceSingle'));
                   next.has(val) ? next.delete(val) : next.add(val);
                   return next;
                 });
