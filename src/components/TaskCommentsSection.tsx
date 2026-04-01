@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { TaskComment } from '@/types/note';
 import { Button } from '@/components/ui/button';
@@ -9,6 +9,10 @@ import { format } from 'date-fns';
 import { toast } from 'sonner';
 import { Haptics, ImpactStyle } from '@capacitor/haptics';
 import { compressImage } from '@/utils/receiptStorage';
+import { MentionDropdown, MentionItem } from './MentionDropdown';
+import { MentionRenderer } from './MentionRenderer';
+import { useMention } from '@/hooks/useMention';
+import { hasMentions } from '@/utils/mentionUtils';
 
 interface TaskCommentsSectionProps {
   comments: TaskComment[];
@@ -26,6 +30,17 @@ export const TaskCommentsSection = ({
   const [imagePreview, setImagePreview] = useState<string | null>(null);
   const [isExpanded, setIsExpanded] = useState(comments.length > 0);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const commentInputRef = useRef<HTMLInputElement>(null);
+
+  const commentMention = useMention({
+    text,
+    setText,
+    inputRef: commentInputRef as React.RefObject<HTMLInputElement>,
+  });
+
+  const handleMentionNavigate = useCallback((type: 'note' | 'task', id: string) => {
+    window.dispatchEvent(new CustomEvent('mention-navigate', { detail: { type, id } }));
+  }, []);
 
   const handleSubmit = async () => {
     if (!text.trim() && !imagePreview) return;
@@ -66,6 +81,7 @@ export const TaskCommentsSection = ({
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (commentMention.mentionOpen) return; // Let mention dropdown handle Enter
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();
       handleSubmit();
@@ -123,7 +139,16 @@ export const TaskCommentsSection = ({
                   <div className="flex items-start justify-between gap-2">
                     <div className="flex-1 min-w-0">
                       {comment.text && (
-                        <p className="text-sm whitespace-pre-wrap break-words">{comment.text}</p>
+                        hasMentions(comment.text) ? (
+                          <div className="text-sm whitespace-pre-wrap break-words">
+                            <MentionRenderer
+                              text={comment.text}
+                              onMentionClick={handleMentionNavigate}
+                            />
+                          </div>
+                        ) : (
+                          <p className="text-sm whitespace-pre-wrap break-words">{comment.text}</p>
+                        )
                       )}
                     </div>
                     <button
@@ -175,31 +200,43 @@ export const TaskCommentsSection = ({
             </div>
           )}
 
-          {/* Input area */}
-          <div className="flex items-end gap-2">
-            <div className="flex-1 relative">
-              <Input
-                value={text}
-                onChange={(e) => setText(e.target.value)}
-                onKeyDown={handleKeyDown}
-                placeholder={t('comments.placeholder')}
-                className="pr-10 rounded-xl"
-              />
-              <button
-                onClick={() => fileInputRef.current?.click()}
-                className="absolute right-2 top-1/2 -translate-y-1/2 p-1 hover:bg-muted rounded transition-colors"
+          {/* Input area with @mention support */}
+          <div className="relative">
+            <div className="flex items-end gap-2">
+              <div className="flex-1 relative">
+                <Input
+                  ref={commentInputRef}
+                  value={text}
+                  onChange={(e) => setText(e.target.value)}
+                  onInput={() => commentMention.checkForMention()}
+                  onKeyDown={handleKeyDown}
+                  placeholder={t('comments.placeholder') + ' (@notes/@tasks)'}
+                  className="pr-10 rounded-xl"
+                />
+                <button
+                  onClick={() => fileInputRef.current?.click()}
+                  className="absolute right-2 top-1/2 -translate-y-1/2 p-1 hover:bg-muted rounded transition-colors"
+                >
+                  <ImageIcon className="h-4 w-4 text-muted-foreground" />
+                </button>
+              </div>
+              <Button
+                size="icon"
+                className="h-9 w-9 rounded-xl flex-shrink-0"
+                onClick={handleSubmit}
+                disabled={!text.trim() && !imagePreview}
               >
-                <ImageIcon className="h-4 w-4 text-muted-foreground" />
-              </button>
+                <Send className="h-4 w-4" />
+              </Button>
             </div>
-            <Button
-              size="icon"
-              className="h-9 w-9 rounded-xl flex-shrink-0"
-              onClick={handleSubmit}
-              disabled={!text.trim() && !imagePreview}
-            >
-              <Send className="h-4 w-4" />
-            </Button>
+            <MentionDropdown
+              isOpen={commentMention.mentionOpen}
+              mentionType={commentMention.mentionType}
+              query={commentMention.mentionQuery}
+              position={commentMention.dropdownPos}
+              onSelect={commentMention.handleMentionSelect}
+              onClose={commentMention.closeMention}
+            />
           </div>
 
           <input

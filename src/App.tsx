@@ -190,9 +190,15 @@ const RootRedirect = () => {
   return <Today />;
 };
 
+const MentionNavHandler = () => {
+  useMentionNavigation();
+  return null;
+};
+
 const AppRoutes = () => {
   return (
     <BrowserRouter>
+      <MentionNavHandler />
       <NavigationBackProvider>
         <NavigationLoader />
         <DashboardTracker />
@@ -260,7 +266,6 @@ const AppContent = () => {
   useJourneyAdvancement();
   useAchievementToasts();
   useCertificateToasts();
-  useMentionNavigation();
   
   // Subscription expiry watcher — warnings + notifications
   useSubscriptionExpiry();
