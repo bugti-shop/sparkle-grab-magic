@@ -226,7 +226,7 @@ function PaywallVariantA({ logic }: { logic: ReturnType<typeof usePaywallLogic> 
         <div className="mt-10 flex flex-col items-center gap-4">
           <div className="flex gap-3 w-full max-w-sm">
             {PLANS.map((plan) => (
-              <button key={plan.id} onClick={() => setSelectedPlan(plan.id)}
+              <button key={plan.id} onClick={() => { triggerTripleHeavyHaptic(); setSelectedPlan(plan.id); }}
                 className={`flex-1 relative rounded-xl p-3 text-center border-2 transition-all ${selectedPlan === plan.id ? 'border-primary' : ''}`}
                 style={{ 
                   background: selectedPlan === plan.id ? 'hsl(0 0% 96.1%)' : 'hsl(0 0% 100%)',
