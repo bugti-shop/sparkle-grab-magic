@@ -1,4 +1,4 @@
-import { useEffect, useState, lazy, Suspense, startTransition, useRef, useCallback } from "react";
+import React, { useEffect, useState, lazy, Suspense, startTransition, useRef, useCallback } from "react";
 import { LazyMotion, domAnimation } from "framer-motion";
 import { useKeyboardHeight } from "@/hooks/useKeyboardHeight";
 import { Toaster } from "@/components/ui/toaster";
@@ -380,11 +380,11 @@ const DeferredSyncInit = () => {
 
 const DeferredSyncHooks = lazy(async () => {
   const calSync = await import('@/hooks/useSystemCalendarSync');
-  const SyncComponent = () => {
+  const SyncComponent = React.forwardRef<HTMLDivElement>(function SyncComponent(_props, _ref) {
     calSync.useSystemCalendarSync();
     return null;
-  };
-  return { default: SyncComponent };
+  });
+  return { default: SyncComponent as unknown as React.ComponentType };
 });
 
 const App = () => (
