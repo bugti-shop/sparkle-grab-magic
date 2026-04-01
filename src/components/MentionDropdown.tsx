@@ -317,8 +317,6 @@ export const MentionDropdown = ({
               )}
             </div>
           )}
-            </div>
-          )}
         </motion.div>
       )}
     </AnimatePresence>
