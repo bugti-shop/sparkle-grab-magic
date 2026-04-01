@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo, useRef, useCallback, lazy, Suspense } from 'react';
+import { useTranslation } from 'react-i18next';
 import { m as motion, AnimatePresence } from 'framer-motion';
 import { Award, Share2, Edit3, Check } from 'lucide-react';
 import { cn } from '@/lib/utils';
