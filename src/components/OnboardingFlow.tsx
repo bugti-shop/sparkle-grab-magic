@@ -528,7 +528,7 @@ const OnboardingBatchTaskForm = ({ sections, folders, onAddTasks, onCancel }: {
 
       {/* Due date picker */}
       <div className="flex flex-col gap-1.5">
-        <span className="text-[12px] font-medium text-[#767b7e]">Due Date</span>
+        <span className="text-[12px] font-medium text-[#767b7e]">{t('common.dueDate', 'Due Date')}</span>
         <motion.button
           onClick={() => { triggerSelectionHaptic(); }}
           className="relative w-full cursor-pointer"

@@ -801,7 +801,7 @@ export const WordToolbar = ({
               onMouseDown={preventFocus}
               onPointerDown={(e) => { e.preventDefault(); const idx = FONT_SIZES.indexOf(currentFontSize); if (idx < FONT_SIZES.length - 1) onFontSize(FONT_SIZES[idx + 1]); }}
               className="h-[38px] w-8 flex items-center justify-center rounded-r-lg hover:bg-accent/60 active:scale-95 transition-all"
-              title="Increase"
+              title={t('editor.increase', 'Increase')}
             >
               <Plus className="h-4 w-4" strokeWidth={2.5} />
             </button>

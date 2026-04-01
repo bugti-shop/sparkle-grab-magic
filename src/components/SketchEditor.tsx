@@ -8015,7 +8015,7 @@ export const SketchEditor = memo(({ initialData, onChange, onImageExport, classN
                           forceUpdate(n => n + 1); redrawAll(); emitChange();
                           if (onCollabLayerEvent) onCollabLayerEvent('reorder', { layerOrder: layersRef.current.map(l => l.id) });
                         }
-                      }} title="Move up"><ArrowRight className="h-3 w-3 -rotate-90" /></button>
+                      }} title={t('sketch.moveUp', 'Move up')}><ArrowRight className="h-3 w-3 -rotate-90" /></button>
                     )}
                   </div>
                   <span className="text-[10px] text-muted-foreground">{layer.strokes.length + (layer.textAnnotations?.length || 0) + (layer.stickyNotes?.length || 0)}</span>
