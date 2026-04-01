@@ -190,9 +190,15 @@ const RootRedirect = () => {
   return <Today />;
 };
 
+const MentionNavHandler = () => {
+  useMentionNavigation();
+  return null;
+};
+
 const AppRoutes = () => {
   return (
     <BrowserRouter>
+      <MentionNavHandler />
       <NavigationBackProvider>
         <NavigationLoader />
         <DashboardTracker />
