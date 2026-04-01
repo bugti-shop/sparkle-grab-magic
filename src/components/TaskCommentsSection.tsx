@@ -28,15 +28,6 @@ export const TaskCommentsSection = ({
   const fileInputRef = useRef<HTMLInputElement>(null);
   const commentInputRef = useRef<HTMLInputElement>(null);
 
-  const commentMention = useMention({
-    text,
-    setText,
-    inputRef: commentInputRef as React.RefObject<HTMLInputElement>,
-  });
-
-  const handleMentionNavigate = useCallback((type: 'note' | 'task', id: string) => {
-    window.dispatchEvent(new CustomEvent('mention-navigate', { detail: { type, id } }));
-  }, []);
 
   const handleSubmit = async () => {
     if (!text.trim() && !imagePreview) return;
