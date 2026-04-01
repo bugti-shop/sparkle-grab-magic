@@ -93,7 +93,10 @@
     "less": "কম",
     "tags": "ট্যাগ",
     "enterYourName": "আপনার নাম লিখুন",
-    "tapEditName": "আপনার নাম যোগ করতে সম্পাদনা ট্যাপ করুন"
+    "tapEditName": "আপনার নাম যোগ করতে সম্পাদনা ট্যাপ করুন",
+    "section": "বিভাগ",
+    "folder": "ফোল্ডার",
+    "dueDate": "নির্ধারিত তারিখ"
   },
   "folders": {
     "manageFolders": "Управление папками",
@@ -1411,7 +1414,9 @@
     "extractUrls": "URL বের করুন",
     "extractHashtags": "হ্যাশট্যাগ বের করুন",
     "replaceContent": "বিষয়বস্তু প্রতিস্থাপন করুন",
-    "copyToClipboard": "ক্লিপবোর্ডে কপি করুন"
+    "copyToClipboard": "ক্লিপবোর্ডে কপি করুন",
+    "decrease": "হ্রাস করুন",
+    "increase": "বৃদ্ধি করুন"
   },
   "notePin": {
     "setPin": "পিন সেট করুন",
@@ -4972,7 +4977,10 @@
     "blank": "খালি",
     "custom": "কাস্টম",
     "compass": "কম্পাস",
-    "templateGallery": "টেমপ্লেট গ্যালারি"
+    "templateGallery": "টেমপ্লেট গ্যালারি",
+    "doubleClickRename": "নাম পরিবর্তন করতে ডাবল-ক্লিক করুন",
+    "moveDown": "নিচে সরান",
+    "moveUp": "উপরে সরান"
   },
   "sketchVideo": {
     "invalidYoutubeUrl": "অবৈধ YouTube URL",

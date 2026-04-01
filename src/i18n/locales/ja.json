@@ -61,7 +61,10 @@
     "tasks": "タスク",
     "tags": "タグ",
     "enterYourName": "名前を入力",
-    "tapEditName": "編集をタップして名前を追加"
+    "tapEditName": "編集をタップして名前を追加",
+    "section": "セクション",
+    "folder": "フォルダ",
+    "dueDate": "期日"
   },
   "folders": {
     "manageFolders": "フォルダを管理",
@@ -1004,7 +1007,9 @@
     "extractUrls": "URLを抽出",
     "extractHashtags": "ハッシュタグを抽出",
     "replaceContent": "コンテンツを置換",
-    "copyToClipboard": "クリップボードにコピー"
+    "copyToClipboard": "クリップボードにコピー",
+    "decrease": "小さく",
+    "increase": "大きく"
   },
   "notePin": {
     "setPin": "PINを設定",
@@ -3581,7 +3586,12 @@
     "pen": "ペン",
     "pencil": "鉛筆",
     "textTool": "テキストツール",
-    "undo": "元に戻す"
+    "undo": "元に戻す",
+    "addLayer": "レイヤーを追加",
+    "deleteLayer": "レイヤーを削除",
+    "doubleClickRename": "ダブルクリックで名前変更",
+    "moveDown": "下に移動",
+    "moveUp": "上に移動"
   },
   "sketchVideo": {
     "invalidYoutubeUrl": "無効なYouTube URL",

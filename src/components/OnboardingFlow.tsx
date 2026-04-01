@@ -423,6 +423,7 @@ const OnboardingBatchTaskForm = ({ sections, folders, onAddTasks, onCancel }: {
   onAddTasks: (tasks: string[], sectionId?: string, folderId?: string, priority?: string, dueDate?: Date) => void;
   onCancel: () => void;
 }) => {
+  const { t } = useTranslation();
   const [text, setText] = useState('');
   const [selectedSection, setSelectedSection] = useState<string>('');
   const [selectedFolder, setSelectedFolder] = useState<string>('');
@@ -439,16 +440,16 @@ const OnboardingBatchTaskForm = ({ sections, folders, onAddTasks, onCancel }: {
   };
 
   const priorityOptions = [
-    { value: 'high', label: 'High', color: '#DC2626' },
-    { value: 'medium', label: 'Medium', color: '#F59E0B' },
-    { value: 'low', label: 'Low', color: '#22C55E' },
-    { value: 'none', label: 'None', color: '#9CA3AF' },
+    { value: 'high', label: t('onboarding.priorityHigh', 'High'), color: '#DC2626' },
+    { value: 'medium', label: t('onboarding.priorityMedium', 'Medium'), color: '#F59E0B' },
+    { value: 'low', label: t('onboarding.priorityLow', 'Low'), color: '#22C55E' },
+    { value: 'none', label: t('onboarding.priorityNone', 'None'), color: '#9CA3AF' },
   ];
 
   return (
     <div className="flex flex-col gap-4 flex-1">
       <textarea
-        placeholder="Buy groceries&#10;Call dentist&#10;Finish report&#10;..."
+        placeholder={t('onboarding.taskPlaceholder', 'Buy groceries\nCall dentist\nFinish report\n...')}
         value={text}
         onChange={(e) => setText(e.target.value)}
         className="w-full min-h-[180px] resize-none rounded-2xl p-4 text-[15px] outline-none"
@@ -459,7 +460,7 @@ const OnboardingBatchTaskForm = ({ sections, folders, onAddTasks, onCancel }: {
       {/* Section selector */}
       {sections.length > 0 && (
         <div className="flex flex-col gap-1.5">
-          <span className="text-[12px] font-medium text-[#767b7e]">Section</span>
+          <span className="text-[12px] font-medium text-[#767b7e]">{t('common.section', 'Section')}</span>
           <div className="flex flex-wrap gap-2">
             {sections.map(s => (
               <motion.button
@@ -483,7 +484,7 @@ const OnboardingBatchTaskForm = ({ sections, folders, onAddTasks, onCancel }: {
       {/* Folder selector */}
       {folders.length > 0 && (
         <div className="flex flex-col gap-1.5">
-          <span className="text-[12px] font-medium text-[#767b7e]">Folder</span>
+          <span className="text-[12px] font-medium text-[#767b7e]">{t('common.folder', 'Folder')}</span>
           <div className="flex flex-wrap gap-2">
             {folders.map(f => (
               <motion.button
@@ -506,7 +507,7 @@ const OnboardingBatchTaskForm = ({ sections, folders, onAddTasks, onCancel }: {
 
       {/* Priority selector */}
       <div className="flex flex-col gap-1.5">
-        <span className="text-[12px] font-medium text-[#767b7e]">Priority</span>
+        <span className="text-[12px] font-medium text-[#767b7e]">{t('common.priority', 'Priority')}</span>
         <div className="flex gap-2">
           {priorityOptions.map(p => (
             <motion.button
@@ -528,7 +529,7 @@ const OnboardingBatchTaskForm = ({ sections, folders, onAddTasks, onCancel }: {
 
       {/* Due date picker */}
       <div className="flex flex-col gap-1.5">
-        <span className="text-[12px] font-medium text-[#767b7e]">Due Date</span>
+        <span className="text-[12px] font-medium text-[#767b7e]">{t('common.dueDate', 'Due Date')}</span>
         <motion.button
           onClick={() => { triggerSelectionHaptic(); }}
           className="relative w-full cursor-pointer"

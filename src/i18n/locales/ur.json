@@ -61,7 +61,10 @@
     "tasks": "کام",
     "tags": "ٹیگز",
     "enterYourName": "اپنا نام درج کریں",
-    "tapEditName": "اپنا نام شامل کرنے کے لیے ترمیم پر ٹیپ کریں"
+    "tapEditName": "اپنا نام شامل کرنے کے لیے ترمیم پر ٹیپ کریں",
+    "section": "سیکشن",
+    "folder": "فولڈر",
+    "dueDate": "مقررہ تاریخ"
   },
   "folders": {
     "manageFolders": "فولڈرز کا انتظام کریں",
@@ -941,7 +944,9 @@
       "modern": "جدید",
       "striped": "دھاری دار"
     },
-    "wordsCount": "{{count}} الفاظ"
+    "wordsCount": "{{count}} الفاظ",
+    "decrease": "کم کریں",
+    "increase": "بڑھائیں"
   },
   "dateTime": {
     "title": "تاریخ اور وقت",
@@ -3549,7 +3554,12 @@
     "pen": "قلم",
     "pencil": "پنسل",
     "textTool": "ٹیکسٹ ٹول",
-    "undo": "واپس کریں"
+    "undo": "واپس کریں",
+    "addLayer": "تہہ شامل کریں",
+    "deleteLayer": "تہہ حذف کریں",
+    "doubleClickRename": "نام تبدیل کرنے کے لیے ڈبل کلک کریں",
+    "moveDown": "نیچے منتقل کریں",
+    "moveUp": "اوپر منتقل کریں"
   },
   "sketchVideo": {
     "invalidYoutubeUrl": "غلط یوٹیوب لنک",

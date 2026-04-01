@@ -61,7 +61,10 @@
     "tasks": "పనులు",
     "tags": "ట్యాగ్‌లు",
     "enterYourName": "మీ పేరు నమోదు చేయండి",
-    "tapEditName": "మీ పేరు జోడించడానికి సవరించు నొక్కండి"
+    "tapEditName": "మీ పేరు జోడించడానికి సవరించు నొక్కండి",
+    "section": "విభాగం",
+    "folder": "ఫోల్డర్",
+    "dueDate": "గడువు తేదీ"
   },
   "folders": {
     "manageFolders": "ఫోల్డర్‌లను నిర్వహించండి",
@@ -1078,7 +1081,9 @@
     "extractUrls": "URLలను సంగ్రహించండి",
     "extractHashtags": "హాష్‌ట్యాగ్‌లను సంగ్రహించండి",
     "replaceContent": "కంటెంట్‌ను మార్చండి",
-    "copyToClipboard": "క్లిప్‌బోర్డ్‌కు కాపీ చేయండి"
+    "copyToClipboard": "క్లిప్‌బోర్డ్‌కు కాపీ చేయండి",
+    "decrease": "తగ్గించండి",
+    "increase": "పెంచండి"
   },
   "notePin": {
     "setPin": "పిన్‌ను సెట్ చేయండి",
@@ -3522,7 +3527,12 @@
       "objects": "వస్తువులు",
       "symbols": "గుర్తులు",
       "animals": "జంతువులు"
-    }
+    },
+    "addLayer": "లేయర్ జోడించండి",
+    "deleteLayer": "లేయర్ తొలగించండి",
+    "doubleClickRename": "పేరు మార్చడానికి డబుల్-క్లిక్ చేయండి",
+    "moveDown": "క్రిందికి తరలించండి",
+    "moveUp": "పైకి తరలించండి"
   },
   "sketchVideo": {
     "invalidYoutubeUrl": "చెల్లని YouTube URL",

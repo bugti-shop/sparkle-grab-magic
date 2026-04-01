@@ -61,7 +61,10 @@
     "tasks": "任务",
     "tags": "标签",
     "enterYourName": "输入你的名字",
-    "tapEditName": "点击编辑添加你的名字"
+    "tapEditName": "点击编辑添加你的名字",
+    "section": "部分",
+    "folder": "文件夹",
+    "dueDate": "截止日期"
   },
   "folders": {
     "manageFolders": "管理文件夹",
@@ -1167,7 +1170,9 @@
     "extractUrls": "提取链接",
     "extractHashtags": "提取标签",
     "replaceContent": "替换内容",
-    "copyToClipboard": "复制到剪贴板"
+    "copyToClipboard": "复制到剪贴板",
+    "decrease": "减小",
+    "increase": "增大"
   },
   "notePin": {
     "setPin": "设置PIN",
@@ -3581,7 +3586,12 @@
     "pen": "笔",
     "pencil": "铅笔",
     "textTool": "文本工具",
-    "undo": "撤销"
+    "undo": "撤销",
+    "addLayer": "添加图层",
+    "deleteLayer": "删除图层",
+    "doubleClickRename": "双击重命名",
+    "moveDown": "下移",
+    "moveUp": "上移"
   },
   "sketchVideo": {
     "invalidYoutubeUrl": "无效的YouTube链接",

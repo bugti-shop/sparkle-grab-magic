@@ -61,7 +61,10 @@
     "selectAllText": "Select all",
     "bulletList": "Bullet list",
     "numberedList": "Numbered list",
-    "tasks": "tasks"
+    "tasks": "tasks",
+    "section": "Section",
+    "folder": "Folder",
+    "dueDate": "Due Date"
   },
   "folders": {
     "manageFolders": "Manage Folders",
@@ -1096,7 +1099,9 @@
     "extractUrls": "Extract URLs",
     "extractHashtags": "Extract Hashtags",
     "replaceContent": "Replace Content",
-    "copyToClipboard": "Copy to Clipboard"
+    "copyToClipboard": "Copy to Clipboard",
+    "decrease": "Decrease",
+    "increase": "Increase"
   },
   "notePin": {
     "setPin": "Set PIN",
@@ -3549,7 +3554,12 @@
       "objects": "Objects",
       "symbols": "Symbols",
       "animals": "Animals"
-    }
+    },
+    "addLayer": "Add layer",
+    "deleteLayer": "Delete layer",
+    "doubleClickRename": "Double-click to rename",
+    "moveDown": "Move down",
+    "moveUp": "Move up"
   },
   "sketchVideo": {
     "invalidYoutubeUrl": "Invalid YouTube URL",

@@ -61,7 +61,10 @@
     "tasks": "कार्य",
     "tags": "टैग",
     "enterYourName": "अपना नाम दर्ज करें",
-    "tapEditName": "अपना नाम जोड़ने के लिए संपादित करें पर टैप करें"
+    "tapEditName": "अपना नाम जोड़ने के लिए संपादित करें पर टैप करें",
+    "section": "अनुभाग",
+    "folder": "फ़ोल्डर",
+    "dueDate": "नियत तारीख"
   },
   "folders": {
     "manageFolders": "फ़ोल्डर प्रबंधित करें",
@@ -1167,7 +1170,9 @@
     "extractUrls": "URL निकालें",
     "extractHashtags": "हैशटैग निकालें",
     "replaceContent": "सामग्री बदलें",
-    "copyToClipboard": "क्लिपबोर्ड पर कॉपी करें"
+    "copyToClipboard": "क्लिपबोर्ड पर कॉपी करें",
+    "decrease": "कम करें",
+    "increase": "बढ़ाएं"
   },
   "notePin": {
     "setPin": "PIN सेट करें",
@@ -3667,7 +3672,12 @@
     "pen": "पेन",
     "pencil": "पेंसिल",
     "textTool": "टेक्स्ट टूल",
-    "undo": "पूर्ववत करें"
+    "undo": "पूर्ववत करें",
+    "addLayer": "परत जोड़ें",
+    "deleteLayer": "परत हटाएं",
+    "doubleClickRename": "नाम बदलने के लिए डबल-क्लिक करें",
+    "moveDown": "नीचे ले जाएं",
+    "moveUp": "ऊपर ले जाएं"
   },
   "sketchVideo": {
     "invalidYoutubeUrl": "अमान्य YouTube लिंक",

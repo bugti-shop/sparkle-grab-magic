@@ -61,7 +61,10 @@
     "tasks": "Aufgaben",
     "tags": "Tags",
     "enterYourName": "Geben Sie Ihren Namen ein",
-    "tapEditName": "Tippen Sie auf Bearbeiten, um Ihren Namen hinzuzufügen"
+    "tapEditName": "Tippen Sie auf Bearbeiten, um Ihren Namen hinzuzufügen",
+    "section": "Abschnitt",
+    "folder": "Ordner",
+    "dueDate": "Fälligkeitsdatum"
   },
   "folders": {
     "manageFolders": "Ordner verwalten",
@@ -1167,7 +1170,9 @@
     "extractUrls": "URLs extrahieren",
     "extractHashtags": "Hashtags extrahieren",
     "replaceContent": "Inhalt ersetzen",
-    "copyToClipboard": "In die Zwischenablage kopieren"
+    "copyToClipboard": "In die Zwischenablage kopieren",
+    "decrease": "Verringern",
+    "increase": "Erhöhen"
   },
   "notePin": {
     "setPin": "PIN festlegen",
@@ -3581,7 +3586,12 @@
     "pen": "Stift",
     "pencil": "Bleistift",
     "textTool": "Textwerkzeug",
-    "undo": "Rückgängig"
+    "undo": "Rückgängig",
+    "addLayer": "Ebene hinzufügen",
+    "deleteLayer": "Ebene löschen",
+    "doubleClickRename": "Doppelklicken zum Umbenennen",
+    "moveDown": "Nach unten verschieben",
+    "moveUp": "Nach oben verschieben"
   },
   "sketchVideo": {
     "invalidYoutubeUrl": "Ungültige YouTube-URL",

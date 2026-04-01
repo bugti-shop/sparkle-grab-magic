@@ -7950,7 +7950,7 @@ export const SketchEditor = memo(({ initialData, onChange, onImageExport, classN
                       forceUpdate(n => n + 1); emitChange();
                       if (onCollabLayerEvent) onCollabLayerEvent('add', { newLayer: { id: newId, name: newName, opacity: 1, visible: true } });
                     }}
-                    title="Add layer"
+                    title={t('sketch.addLayer', 'Add layer')}
                   ><Plus className="h-3 w-3" /></button>
                 )}
                 {layers.length > 1 && (
@@ -7964,7 +7964,7 @@ export const SketchEditor = memo(({ initialData, onChange, onImageExport, classN
                       forceUpdate(n => n + 1); redrawAll(); emitChange();
                       if (onCollabLayerEvent) onCollabLayerEvent('delete', { layerId: activeLayerId });
                     }}
-                    title="Delete layer"
+                    title={t('sketch.deleteLayer', 'Delete layer')}
                   ><Trash className="h-3 w-3" /></button>
                 )}
               </div>
@@ -7992,7 +7992,7 @@ export const SketchEditor = memo(({ initialData, onChange, onImageExport, classN
                         if (onCollabLayerEvent) onCollabLayerEvent('rename', { layerId: layer.id, layerName: newName.trim() });
                       }
                     }}
-                    title="Double-click to rename"
+                    title={t('sketch.doubleClickRename', 'Double-click to rename')}
                   >{layer.name}</span>
                   <div className="flex gap-0.5">
                     {ri < layers.length - 1 && (
@@ -8004,7 +8004,7 @@ export const SketchEditor = memo(({ initialData, onChange, onImageExport, classN
                           forceUpdate(n => n + 1); redrawAll(); emitChange();
                           if (onCollabLayerEvent) onCollabLayerEvent('reorder', { layerOrder: layersRef.current.map(l => l.id) });
                         }
-                      }} title="Move down"><ArrowRight className="h-3 w-3 rotate-90" /></button>
+                      }} title={t('sketch.moveDown', 'Move down')}><ArrowRight className="h-3 w-3 rotate-90" /></button>
                     )}
                     {ri > 0 && (
                       <button className="p-0.5 text-muted-foreground/50 hover:text-foreground" onClick={(e) => {
@@ -8015,7 +8015,7 @@ export const SketchEditor = memo(({ initialData, onChange, onImageExport, classN
                           forceUpdate(n => n + 1); redrawAll(); emitChange();
                           if (onCollabLayerEvent) onCollabLayerEvent('reorder', { layerOrder: layersRef.current.map(l => l.id) });
                         }
-                      }} title="Move up"><ArrowRight className="h-3 w-3 -rotate-90" /></button>
+                      }} title={t('sketch.moveUp', 'Move up')}><ArrowRight className="h-3 w-3 -rotate-90" /></button>
                     )}
                   </div>
                   <span className="text-[10px] text-muted-foreground">{layer.strokes.length + (layer.textAnnotations?.length || 0) + (layer.stickyNotes?.length || 0)}</span>

@@ -61,7 +61,10 @@
     "tasks": "कार्ये",
     "tags": "टॅग",
     "enterYourName": "तुमचे नाव प्रविष्ट करा",
-    "tapEditName": "तुमचे नाव जोडण्यासाठी संपादित करा वर टॅप करा"
+    "tapEditName": "तुमचे नाव जोडण्यासाठी संपादित करा वर टॅप करा",
+    "section": "विभाग",
+    "folder": "फोल्डर",
+    "dueDate": "देय तारीख"
   },
   "folders": {
     "manageFolders": "फोल्डर व्यवस्थापित करा",
@@ -1078,7 +1081,9 @@
     "extractUrls": "URL निष्कर्षण करा",
     "extractHashtags": "हॅशटॅग निष्कर्षण करा",
     "replaceContent": "सामग्री बदला",
-    "copyToClipboard": "क्लिपबोर्डवर कॉपी करा"
+    "copyToClipboard": "क्लिपबोर्डवर कॉपी करा",
+    "decrease": "कमी करा",
+    "increase": "वाढवा"
   },
   "notePin": {
     "setPin": "PIN सेट करा",
@@ -3522,7 +3527,12 @@
       "objects": "वस्तू",
       "symbols": "चिन्हे",
       "animals": "प्राणी"
-    }
+    },
+    "addLayer": "स्तर जोडा",
+    "deleteLayer": "स्तर हटवा",
+    "doubleClickRename": "नाव बदलण्यासाठी डबल-क्लिक करा",
+    "moveDown": "खाली हलवा",
+    "moveUp": "वर हलवा"
   },
   "sketchVideo": {
     "invalidYoutubeUrl": "अवैध YouTube URL",
