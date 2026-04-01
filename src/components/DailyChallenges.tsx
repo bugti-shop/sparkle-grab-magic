@@ -11,6 +11,7 @@ import {
   refreshChallenges,
 } from '@/utils/gamificationStorage';
 import { playChallengeCompleteSound } from '@/utils/gamificationSounds';
+import { triggerTripleHeavyHaptic } from '@/utils/haptics';
 
 export const DailyChallenges = () => {
   const { t } = useTranslation();
