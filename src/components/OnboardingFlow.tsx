@@ -921,6 +921,12 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
       setStep(34); // → unfinished tasks
     } else if (step === 6) {
       setStep(13); // → INFO (sketch moved to after devices)
+    } else if (step === 13) {
+      setStep(14); // → create task
+    } else if (step === 14) {
+      setStep(25); // → feature showcase
+    } else if (step === 25) {
+      setStep(26); // → loading screen
     } else if (step === 24) {
       if (selectedJourneyId) {
         startJourney(selectedJourneyId);
@@ -930,14 +936,6 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
       }
     } else if (step === 29) {
       setStep(32); // → devices
-    } else if (step === 10) {
-      setStep(13);
-    } else if (step === 13) {
-      setStep(14);
-    } else if (step === 14) {
-      setStep(25);
-    } else if (step === 25) {
-      setStep(26);
     }
     } catch (error) {
       console.warn('Onboarding goNext error:', error);
