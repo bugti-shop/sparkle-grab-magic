@@ -122,7 +122,7 @@ const JourneyBadges = () => {
         fileName: `badge-${selectedBadge.id}.png`,
         title: `${selectedBadge.label} Badge`,
         text: `I earned the "${selectedBadge.label}" badge on my ${selectedBadge.journeyName} journey! 🏅`,
-        dialogTitle: 'Share Badge',
+        dialogTitle: t('journey.shareBadge', 'Share Badge'),
       });
       setShareConfetti(true);
       setTimeout(() => setShareConfetti(false), 3500);
