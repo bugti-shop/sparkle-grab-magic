@@ -1,4 +1,5 @@
 import { memo, useState, useRef, useEffect, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { MessageSquare, Send, X, ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import type { CollabChatMessage } from '@/utils/sketchCollaboration';
