@@ -7950,7 +7950,7 @@ export const SketchEditor = memo(({ initialData, onChange, onImageExport, classN
                       forceUpdate(n => n + 1); emitChange();
                       if (onCollabLayerEvent) onCollabLayerEvent('add', { newLayer: { id: newId, name: newName, opacity: 1, visible: true } });
                     }}
-                    title="Add layer"
+                    title={t('sketch.addLayer', 'Add layer')}
                   ><Plus className="h-3 w-3" /></button>
                 )}
                 {layers.length > 1 && (
