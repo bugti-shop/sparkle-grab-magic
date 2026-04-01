@@ -920,7 +920,7 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
       setShowTasksFolderCreation(false);
       setStep(34); // → unfinished tasks
     } else if (step === 6) {
-      setStep(10); // → sketch
+      setStep(13); // → INFO (sketch moved to after devices)
     } else if (step === 24) {
       if (selectedJourneyId) {
         startJourney(selectedJourneyId);
