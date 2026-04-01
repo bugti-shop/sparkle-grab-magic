@@ -546,7 +546,7 @@ const OnboardingBatchTaskForm = ({ sections, folders, onAddTasks, onCancel }: {
                 }}
               >
                 <CalendarDays className="h-4 w-4" />
-                {selectedDate ? format(selectedDate, 'MMM d, yyyy') : 'No due date'}
+                {selectedDate ? format(selectedDate, 'MMM d, yyyy') : t('onboarding.noDueDate', 'No due date')}
                 {selectedDate && (
                   <span
                     className="ml-auto text-[11px] underline"
@@ -575,7 +575,7 @@ const OnboardingBatchTaskForm = ({ sections, folders, onAddTasks, onCancel }: {
       {/* Task count + Add button */}
       <div className="flex flex-col gap-2 pb-2" style={{ paddingBottom: 'max(env(safe-area-inset-bottom, 0px), 8px)' }}>
         {taskCount > 0 && (
-          <p className="text-[13px] text-[#767b7e] font-['Nunito_Sans'] text-center">{taskCount} task{taskCount > 1 ? 's' : ''} ready to add</p>
+          <p className="text-[13px] text-[#767b7e] font-['Nunito_Sans'] text-center">{t('onboarding.tasksReadyToAdd', '{{count}} task(s) ready to add', { count: taskCount })}</p>
         )}
         <motion.button
           onClick={handleAdd}
@@ -588,7 +588,7 @@ const OnboardingBatchTaskForm = ({ sections, folders, onAddTasks, onCancel }: {
           }}
           whileTap={taskCount > 0 ? { scale: 0.97 } : undefined}
         >
-          {taskCount > 0 ? `Add ${taskCount} Task${taskCount > 1 ? 's' : ''}` : 'Add Tasks'}
+          {taskCount > 0 ? t('onboarding.addCountTasks', 'Add {{count}} Task(s)', { count: taskCount }) : t('onboarding.addTasks', 'Add Tasks')}
         </motion.button>
       </div>
     </div>
@@ -1410,7 +1410,7 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
         {!isTaskInputSheetOpen && (
           <div className="px-4 pb-2 pt-1 flex flex-col gap-1.5 relative z-50 bg-white" style={{ paddingBottom: 'env(safe-area-inset-bottom, 8px)' }}>
             <motion.button onClick={goNext} className="w-full py-3 rounded-2xl text-[17px] font-bold" style={{ backgroundColor: '#333333', color: '#ffffff', boxShadow: '0 8px 0 0 #000000' }} whileTap={{ scale: 0.97 }}>
-              {createdTasks.length > 0 ? `${t('onboarding.continue')} · ${createdTasks.length} task${createdTasks.length > 1 ? 's' : ''}` : t('onboarding.continue')}
+              {createdTasks.length > 0 ? `${t('onboarding.continue')} · ${createdTasks.length} ${t('common.tasks', 'tasks')}` : t('onboarding.continue')}
             </motion.button>
           </div>
         )}
@@ -1641,7 +1641,7 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
                     <p className="text-[12px] text-[#767b7e] mt-0.5 leading-relaxed">{journey.description}</p>
                     <div className="flex items-center gap-3 mt-2">
                       <span className="text-[10px] text-[#767b7e] bg-[#f3f4f6] px-2 py-0.5 rounded-full">
-                        {journey.totalTasks} tasks
+                        {journey.totalTasks} {t('common.tasks', 'tasks')}
                       </span>
                       <span className="text-[10px] text-[#767b7e] bg-[#f3f4f6] px-2 py-0.5 rounded-full">
                         {t('onboarding.milestonesCount', { count: journey.milestones.length })}

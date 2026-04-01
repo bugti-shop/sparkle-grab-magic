@@ -168,7 +168,12 @@
     "atRiskWarning": "உங்கள் ஸ்ட்ரீக்கை தொடர இன்று ஒரு பணியை முடிக்கவும்!",
     "earnFreeze": "ஃப்ரீஸ் பெற இன்று இன்னும் {{remaining}} பணிகளை முடிக்கவும்",
     "freezeEarnedToday": "இன்று ஃப்ரீஸ் பெறப்பட்டது! 🎉",
-    "milestoneReached": "மைல்கல் அடையப்பட்டது!"
+    "milestoneReached": "மைல்கல் அடையப்பட்டது!",
+    "newPersonalBest": "புதிய தனிப்பட்ட சிறந்த சாதனை! 🎉",
+    "motivationalHint": "உங்கள் தொடரை உருவாக்க ஒவ்வொரு நாளும் ஒரு பணியை முடிக்கவும். நீங்கள் எவ்வளவு நீண்ட நேரம் தொடர்கிறீர்களோ, அவ்வளவு அதிக வெகுமதிகளை திறக்கிறீர்கள்!",
+    "letsGo": "தொடங்குவோம்!",
+    "reachStreak": "ஸ்ட்ரீக் சொசைட்டியில் சேர 3 நாள் தொடர் அடையுங்கள்",
+    "societyDays": "ஸ்ட்ரீக் சொசைட்டி · {{count}} நாட்கள்"
   },
   "profile": {
     "title": "சுயவிவரம்",
@@ -1921,7 +1926,11 @@
     "deviceIPad": "iPad",
     "deviceMac": "Mac",
     "deviceAndroid": "Android",
-    "deviceWindows": "Windows"
+    "deviceWindows": "Windows",
+    "noDueDate": "கெடு தேதி இல்லை",
+    "tasksReadyToAdd": "{{count}} பணிகள் சேர்க்க தயார்",
+    "addCountTasks": "{{count}} பணிகளைச் சேர்",
+    "addTasks": "பணிகளைச் சேர்"
   },
   "toast": {
     "folderCreated": "கோப்புறை உருவாக்கப்பட்டது",

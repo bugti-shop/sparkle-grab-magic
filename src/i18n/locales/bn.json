@@ -268,7 +268,12 @@
     "freezeAvailable": "ফ্রিজ উপলব্ধ",
     "freezeUsed": "ফ্রিজ ব্যবহৃত",
     "streakProtected": "স্ট্রিক সুরক্ষিত",
-    "weeklyGoal": "সাপ্তাহিক লক্ষ্য"
+    "weeklyGoal": "সাপ্তাহিক লক্ষ্য",
+    "newPersonalBest": "নতুন ব্যক্তিগত সেরা! 🎉",
+    "motivationalHint": "আপনার ধারা তৈরি করতে প্রতিদিন একটি কাজ সম্পন্ন করুন। যতদিন চালিয়ে যাবেন, তত বেশি পুরস্কার আনলক হবে!",
+    "letsGo": "চলো শুরু করি!",
+    "reachStreak": "স্ট্রিক সোসাইটিতে যোগ দিতে ৩ দিনের ধারা অর্জন করুন",
+    "societyDays": "স্ট্রিক সোসাইটি · {{count}} দিন"
   },
   "profile": {
     "title": "প্রোফাইল",
@@ -2394,7 +2399,11 @@
     "deviceIPad": "iPad",
     "deviceMac": "Mac",
     "deviceAndroid": "Android",
-    "deviceWindows": "Windows"
+    "deviceWindows": "Windows",
+    "noDueDate": "কোনো নির্ধারিত তারিখ নেই",
+    "tasksReadyToAdd": "{{count}}টি কাজ যোগ করতে প্রস্তুত",
+    "addCountTasks": "{{count}}টি কাজ যোগ করুন",
+    "addTasks": "কাজ যোগ করুন"
   },
   "toast": {
     "folderCreated": "ফোল্ডার তৈরি হয়েছে",

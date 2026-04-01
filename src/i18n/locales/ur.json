@@ -1736,7 +1736,11 @@
     "certificateSubtitle": "اپنی مستقل مزاجی دنیا کے ساتھ شیئر کریں!",
     "chooseAdventure": "اپنا ایڈونچر چنیں",
     "chooseAdventureSubtitle": "دنیا بھر میں سفر کرنے کے لیے ٹاسک مکمل کریں! شروع کرنے کے لیے ایک سفر چنیں۔",
-    "noFoldersEmpty": "ابھی تک کوئی فولڈر نہیں — اوپر ایک بنائیں!"
+    "noFoldersEmpty": "ابھی تک کوئی فولڈر نہیں — اوپر ایک بنائیں!",
+    "noDueDate": "کوئی مقررہ تاریخ نہیں",
+    "tasksReadyToAdd": "{{count}} کام شامل کرنے کے لیے تیار",
+    "addCountTasks": "{{count}} کام شامل کریں",
+    "addTasks": "کام شامل کریں"
   },
   "productivity": {
     "dailyPlanner": {
@@ -3757,7 +3761,12 @@
     "streakProtected": "اسٹریک محفوظ",
     "tasksCompleted": "مکمل ٹاسک",
     "todayProgress": "آج کی پیش رفت",
-    "weeklyActivity": "ہفتہ وار سرگرمی"
+    "weeklyActivity": "ہفتہ وار سرگرمی",
+    "newPersonalBest": "نیا ذاتی ریکارڈ! 🎉",
+    "motivationalHint": "اپنی سلسلہ بنانے کے لیے ہر روز ایک کام مکمل کریں۔ جتنا لمبا چلیں گے، اتنے زیادہ انعامات ملیں گے!",
+    "letsGo": "!چلیں",
+    "reachStreak": "سٹریک سوسائٹی میں شامل ہونے کے لیے 3 دن کی سلسلہ حاصل کریں",
+    "societyDays": "سٹریک سوسائٹی · {{count}} دن"
   },
   "team": {
     "activityFeed": "سرگرمی",

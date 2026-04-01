@@ -168,7 +168,12 @@
     "atRiskWarning": "Selesaikan satu tugas hari ini untuk mempertahankan rentetan Anda!",
     "earnFreeze": "Selesaikan {{remaining}} tugas lagi hari ini untuk mendapatkan pembeku",
     "freezeEarnedToday": "Pembeku didapatkan hari ini! 🎉",
-    "milestoneReached": "Pencapaian tercapai!"
+    "milestoneReached": "Pencapaian tercapai!",
+    "newPersonalBest": "Rekor Pribadi Baru! 🎉",
+    "motivationalHint": "Selesaikan tugas setiap hari untuk membangun streak Anda. Semakin lama, semakin banyak hadiah yang Anda buka!",
+    "letsGo": "Ayo Mulai!",
+    "reachStreak": "Capai streak 3 hari untuk bergabung dengan Streak Society",
+    "societyDays": "Streak Society · {{count}} hari"
   },
   "profile": {
     "title": "Profil",
@@ -1938,7 +1943,11 @@
     "deviceIPad": "iPad",
     "deviceMac": "Mac",
     "deviceAndroid": "Android",
-    "deviceWindows": "Windows"
+    "deviceWindows": "Windows",
+    "noDueDate": "Tanpa tenggat waktu",
+    "tasksReadyToAdd": "{{count}} tugas siap ditambahkan",
+    "addCountTasks": "Tambah {{count}} tugas",
+    "addTasks": "Tambah tugas"
   },
   "toast": {
     "folderCreated": "Folder dibuat",

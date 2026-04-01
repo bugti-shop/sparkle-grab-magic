@@ -180,7 +180,12 @@
     "streakProtected": "連続記録が保護されました",
     "tasksCompleted": "完了したタスク",
     "todayProgress": "今日の進捗",
-    "weeklyActivity": "週間アクティビティ"
+    "weeklyActivity": "週間アクティビティ",
+    "newPersonalBest": "新しい自己ベスト！🎉",
+    "motivationalHint": "毎日タスクを完了して連続記録を作りましょう。長く続けるほど、より多くの報酬がアンロックされます！",
+    "letsGo": "さあ始めよう！",
+    "reachStreak": "ストリークソサエティに参加するには3日間の連続を達成してください",
+    "societyDays": "ストリークソサエティ · {{count}}日"
   },
   "profile": {
     "title": "プロフィール",
@@ -1865,7 +1870,11 @@
     "deviceIPad": "iPad",
     "deviceMac": "Mac",
     "deviceAndroid": "Android",
-    "deviceWindows": "Windows"
+    "deviceWindows": "Windows",
+    "noDueDate": "期限なし",
+    "tasksReadyToAdd": "{{count}}件のタスクが追加可能",
+    "addCountTasks": "{{count}}件のタスクを追加",
+    "addTasks": "タスクを追加"
   },
   "toast": {
     "folderCreated": "フォルダが作成されました",

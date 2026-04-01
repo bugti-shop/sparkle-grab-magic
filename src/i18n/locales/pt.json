@@ -180,7 +180,12 @@
     "streakProtected": "Sequência Protegida",
     "tasksCompleted": "Tarefas Concluídas",
     "todayProgress": "Progresso de Hoje",
-    "weeklyActivity": "Atividade Semanal"
+    "weeklyActivity": "Atividade Semanal",
+    "newPersonalBest": "Novo recorde pessoal! 🎉",
+    "motivationalHint": "Complete uma tarefa todos os dias para construir sua sequência. Quanto mais tempo, mais recompensas você desbloqueia!",
+    "letsGo": "Vamos lá!",
+    "reachStreak": "Alcance uma sequência de 3 dias para entrar na Sociedade de Sequências",
+    "societyDays": "Sociedade de Sequências · {{count}} dias"
   },
   "profile": {
     "title": "Perfil",
@@ -2028,7 +2033,11 @@
     "deviceIPad": "iPad",
     "deviceMac": "Mac",
     "deviceAndroid": "Android",
-    "deviceWindows": "Windows"
+    "deviceWindows": "Windows",
+    "noDueDate": "Sem data de vencimento",
+    "tasksReadyToAdd": "{{count}} tarefa(s) pronta(s) para adicionar",
+    "addCountTasks": "Adicionar {{count}} tarefa(s)",
+    "addTasks": "Adicionar tarefas"
   },
   "toast": {
     "folderCreated": "Pasta criada",

@@ -180,7 +180,12 @@
     "streakProtected": "Serie Protetta",
     "tasksCompleted": "Attività Completate",
     "todayProgress": "Progressi di Oggi",
-    "weeklyActivity": "Attività Settimanale"
+    "weeklyActivity": "Attività Settimanale",
+    "newPersonalBest": "Nuovo record personale! 🎉",
+    "motivationalHint": "Completa un'attività ogni giorno per costruire la tua serie. Più a lungo vai avanti, più ricompense sblocchi!",
+    "letsGo": "Andiamo!",
+    "reachStreak": "Raggiungi una serie di 3 giorni per unirti alla Società delle Serie",
+    "societyDays": "Società delle Serie · {{count}} giorni"
   },
   "profile": {
     "title": "Profilo",
@@ -2028,7 +2033,11 @@
     "deviceIPad": "iPad",
     "deviceMac": "Mac",
     "deviceAndroid": "Android",
-    "deviceWindows": "Windows"
+    "deviceWindows": "Windows",
+    "noDueDate": "Nessuna scadenza",
+    "tasksReadyToAdd": "{{count}} attività pronte da aggiungere",
+    "addCountTasks": "Aggiungi {{count}} attività",
+    "addTasks": "Aggiungi attività"
   },
   "toast": {
     "folderCreated": "Cartella creata",

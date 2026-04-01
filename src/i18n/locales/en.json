@@ -168,7 +168,12 @@
     "atRiskWarning": "Complete one task today to keep your streak going!",
     "earnFreeze": "Complete {{remaining}} more tasks today to earn a freeze",
     "freezeEarnedToday": "Freeze earned today! 🎉",
-    "milestoneReached": "Milestone reached!"
+    "milestoneReached": "Milestone reached!",
+    "newPersonalBest": "New Personal Best! 🎉",
+    "motivationalHint": "Complete a task every day to build your streak. The longer you go, the more rewards you unlock!",
+    "letsGo": "Let's Go",
+    "reachStreak": "Reach a 3-day streak to join the Streak Society",
+    "societyDays": "Streak Society · {{count}} days"
   },
   "profile": {
     "title": "Profile",
@@ -1947,7 +1952,11 @@
     "certificateSubtitle": "Share your consistency with the world!",
     "chooseAdventure": "Choose Your Adventure",
     "chooseAdventureSubtitle": "Complete tasks to travel the world! Pick a journey to start.",
-    "noFoldersEmpty": "No folders yet — create one above!"
+    "noFoldersEmpty": "No folders yet — create one above!",
+    "noDueDate": "No due date",
+    "tasksReadyToAdd": "{{count}} task(s) ready to add",
+    "addCountTasks": "Add {{count}} Task(s)",
+    "addTasks": "Add Tasks"
   },
   "toast": {
     "folderCreated": "Folder created",

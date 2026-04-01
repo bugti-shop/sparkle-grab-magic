@@ -168,7 +168,12 @@
     "atRiskWarning": "तुमची स्ट्रेक चालू ठेवण्यासाठी आज एक कार्य पूर्ण करा!",
     "earnFreeze": "फ्रीझ मिळवण्यासाठी आजही अजून {{remaining}} कार्ये पूर्ण करा",
     "freezeEarnedToday": "आज फ्रीझ मिळाले! 🎉",
-    "milestoneReached": "टप्पा गाठला!"
+    "milestoneReached": "टप्पा गाठला!",
+    "newPersonalBest": "नवीन वैयक्तिक सर्वोत्तम! 🎉",
+    "motivationalHint": "तुमची मालिका तयार करण्यासाठी दररोज एक कार्य पूर्ण करा. जितके जास्त चालू ठेवाल, तितकी अधिक बक्षिसे अनलॉक होतील!",
+    "letsGo": "चला सुरू करूया!",
+    "reachStreak": "स्ट्रीक सोसायटीत सामील होण्यासाठी ३ दिवसांची मालिका गाठा",
+    "societyDays": "स्ट्रीक सोसायटी · {{count}} दिवस"
   },
   "profile": {
     "title": "प्रोफाइल",
@@ -1920,7 +1925,11 @@
     "deviceIPad": "iPad",
     "deviceMac": "Mac",
     "deviceAndroid": "Android",
-    "deviceWindows": "Windows"
+    "deviceWindows": "Windows",
+    "noDueDate": "कोणतीही देय तारीख नाही",
+    "tasksReadyToAdd": "{{count}} कार्ये जोडण्यास तयार",
+    "addCountTasks": "{{count}} कार्ये जोडा",
+    "addTasks": "कार्ये जोडा"
   },
   "toast": {
     "folderCreated": "फोल्डर तयार झाले",

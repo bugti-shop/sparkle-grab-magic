@@ -170,7 +170,12 @@
     "atRiskWarning": "Выполните одну задачу сегодня, чтобы сохранить серию!",
     "earnFreeze": "Выполните ещё {{remaining}} задач сегодня, чтобы заработать заморозку",
     "freezeEarnedToday": "Заморозка заработана сегодня! 🎉",
-    "milestoneReached": "Веха достигнута!"
+    "milestoneReached": "Веха достигнута!",
+    "newPersonalBest": "Новый личный рекорд! 🎉",
+    "motivationalHint": "Выполняйте задание каждый день, чтобы поддерживать серию. Чем дольше вы продержитесь, тем больше наград откроете!",
+    "letsGo": "Поехали!",
+    "reachStreak": "Достигните серии в 3 дня, чтобы присоединиться к Обществу Серий",
+    "societyDays": "Общество Серий · {{count}} дней"
   },
   "profile": {
     "title": "Профиль",
@@ -1987,7 +1992,11 @@
     "deviceIPad": "iPad",
     "deviceMac": "Mac",
     "deviceAndroid": "Android",
-    "deviceWindows": "Windows"
+    "deviceWindows": "Windows",
+    "noDueDate": "Без срока выполнения",
+    "tasksReadyToAdd": "{{count}} задач(и) готовы к добавлению",
+    "addCountTasks": "Добавить {{count}} задач(и)",
+    "addTasks": "Добавить задачи"
   },
   "toast": {
     "folderCreated": "Папка создана",

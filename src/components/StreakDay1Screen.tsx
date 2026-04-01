@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils';
 import { useStreak } from '@/hooks/useStreak';
 import { StreakSocietyBadge } from '@/components/StreakSocietyBadge';
 import { triggerTripleHeavyHaptic } from '@/utils/haptics';
+import { useTranslation } from 'react-i18next';
 
 const ONBOARDING_COLOR = '#3c78f0';
 
@@ -14,6 +15,7 @@ interface StreakDay1ScreenProps {
 }
 
 export const StreakDay1Screen = ({ userName, onContinue }: StreakDay1ScreenProps) => {
+  const { t } = useTranslation();
   const { data, completedToday, weekData, recordTaskCompletion } = useStreak({ autoCheck: true });
   const [streakStarted, setStreakStarted] = useState(false);
 
@@ -113,7 +115,7 @@ export const StreakDay1Screen = ({ userName, onContinue }: StreakDay1ScreenProps
                 "text-lg font-medium",
                 completedToday ? "text-streak" : "text-muted-foreground"
               )}>
-                day streak
+                {t('streak.dayStreak', 'day streak')}
               </p>
               <div className="flex justify-center mt-2">
                 <StreakSocietyBadge streak={currentStreak} compact />
@@ -124,7 +126,7 @@ export const StreakDay1Screen = ({ userName, onContinue }: StreakDay1ScreenProps
                   animate={{ opacity: 1, scale: 1 }}
                   className="text-xs font-bold text-warning mt-1"
                 >
-                  New Personal Best! 🎉
+                  {t('streak.newPersonalBest', 'New Personal Best! 🎉')}
                 </motion.p>
               )}
             </motion.div>
@@ -176,7 +178,7 @@ export const StreakDay1Screen = ({ userName, onContinue }: StreakDay1ScreenProps
         >
           <Sparkles className="h-5 w-5 text-streak flex-shrink-0 mt-0.5" />
           <p className="text-sm text-foreground leading-relaxed">
-            Complete a task every day to build your streak. The longer you go, the more rewards you unlock!
+            {t('streak.motivationalHint', 'Complete a task every day to build your streak. The longer you go, the more rewards you unlock!')}
           </p>
         </motion.div>
       </div>
@@ -191,7 +193,7 @@ export const StreakDay1Screen = ({ userName, onContinue }: StreakDay1ScreenProps
           className="w-full py-4 rounded-2xl text-[17px] font-bold text-white cursor-pointer active:brightness-95 flex items-center justify-center gap-2"
           style={{ background: ONBOARDING_COLOR, boxShadow: `0 8px 0 0 #2a5cc0` }}
         >
-          Let's Go
+          {t('streak.letsGo', "Let's Go")}
           <ArrowRight className="h-5 w-5" />
         </motion.button>
       </div>

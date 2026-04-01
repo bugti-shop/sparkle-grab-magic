@@ -1,6 +1,7 @@
 import { useStreak } from '@/hooks/useStreak';
 import { cn } from '@/lib/utils';
 import { m as motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 export interface StreakTier {
   id: string;
@@ -36,6 +37,7 @@ interface StreakSocietyBadgeProps {
 }
 
 export const StreakSocietyBadge = ({ streak, compact = false }: StreakSocietyBadgeProps) => {
+  const { t } = useTranslation();
   const { data } = useStreak();
   const currentStreak = streak ?? (data?.currentStreak || 0);
   const tier = getStreakTier(currentStreak);
@@ -47,7 +49,7 @@ export const StreakSocietyBadge = ({ streak, compact = false }: StreakSocietyBad
           <span className="text-2xl opacity-40">🔒</span>
         </div>
         <p className="text-xs text-muted-foreground text-center">
-          Reach a 3-day streak to join the Streak Society
+          {t('streak.reachStreak', 'Reach a 3-day streak to join the Streak Society')}
         </p>
       </div>
     );
@@ -106,7 +108,7 @@ export const StreakSocietyBadge = ({ streak, compact = false }: StreakSocietyBad
           {tier.name}
         </p>
         <p className="text-[10px] text-muted-foreground font-medium">
-          Streak Society · {currentStreak} days
+          {t('streak.societyDays', 'Streak Society · {{count}} days', { count: currentStreak })}
         </p>
       </div>
 
