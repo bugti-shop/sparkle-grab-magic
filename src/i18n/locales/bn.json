@@ -90,7 +90,10 @@
     "week": "সপ্তাহ",
     "month": "মাস",
     "year": "বছর",
-    "less": "কম"
+    "less": "কম",
+    "tags": "ট্যাগ",
+    "enterYourName": "আপনার নাম লিখুন",
+    "tapEditName": "আপনার নাম যোগ করতে সম্পাদনা ট্যাপ করুন"
   },
   "folders": {
     "manageFolders": "Управление папками",
@@ -799,7 +802,8 @@
     "exportedToMarkdown": "নোট Markdown-এ রপ্তানি করা হয়েছে",
     "restoreFromArchive": "আর্কাইভ থেকে পুনরুদ্ধার করুন",
     "archiveNote": "নোট আর্কাইভ করুন",
-    "sketchDrawing": "স্কেচ আঁকা"
+    "sketchDrawing": "স্কেচ আঁকা",
+    "restoreFromTrash": "ট্র্যাশ থেকে পুনরুদ্ধার করুন"
   },
   "tasks": {
     "title": "কাজ",
@@ -4357,7 +4361,10 @@
       "sp_5_desc": "লাল গ্রহটি দৃষ্টিসীমায়!",
       "sp_6": "মঙ্গল গ্রহে অবতরণ!",
       "sp_6_desc": "এক বিশাল ঝাঁপ! আপনি মঙ্গলে আছেন!"
-    }
+    },
+    "badges": "যাত্রা ব্যাজ",
+    "shareBadge": "ব্যাজ শেয়ার করুন",
+    "shareError": "ব্যাজ শেয়ার ব্যর্থ"
   },
   "certificates": {
     "title": "সার্টিফিকেট",
@@ -5157,7 +5164,9 @@
     "beginnerDesc": "১০টি কাজ সম্পন্ন ও ৫টি নোট তৈরি করুন",
     "intermediateDesc": "৫০টি কাজ সম্পন্ন ও ৭ দিনের ধারা",
     "advancedDesc": "২০০টি কাজ সম্পন্ন ও ৩০ দিনের ধারা",
-    "masterDesc": "৫০০টি কাজ সম্পন্ন ও ১০০ দিনের ধারা"
+    "masterDesc": "৫০০টি কাজ সম্পন্ন ও ১০০ দিনের ধারা",
+    "yourNameOnCert": "সার্টিফিকেটে আপনার নাম",
+    "nameAppearOnCert": "এই নাম শেয়ার করা সার্টিফিকেট ইমেজে প্রদর্শিত হবে"
   },
   "security": {
     "passwordRecovery": "পাসওয়ার্ড পুনরুদ্ধার",
@@ -5242,7 +5251,8 @@
     "enterCode": "৬ সংখ্যার কোড লিখুন",
     "addedLayer": "{{name}} একটি স্তর যোগ করেছে",
     "deletedLayer": "{{name}} একটি স্তর মুছেছে",
-    "collaborate": "সহযোগিতা"
+    "collaborate": "সহযোগিতা",
+    "typeMessage": "একটি বার্তা টাইপ করুন..."
   },
   "audio": {
     "effectsApplied": "অডিও এফেক্ট প্রয়োগ হয়েছে!",

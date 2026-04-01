@@ -58,7 +58,10 @@
     "selectAllText": "Seleziona tutto",
     "bulletList": "Elenco puntato",
     "numberedList": "Elenco numerato",
-    "tasks": "attività"
+    "tasks": "attività",
+    "tags": "Tag",
+    "enterYourName": "Inserisci il tuo nome",
+    "tapEditName": "Tocca Modifica per aggiungere il tuo nome"
   },
   "folders": {
     "manageFolders": "Gestisci cartelle",
@@ -677,7 +680,8 @@
     "exportedToMarkdown": "Nota esportata in Markdown",
     "restoreFromArchive": "Ripristina dall'archivio",
     "archiveNote": "Archivia nota",
-    "sketchDrawing": "Disegno a schizzo"
+    "sketchDrawing": "Disegno a schizzo",
+    "restoreFromTrash": "Ripristina dal cestino"
   },
   "tasks": {
     "title": "Attività",
@@ -3163,7 +3167,10 @@
       "sp_6": "Atterraggio su Marte!",
       "sp_6_desc": "Un grande balzo! Sei su Marte!"
     },
-    "tasksCount": "{{count}} attività"
+    "tasksCount": "{{count}} attività",
+    "badges": "Badge di viaggio",
+    "shareBadge": "Condividi badge",
+    "shareError": "Impossibile condividere il badge"
   },
   "certificates": {
     "title": "Certificati",
@@ -3814,7 +3821,9 @@
     "beginnerDesc": "Completa 10 attività e crea 5 note",
     "intermediateDesc": "Completa 50 attività e serie di 7 giorni",
     "advancedDesc": "Completa 200 attività e serie di 30 giorni",
-    "masterDesc": "Completa 500 attività e serie di 100 giorni"
+    "masterDesc": "Completa 500 attività e serie di 100 giorni",
+    "yourNameOnCert": "Il tuo nome sul certificato",
+    "nameAppearOnCert": "Questo nome apparirà nell'immagine del certificato condiviso"
   },
   "security": {
     "passwordRecovery": "Recupero Password",
@@ -3899,7 +3908,8 @@
     "enterCode": "Inserisci codice a 6 cifre",
     "addedLayer": "{{name}} ha aggiunto un livello",
     "deletedLayer": "{{name}} ha eliminato un livello",
-    "collaborate": "Collabora"
+    "collaborate": "Collabora",
+    "typeMessage": "Scrivi un messaggio..."
   },
   "audio": {
     "effectsApplied": "Effetti audio applicati!",

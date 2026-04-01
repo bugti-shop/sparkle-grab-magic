@@ -58,7 +58,10 @@
     "selectAllText": "모두 선택",
     "bulletList": "글머리 기호 목록",
     "numberedList": "번호 매기기 목록",
-    "tasks": "작업"
+    "tasks": "작업",
+    "tags": "태그",
+    "enterYourName": "이름을 입력하세요",
+    "tapEditName": "이름을 추가하려면 편집을 탭하세요"
   },
   "folders": {
     "manageFolders": "폴더 관리",
@@ -677,7 +680,8 @@
     "exportedToMarkdown": "노트가 Markdown으로 내보내졌습니다",
     "restoreFromArchive": "보관함에서 복원",
     "archiveNote": "노트 보관",
-    "sketchDrawing": "스케치 그림"
+    "sketchDrawing": "스케치 그림",
+    "restoreFromTrash": "휴지통에서 복원"
   },
   "tasks": {
     "title": "작업",
@@ -3163,7 +3167,10 @@
       "sp_6": "화성 착륙!",
       "sp_6_desc": "거대한 도약! 화성에 있습니다!"
     },
-    "tasksCount": "{{count}}개 작업"
+    "tasksCount": "{{count}}개 작업",
+    "badges": "여정 배지",
+    "shareBadge": "배지 공유",
+    "shareError": "배지 공유 실패"
   },
   "certificates": {
     "title": "인증서",
@@ -3814,7 +3821,9 @@
     "beginnerDesc": "10개의 작업 완료 & 5개의 메모 작성",
     "intermediateDesc": "50개의 작업 완료 & 7일 연속",
     "advancedDesc": "200개의 작업 완료 & 30일 연속",
-    "masterDesc": "500개의 작업 완료 & 100일 연속"
+    "masterDesc": "500개의 작업 완료 & 100일 연속",
+    "yourNameOnCert": "인증서에 표시될 이름",
+    "nameAppearOnCert": "이 이름이 공유된 인증서 이미지에 표시됩니다"
   },
   "security": {
     "passwordRecovery": "비밀번호 복구",
@@ -3899,7 +3908,8 @@
     "enterCode": "6자리 코드 입력",
     "addedLayer": "{{name}}이 레이어를 추가했습니다",
     "deletedLayer": "{{name}}이 레이어를 삭제했습니다",
-    "collaborate": "협업"
+    "collaborate": "협업",
+    "typeMessage": "메시지를 입력하세요..."
   },
   "audio": {
     "effectsApplied": "오디오 효과 적용됨!",

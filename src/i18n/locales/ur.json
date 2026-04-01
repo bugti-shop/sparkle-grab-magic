@@ -58,7 +58,10 @@
     "selectAllText": "سب منتخب کریں",
     "bulletList": "بلٹ لسٹ",
     "numberedList": "نمبر لسٹ",
-    "tasks": "کام"
+    "tasks": "کام",
+    "tags": "ٹیگز",
+    "enterYourName": "اپنا نام درج کریں",
+    "tapEditName": "اپنا نام شامل کرنے کے لیے ترمیم پر ٹیپ کریں"
   },
   "folders": {
     "manageFolders": "فولڈرز کا انتظام کریں",
@@ -645,7 +648,8 @@
     "unknown": "نامعلوم",
     "untitled": "بے عنوان",
     "upcomingReminders": "آنے والے یاد دہانیاں",
-    "sketchDrawing": "خاکہ"
+    "sketchDrawing": "خاکہ",
+    "restoreFromTrash": "ردی سے بحال کریں"
   },
   "tasks": {
     "title": "کام",
@@ -3131,7 +3135,10 @@
       "sp_6": "مریخ پر اترنا!",
       "sp_6_desc": "ایک عظیم چھلانگ! آپ مریخ پر ہیں!"
     },
-    "tasksCount": "{{count}} ٹاسک"
+    "tasksCount": "{{count}} ٹاسک",
+    "badges": "سفر کے بیجز",
+    "shareBadge": "بیج شیئر کریں",
+    "shareError": "بیج شیئر کرنے میں ناکامی"
   },
   "certificates": {
     "title": "سرٹیفکیٹس",
@@ -3814,7 +3821,9 @@
     "beginnerDesc": "10 کام مکمل کریں اور 5 نوٹس بنائیں",
     "intermediateDesc": "50 کام مکمل کریں اور 7 دن کی سلسلہ",
     "advancedDesc": "200 کام مکمل کریں اور 30 دن کی سلسلہ",
-    "masterDesc": "500 کام مکمل کریں اور 100 دن کی سلسلہ"
+    "masterDesc": "500 کام مکمل کریں اور 100 دن کی سلسلہ",
+    "yourNameOnCert": "سرٹیفکیٹ پر آپ کا نام",
+    "nameAppearOnCert": "یہ نام شیئر کی گئی سرٹیفکیٹ تصویر پر ظاہر ہوگا"
   },
   "security": {
     "passwordRecovery": "پاس ورڈ کی بازیابی",
@@ -3899,7 +3908,8 @@
     "enterCode": "6 ہندسوں کا کوڈ درج کریں",
     "addedLayer": "{{name}} نے ایک تہہ شامل کی",
     "deletedLayer": "{{name}} نے ایک تہہ حذف کی",
-    "collaborate": "تعاون"
+    "collaborate": "تعاون",
+    "typeMessage": "ایک پیغام لکھیں..."
   },
   "audio": {
     "effectsApplied": "آڈیو اثرات لاگو ہو گئے!",

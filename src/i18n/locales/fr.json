@@ -58,7 +58,10 @@
     "selectAllText": "Tout sélectionner",
     "bulletList": "Liste à puces",
     "numberedList": "Liste numérotée",
-    "tasks": "tâches"
+    "tasks": "tâches",
+    "tags": "Étiquettes",
+    "enterYourName": "Entrez votre nom",
+    "tapEditName": "Appuyez sur Modifier pour ajouter votre nom"
   },
   "folders": {
     "manageFolders": "Gérer les dossiers",
@@ -677,7 +680,8 @@
     "exportedToMarkdown": "Note exportée vers Markdown",
     "restoreFromArchive": "Restaurer depuis l'Archive",
     "archiveNote": "Archiver la Note",
-    "sketchDrawing": "Dessin de croquis"
+    "sketchDrawing": "Dessin de croquis",
+    "restoreFromTrash": "Restaurer de la corbeille"
   },
   "tasks": {
     "title": "Tâches",
@@ -3163,7 +3167,10 @@
       "sp_6": "Atterrissage sur Mars !",
       "sp_6_desc": "Un grand bond ! Vous êtes sur Mars !"
     },
-    "tasksCount": "{{count}} tâches"
+    "tasksCount": "{{count}} tâches",
+    "badges": "Badges de voyage",
+    "shareBadge": "Partager le badge",
+    "shareError": "Échec du partage du badge"
   },
   "certificates": {
     "title": "Certificats",
@@ -3814,7 +3821,9 @@
     "beginnerDesc": "Complétez 10 tâches et créez 5 notes",
     "intermediateDesc": "Complétez 50 tâches et série de 7 jours",
     "advancedDesc": "Complétez 200 tâches et série de 30 jours",
-    "masterDesc": "Complétez 500 tâches et série de 100 jours"
+    "masterDesc": "Complétez 500 tâches et série de 100 jours",
+    "yourNameOnCert": "Votre nom sur le certificat",
+    "nameAppearOnCert": "Ce nom apparaîtra sur l'image du certificat partagé"
   },
   "security": {
     "passwordRecovery": "Récupération du Mot de Passe",
@@ -3899,7 +3908,8 @@
     "enterCode": "Entrez le code à 6 chiffres",
     "addedLayer": "{{name}} a ajouté un calque",
     "deletedLayer": "{{name}} a supprimé un calque",
-    "collaborate": "Collaborer"
+    "collaborate": "Collaborer",
+    "typeMessage": "Tapez un message..."
   },
   "audio": {
     "effectsApplied": "Effets audio appliqués !",

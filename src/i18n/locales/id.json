@@ -58,7 +58,10 @@
     "selectAllText": "Pilih semua",
     "bulletList": "Daftar poin",
     "numberedList": "Daftar bernomor",
-    "tasks": "tugas"
+    "tasks": "tugas",
+    "tags": "Tag",
+    "enterYourName": "Masukkan nama Anda",
+    "tapEditName": "Ketuk Edit untuk menambahkan nama Anda"
   },
   "folders": {
     "manageFolders": "Kelola Folder",
@@ -621,7 +624,8 @@
     "exportedToMarkdown": "Catatan diekspor ke Markdown",
     "restoreFromArchive": "Pulihkan dari Arsip",
     "archiveNote": "Arsipkan Catatan",
-    "sketchDrawing": "Gambar sketsa"
+    "sketchDrawing": "Gambar sketsa",
+    "restoreFromTrash": "Pulihkan dari Sampah"
   },
   "tasks": {
     "title": "Tugas",
@@ -3137,7 +3141,10 @@
       "sp_5_desc": "Planet Merah sudah terlihat!",
       "sp_6": "Pendaratan di Mars!",
       "sp_6_desc": "Satu lompatan besar! Anda berada di Mars!"
-    }
+    },
+    "badges": "Lencana Perjalanan",
+    "shareBadge": "Bagikan Lencana",
+    "shareError": "Gagal membagikan lencana"
   },
   "certificates": {
     "title": "Sertifikat",
@@ -3644,7 +3651,9 @@
     "beginnerDesc": "Selesaikan 10 tugas & buat 5 catatan",
     "intermediateDesc": "Selesaikan 50 tugas & streak 7 hari",
     "advancedDesc": "Selesaikan 200 tugas & streak 30 hari",
-    "masterDesc": "Selesaikan 500 tugas & streak 100 hari"
+    "masterDesc": "Selesaikan 500 tugas & streak 100 hari",
+    "yourNameOnCert": "Nama Anda di Sertifikat",
+    "nameAppearOnCert": "Nama ini akan muncul di gambar sertifikat yang dibagikan"
   },
   "security": {
     "passwordRecovery": "Pemulihan Kata Sandi",
@@ -3729,7 +3738,8 @@
     "enterCode": "Masukkan kode 6 digit",
     "addedLayer": "{{name}} menambahkan layer",
     "deletedLayer": "{{name}} menghapus layer",
-    "collaborate": "Kolaborasi"
+    "collaborate": "Kolaborasi",
+    "typeMessage": "Ketik pesan..."
   },
   "audio": {
     "effectsApplied": "Efek audio diterapkan!",

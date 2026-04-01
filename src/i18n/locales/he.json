@@ -58,7 +58,10 @@
     "selectAllText": "בחר הכל",
     "bulletList": "רשימת תבליטים",
     "numberedList": "רשימה ממוספרת",
-    "tasks": "משימות"
+    "tasks": "משימות",
+    "tags": "תגיות",
+    "enterYourName": "הזן את שמך",
+    "tapEditName": "הקש על עריכה כדי להוסיף את שמך"
   },
   "folders": {
     "manageFolders": "נהל תיקיות",
@@ -659,7 +662,8 @@
     "exportedToMarkdown": "הפתק ייוצא ל-Markdown",
     "restoreFromArchive": "שחזר מהארכיון",
     "archiveNote": "העבר לארכיון",
-    "sketchDrawing": "ציור סקיצה"
+    "sketchDrawing": "ציור סקיצה",
+    "restoreFromTrash": "שחזר מהאשפה"
   },
   "tasks": {
     "title": "משימות",
@@ -3145,7 +3149,10 @@
       "sp_6": "נחיתה על מאדים!",
       "sp_6_desc": "צעד ענק! אתה על מאדים!"
     },
-    "tasksCount": "{{count}} משימות"
+    "tasksCount": "{{count}} משימות",
+    "badges": "תגי מסע",
+    "shareBadge": "שתף תג",
+    "shareError": "שיתוף התג נכשל"
   },
   "certificates": {
     "title": "תעודות",
@@ -3796,7 +3803,9 @@
     "beginnerDesc": "השלם 10 משימות וצור 5 הערות",
     "intermediateDesc": "השלם 50 משימות ורצף 7 ימים",
     "advancedDesc": "השלם 200 משימות ורצף 30 ימים",
-    "masterDesc": "השלם 500 משימות ורצף 100 ימים"
+    "masterDesc": "השלם 500 משימות ורצף 100 ימים",
+    "yourNameOnCert": "שמך על התעודה",
+    "nameAppearOnCert": "שם זה יופיע על תמונת התעודה המשותפת"
   },
   "security": {
     "passwordRecovery": "שחזור סיסמה",
@@ -3881,7 +3890,8 @@
     "enterCode": "הזן קוד בן 6 ספרות",
     "addedLayer": "{{name}} הוסיף שכבה",
     "deletedLayer": "{{name}} מחק שכבה",
-    "collaborate": "שיתוף פעולה"
+    "collaborate": "שיתוף פעולה",
+    "typeMessage": "הקלד הודעה..."
   },
   "audio": {
     "effectsApplied": "אפקטי שמע הוחלו!",

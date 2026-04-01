@@ -58,7 +58,10 @@
     "selectAllText": "すべて選択",
     "bulletList": "箇条書き",
     "numberedList": "番号付きリスト",
-    "tasks": "タスク"
+    "tasks": "タスク",
+    "tags": "タグ",
+    "enterYourName": "名前を入力",
+    "tapEditName": "編集をタップして名前を追加"
   },
   "folders": {
     "manageFolders": "フォルダを管理",
@@ -677,7 +680,8 @@
     "exportedToMarkdown": "ノートをMarkdownにエクスポートしました",
     "restoreFromArchive": "アーカイブから復元",
     "archiveNote": "ノートをアーカイブ",
-    "sketchDrawing": "スケッチ"
+    "sketchDrawing": "スケッチ",
+    "restoreFromTrash": "ゴミ箱から復元"
   },
   "tasks": {
     "title": "タスク",
@@ -3163,7 +3167,10 @@
       "sp_6": "火星着陸！",
       "sp_6_desc": "大きな一歩！火星にいます！"
     },
-    "tasksCount": "{{count}} タスク"
+    "tasksCount": "{{count}} タスク",
+    "badges": "ジャーニーバッジ",
+    "shareBadge": "バッジを共有",
+    "shareError": "バッジの共有に失敗"
   },
   "certificates": {
     "title": "証明書",
@@ -3814,7 +3821,9 @@
     "beginnerDesc": "10個のタスクを完了し5つのノートを作成",
     "intermediateDesc": "50個のタスクを完了し7日間のストリーク",
     "advancedDesc": "200個のタスクを完了し30日間のストリーク",
-    "masterDesc": "500個のタスクを完了し100日間のストリーク"
+    "masterDesc": "500個のタスクを完了し100日間のストリーク",
+    "yourNameOnCert": "証明書のお名前",
+    "nameAppearOnCert": "この名前は共有された証明書画像に表示されます"
   },
   "security": {
     "passwordRecovery": "パスワード回復",
@@ -3899,7 +3908,8 @@
     "enterCode": "6桁のコードを入力",
     "addedLayer": "{{name}}がレイヤーを追加しました",
     "deletedLayer": "{{name}}がレイヤーを削除しました",
-    "collaborate": "コラボレーション"
+    "collaborate": "コラボレーション",
+    "typeMessage": "メッセージを入力..."
   },
   "audio": {
     "effectsApplied": "オーディオエフェクト適用済み！",

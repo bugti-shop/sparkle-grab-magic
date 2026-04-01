@@ -58,7 +58,10 @@
     "selectAllText": "全选",
     "bulletList": "项目符号列表",
     "numberedList": "编号列表",
-    "tasks": "任务"
+    "tasks": "任务",
+    "tags": "标签",
+    "enterYourName": "输入你的名字",
+    "tapEditName": "点击编辑添加你的名字"
   },
   "folders": {
     "manageFolders": "管理文件夹",
@@ -677,7 +680,8 @@
     "exportedToMarkdown": "笔记已导出到 Markdown",
     "restoreFromArchive": "从归档恢复",
     "archiveNote": "归档笔记",
-    "sketchDrawing": "素描"
+    "sketchDrawing": "素描",
+    "restoreFromTrash": "从回收站恢复"
   },
   "tasks": {
     "title": "任务",
@@ -3163,7 +3167,10 @@
       "sp_6": "火星着陆！",
       "sp_6_desc": "一个巨大的飞跃！你在火星上！"
     },
-    "tasksCount": "{{count}} 个任务"
+    "tasksCount": "{{count}} 个任务",
+    "badges": "旅程徽章",
+    "shareBadge": "分享徽章",
+    "shareError": "分享徽章失败"
   },
   "certificates": {
     "title": "证书",
@@ -3814,7 +3821,9 @@
     "beginnerDesc": "完成10个任务并创建5个笔记",
     "intermediateDesc": "完成50个任务并保持7天连续",
     "advancedDesc": "完成200个任务并保持30天连续",
-    "masterDesc": "完成500个任务并保持100天连续"
+    "masterDesc": "完成500个任务并保持100天连续",
+    "yourNameOnCert": "证书上的姓名",
+    "nameAppearOnCert": "此名称将显示在共享的证书图片上"
   },
   "security": {
     "passwordRecovery": "密码恢复",
@@ -3899,7 +3908,8 @@
     "enterCode": "输入6位代码",
     "addedLayer": "{{name}}添加了一个图层",
     "deletedLayer": "{{name}}删除了一个图层",
-    "collaborate": "协作"
+    "collaborate": "协作",
+    "typeMessage": "输入消息..."
   },
   "audio": {
     "effectsApplied": "音频效果已应用！",
