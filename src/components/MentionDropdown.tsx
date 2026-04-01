@@ -121,7 +121,7 @@ export const MentionDropdown = ({
       } else if (e.key === 'ArrowUp') {
         e.preventDefault();
         setSelectedIndex((prev) => Math.max(prev - 1, 0));
-      } else if (e.key === 'Enter' && filteredItems.length > 0) {
+      } else if ((e.key === 'Enter' || e.key === 'Tab') && filteredItems.length > 0) {
         e.preventDefault();
         e.stopPropagation();
         onSelect(filteredItems[selectedIndex]);
