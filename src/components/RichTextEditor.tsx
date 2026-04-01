@@ -538,6 +538,28 @@ export const RichTextEditor = ({
     // Add event delegation with capture phase to intercept before contenteditable
     editorRef.current.addEventListener('click', handleEditorClick, true);
     editorRef.current.addEventListener('touchend', handleEditorTouch, true);
+
+    // Mention hover preview handler
+    const handleMentionHover = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      const block = target.closest('.mention-block') as HTMLElement;
+      if (block) {
+        const mType = block.getAttribute('data-mention-type') as 'note' | 'task';
+        const mId = block.getAttribute('data-mention-id');
+        if (mType && mId) {
+          const rect = block.getBoundingClientRect();
+          mentionPreview.showPreview(mType, mId, rect.left, rect.bottom);
+        }
+      }
+    };
+    const handleMentionLeave = (e: MouseEvent) => {
+      const target = e.relatedTarget as HTMLElement | null;
+      if (!target?.closest?.('.mention-block')) {
+        mentionPreview.hidePreview();
+      }
+    };
+    editorRef.current.addEventListener('mouseover', handleMentionHover);
+    editorRef.current.addEventListener('mouseout', handleMentionLeave);
     
     // Use MutationObserver to detect new audio elements
     const observer = new MutationObserver(setupAudioListeners);
@@ -554,6 +576,8 @@ export const RichTextEditor = ({
           editorEl.removeEventListener('click', audioClickHandlerRef.current, true);
         }
         editorEl.removeEventListener('touchend', handleEditorTouch, true);
+        editorEl.removeEventListener('mouseover', handleMentionHover);
+        editorEl.removeEventListener('mouseout', handleMentionLeave);
       }
     };
   }, []);
