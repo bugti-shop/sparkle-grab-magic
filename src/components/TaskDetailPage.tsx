@@ -144,6 +144,7 @@ export const TaskDetailPage = ({
   useEffect(() => {
     if (task) {
       setTitle(task.text);
+      setDescText(task.description || '');
       // Resolve audio URL
       if (task.voiceRecording?.audioUrl) {
         resolveTaskMediaUrl(task.voiceRecording.audioUrl).then(url => {
