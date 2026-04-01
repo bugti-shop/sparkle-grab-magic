@@ -1545,7 +1545,7 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
         </div>
         <div className="flex-1 overflow-y-auto px-6 pt-2 pb-4">
           <motion.h1 initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="text-[32px] font-black text-[#1a1a1a] font-['Nunito'] tracking-tight text-center leading-tight mb-8">
-            Ready to start your{'\n'}journey?
+            {t('onboarding.readyTitle')}
           </motion.h1>
           <div className="flex flex-col items-start mx-auto w-80 relative">
             <div className="absolute left-[10.5px] top-[20px] bottom-[20px] w-[11px] rounded-b-full" style={{ background: 'hsl(var(--primary) / 0.2)' }} />
