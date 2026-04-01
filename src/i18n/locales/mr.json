@@ -575,7 +575,8 @@
     "exportedToWord": "टीप Word मध्ये निर्यात केली",
     "exportedToMarkdown": "टीप Markdown मध्ये निर्यात केली",
     "restoreFromArchive": "आर्काइव्हमधून पुनर्संचयित करा",
-    "archiveNote": "टीप आर्काइव्ह करा"
+    "archiveNote": "टीप आर्काइव्ह करा",
+    "sketchDrawing": "स्केच रेखाचित्र"
   },
   "tasks": {
     "title": "कार्ये",
@@ -871,7 +872,13 @@
     "pleaseGrantAccess": "समक्रमण सक्षम करण्यासाठी कृपया तुमच्या Google Calendar ला प्रवेश मंजूर करा",
     "calendarAccessDenied": "कॅलेंडर प्रवेश नाकारला",
     "calendarAccessRequired": "समक्रमण सक्षम करण्यासाठी कॅलेंडर प्रवेश आवश्यक आहे. कृपया पुन्हा प्रयत्न करा.",
-    "dontAskAgain": "मला पुन्हा विचारू नका"
+    "dontAskAgain": "मला पुन्हा विचारू नका",
+    "syncing": "सिंक होत आहे...",
+    "synced": "सिंक झाले",
+    "syncError": "सिंक त्रुटी",
+    "offline": "ऑफलाइन",
+    "tapToReconnect": "सिंक पुन्हा जोडण्यासाठी टॅप करा",
+    "reconnectSyncPrompt": "प्रोफाइलवर जा → Google ने साइन इन करा"
   },
   "accessibility": {
     "goToPreviousPage": "मागील पृष्ठावर जा",
@@ -3593,5 +3600,116 @@
     "intermediateDesc": "५० कार्ये पूर्ण करा व ७ दिवसांची मालिका",
     "advancedDesc": "२०० कार्ये पूर्ण करा व ३० दिवसांची मालिका",
     "masterDesc": "५०० कार्ये पूर्ण करा व १०० दिवसांची मालिका"
+  },
+  "security": {
+    "passwordRecovery": "पासवर्ड पुनर्प्राप्ती",
+    "verifyIdentity": "आपली ओळख सत्यापित करा",
+    "resetPassword": "पासवर्ड रीसेट करा",
+    "securityQuestion": "सुरक्षा प्रश्न",
+    "yourAnswer": "तुमचे उत्तर",
+    "newPassword": "नवीन पासवर्ड",
+    "confirmPassword": "पासवर्ड पुष्टी करा",
+    "enterYourAnswer": "तुमचे उत्तर प्रविष्ट करा",
+    "enterNewPassword": "नवीन पासवर्ड प्रविष्ट करा",
+    "confirmNewPassword": "नवीन पासवर्ड पुष्टी करा",
+    "verifyAnswer": "उत्तर सत्यापित करा",
+    "answerVerified": "उत्तर सत्यापित!",
+    "incorrectAnswer": "चुकीचे उत्तर. पुन्हा प्रयत्न करा.",
+    "enterNewPasswordPrompt": "कृपया नवीन पासवर्ड प्रविष्ट करा",
+    "passwordMinLength": "पासवर्ड किमान 4 अक्षरांचा असावा",
+    "passwordsDoNotMatch": "पासवर्ड जुळत नाहीत",
+    "passwordResetSuccess": "पासवर्ड यशस्वीरित्या रीसेट!",
+    "noSecurityQuestion": "पासवर्ड पुनर्प्राप्तीसाठी सुरक्षा प्रश्न सेट केलेला नाही.",
+    "setupSecurityInSettings": "अनलॉक केल्यानंतर लपवलेल्या नोट्स सेटिंग्जमध्ये सुरक्षा प्रश्न सेट करू शकता.",
+    "enterNewPasswordBelow": "खाली तुमचा नवीन पासवर्ड प्रविष्ट करा.",
+    "updateSecurityQuestion": "सुरक्षा प्रश्न अपडेट करा",
+    "setupSecurityQuestion": "सुरक्षा प्रश्न सेट करा",
+    "setupSecurityDesc": "पासवर्ड विसरल्यास पुनर्प्राप्तीसाठी सुरक्षा प्रश्न सेट करा.",
+    "selectAQuestion": "एक प्रश्न निवडा",
+    "enterAnAnswer": "तुमचे उत्तर प्रविष्ट करा",
+    "answerMinLength": "उत्तर किमान 2 अक्षरांचे असावे",
+    "securityQuestionSaved": "सुरक्षा प्रश्न जतन झाला!",
+    "answerVerifyDesc": "तुमची ओळख सत्यापित करण्यासाठी हे उत्तर वापरले जाईल.",
+    "updateSecurityBtn": "सुरक्षा प्रश्न अपडेट करा",
+    "saveSecurityBtn": "सुरक्षा प्रश्न जतन करा",
+    "selectSecurityQuestion": "कृपया सुरक्षा प्रश्न निवडा",
+    "pleaseEnterAnswer": "कृपया उत्तर प्रविष्ट करा",
+    "motherMaidenName": "तुमच्या आईचे लग्नापूर्वीचे आडनाव काय आहे?",
+    "firstPetName": "तुमच्या पहिल्या पाळीव प्राण्याचे नाव काय होते?",
+    "birthCity": "तुम्ही कोणत्या शहरात जन्मलात?",
+    "favoriteMovie": "तुमचा आवडता चित्रपट कोणता?",
+    "elementarySchool": "तुमच्या प्राथमिक शाळेचे नाव काय होते?",
+    "favoriteFood": "तुमचे आवडते अन्न काय आहे?"
+  },
+  "habits": {
+    "newHabit": "नवीन सवय",
+    "name": "नाव",
+    "icon": "चिन्ह",
+    "color": "रंग",
+    "frequency": "वारंवारता",
+    "whichDays": "कोणते दिवस?",
+    "targetStreak": "लक्ष्य मालिका (दिवस)",
+    "dailyReminder": "दैनिक स्मरण",
+    "remindMeAt": "मला आठवण करा",
+    "habitNamePlaceholder": "उदा. 8 ग्लास पाणी प्या"
+  },
+  "tags": {
+    "createNewTag": "नवीन टॅग तयार करा",
+    "tagName": "टॅगचे नाव...",
+    "tagAlreadyExists": "टॅग आधीपासून आहे!",
+    "tagCreated": "टॅग \"{{name}}\" तयार झाला!",
+    "tagDeleted": "टॅग हटवला",
+    "tagUpdated": "टॅग अपडेट झाला"
+  },
+  "smartViews": {
+    "enterName": "कृपया नाव प्रविष्ट करा",
+    "viewSaved": "दृश्य \"{{name}}\" जतन झाले!",
+    "viewDeleted": "स्मार्ट दृश्य हटवले",
+    "namePlaceholder": "उदा., या आठवड्यात तातडीचे"
+  },
+  "collab": {
+    "roomCreated": "खोली तयार!",
+    "failedToCreateRoom": "खोली तयार करण्यात अयशस्वी",
+    "enterValidCode": "वैध कोड प्रविष्ट करा",
+    "joinedAs": "{{role}} म्हणून सामील!",
+    "roomNotFound": "खोली सापडली नाही",
+    "codeCopied": "कोड कॉपी झाला!",
+    "failedToCopy": "कॉपी अयशस्वी",
+    "create": "तयार करा",
+    "join": "सामील व्हा",
+    "joinAs": "म्हणून सामील:",
+    "editor": "संपादक",
+    "viewer": "प्रेक्षक",
+    "roomCode": "खोलीचा कोड:",
+    "enterCode": "6 अंकी कोड प्रविष्ट करा",
+    "addedLayer": "{{name}} ने एक स्तर जोडला",
+    "deletedLayer": "{{name}} ने एक स्तर हटवला",
+    "collaborate": "सहकार्य"
+  },
+  "audio": {
+    "effectsApplied": "ऑडिओ प्रभाव लागू!",
+    "effectsFailed": "प्रभाव लागू करण्यात अयशस्वी, मूळ जतन केले जात आहे"
+  },
+  "image": {
+    "selectImageFile": "कृपया एक प्रतिमा फाइल निवडा",
+    "imageTooLarge": "प्रतिमा 10MB पेक्षा कमी असावी"
+  },
+  "location": {
+    "enterLocation": "स्थान प्रविष्ट करा...",
+    "addMapboxToken": "स्थान शोध सक्षम करण्यासाठी सेटिंग्जमध्ये Mapbox टोकन जोडा",
+    "searchLocation": "स्मरणासाठी स्थान शोधा...",
+    "arrive": "पोहोचणे",
+    "leave": "निघणे",
+    "radiusUnit": "{{radius}}मी त्रिज्या"
+  },
+  "theme": {
+    "editTheme": "थीम संपादित करा",
+    "themeName": "थीमचे नाव",
+    "themeNamePlaceholder": "माझी सानुकूल थीम",
+    "livePreview": "थेट पूर्वावलोकन"
+  },
+  "versionHistory": {
+    "noHistory": "अजून आवृत्ती इतिहास नाही",
+    "changesSavedAuto": "बदल स्वयंचलितपणे जतन होतील"
   }
 }

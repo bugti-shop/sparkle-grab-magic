@@ -624,7 +624,8 @@
     "exportedToWord": "Заметка экспортирована в Word",
     "exportedToMarkdown": "Заметка экспортирована в Markdown",
     "restoreFromArchive": "Восстановить из архива",
-    "archiveNote": "Архивировать заметку"
+    "archiveNote": "Архивировать заметку",
+    "sketchDrawing": "Набросок"
   },
   "tasks": {
     "title": "Задачи",
@@ -920,7 +921,13 @@
     "pleaseGrantAccess": "Предоставьте доступ к Google Календарю для синхронизации",
     "calendarAccessDenied": "Доступ к календарю отклонён",
     "calendarAccessRequired": "Для синхронизации требуется доступ к календарю. Попробуйте ещё раз.",
-    "dontAskAgain": "Больше не спрашивать"
+    "dontAskAgain": "Больше не спрашивать",
+    "syncing": "Синхронизация...",
+    "synced": "Синхронизировано",
+    "syncError": "Ошибка синхронизации",
+    "offline": "Офлайн",
+    "tapToReconnect": "Нажмите для повторного подключения",
+    "reconnectSyncPrompt": "Перейдите в Профиль → Войдите через Google для переподключения"
   },
   "accessibility": {
     "goToPreviousPage": "На предыдущую страницу",
@@ -3642,5 +3649,116 @@
     "intermediateDesc": "Выполните 50 задач и 7-дневную серию",
     "advancedDesc": "Выполните 200 задач и 30-дневную серию",
     "masterDesc": "Выполните 500 задач и 100-дневную серию"
+  },
+  "security": {
+    "passwordRecovery": "Восстановление Пароля",
+    "verifyIdentity": "Подтвердите Личность",
+    "resetPassword": "Сбросить Пароль",
+    "securityQuestion": "Секретный Вопрос",
+    "yourAnswer": "Ваш Ответ",
+    "newPassword": "Новый Пароль",
+    "confirmPassword": "Подтвердите Пароль",
+    "enterYourAnswer": "Введите ваш ответ",
+    "enterNewPassword": "Введите новый пароль",
+    "confirmNewPassword": "Подтвердите новый пароль",
+    "verifyAnswer": "Проверить Ответ",
+    "answerVerified": "Ответ подтверждён!",
+    "incorrectAnswer": "Неверный ответ. Попробуйте снова.",
+    "enterNewPasswordPrompt": "Пожалуйста, введите новый пароль",
+    "passwordMinLength": "Пароль должен содержать минимум 4 символа",
+    "passwordsDoNotMatch": "Пароли не совпадают",
+    "passwordResetSuccess": "Пароль успешно сброшен!",
+    "noSecurityQuestion": "Секретный вопрос для восстановления пароля не настроен.",
+    "setupSecurityInSettings": "Вы можете настроить секретный вопрос в настройках скрытых заметок после разблокировки.",
+    "enterNewPasswordBelow": "Введите новый пароль ниже.",
+    "updateSecurityQuestion": "Обновить Секретный Вопрос",
+    "setupSecurityQuestion": "Настроить Секретный Вопрос",
+    "setupSecurityDesc": "Настройте секретный вопрос для восстановления пароля.",
+    "selectAQuestion": "Выберите вопрос",
+    "enterAnAnswer": "Введите ваш ответ",
+    "answerMinLength": "Ответ должен содержать минимум 2 символа",
+    "securityQuestionSaved": "Секретный вопрос сохранён!",
+    "answerVerifyDesc": "Этот ответ будет использован для подтверждения вашей личности.",
+    "updateSecurityBtn": "Обновить Секретный Вопрос",
+    "saveSecurityBtn": "Сохранить Секретный Вопрос",
+    "selectSecurityQuestion": "Выберите секретный вопрос",
+    "pleaseEnterAnswer": "Пожалуйста, введите ответ",
+    "motherMaidenName": "Какова девичья фамилия вашей матери?",
+    "firstPetName": "Как звали вашего первого питомца?",
+    "birthCity": "В каком городе вы родились?",
+    "favoriteMovie": "Какой ваш любимый фильм?",
+    "elementarySchool": "Как называлась ваша начальная школа?",
+    "favoriteFood": "Какая ваша любимая еда?"
+  },
+  "habits": {
+    "newHabit": "Новая Привычка",
+    "name": "Название",
+    "icon": "Иконка",
+    "color": "Цвет",
+    "frequency": "Частота",
+    "whichDays": "Какие дни?",
+    "targetStreak": "Целевая серия (дни)",
+    "dailyReminder": "Ежедневное Напоминание",
+    "remindMeAt": "Напомнить мне в",
+    "habitNamePlaceholder": "напр. Выпить 8 стаканов воды"
+  },
+  "tags": {
+    "createNewTag": "Создать Новый Тег",
+    "tagName": "Имя тега...",
+    "tagAlreadyExists": "Тег уже существует!",
+    "tagCreated": "Тег \"{{name}}\" создан!",
+    "tagDeleted": "Тег удалён",
+    "tagUpdated": "Тег обновлён"
+  },
+  "smartViews": {
+    "enterName": "Введите название",
+    "viewSaved": "Вид \"{{name}}\" сохранён!",
+    "viewDeleted": "Умный вид удалён",
+    "namePlaceholder": "напр., Срочное На Этой Неделе"
+  },
+  "collab": {
+    "roomCreated": "Комната создана!",
+    "failedToCreateRoom": "Не удалось создать комнату",
+    "enterValidCode": "Введите действительный код",
+    "joinedAs": "Присоединились как {{role}}!",
+    "roomNotFound": "Комната не найдена",
+    "codeCopied": "Код скопирован!",
+    "failedToCopy": "Не удалось скопировать",
+    "create": "Создать",
+    "join": "Присоединиться",
+    "joinAs": "Присоединиться как:",
+    "editor": "Редактор",
+    "viewer": "Зритель",
+    "roomCode": "Код Комнаты:",
+    "enterCode": "Введите 6-значный код",
+    "addedLayer": "{{name}} добавил слой",
+    "deletedLayer": "{{name}} удалил слой",
+    "collaborate": "Совместная работа"
+  },
+  "audio": {
+    "effectsApplied": "Звуковые эффекты применены!",
+    "effectsFailed": "Не удалось применить эффекты, сохраняется оригинал"
+  },
+  "image": {
+    "selectImageFile": "Выберите файл изображения",
+    "imageTooLarge": "Изображение должно быть менее 10МБ"
+  },
+  "location": {
+    "enterLocation": "Введите место...",
+    "addMapboxToken": "Добавьте токен Mapbox в настройках для поиска мест",
+    "searchLocation": "Поиск места для напоминания...",
+    "arrive": "Прибытие",
+    "leave": "Отъезд",
+    "radiusUnit": "радиус {{radius}}м"
+  },
+  "theme": {
+    "editTheme": "Редактировать Тему",
+    "themeName": "Название Темы",
+    "themeNamePlaceholder": "Моя Тема",
+    "livePreview": "Предварительный Просмотр"
+  },
+  "versionHistory": {
+    "noHistory": "Истории версий пока нет",
+    "changesSavedAuto": "Изменения будут сохранены автоматически"
   }
 }

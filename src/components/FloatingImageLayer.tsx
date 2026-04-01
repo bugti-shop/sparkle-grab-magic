@@ -1,4 +1,5 @@
 import { useState, useRef, useCallback, useEffect, forwardRef, useImperativeHandle } from 'react';
+import { useTranslation } from 'react-i18next';
 import { FloatingImage } from '@/types/note';
 import { Trash2, Move } from 'lucide-react';
 import { toast } from 'sonner';
@@ -20,6 +21,7 @@ const MIN_SIZE = 40;
 type HandleType = 'nw' | 'ne' | 'sw' | 'se';
 
 export const FloatingImageLayer = forwardRef<FloatingImageLayerHandle, FloatingImageLayerProps>(({ images, onChange, containerRef }, ref) => {
+  const { t } = useTranslation();
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [dragging, setDragging] = useState<{ id: string; startX: number; startY: number; origX: number; origY: number } | null>(null);
   const [resizing, setResizing] = useState<{ id: string; handle: HandleType; startX: number; startY: number; origX: number; origY: number; origW: number; origH: number } | null>(null);
@@ -38,11 +40,11 @@ export const FloatingImageLayer = forwardRef<FloatingImageLayerHandle, FloatingI
     const file = e.target.files?.[0];
     if (!file) return;
     if (!file.type.startsWith('image/')) {
-      toast.error('Please select an image file');
+      toast.error(t('image.selectImageFile'));
       return;
     }
     if (file.size > 10 * 1024 * 1024) {
-      toast.error('Image must be less than 10MB');
+      toast.error(t('image.imageTooLarge'));
       return;
     }
 

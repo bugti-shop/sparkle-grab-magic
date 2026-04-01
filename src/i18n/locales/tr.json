@@ -631,7 +631,8 @@
     "exportedToWord": "Not Word'e aktarıldı",
     "exportedToMarkdown": "Not Markdown'a aktarıldı",
     "restoreFromArchive": "Arşivden Geri Yükle",
-    "archiveNote": "Notu Arşivle"
+    "archiveNote": "Notu Arşivle",
+    "sketchDrawing": "Eskiz çizimi"
   },
   "tasks": {
     "title": "Görevler",
@@ -2518,7 +2519,9 @@
     "syncError": "Senkronizasyon Hatası",
     "syncInProgress": "Senkronize ediliyor...",
     "synced": "Senkronize Edildi",
-    "syncing": "Senkronize Ediliyor"
+    "syncing": "Senkronize Ediliyor",
+    "tapToReconnect": "Senkronizasyonu yeniden bağlamak için dokunun",
+    "reconnectSyncPrompt": "Profil → Google ile giriş yaparak yeniden bağlanın"
   },
   "accessibility": {
     "goToPreviousPage": "Önceki sayfaya git",
@@ -3767,5 +3770,116 @@
     "intermediateDesc": "50 görevi tamamlayın ve 7 gün seri",
     "advancedDesc": "200 görevi tamamlayın ve 30 gün seri",
     "masterDesc": "500 görevi tamamlayın ve 100 gün seri"
+  },
+  "security": {
+    "passwordRecovery": "Şifre Kurtarma",
+    "verifyIdentity": "Kimliğinizi Doğrulayın",
+    "resetPassword": "Şifre Sıfırla",
+    "securityQuestion": "Güvenlik Sorusu",
+    "yourAnswer": "Cevabınız",
+    "newPassword": "Yeni Şifre",
+    "confirmPassword": "Şifreyi Onayla",
+    "enterYourAnswer": "Cevabınızı girin",
+    "enterNewPassword": "Yeni şifre girin",
+    "confirmNewPassword": "Yeni şifreyi onaylayın",
+    "verifyAnswer": "Cevabı Doğrula",
+    "answerVerified": "Cevap doğrulandı!",
+    "incorrectAnswer": "Yanlış cevap. Tekrar deneyin.",
+    "enterNewPasswordPrompt": "Lütfen yeni bir şifre girin",
+    "passwordMinLength": "Şifre en az 4 karakter olmalıdır",
+    "passwordsDoNotMatch": "Şifreler eşleşmiyor",
+    "passwordResetSuccess": "Şifre başarıyla sıfırlandı!",
+    "noSecurityQuestion": "Şifre kurtarma için güvenlik sorusu ayarlanmamış.",
+    "setupSecurityInSettings": "Kilidi açtıktan sonra Gizli Notlar ayarlarında güvenlik sorusu ayarlayabilirsiniz.",
+    "enterNewPasswordBelow": "Aşağıya yeni şifrenizi girin.",
+    "updateSecurityQuestion": "Güvenlik Sorusunu Güncelle",
+    "setupSecurityQuestion": "Güvenlik Sorusu Ayarla",
+    "setupSecurityDesc": "Şifrenizi unutmanız durumunda kurtarma için güvenlik sorusu ayarlayın.",
+    "selectAQuestion": "Bir soru seçin",
+    "enterAnAnswer": "Cevabınızı girin",
+    "answerMinLength": "Cevap en az 2 karakter olmalıdır",
+    "securityQuestionSaved": "Güvenlik sorusu kaydedildi!",
+    "answerVerifyDesc": "Bu cevap şifrenizi unutmanız durumunda kimliğinizi doğrulamak için kullanılacaktır.",
+    "updateSecurityBtn": "Güvenlik Sorusunu Güncelle",
+    "saveSecurityBtn": "Güvenlik Sorusunu Kaydet",
+    "selectSecurityQuestion": "Lütfen bir güvenlik sorusu seçin",
+    "pleaseEnterAnswer": "Lütfen bir cevap girin",
+    "motherMaidenName": "Annenizin kızlık soyadı nedir?",
+    "firstPetName": "İlk evcil hayvanınızın adı neydi?",
+    "birthCity": "Hangi şehirde doğdunuz?",
+    "favoriteMovie": "En sevdiğiniz film hangisi?",
+    "elementarySchool": "İlkokulunuzun adı neydi?",
+    "favoriteFood": "En sevdiğiniz yemek nedir?"
+  },
+  "habits": {
+    "newHabit": "Yeni Alışkanlık",
+    "name": "Ad",
+    "icon": "Simge",
+    "color": "Renk",
+    "frequency": "Sıklık",
+    "whichDays": "Hangi günler?",
+    "targetStreak": "Hedef seri (gün)",
+    "dailyReminder": "Günlük Hatırlatıcı",
+    "remindMeAt": "Bana hatırlat",
+    "habitNamePlaceholder": "örn. 8 bardak su iç"
+  },
+  "tags": {
+    "createNewTag": "Yeni Etiket Oluştur",
+    "tagName": "Etiket adı...",
+    "tagAlreadyExists": "Etiket zaten mevcut!",
+    "tagCreated": "\"{{name}}\" etiketi oluşturuldu!",
+    "tagDeleted": "Etiket silindi",
+    "tagUpdated": "Etiket güncellendi"
+  },
+  "smartViews": {
+    "enterName": "Lütfen bir ad girin",
+    "viewSaved": "\"{{name}}\" görünümü kaydedildi!",
+    "viewDeleted": "Akıllı görünüm silindi",
+    "namePlaceholder": "örn., Bu Hafta Acil"
+  },
+  "collab": {
+    "roomCreated": "Oda oluşturuldu!",
+    "failedToCreateRoom": "Oda oluşturulamadı",
+    "enterValidCode": "Geçerli bir kod girin",
+    "joinedAs": "{{role}} olarak katıldınız!",
+    "roomNotFound": "Oda bulunamadı",
+    "codeCopied": "Kod kopyalandı!",
+    "failedToCopy": "Kopyalama başarısız",
+    "create": "Oluştur",
+    "join": "Katıl",
+    "joinAs": "Olarak katıl:",
+    "editor": "Düzenleyici",
+    "viewer": "İzleyici",
+    "roomCode": "Oda Kodu:",
+    "enterCode": "6 haneli kod girin",
+    "addedLayer": "{{name}} bir katman ekledi",
+    "deletedLayer": "{{name}} bir katman sildi",
+    "collaborate": "İşbirliği"
+  },
+  "audio": {
+    "effectsApplied": "Ses efektleri uygulandı!",
+    "effectsFailed": "Efektler uygulanamadı, orijinal kaydediliyor"
+  },
+  "image": {
+    "selectImageFile": "Lütfen bir resim dosyası seçin",
+    "imageTooLarge": "Resim 10MB'den küçük olmalıdır"
+  },
+  "location": {
+    "enterLocation": "Konum girin...",
+    "addMapboxToken": "Konum aramayı etkinleştirmek için ayarlarda Mapbox tokenı ekleyin",
+    "searchLocation": "Hatırlatıcı için konum ara...",
+    "arrive": "Varış",
+    "leave": "Ayrılış",
+    "radiusUnit": "{{radius}}m yarıçap"
+  },
+  "theme": {
+    "editTheme": "Temayı Düzenle",
+    "themeName": "Tema Adı",
+    "themeNamePlaceholder": "Özel Temam",
+    "livePreview": "Canlı Önizleme"
+  },
+  "versionHistory": {
+    "noHistory": "Henüz sürüm geçmişi yok",
+    "changesSavedAuto": "Değişiklikler otomatik kaydedilecek"
   }
 }

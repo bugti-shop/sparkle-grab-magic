@@ -631,7 +631,8 @@
     "exportedToWord": "הפתק ייוצא ל-Word",
     "exportedToMarkdown": "הפתק ייוצא ל-Markdown",
     "restoreFromArchive": "שחזר מהארכיון",
-    "archiveNote": "העבר לארכיון"
+    "archiveNote": "העבר לארכיון",
+    "sketchDrawing": "ציור סקיצה"
   },
   "tasks": {
     "title": "משימות",
@@ -946,7 +947,9 @@
     "syncError": "שגיאת סנכרון",
     "syncInProgress": "מסנכרן...",
     "synced": "מסונכרן",
-    "syncing": "מסנכרן"
+    "syncing": "מסנכרן",
+    "tapToReconnect": "הקש לחיבור מחדש",
+    "reconnectSyncPrompt": "עבור לפרופיל → היכנס עם Google לחיבור מחדש"
   },
   "accessibility": {
     "goToPreviousPage": "עבור לעמוד הקודם",
@@ -3767,5 +3770,116 @@
     "intermediateDesc": "השלם 50 משימות ורצף 7 ימים",
     "advancedDesc": "השלם 200 משימות ורצף 30 ימים",
     "masterDesc": "השלם 500 משימות ורצף 100 ימים"
+  },
+  "security": {
+    "passwordRecovery": "שחזור סיסמה",
+    "verifyIdentity": "אמת את זהותך",
+    "resetPassword": "איפוס סיסמה",
+    "securityQuestion": "שאלת אבטחה",
+    "yourAnswer": "התשובה שלך",
+    "newPassword": "סיסמה חדשה",
+    "confirmPassword": "אשר סיסמה",
+    "enterYourAnswer": "הזן את תשובתך",
+    "enterNewPassword": "הזן סיסמה חדשה",
+    "confirmNewPassword": "אשר סיסמה חדשה",
+    "verifyAnswer": "אמת תשובה",
+    "answerVerified": "התשובה אומתה!",
+    "incorrectAnswer": "תשובה שגויה. נסה שוב.",
+    "enterNewPasswordPrompt": "אנא הזן סיסמה חדשה",
+    "passwordMinLength": "הסיסמה חייבת להכיל לפחות 4 תווים",
+    "passwordsDoNotMatch": "הסיסמאות אינן תואמות",
+    "passwordResetSuccess": "הסיסמה אופסה בהצלחה!",
+    "noSecurityQuestion": "לא הוגדרה שאלת אבטחה לשחזור סיסמה.",
+    "setupSecurityInSettings": "ניתן להגדיר שאלת אבטחה בהגדרות הפתקים המוסתרים לאחר פתיחת הנעילה.",
+    "enterNewPasswordBelow": "הזן את הסיסמה החדשה למטה.",
+    "updateSecurityQuestion": "עדכן שאלת אבטחה",
+    "setupSecurityQuestion": "הגדר שאלת אבטחה",
+    "setupSecurityDesc": "הגדר שאלת אבטחה לשחזור הסיסמה שלך.",
+    "selectAQuestion": "בחר שאלה",
+    "enterAnAnswer": "הזן את תשובתך",
+    "answerMinLength": "התשובה חייבת להכיל לפחות 2 תווים",
+    "securityQuestionSaved": "שאלת האבטחה נשמרה!",
+    "answerVerifyDesc": "תשובה זו תשמש לאימות זהותך.",
+    "updateSecurityBtn": "עדכן שאלת אבטחה",
+    "saveSecurityBtn": "שמור שאלת אבטחה",
+    "selectSecurityQuestion": "בחר שאלת אבטחה",
+    "pleaseEnterAnswer": "אנא הזן תשובה",
+    "motherMaidenName": "מה שם הנעורים של אמך?",
+    "firstPetName": "מה שם חיית המחמד הראשונה שלך?",
+    "birthCity": "באיזו עיר נולדת?",
+    "favoriteMovie": "מה הסרט האהוב עליך?",
+    "elementarySchool": "מה שם בית הספר היסודי שלך?",
+    "favoriteFood": "מה האוכל האהוב עליך?"
+  },
+  "habits": {
+    "newHabit": "הרגל חדש",
+    "name": "שם",
+    "icon": "סמל",
+    "color": "צבע",
+    "frequency": "תדירות",
+    "whichDays": "באילו ימים?",
+    "targetStreak": "סדרת יעד (ימים)",
+    "dailyReminder": "תזכורת יומית",
+    "remindMeAt": "הזכר לי בשעה",
+    "habitNamePlaceholder": "למשל: שתה 8 כוסות מים"
+  },
+  "tags": {
+    "createNewTag": "צור תגית חדשה",
+    "tagName": "שם תגית...",
+    "tagAlreadyExists": "התגית כבר קיימת!",
+    "tagCreated": "תגית \"{{name}}\" נוצרה!",
+    "tagDeleted": "תגית נמחקה",
+    "tagUpdated": "תגית עודכנה"
+  },
+  "smartViews": {
+    "enterName": "הזן שם",
+    "viewSaved": "תצוגה \"{{name}}\" נשמרה!",
+    "viewDeleted": "תצוגה חכמה נמחקה",
+    "namePlaceholder": "למשל, דחוף השבוע"
+  },
+  "collab": {
+    "roomCreated": "חדר נוצר!",
+    "failedToCreateRoom": "יצירת חדר נכשלה",
+    "enterValidCode": "הזן קוד תקף",
+    "joinedAs": "הצטרפת כ{{role}}!",
+    "roomNotFound": "חדר לא נמצא",
+    "codeCopied": "קוד הועתק!",
+    "failedToCopy": "העתקה נכשלה",
+    "create": "צור",
+    "join": "הצטרף",
+    "joinAs": "הצטרף כ:",
+    "editor": "עורך",
+    "viewer": "צופה",
+    "roomCode": "קוד חדר:",
+    "enterCode": "הזן קוד בן 6 ספרות",
+    "addedLayer": "{{name}} הוסיף שכבה",
+    "deletedLayer": "{{name}} מחק שכבה",
+    "collaborate": "שיתוף פעולה"
+  },
+  "audio": {
+    "effectsApplied": "אפקטי שמע הוחלו!",
+    "effectsFailed": "החלת אפקטים נכשלה, שומר את המקור"
+  },
+  "image": {
+    "selectImageFile": "בחר קובץ תמונה",
+    "imageTooLarge": "התמונה חייבת להיות קטנה מ-10MB"
+  },
+  "location": {
+    "enterLocation": "הזן מיקום...",
+    "addMapboxToken": "הוסף אסימון Mapbox בהגדרות לחיפוש מיקום",
+    "searchLocation": "חפש מיקום לתזכורת...",
+    "arrive": "הגעה",
+    "leave": "עזיבה",
+    "radiusUnit": "רדיוס {{radius}}מ'"
+  },
+  "theme": {
+    "editTheme": "ערוך ערכת נושא",
+    "themeName": "שם ערכת הנושא",
+    "themeNamePlaceholder": "ערכת הנושא שלי",
+    "livePreview": "תצוגה מקדימה"
+  },
+  "versionHistory": {
+    "noHistory": "אין עדיין היסטוריית גרסאות",
+    "changesSavedAuto": "שינויים יישמרו אוטומטית"
   }
 }

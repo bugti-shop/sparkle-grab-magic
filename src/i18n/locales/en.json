@@ -575,7 +575,8 @@
     "exportedToWord": "Note exported to Word",
     "exportedToMarkdown": "Note exported to Markdown",
     "restoreFromArchive": "Restore from Archive",
-    "archiveNote": "Archive Note"
+    "archiveNote": "Archive Note",
+    "sketchDrawing": "Sketch drawing"
   },
   "tasks": {
     "title": "Tasks",
@@ -871,7 +872,13 @@
     "pleaseGrantAccess": "Please grant access to your Google Calendar to enable sync",
     "calendarAccessDenied": "Calendar Access Denied",
     "calendarAccessRequired": "Calendar access is required to enable sync. Please try again.",
-    "dontAskAgain": "Don't ask me again"
+    "dontAskAgain": "Don't ask me again",
+    "syncing": "Syncing...",
+    "synced": "Synced",
+    "syncError": "Sync error",
+    "offline": "Offline",
+    "tapToReconnect": "Tap to reconnect sync",
+    "reconnectSyncPrompt": "Go to Profile → Sign in with Google to reconnect sync"
   },
   "accessibility": {
     "goToPreviousPage": "Go to previous page",
@@ -906,7 +913,7 @@
   },
   "editor": {
     "title": "Title",
-    "titlePlaceholder": "Enter title...",
+    "titlePlaceholder": "Title",
     "content": "Content",
     "contentPlaceholder": "Start writing...",
     "insertImage": "Insert Image",
@@ -3602,5 +3609,115 @@
     "intermediateDesc": "Complete 50 tasks & 7-day streak",
     "advancedDesc": "Complete 200 tasks & 30-day streak",
     "masterDesc": "Complete 500 tasks & 100-day streak"
+  },
+  "security": {
+    "passwordRecovery": "Password Recovery",
+    "verifyIdentity": "Verify Your Identity",
+    "resetPassword": "Reset Password",
+    "securityQuestion": "Security Question",
+    "yourAnswer": "Your Answer",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm Password",
+    "enterYourAnswer": "Enter your answer",
+    "enterNewPassword": "Enter new password",
+    "confirmNewPassword": "Confirm new password",
+    "verifyAnswer": "Verify Answer",
+    "answerVerified": "Answer verified!",
+    "incorrectAnswer": "Incorrect answer. Please try again.",
+    "enterNewPasswordPrompt": "Please enter a new password",
+    "passwordMinLength": "Password must be at least 4 characters",
+    "passwordsDoNotMatch": "Passwords do not match",
+    "passwordResetSuccess": "Password reset successfully!",
+    "noSecurityQuestion": "No security question has been set up for password recovery.",
+    "setupSecurityInSettings": "You can set up a security question in the Hidden Notes settings after unlocking.",
+    "enterNewPasswordBelow": "Enter your new password below.",
+    "updateSecurityQuestion": "Update Security Question",
+    "setupSecurityQuestion": "Set Up Security Question",
+    "setupSecurityDesc": "Set up a security question to recover your password if you forget it.",
+    "selectAQuestion": "Select a question",
+    "enterAnAnswer": "Enter your answer",
+    "answerMinLength": "Answer must be at least 2 characters",
+    "securityQuestionSaved": "Security question saved!",
+    "answerVerifyDesc": "This answer will be used to verify your identity if you forget your password.",
+    "updateSecurityBtn": "Update Security Question",
+    "saveSecurityBtn": "Save Security Question",
+    "selectSecurityQuestion": "Please select a security question",
+    "pleaseEnterAnswer": "Please enter an answer",
+    "motherMaidenName": "What is your mother's maiden name?",
+    "firstPetName": "What was the name of your first pet?",
+    "birthCity": "What city were you born in?",
+    "favoriteMovie": "What is your favorite movie?",
+    "elementarySchool": "What was the name of your elementary school?",
+    "favoriteFood": "What is your favorite food?"
+  },
+  "habits": {
+    "newHabit": "New Habit",
+    "name": "Name",
+    "icon": "Icon",
+    "color": "Color",
+    "frequency": "Frequency",
+    "whichDays": "Which days?",
+    "targetStreak": "Target streak (days)",
+    "dailyReminder": "Daily Reminder",
+    "remindMeAt": "Remind me at",
+    "habitNamePlaceholder": "e.g. Drink 8 glasses of water"
+  },
+  "tags": {
+    "createNewTag": "Create New Tag",
+    "tagName": "Tag name...",
+    "tagAlreadyExists": "Tag already exists!",
+    "tagCreated": "Tag \"{{name}}\" created!",
+    "tagDeleted": "Tag deleted",
+    "tagUpdated": "Tag updated"
+  },
+  "smartViews": {
+    "enterName": "Please enter a name",
+    "viewSaved": "Smart View \"{{name}}\" saved!",
+    "viewDeleted": "Smart View deleted",
+    "namePlaceholder": "e.g., Urgent This Week"
+  },
+  "collab": {
+    "roomCreated": "Room created!",
+    "failedToCreateRoom": "Failed to create room",
+    "enterValidCode": "Enter a valid room code",
+    "joinedAs": "Joined as {{role}}!",
+    "roomNotFound": "Room not found",
+    "codeCopied": "Code copied!",
+    "failedToCopy": "Failed to copy",
+    "create": "Create",
+    "join": "Join",
+    "joinAs": "Join as:",
+    "editor": "Editor",
+    "viewer": "Viewer",
+    "roomCode": "Room Code:",
+    "enterCode": "Enter 6-digit code",
+    "addedLayer": "{{name}} added a layer",
+    "deletedLayer": "{{name}} deleted a layer"
+  },
+  "audio": {
+    "effectsApplied": "Audio effects applied!",
+    "effectsFailed": "Failed to apply effects, saving original"
+  },
+  "image": {
+    "selectImageFile": "Please select an image file",
+    "imageTooLarge": "Image must be less than 10MB"
+  },
+  "location": {
+    "enterLocation": "Enter location...",
+    "addMapboxToken": "Add your Mapbox token in settings to enable location search",
+    "searchLocation": "Search location for reminder...",
+    "arrive": "Arrive",
+    "leave": "Leave",
+    "radiusUnit": "{{radius}}m radius"
+  },
+  "theme": {
+    "editTheme": "Edit Theme",
+    "themeName": "Theme Name",
+    "themeNamePlaceholder": "My Custom Theme",
+    "livePreview": "Live Preview"
+  },
+  "versionHistory": {
+    "noHistory": "No version history yet",
+    "changesSavedAuto": "Changes will be saved automatically"
   }
 }

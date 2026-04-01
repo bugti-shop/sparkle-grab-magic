@@ -575,7 +575,8 @@
     "exportedToWord": "குறிப்பு Word ஆக ஏற்றுமதி செய்யப்பட்டது",
     "exportedToMarkdown": "குறிப்பு Markdown ஆக ஏற்றுமதி செய்யப்பட்டது",
     "restoreFromArchive": "காப்பகத்திலிருந்து மீட்டெடு",
-    "archiveNote": "குறிப்பை காப்பகப்படுத்து"
+    "archiveNote": "குறிப்பை காப்பகப்படுத்து",
+    "sketchDrawing": "ஓவிய வரைபடம்"
   },
   "tasks": {
     "title": "பணிகள்",
@@ -871,7 +872,13 @@
     "pleaseGrantAccess": "ஒத்திசைவை இயக்க உங்கள் Google Calendar க்கு அணுகலை வழங்கவும்",
     "calendarAccessDenied": "காலெண்டர் அணுகல் மறுக்கப்பட்டது",
     "calendarAccessRequired": "ஒத்திசைவை இயக்க காலெண்டர் அணுகல் தேவை. தயவுசெய்து மீண்டும் முயற்சிக்கவும்.",
-    "dontAskAgain": "மீண்டும் கேட்க வேண்டாம்"
+    "dontAskAgain": "மீண்டும் கேட்க வேண்டாம்",
+    "syncing": "ஒத்திசைக்கிறது...",
+    "synced": "ஒத்திசைக்கப்பட்டது",
+    "syncError": "ஒத்திசைவு பிழை",
+    "offline": "ஆஃப்லைன்",
+    "tapToReconnect": "ஒத்திசைவை மீண்டும் இணைக்க தட்டவும்",
+    "reconnectSyncPrompt": "சுயவிவரத்திற்கு செல்லவும் → Google மூலம் உள்நுழையவும்"
   },
   "accessibility": {
     "goToPreviousPage": "முந்தைய பக்கத்திற்குச் செல்",
@@ -3594,5 +3601,116 @@
     "intermediateDesc": "50 பணிகள் நிறைவு & 7 நாள் தொடர்",
     "advancedDesc": "200 பணிகள் நிறைவு & 30 நாள் தொடர்",
     "masterDesc": "500 பணிகள் நிறைவு & 100 நாள் தொடர்"
+  },
+  "security": {
+    "passwordRecovery": "கடவுச்சொல் மீட்பு",
+    "verifyIdentity": "உங்கள் அடையாளத்தை சரிபார்க்கவும்",
+    "resetPassword": "கடவுச்சொல்லை மீட்டமைக்கவும்",
+    "securityQuestion": "பாதுகாப்பு கேள்வி",
+    "yourAnswer": "உங்கள் பதில்",
+    "newPassword": "புதிய கடவுச்சொல்",
+    "confirmPassword": "கடவுச்சொல்லை உறுதிப்படுத்தவும்",
+    "enterYourAnswer": "உங்கள் பதிலை உள்ளிடவும்",
+    "enterNewPassword": "புதிய கடவுச்சொல்லை உள்ளிடவும்",
+    "confirmNewPassword": "புதிய கடவுச்சொல்லை உறுதிப்படுத்தவும்",
+    "verifyAnswer": "பதிலை சரிபார்க்கவும்",
+    "answerVerified": "பதில் சரிபார்க்கப்பட்டது!",
+    "incorrectAnswer": "தவறான பதில். மீண்டும் முயற்சிக்கவும்.",
+    "enterNewPasswordPrompt": "தயவுசெய்து புதிய கடவுச்சொல்லை உள்ளிடவும்",
+    "passwordMinLength": "கடவுச்சொல் குறைந்தது 4 எழுத்துக்கள் இருக்க வேண்டும்",
+    "passwordsDoNotMatch": "கடவுச்சொற்கள் பொருந்தவில்லை",
+    "passwordResetSuccess": "கடவுச்சொல் வெற்றிகரமாக மீட்டமைக்கப்பட்டது!",
+    "noSecurityQuestion": "கடவுச்சொல் மீட்புக்கு பாதுகாப்பு கேள்வி அமைக்கப்படவில்லை.",
+    "setupSecurityInSettings": "திறந்த பிறகு மறைக்கப்பட்ட குறிப்புகள் அமைப்புகளில் பாதுகாப்பு கேள்வி அமைக்கலாம்.",
+    "enterNewPasswordBelow": "கீழே உங்கள் புதிய கடவுச்சொல்லை உள்ளிடவும்.",
+    "updateSecurityQuestion": "பாதுகாப்பு கேள்வியை புதுப்பிக்கவும்",
+    "setupSecurityQuestion": "பாதுகாப்பு கேள்வியை அமைக்கவும்",
+    "setupSecurityDesc": "கடவுச்சொல்லை மறந்தால் மீட்புக்கு பாதுகாப்பு கேள்வி அமைக்கவும்.",
+    "selectAQuestion": "ஒரு கேள்வியைத் தேர்வு செய்யவும்",
+    "enterAnAnswer": "உங்கள் பதிலை உள்ளிடவும்",
+    "answerMinLength": "பதில் குறைந்தது 2 எழுத்துக்கள் இருக்க வேண்டும்",
+    "securityQuestionSaved": "பாதுகாப்பு கேள்வி சேமிக்கப்பட்டது!",
+    "answerVerifyDesc": "இந்தப் பதில் உங்கள் அடையாளத்தை சரிபார்க்க பயன்படுத்தப்படும்.",
+    "updateSecurityBtn": "பாதுகாப்பு கேள்வியை புதுப்பிக்கவும்",
+    "saveSecurityBtn": "பாதுகாப்பு கேள்வியை சேமிக்கவும்",
+    "selectSecurityQuestion": "தயவுசெய்து பாதுகாப்பு கேள்வியைத் தேர்வு செய்யவும்",
+    "pleaseEnterAnswer": "தயவுசெய்து பதிலை உள்ளிடவும்",
+    "motherMaidenName": "உங்கள் தாயாரின் திருமணத்திற்கு முந்தைய பெயர் என்ன?",
+    "firstPetName": "உங்கள் முதல் செல்லப்பிராணியின் பெயர் என்ன?",
+    "birthCity": "நீங்கள் எந்த நகரத்தில் பிறந்தீர்கள்?",
+    "favoriteMovie": "உங்களுக்கு பிடித்த திரைப்படம் எது?",
+    "elementarySchool": "உங்கள் ஆரம்ப பள்ளியின் பெயர் என்ன?",
+    "favoriteFood": "உங்களுக்கு பிடித்த உணவு என்ன?"
+  },
+  "habits": {
+    "newHabit": "புதிய பழக்கம்",
+    "name": "பெயர்",
+    "icon": "சின்னம்",
+    "color": "நிறம்",
+    "frequency": "அதிர்வெண்",
+    "whichDays": "எந்த நாட்கள்?",
+    "targetStreak": "இலக்கு தொடர் (நாட்கள்)",
+    "dailyReminder": "தினசரி நினைவூட்டல்",
+    "remindMeAt": "எனக்கு நினைவூட்டுங்கள்",
+    "habitNamePlaceholder": "எ.கா. 8 கிளாஸ் தண்ணீர் குடிக்கவும்"
+  },
+  "tags": {
+    "createNewTag": "புதிய குறிச்சொல் உருவாக்கவும்",
+    "tagName": "குறிச்சொல் பெயர்...",
+    "tagAlreadyExists": "குறிச்சொல் ஏற்கனவே உள்ளது!",
+    "tagCreated": "குறிச்சொல் \"{{name}}\" உருவாக்கப்பட்டது!",
+    "tagDeleted": "குறிச்சொல் நீக்கப்பட்டது",
+    "tagUpdated": "குறிச்சொல் புதுப்பிக்கப்பட்டது"
+  },
+  "smartViews": {
+    "enterName": "பெயரை உள்ளிடவும்",
+    "viewSaved": "காட்சி \"{{name}}\" சேமிக்கப்பட்டது!",
+    "viewDeleted": "ஸ்மார்ட் காட்சி நீக்கப்பட்டது",
+    "namePlaceholder": "எ.கா., இந்த வாரம் அவசரம்"
+  },
+  "collab": {
+    "roomCreated": "அறை உருவாக்கப்பட்டது!",
+    "failedToCreateRoom": "அறை உருவாக்க இயலவில்லை",
+    "enterValidCode": "சரியான குறியீட்டை உள்ளிடவும்",
+    "joinedAs": "{{role}} ஆக சேர்ந்தது!",
+    "roomNotFound": "அறை கிடைக்கவில்லை",
+    "codeCopied": "குறியீடு நகலெடுக்கப்பட்டது!",
+    "failedToCopy": "நகலெடுக்க இயலவில்லை",
+    "create": "உருவாக்கு",
+    "join": "சேரு",
+    "joinAs": "ஆக சேரு:",
+    "editor": "தொகுப்பாளர்",
+    "viewer": "பார்வையாளர்",
+    "roomCode": "அறை குறியீடு:",
+    "enterCode": "6 இலக்க குறியீட்டை உள்ளிடவும்",
+    "addedLayer": "{{name}} ஒரு அடுக்கை சேர்த்தார்",
+    "deletedLayer": "{{name}} ஒரு அடுக்கை நீக்கினார்",
+    "collaborate": "ஒத்துழைப்பு"
+  },
+  "audio": {
+    "effectsApplied": "ஒலி விளைவுகள் பயன்படுத்தப்பட்டன!",
+    "effectsFailed": "விளைவுகள் பயன்படுத்த இயலவில்லை, அசல் சேமிக்கப்படுகிறது"
+  },
+  "image": {
+    "selectImageFile": "ஒரு படக் கோப்பைத் தேர்வு செய்யவும்",
+    "imageTooLarge": "படம் 10MB க்கும் குறைவாக இருக்க வேண்டும்"
+  },
+  "location": {
+    "enterLocation": "இடத்தை உள்ளிடவும்...",
+    "addMapboxToken": "இடத் தேடலை இயக்க அமைப்புகளில் Mapbox டோக்கனை சேர்க்கவும்",
+    "searchLocation": "நினைவூட்டலுக்கு இடத்தைத் தேடவும்...",
+    "arrive": "வருகை",
+    "leave": "புறப்படல்",
+    "radiusUnit": "{{radius}}மீ ஆரம்"
+  },
+  "theme": {
+    "editTheme": "தீம் திருத்தவும்",
+    "themeName": "தீம் பெயர்",
+    "themeNamePlaceholder": "எனது தனிப்பயன் தீம்",
+    "livePreview": "நேரடி முன்னோட்டம்"
+  },
+  "versionHistory": {
+    "noHistory": "இன்னும் பதிப்பு வரலாறு இல்லை",
+    "changesSavedAuto": "மாற்றங்கள் தானாக சேமிக்கப்படும்"
   }
 }

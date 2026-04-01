@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { LocationReminder } from '@/types/note';
@@ -28,6 +29,7 @@ export const LocationSearchInput = ({
   onClear,
   className,
 }: LocationSearchInputProps) => {
+  const { t } = useTranslation();
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState<SearchResult[]>([]);
   const [isSearching, setIsSearching] = useState(false);
@@ -154,12 +156,12 @@ export const LocationSearchInput = ({
           <Input
             value={value}
             onChange={(e) => onChange(e.target.value)}
-            placeholder="Enter location..."
+            placeholder={t('location.enterLocation')}
             className="flex-1"
           />
         </div>
         <p className="text-xs text-muted-foreground">
-          Add your Mapbox token in settings to enable location search
+          {t('location.addMapboxToken')}
         </p>
       </div>
     );
@@ -183,13 +185,13 @@ export const LocationSearchInput = ({
               <span className="text-xs text-pink-600/70 dark:text-pink-400/70 flex items-center gap-1">
                 {locationReminder.triggerOnEnter && (
                   <span className="flex items-center gap-0.5">
-                    <ArrowRight className="h-3 w-3" /> Arrive
+                    <ArrowRight className="h-3 w-3" /> {t('location.arrive')}
                   </span>
                 )}
                 {locationReminder.triggerOnEnter && locationReminder.triggerOnExit && ' / '}
                 {locationReminder.triggerOnExit && (
                   <span className="flex items-center gap-0.5">
-                    <ArrowLeft className="h-3 w-3" /> Leave
+                    <ArrowLeft className="h-3 w-3" /> {t('location.leave')}
                   </span>
                 )}
               </span>
@@ -218,7 +220,7 @@ export const LocationSearchInput = ({
               if (!e.target.value) onChange('');
             }}
             onFocus={() => searchQuery && setShowResults(true)}
-            placeholder="Search location for reminder..."
+            placeholder={t('location.searchLocation')}
             className="pl-10 pr-10"
           />
           {(searchQuery || value) && (

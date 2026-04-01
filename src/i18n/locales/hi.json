@@ -631,7 +631,8 @@
     "exportedToWord": "नोट Word में निर्यात किया गया",
     "exportedToMarkdown": "नोट Markdown में निर्यात किया गया",
     "restoreFromArchive": "आर्काइव से पुनर्स्थापित करें",
-    "archiveNote": "नोट आर्काइव करें"
+    "archiveNote": "नोट आर्काइव करें",
+    "sketchDrawing": "स्केच चित्र"
   },
   "tasks": {
     "title": "कार्य",
@@ -946,7 +947,9 @@
     "syncError": "सिंक त्रुटि",
     "syncInProgress": "सिंक हो रहा है...",
     "synced": "सिंक हुआ",
-    "syncing": "सिंक हो रहा है"
+    "syncing": "सिंक हो रहा है",
+    "tapToReconnect": "सिंक पुनः कनेक्ट करने के लिए टैप करें",
+    "reconnectSyncPrompt": "प्रोफ़ाइल पर जाएं → Google से साइन इन करें"
   },
   "accessibility": {
     "goToPreviousPage": "पिछले पृष्ठ पर जाएं",
@@ -3767,5 +3770,116 @@
     "intermediateDesc": "50 कार्य पूरे करें और 7 दिन की स्ट्रीक",
     "advancedDesc": "200 कार्य पूरे करें और 30 दिन की स्ट्रीक",
     "masterDesc": "500 कार्य पूरे करें और 100 दिन की स्ट्रीक"
+  },
+  "security": {
+    "passwordRecovery": "पासवर्ड पुनर्प्राप्ति",
+    "verifyIdentity": "अपनी पहचान सत्यापित करें",
+    "resetPassword": "पासवर्ड रीसेट करें",
+    "securityQuestion": "सुरक्षा प्रश्न",
+    "yourAnswer": "आपका उत्तर",
+    "newPassword": "नया पासवर्ड",
+    "confirmPassword": "पासवर्ड की पुष्टि करें",
+    "enterYourAnswer": "अपना उत्तर दर्ज करें",
+    "enterNewPassword": "नया पासवर्ड दर्ज करें",
+    "confirmNewPassword": "नए पासवर्ड की पुष्टि करें",
+    "verifyAnswer": "उत्तर सत्यापित करें",
+    "answerVerified": "उत्तर सत्यापित!",
+    "incorrectAnswer": "गलत उत्तर। कृपया पुनः प्रयास करें।",
+    "enterNewPasswordPrompt": "कृपया नया पासवर्ड दर्ज करें",
+    "passwordMinLength": "पासवर्ड कम से कम 4 अक्षरों का होना चाहिए",
+    "passwordsDoNotMatch": "पासवर्ड मेल नहीं खाते",
+    "passwordResetSuccess": "पासवर्ड सफलतापूर्वक रीसेट हो गया!",
+    "noSecurityQuestion": "पासवर्ड पुनर्प्राप्ति के लिए कोई सुरक्षा प्रश्न सेट नहीं किया गया है।",
+    "setupSecurityInSettings": "आप अनलॉक करने के बाद छिपे हुए नोट्स सेटिंग्स में सुरक्षा प्रश्न सेट कर सकते हैं।",
+    "enterNewPasswordBelow": "नीचे अपना नया पासवर्ड दर्ज करें।",
+    "updateSecurityQuestion": "सुरक्षा प्रश्न अपडेट करें",
+    "setupSecurityQuestion": "सुरक्षा प्रश्न सेट करें",
+    "setupSecurityDesc": "अपना पासवर्ड भूलने की स्थिति में पुनर्प्राप्ति के लिए सुरक्षा प्रश्न सेट करें।",
+    "selectAQuestion": "एक प्रश्न चुनें",
+    "enterAnAnswer": "अपना उत्तर दर्ज करें",
+    "answerMinLength": "उत्तर कम से कम 2 अक्षरों का होना चाहिए",
+    "securityQuestionSaved": "सुरक्षा प्रश्न सहेजा गया!",
+    "answerVerifyDesc": "यह उत्तर आपकी पहचान सत्यापित करने के लिए उपयोग किया जाएगा।",
+    "updateSecurityBtn": "सुरक्षा प्रश्न अपडेट करें",
+    "saveSecurityBtn": "सुरक्षा प्रश्न सहेजें",
+    "selectSecurityQuestion": "कृपया एक सुरक्षा प्रश्न चुनें",
+    "pleaseEnterAnswer": "कृपया उत्तर दर्ज करें",
+    "motherMaidenName": "आपकी माँ का विवाह से पहले का नाम क्या है?",
+    "firstPetName": "आपके पहले पालतू जानवर का नाम क्या था?",
+    "birthCity": "आप किस शहर में पैदा हुए?",
+    "favoriteMovie": "आपकी पसंदीदा फिल्म कौन सी है?",
+    "elementarySchool": "आपके प्राथमिक विद्यालय का नाम क्या था?",
+    "favoriteFood": "आपका पसंदीदा खाना क्या है?"
+  },
+  "habits": {
+    "newHabit": "नई आदत",
+    "name": "नाम",
+    "icon": "आइकन",
+    "color": "रंग",
+    "frequency": "आवृत्ति",
+    "whichDays": "कौन से दिन?",
+    "targetStreak": "लक्ष्य लकीर (दिन)",
+    "dailyReminder": "दैनिक अनुस्मारक",
+    "remindMeAt": "मुझे याद दिलाएं",
+    "habitNamePlaceholder": "उदा. 8 गिलास पानी पिएं"
+  },
+  "tags": {
+    "createNewTag": "नया टैग बनाएं",
+    "tagName": "टैग का नाम...",
+    "tagAlreadyExists": "टैग पहले से मौजूद है!",
+    "tagCreated": "टैग \"{{name}}\" बनाया गया!",
+    "tagDeleted": "टैग हटाया गया",
+    "tagUpdated": "टैग अपडेट किया गया"
+  },
+  "smartViews": {
+    "enterName": "कृपया नाम दर्ज करें",
+    "viewSaved": "व्यू \"{{name}}\" सहेजा गया!",
+    "viewDeleted": "स्मार्ट व्यू हटाया गया",
+    "namePlaceholder": "उदा., इस सप्ताह जरूरी"
+  },
+  "collab": {
+    "roomCreated": "कमरा बन गया!",
+    "failedToCreateRoom": "कमरा बनाने में विफल",
+    "enterValidCode": "वैध कोड दर्ज करें",
+    "joinedAs": "{{role}} के रूप में शामिल हुए!",
+    "roomNotFound": "कमरा नहीं मिला",
+    "codeCopied": "कोड कॉपी हो गया!",
+    "failedToCopy": "कॉपी विफल",
+    "create": "बनाएं",
+    "join": "शामिल हों",
+    "joinAs": "के रूप में शामिल:",
+    "editor": "संपादक",
+    "viewer": "दर्शक",
+    "roomCode": "कमरे का कोड:",
+    "enterCode": "6 अंकों का कोड दर्ज करें",
+    "addedLayer": "{{name}} ने एक परत जोड़ी",
+    "deletedLayer": "{{name}} ने एक परत हटाई",
+    "collaborate": "सहयोग"
+  },
+  "audio": {
+    "effectsApplied": "ऑडियो प्रभाव लागू!",
+    "effectsFailed": "प्रभाव लागू करने में विफल, मूल सहेजा जा रहा है"
+  },
+  "image": {
+    "selectImageFile": "कृपया एक छवि फ़ाइल चुनें",
+    "imageTooLarge": "छवि 10MB से कम होनी चाहिए"
+  },
+  "location": {
+    "enterLocation": "स्थान दर्ज करें...",
+    "addMapboxToken": "स्थान खोज सक्षम करने के लिए सेटिंग्स में Mapbox टोकन जोड़ें",
+    "searchLocation": "अनुस्मारक के लिए स्थान खोजें...",
+    "arrive": "पहुंचना",
+    "leave": "जाना",
+    "radiusUnit": "{{radius}}मी त्रिज्या"
+  },
+  "theme": {
+    "editTheme": "थीम संपादित करें",
+    "themeName": "थीम का नाम",
+    "themeNamePlaceholder": "मेरी कस्टम थीम",
+    "livePreview": "लाइव पूर्वावलोकन"
+  },
+  "versionHistory": {
+    "noHistory": "अभी कोई संस्करण इतिहास नहीं",
+    "changesSavedAuto": "परिवर्तन स्वचालित रूप से सहेजे जाएंगे"
   }
 }

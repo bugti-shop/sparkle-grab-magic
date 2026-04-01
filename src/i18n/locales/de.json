@@ -631,7 +631,8 @@
     "exportedToWord": "Notiz nach Word exportiert",
     "exportedToMarkdown": "Notiz nach Markdown exportiert",
     "restoreFromArchive": "Aus Archiv wiederherstellen",
-    "archiveNote": "Notiz archivieren"
+    "archiveNote": "Notiz archivieren",
+    "sketchDrawing": "Skizzenzeichnung"
   },
   "tasks": {
     "title": "Aufgaben",
@@ -946,7 +947,9 @@
     "syncError": "Synchronisierungsfehler",
     "syncInProgress": "Synchronisierung läuft...",
     "synced": "Synchronisiert",
-    "syncing": "Synchronisierung"
+    "syncing": "Synchronisierung",
+    "tapToReconnect": "Tippen zum Neu-Verbinden",
+    "reconnectSyncPrompt": "Gehe zu Profil → Mit Google anmelden zum Neu-Verbinden"
   },
   "accessibility": {
     "goToPreviousPage": "Zur vorherigen Seite gehen",
@@ -3767,5 +3770,116 @@
     "intermediateDesc": "Erledige 50 Aufgaben und 7-Tage-Serie",
     "advancedDesc": "Erledige 200 Aufgaben und 30-Tage-Serie",
     "masterDesc": "Erledige 500 Aufgaben und 100-Tage-Serie"
+  },
+  "security": {
+    "passwordRecovery": "Passwort-Wiederherstellung",
+    "verifyIdentity": "Identität Überprüfen",
+    "resetPassword": "Passwort Zurücksetzen",
+    "securityQuestion": "Sicherheitsfrage",
+    "yourAnswer": "Ihre Antwort",
+    "newPassword": "Neues Passwort",
+    "confirmPassword": "Passwort Bestätigen",
+    "enterYourAnswer": "Geben Sie Ihre Antwort ein",
+    "enterNewPassword": "Neues Passwort eingeben",
+    "confirmNewPassword": "Neues Passwort bestätigen",
+    "verifyAnswer": "Antwort Überprüfen",
+    "answerVerified": "Antwort verifiziert!",
+    "incorrectAnswer": "Falsche Antwort. Bitte versuchen Sie es erneut.",
+    "enterNewPasswordPrompt": "Bitte geben Sie ein neues Passwort ein",
+    "passwordMinLength": "Das Passwort muss mindestens 4 Zeichen haben",
+    "passwordsDoNotMatch": "Die Passwörter stimmen nicht überein",
+    "passwordResetSuccess": "Passwort erfolgreich zurückgesetzt!",
+    "noSecurityQuestion": "Es wurde keine Sicherheitsfrage für die Passwort-Wiederherstellung eingerichtet.",
+    "setupSecurityInSettings": "Sie können eine Sicherheitsfrage in den Einstellungen der versteckten Notizen nach dem Entsperren einrichten.",
+    "enterNewPasswordBelow": "Geben Sie Ihr neues Passwort unten ein.",
+    "updateSecurityQuestion": "Sicherheitsfrage Aktualisieren",
+    "setupSecurityQuestion": "Sicherheitsfrage Einrichten",
+    "setupSecurityDesc": "Richten Sie eine Sicherheitsfrage ein, um Ihr Passwort wiederherzustellen.",
+    "selectAQuestion": "Frage auswählen",
+    "enterAnAnswer": "Ihre Antwort eingeben",
+    "answerMinLength": "Die Antwort muss mindestens 2 Zeichen haben",
+    "securityQuestionSaved": "Sicherheitsfrage gespeichert!",
+    "answerVerifyDesc": "Diese Antwort wird verwendet, um Ihre Identität zu überprüfen, falls Sie Ihr Passwort vergessen.",
+    "updateSecurityBtn": "Sicherheitsfrage Aktualisieren",
+    "saveSecurityBtn": "Sicherheitsfrage Speichern",
+    "selectSecurityQuestion": "Bitte wählen Sie eine Sicherheitsfrage",
+    "pleaseEnterAnswer": "Bitte geben Sie eine Antwort ein",
+    "motherMaidenName": "Wie lautet der Mädchenname Ihrer Mutter?",
+    "firstPetName": "Wie hieß Ihr erstes Haustier?",
+    "birthCity": "In welcher Stadt wurden Sie geboren?",
+    "favoriteMovie": "Was ist Ihr Lieblingsfilm?",
+    "elementarySchool": "Wie hieß Ihre Grundschule?",
+    "favoriteFood": "Was ist Ihr Lieblingsessen?"
+  },
+  "habits": {
+    "newHabit": "Neue Gewohnheit",
+    "name": "Name",
+    "icon": "Symbol",
+    "color": "Farbe",
+    "frequency": "Häufigkeit",
+    "whichDays": "Welche Tage?",
+    "targetStreak": "Zielserie (Tage)",
+    "dailyReminder": "Tägliche Erinnerung",
+    "remindMeAt": "Erinnere mich um",
+    "habitNamePlaceholder": "z.B. 8 Gläser Wasser trinken"
+  },
+  "tags": {
+    "createNewTag": "Neues Tag Erstellen",
+    "tagName": "Tag-Name...",
+    "tagAlreadyExists": "Tag existiert bereits!",
+    "tagCreated": "Tag \"{{name}}\" erstellt!",
+    "tagDeleted": "Tag gelöscht",
+    "tagUpdated": "Tag aktualisiert"
+  },
+  "smartViews": {
+    "enterName": "Bitte geben Sie einen Namen ein",
+    "viewSaved": "Ansicht \"{{name}}\" gespeichert!",
+    "viewDeleted": "Intelligente Ansicht gelöscht",
+    "namePlaceholder": "z.B., Dringend Diese Woche"
+  },
+  "collab": {
+    "roomCreated": "Raum erstellt!",
+    "failedToCreateRoom": "Raum konnte nicht erstellt werden",
+    "enterValidCode": "Gültigen Code eingeben",
+    "joinedAs": "Beigetreten als {{role}}!",
+    "roomNotFound": "Raum nicht gefunden",
+    "codeCopied": "Code kopiert!",
+    "failedToCopy": "Kopieren fehlgeschlagen",
+    "create": "Erstellen",
+    "join": "Beitreten",
+    "joinAs": "Beitreten als:",
+    "editor": "Editor",
+    "viewer": "Betrachter",
+    "roomCode": "Raumcode:",
+    "enterCode": "6-stelligen Code eingeben",
+    "addedLayer": "{{name}} hat eine Ebene hinzugefügt",
+    "deletedLayer": "{{name}} hat eine Ebene gelöscht",
+    "collaborate": "Zusammenarbeiten"
+  },
+  "audio": {
+    "effectsApplied": "Audioeffekte angewendet!",
+    "effectsFailed": "Effekte konnten nicht angewendet werden, Original wird gespeichert"
+  },
+  "image": {
+    "selectImageFile": "Bitte wählen Sie eine Bilddatei",
+    "imageTooLarge": "Das Bild muss kleiner als 10MB sein"
+  },
+  "location": {
+    "enterLocation": "Ort eingeben...",
+    "addMapboxToken": "Fügen Sie Ihr Mapbox-Token in den Einstellungen hinzu, um die Ortssuche zu aktivieren",
+    "searchLocation": "Ort für Erinnerung suchen...",
+    "arrive": "Ankommen",
+    "leave": "Verlassen",
+    "radiusUnit": "{{radius}}m Radius"
+  },
+  "theme": {
+    "editTheme": "Thema Bearbeiten",
+    "themeName": "Themenname",
+    "themeNamePlaceholder": "Mein Benutzerdefiniertes Thema",
+    "livePreview": "Vorschau"
+  },
+  "versionHistory": {
+    "noHistory": "Noch kein Versionsverlauf",
+    "changesSavedAuto": "Änderungen werden automatisch gespeichert"
   }
 }

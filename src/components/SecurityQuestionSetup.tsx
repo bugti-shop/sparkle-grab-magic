@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -28,6 +29,7 @@ export const SecurityQuestionSetup = ({
   onClose,
   onSetupComplete,
 }: SecurityQuestionSetupProps) => {
+  const { t } = useTranslation();
   const [selectedQuestion, setSelectedQuestion] = useState<string>('');
   const [answer, setAnswer] = useState('');
   const [hasExisting, setHasExisting] = useState(false);
@@ -51,20 +53,20 @@ export const SecurityQuestionSetup = ({
     await triggerHaptic('heavy');
 
     if (!selectedQuestion) {
-      toast.error('Please select a security question');
+      toast.error(t('security.selectSecurityQuestion'));
       return;
     }
     if (!answer.trim()) {
-      toast.error('Please enter an answer');
+      toast.error(t('security.pleaseEnterAnswer'));
       return;
     }
     if (answer.trim().length < 2) {
-      toast.error('Answer must be at least 2 characters');
+      toast.error(t('security.answerMinLength'));
       return;
     }
 
     await setSecurityQuestion(selectedQuestion, answer.trim());
-    toast.success('Security question saved!');
+    toast.success(t('security.securityQuestionSaved'));
     onSetupComplete();
     onClose();
   };
@@ -75,20 +77,20 @@ export const SecurityQuestionSetup = ({
         <SheetHeader className="mb-4">
           <SheetTitle className="flex items-center gap-2">
             <ShieldQuestion className="h-5 w-5 text-primary" />
-            {hasExisting ? 'Update Security Question' : 'Set Up Security Question'}
+            {hasExisting ? t('security.updateSecurityQuestion') : t('security.setupSecurityQuestion')}
           </SheetTitle>
         </SheetHeader>
 
         <div className="space-y-6">
           <p className="text-sm text-muted-foreground">
-            Set up a security question to recover your password if you forget it.
+            {t('security.setupSecurityDesc')}
           </p>
 
           <div className="space-y-2">
-            <Label>Security Question</Label>
+            <Label>{t('security.securityQuestion')}</Label>
             <Select value={selectedQuestion} onValueChange={setSelectedQuestion}>
               <SelectTrigger className="h-12">
-                <SelectValue placeholder="Select a question" />
+                <SelectValue placeholder={t('security.selectAQuestion')} />
               </SelectTrigger>
               <SelectContent>
                 {SECURITY_QUESTIONS.map((q) => (
@@ -101,27 +103,27 @@ export const SecurityQuestionSetup = ({
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="answer">Your Answer</Label>
+            <Label htmlFor="answer">{t('security.yourAnswer')}</Label>
             <Input
               id="answer"
               type="text"
-              placeholder="Enter your answer"
+              placeholder={t('security.enterAnAnswer')}
               value={answer}
               onChange={(e) => setAnswer(e.target.value)}
               className="h-12"
             />
             <p className="text-xs text-muted-foreground">
-              This answer will be used to verify your identity if you forget your password.
+              {t('security.answerVerifyDesc')}
             </p>
           </div>
 
           <div className="flex flex-col gap-2">
             <Button onClick={handleSave} className="w-full">
               <ShieldCheck className="h-4 w-4 mr-2" />
-              {hasExisting ? 'Update' : 'Save'} Security Question
+              {hasExisting ? t('security.updateSecurityBtn') : t('security.saveSecurityBtn')}
             </Button>
             <Button variant="ghost" onClick={onClose} className="w-full text-muted-foreground">
-              Cancel
+              {t('common.cancel')}
             </Button>
           </div>
         </div>

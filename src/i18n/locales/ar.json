@@ -631,7 +631,8 @@
     "exportedToWord": "تم تصدير الملاحظة إلى Word",
     "exportedToMarkdown": "تم تصدير الملاحظة إلى Markdown",
     "restoreFromArchive": "استعادة من الأرشيف",
-    "archiveNote": "أرشفة الملاحظة"
+    "archiveNote": "أرشفة الملاحظة",
+    "sketchDrawing": "رسم تخطيطي"
   },
   "tasks": {
     "title": "المهام",
@@ -946,7 +947,9 @@
     "syncError": "خطأ في المزامنة",
     "syncInProgress": "جاري المزامنة...",
     "synced": "تم المزامنة",
-    "syncing": "جاري المزامنة"
+    "syncing": "جاري المزامنة",
+    "tapToReconnect": "اضغط لإعادة الاتصال",
+    "reconnectSyncPrompt": "اذهب إلى الملف الشخصي ← تسجيل الدخول بـ Google لإعادة الاتصال"
   },
   "accessibility": {
     "goToPreviousPage": "الانتقال إلى الصفحة السابقة",
@@ -3767,5 +3770,116 @@
     "intermediateDesc": "أكمل 50 مهمة وسلسلة 7 أيام",
     "advancedDesc": "أكمل 200 مهمة وسلسلة 30 يومًا",
     "masterDesc": "أكمل 500 مهمة وسلسلة 100 يوم"
+  },
+  "security": {
+    "passwordRecovery": "استعادة كلمة المرور",
+    "verifyIdentity": "تحقق من هويتك",
+    "resetPassword": "إعادة تعيين كلمة المرور",
+    "securityQuestion": "سؤال الأمان",
+    "yourAnswer": "إجابتك",
+    "newPassword": "كلمة مرور جديدة",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "enterYourAnswer": "أدخل إجابتك",
+    "enterNewPassword": "أدخل كلمة المرور الجديدة",
+    "confirmNewPassword": "تأكيد كلمة المرور الجديدة",
+    "verifyAnswer": "تحقق من الإجابة",
+    "answerVerified": "تم التحقق من الإجابة!",
+    "incorrectAnswer": "إجابة خاطئة. حاول مرة أخرى.",
+    "enterNewPasswordPrompt": "يرجى إدخال كلمة مرور جديدة",
+    "passwordMinLength": "يجب أن تكون كلمة المرور 4 أحرف على الأقل",
+    "passwordsDoNotMatch": "كلمات المرور غير متطابقة",
+    "passwordResetSuccess": "تم إعادة تعيين كلمة المرور بنجاح!",
+    "noSecurityQuestion": "لم يتم إعداد سؤال أمان لاستعادة كلمة المرور.",
+    "setupSecurityInSettings": "يمكنك إعداد سؤال أمان في إعدادات الملاحظات المخفية بعد الفتح.",
+    "enterNewPasswordBelow": "أدخل كلمة المرور الجديدة أدناه.",
+    "updateSecurityQuestion": "تحديث سؤال الأمان",
+    "setupSecurityQuestion": "إعداد سؤال الأمان",
+    "setupSecurityDesc": "قم بإعداد سؤال أمان لاستعادة كلمة مرورك.",
+    "selectAQuestion": "اختر سؤالاً",
+    "enterAnAnswer": "أدخل إجابتك",
+    "answerMinLength": "يجب أن تكون الإجابة حرفين على الأقل",
+    "securityQuestionSaved": "تم حفظ سؤال الأمان!",
+    "answerVerifyDesc": "ستُستخدم هذه الإجابة للتحقق من هويتك إذا نسيت كلمة مرورك.",
+    "updateSecurityBtn": "تحديث سؤال الأمان",
+    "saveSecurityBtn": "حفظ سؤال الأمان",
+    "selectSecurityQuestion": "يرجى اختيار سؤال أمان",
+    "pleaseEnterAnswer": "يرجى إدخال إجابة",
+    "motherMaidenName": "ما هو اسم عائلة والدتك قبل الزواج؟",
+    "firstPetName": "ما اسم أول حيوان أليف لك؟",
+    "birthCity": "في أي مدينة ولدت؟",
+    "favoriteMovie": "ما هو فيلمك المفضل؟",
+    "elementarySchool": "ما اسم مدرستك الابتدائية؟",
+    "favoriteFood": "ما هو طعامك المفضل؟"
+  },
+  "habits": {
+    "newHabit": "عادة جديدة",
+    "name": "الاسم",
+    "icon": "الأيقونة",
+    "color": "اللون",
+    "frequency": "التكرار",
+    "whichDays": "أي أيام؟",
+    "targetStreak": "سلسلة الهدف (أيام)",
+    "dailyReminder": "تذكير يومي",
+    "remindMeAt": "ذكرني في",
+    "habitNamePlaceholder": "مثل: شرب 8 أكواب ماء"
+  },
+  "tags": {
+    "createNewTag": "إنشاء وسم جديد",
+    "tagName": "اسم الوسم...",
+    "tagAlreadyExists": "الوسم موجود بالفعل!",
+    "tagCreated": "تم إنشاء الوسم \"{{name}}\"!",
+    "tagDeleted": "تم حذف الوسم",
+    "tagUpdated": "تم تحديث الوسم"
+  },
+  "smartViews": {
+    "enterName": "يرجى إدخال اسم",
+    "viewSaved": "تم حفظ العرض \"{{name}}\"!",
+    "viewDeleted": "تم حذف العرض الذكي",
+    "namePlaceholder": "مثل، عاجل هذا الأسبوع"
+  },
+  "collab": {
+    "roomCreated": "تم إنشاء الغرفة!",
+    "failedToCreateRoom": "فشل إنشاء الغرفة",
+    "enterValidCode": "أدخل رمزاً صالحاً",
+    "joinedAs": "انضممت كـ {{role}}!",
+    "roomNotFound": "الغرفة غير موجودة",
+    "codeCopied": "تم نسخ الرمز!",
+    "failedToCopy": "فشل النسخ",
+    "create": "إنشاء",
+    "join": "انضمام",
+    "joinAs": "انضمام كـ:",
+    "editor": "محرر",
+    "viewer": "مشاهد",
+    "roomCode": "رمز الغرفة:",
+    "enterCode": "أدخل رمز من 6 أرقام",
+    "addedLayer": "{{name}} أضاف طبقة",
+    "deletedLayer": "{{name}} حذف طبقة",
+    "collaborate": "تعاون"
+  },
+  "audio": {
+    "effectsApplied": "تم تطبيق تأثيرات الصوت!",
+    "effectsFailed": "فشل تطبيق التأثيرات، حفظ الأصل"
+  },
+  "image": {
+    "selectImageFile": "يرجى اختيار ملف صورة",
+    "imageTooLarge": "يجب أن تكون الصورة أقل من 10 ميجابايت"
+  },
+  "location": {
+    "enterLocation": "أدخل الموقع...",
+    "addMapboxToken": "أضف رمز Mapbox في الإعدادات لتفعيل البحث عن الموقع",
+    "searchLocation": "البحث عن موقع للتذكير...",
+    "arrive": "وصول",
+    "leave": "مغادرة",
+    "radiusUnit": "نطاق {{radius}}م"
+  },
+  "theme": {
+    "editTheme": "تعديل السمة",
+    "themeName": "اسم السمة",
+    "themeNamePlaceholder": "سمتي المخصصة",
+    "livePreview": "معاينة مباشرة"
+  },
+  "versionHistory": {
+    "noHistory": "لا يوجد سجل إصدارات بعد",
+    "changesSavedAuto": "سيتم حفظ التغييرات تلقائياً"
   }
 }

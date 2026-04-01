@@ -4,13 +4,14 @@ import { cn } from '@/lib/utils';
 import { useGoogleAuth } from '@/contexts/GoogleAuthContext';
 import { Button } from '@/components/ui/button';
 import { Capacitor } from '@capacitor/core';
+import i18n from '@/i18n';
 import { toast } from 'sonner';
 
 type SyncStatus = 'idle' | 'syncing' | 'synced' | 'error' | 'offline' | 'reauth';
 
 const handleReauthTap = (signIn: (explicit?: boolean) => Promise<any>) => {
   if (Capacitor.isNativePlatform()) {
-    toast.info('Go to Profile → Sign in with Google to reconnect sync');
+    toast.info(i18n.t('sync.reconnectSyncPrompt'));
   } else {
     signIn().catch(() => {});
   }
@@ -34,7 +35,7 @@ export function SyncStatusDot({ className }: { className?: string }) {
       <button
         onClick={() => handleReauthTap(signIn)}
         className={cn('relative', className)}
-        title="Tap to reconnect sync"
+        title={i18n.t('sync.tapToReconnect')}
       >
         <Cloud className="h-4 w-4 text-amber-500" />
         <span className="absolute -top-0.5 -right-0.5 h-2 w-2 rounded-full border border-background bg-amber-500 animate-pulse" />
@@ -50,10 +51,10 @@ export function SyncStatusDot({ className }: { className?: string }) {
   }[status];
 
   const title = {
-    syncing: 'Syncing...',
-    synced: 'Synced',
-    error: 'Sync error',
-    offline: 'Offline',
+    syncing: i18n.t('sync.syncing'),
+    synced: i18n.t('sync.synced'),
+    error: i18n.t('sync.syncError'),
+    offline: i18n.t('sync.offline'),
   }[status];
 
   return (
@@ -84,16 +85,16 @@ export function SyncStatusIndicator({ className }: { className?: string }) {
         className={cn('flex items-center gap-1.5 text-xs text-amber-500', className)}
       >
         <LogIn className="h-3.5 w-3.5" />
-        <span>Tap to reconnect sync</span>
+        <span>{i18n.t('sync.tapToReconnect')}</span>
       </button>
     );
   }
 
   const config = {
-    syncing: { icon: <Loader2 className="h-3.5 w-3.5 animate-spin" />, label: 'Syncing...', color: 'text-primary' },
-    synced: { icon: <Check className="h-3.5 w-3.5" />, label: 'Synced', color: 'text-emerald-500' },
-    error: { icon: <AlertCircle className="h-3.5 w-3.5" />, label: 'Sync error', color: 'text-destructive' },
-    offline: { icon: <CloudOff className="h-3.5 w-3.5" />, label: 'Offline', color: 'text-muted-foreground' },
+    syncing: { icon: <Loader2 className="h-3.5 w-3.5 animate-spin" />, label: i18n.t('sync.syncing'), color: 'text-primary' },
+    synced: { icon: <Check className="h-3.5 w-3.5" />, label: i18n.t('sync.synced'), color: 'text-emerald-500' },
+    error: { icon: <AlertCircle className="h-3.5 w-3.5" />, label: i18n.t('sync.syncError'), color: 'text-destructive' },
+    offline: { icon: <CloudOff className="h-3.5 w-3.5" />, label: i18n.t('sync.offline'), color: 'text-muted-foreground' },
   }[status] || { icon: <Cloud className="h-3.5 w-3.5" />, label: '', color: '' };
 
   return (

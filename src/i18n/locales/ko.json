@@ -631,7 +631,8 @@
     "exportedToWord": "노트가 Word로 내보내졌습니다",
     "exportedToMarkdown": "노트가 Markdown으로 내보내졌습니다",
     "restoreFromArchive": "보관함에서 복원",
-    "archiveNote": "노트 보관"
+    "archiveNote": "노트 보관",
+    "sketchDrawing": "스케치 그림"
   },
   "tasks": {
     "title": "작업",
@@ -946,7 +947,9 @@
     "syncError": "동기화 오류",
     "syncInProgress": "동기화 중...",
     "synced": "동기화됨",
-    "syncing": "동기화 중"
+    "syncing": "동기화 중",
+    "tapToReconnect": "동기화 재연결하려면 탭하세요",
+    "reconnectSyncPrompt": "프로필 → Google 로그인으로 이동하여 재연결"
   },
   "accessibility": {
     "goToPreviousPage": "이전 페이지로 이동",
@@ -3767,5 +3770,116 @@
     "intermediateDesc": "50개의 작업 완료 & 7일 연속",
     "advancedDesc": "200개의 작업 완료 & 30일 연속",
     "masterDesc": "500개의 작업 완료 & 100일 연속"
+  },
+  "security": {
+    "passwordRecovery": "비밀번호 복구",
+    "verifyIdentity": "신원 확인",
+    "resetPassword": "비밀번호 재설정",
+    "securityQuestion": "보안 질문",
+    "yourAnswer": "답변",
+    "newPassword": "새 비밀번호",
+    "confirmPassword": "비밀번호 확인",
+    "enterYourAnswer": "답변을 입력하세요",
+    "enterNewPassword": "새 비밀번호 입력",
+    "confirmNewPassword": "새 비밀번호 확인",
+    "verifyAnswer": "답변 확인",
+    "answerVerified": "답변이 확인되었습니다!",
+    "incorrectAnswer": "잘못된 답변입니다. 다시 시도하세요.",
+    "enterNewPasswordPrompt": "새 비밀번호를 입력하세요",
+    "passwordMinLength": "비밀번호는 최소 4자여야 합니다",
+    "passwordsDoNotMatch": "비밀번호가 일치하지 않습니다",
+    "passwordResetSuccess": "비밀번호가 성공적으로 재설정되었습니다!",
+    "noSecurityQuestion": "비밀번호 복구를 위한 보안 질문이 설정되지 않았습니다.",
+    "setupSecurityInSettings": "잠금 해제 후 숨긴 메모 설정에서 보안 질문을 설정할 수 있습니다.",
+    "enterNewPasswordBelow": "아래에 새 비밀번호를 입력하세요.",
+    "updateSecurityQuestion": "보안 질문 업데이트",
+    "setupSecurityQuestion": "보안 질문 설정",
+    "setupSecurityDesc": "비밀번호를 잊었을 때를 대비한 보안 질문을 설정하세요.",
+    "selectAQuestion": "질문을 선택하세요",
+    "enterAnAnswer": "답변을 입력하세요",
+    "answerMinLength": "답변은 최소 2자여야 합니다",
+    "securityQuestionSaved": "보안 질문이 저장되었습니다!",
+    "answerVerifyDesc": "이 답변은 비밀번호를 잊었을 때 신원 확인에 사용됩니다.",
+    "updateSecurityBtn": "보안 질문 업데이트",
+    "saveSecurityBtn": "보안 질문 저장",
+    "selectSecurityQuestion": "보안 질문을 선택하세요",
+    "pleaseEnterAnswer": "답변을 입력하세요",
+    "motherMaidenName": "어머니의 결혼 전 성은?",
+    "firstPetName": "첫 번째 반려동물의 이름은?",
+    "birthCity": "어디에서 태어났나요?",
+    "favoriteMovie": "좋아하는 영화는?",
+    "elementarySchool": "초등학교 이름은?",
+    "favoriteFood": "좋아하는 음식은?"
+  },
+  "habits": {
+    "newHabit": "새 습관",
+    "name": "이름",
+    "icon": "아이콘",
+    "color": "색상",
+    "frequency": "빈도",
+    "whichDays": "어떤 요일?",
+    "targetStreak": "목표 연속 (일)",
+    "dailyReminder": "일일 알림",
+    "remindMeAt": "알림 시간",
+    "habitNamePlaceholder": "예: 물 8잔 마시기"
+  },
+  "tags": {
+    "createNewTag": "새 태그 만들기",
+    "tagName": "태그 이름...",
+    "tagAlreadyExists": "태그가 이미 존재합니다!",
+    "tagCreated": "태그 \"{{name}}\" 생성!",
+    "tagDeleted": "태그 삭제됨",
+    "tagUpdated": "태그 업데이트됨"
+  },
+  "smartViews": {
+    "enterName": "이름을 입력하세요",
+    "viewSaved": "뷰 \"{{name}}\" 저장됨!",
+    "viewDeleted": "스마트 뷰 삭제됨",
+    "namePlaceholder": "예: 이번 주 긴급"
+  },
+  "collab": {
+    "roomCreated": "방 생성!",
+    "failedToCreateRoom": "방 생성 실패",
+    "enterValidCode": "유효한 코드를 입력하세요",
+    "joinedAs": "{{role}}로 참여!",
+    "roomNotFound": "방을 찾을 수 없음",
+    "codeCopied": "코드 복사됨!",
+    "failedToCopy": "복사 실패",
+    "create": "만들기",
+    "join": "참여",
+    "joinAs": "다음으로 참여:",
+    "editor": "편집자",
+    "viewer": "뷰어",
+    "roomCode": "방 코드:",
+    "enterCode": "6자리 코드 입력",
+    "addedLayer": "{{name}}이 레이어를 추가했습니다",
+    "deletedLayer": "{{name}}이 레이어를 삭제했습니다",
+    "collaborate": "협업"
+  },
+  "audio": {
+    "effectsApplied": "오디오 효과 적용됨!",
+    "effectsFailed": "효과 적용 실패, 원본 저장 중"
+  },
+  "image": {
+    "selectImageFile": "이미지 파일을 선택하세요",
+    "imageTooLarge": "이미지는 10MB 미만이어야 합니다"
+  },
+  "location": {
+    "enterLocation": "위치 입력...",
+    "addMapboxToken": "위치 검색을 활성화하려면 설정에서 Mapbox 토큰을 추가하세요",
+    "searchLocation": "알림을 위한 위치 검색...",
+    "arrive": "도착",
+    "leave": "출발",
+    "radiusUnit": "{{radius}}m 반경"
+  },
+  "theme": {
+    "editTheme": "테마 편집",
+    "themeName": "테마 이름",
+    "themeNamePlaceholder": "내 커스텀 테마",
+    "livePreview": "실시간 미리보기"
+  },
+  "versionHistory": {
+    "noHistory": "아직 버전 기록이 없습니다",
+    "changesSavedAuto": "변경사항이 자동으로 저장됩니다"
   }
 }

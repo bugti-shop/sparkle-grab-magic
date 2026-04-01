@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { Play, Pause, Check, X, Scissors, RotateCcw, Sparkles, Volume2, AudioWaveform } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -13,6 +14,7 @@ interface VoiceTrimmerProps {
 }
 
 export const VoiceTrimmer = ({ audioUrl, duration, onSave, onCancel }: VoiceTrimmerProps) => {
+  const { t } = useTranslation();
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [startTrim, setStartTrim] = useState(0);
@@ -327,10 +329,10 @@ export const VoiceTrimmer = ({ audioUrl, duration, onSave, onCancel }: VoiceTrim
             highPassFrequency: 80,
           });
           
-          toast.success('Audio effects applied!', { id: 'audio-effects' });
+          toast.success(t('audio.effectsApplied'), { id: 'audio-effects' });
         } catch (effectError) {
           console.error('Error applying effects:', effectError);
-          toast.error('Failed to apply effects, saving original', { id: 'audio-effects' });
+          toast.error(t('audio.effectsFailed'), { id: 'audio-effects' });
         }
       }
       

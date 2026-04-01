@@ -384,7 +384,7 @@ export const NoteCard = memo(({ note, onEdit, onDelete, onArchive, onTogglePin, 
             ) : (
               <div className="flex items-center gap-2 text-sm text-black/50 mb-3 italic">
                 <Pen className="h-4 w-4" />
-                <span>Sketch drawing</span>
+                <span>{t('notes.sketchDrawing')}</span>
               </div>
             )
           ) : (note.metaDescription || note.content) && (
