@@ -127,7 +127,7 @@ export const ForgotPasswordSheet = ({
           </div>
 
           <Button variant="outline" onClick={onClose} className="w-full mt-4">
-            Close
+            {t('common.close')}
           </Button>
         </SheetContent>
       </Sheet>
