@@ -471,7 +471,7 @@ const TodoSettings = () => {
                           if (result.updated > 0) parts.push(`${result.updated} updated`);
                           toast.success(parts.length > 0 ? `📅 ${t('calendarSync.synced', 'Synced')}: ${parts.join(', ')}` : `📅 ${t('calendarSync.alreadyInSync', 'Already in sync')}`, { id: 'manual-sync' });
                         } catch (e) {
-                          toast.error('Sync failed', { id: 'manual-sync' });
+                          toast.error(t('calendarSync.syncFailed', 'Sync failed'), { id: 'manual-sync' });
                         }
                       }}
                     >
