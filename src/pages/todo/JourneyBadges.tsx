@@ -290,10 +290,10 @@ const JourneyBadges = () => {
         {/* Journey filter chips */}
         {journeysWithBadges.length > 1 && (
           <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-none">
-            <button onClick={() => setFilter('all')} className={cn('flex-shrink-0 px-3 py-1.5 rounded-full text-xs font-semibold border transition-all', filter === 'all' ? 'bg-primary text-primary-foreground border-primary' : 'bg-card text-muted-foreground border-border')}>All</button>
+            <button onClick={() => setFilter('all')} className={cn('flex-shrink-0 px-3 py-1.5 rounded-full text-xs font-semibold border transition-all', filter === 'all' ? 'bg-primary text-primary-foreground border-primary' : 'bg-card text-muted-foreground border-border')}>{t('common.all', 'All')}</button>
             {journeysWithBadges.map(j => (
               <button key={j.id} onClick={() => setFilter(j.id)} className={cn('flex-shrink-0 px-3 py-1.5 rounded-full text-xs font-semibold border transition-all flex items-center gap-1.5', filter === j.id ? 'bg-primary text-primary-foreground border-primary' : 'bg-card text-muted-foreground border-border')}>
-                <span>{j.emoji}</span><span>{j.name}</span>
+                <span>{j.emoji}</span><span>{t(`journey.${j.id}.name`, j.name)}</span>
               </button>
             ))}
           </div>
