@@ -1531,10 +1531,10 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
   // ============ READY TO START JOURNEY SCREEN ============
   if (showReadyScreen) {
     const featureItems = [
-      { icon: <Unlock size={16} strokeWidth={2} />, title: 'Unlock All Features', desc: 'Dark mode, templates, sync, and more' },
-      { icon: <Bell size={16} strokeWidth={2} />, title: 'Unlimited Everything', desc: 'Unlimited folders, sections, and views' },
-      { icon: <Crown size={16} strokeWidth={2} />, title: 'Pro Member', desc: 'Get access to all current and future features' },
-      { icon: <Gift size={16} strokeWidth={2} />, title: '8 Days Free Trial', desc: 'Try all Pro features free for 8 days' },
+      { icon: <Unlock size={16} strokeWidth={2} />, title: t('onboarding.readyUnlockAll'), desc: t('onboarding.readyUnlockAllDesc') },
+      { icon: <Bell size={16} strokeWidth={2} />, title: t('onboarding.readyUnlimited'), desc: t('onboarding.readyUnlimitedDesc') },
+      { icon: <Crown size={16} strokeWidth={2} />, title: t('onboarding.readyProMember'), desc: t('onboarding.readyProMemberDesc') },
+      { icon: <Gift size={16} strokeWidth={2} />, title: t('onboarding.readyFreeTrial'), desc: t('onboarding.readyFreeTrialDesc') },
     ];
     return (
       <div className="fixed inset-0 z-[300] flex flex-col bg-white" style={{ paddingTop: 'env(safe-area-inset-top, 0px)', paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}>
