@@ -3279,7 +3279,11 @@
     "tasksCount": "{{count}} कार्य",
     "badges": "यात्रा बैज",
     "shareBadge": "बैज साझा करें",
-    "shareError": "बैज साझा करने में विफल"
+    "shareError": "बैज साझा करने में विफल",
+    "noJourneysYet": "अभी तक कोई यात्रा नहीं",
+    "startFromProgress": "अपना साहसिक कार्य शुरू करने के लिए प्रगति पृष्ठ से एक आभासी यात्रा शुरू करें!",
+    "complete": "पूर्ण",
+    "inProgress": "प्रगति में"
   },
   "certificates": {
     "title": "प्रमाणपत्र",

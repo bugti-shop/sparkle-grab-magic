@@ -3192,7 +3192,11 @@
     "tasksCount": "{{count}} attività",
     "badges": "Badge di viaggio",
     "shareBadge": "Condividi badge",
-    "shareError": "Impossibile condividere il badge"
+    "shareError": "Impossibile condividere il badge",
+    "noJourneysYet": "Nessun viaggio ancora",
+    "startFromProgress": "Inizia un viaggio virtuale dalla pagina Progressi per iniziare la tua avventura!",
+    "complete": "Completato",
+    "inProgress": "In corso"
   },
   "certificates": {
     "title": "Certificati",

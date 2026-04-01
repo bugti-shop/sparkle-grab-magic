@@ -3192,7 +3192,11 @@
     "tasksCount": "{{count}}개 작업",
     "badges": "여정 배지",
     "shareBadge": "배지 공유",
-    "shareError": "배지 공유 실패"
+    "shareError": "배지 공유 실패",
+    "noJourneysYet": "아직 여행이 없습니다",
+    "startFromProgress": "진행 페이지에서 가상 여행을 시작하여 모험을 시작하세요!",
+    "complete": "완료",
+    "inProgress": "진행 중"
   },
   "certificates": {
     "title": "인증서",

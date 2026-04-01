@@ -3167,7 +3167,11 @@
     },
     "badges": "Lencana Perjalanan",
     "shareBadge": "Bagikan Lencana",
-    "shareError": "Gagal membagikan lencana"
+    "shareError": "Gagal membagikan lencana",
+    "noJourneysYet": "Belum ada perjalanan",
+    "startFromProgress": "Mulai perjalanan virtual dari halaman Kemajuan untuk memulai petualangan Anda!",
+    "complete": "Selesai",
+    "inProgress": "Sedang berlangsung"
   },
   "certificates": {
     "title": "Sertifikat",

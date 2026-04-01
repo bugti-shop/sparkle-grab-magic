@@ -3192,7 +3192,11 @@
     "tasksCount": "{{count}} Aufgaben",
     "badges": "Reise-Abzeichen",
     "shareBadge": "Abzeichen teilen",
-    "shareError": "Fehler beim Teilen des Abzeichens"
+    "shareError": "Fehler beim Teilen des Abzeichens",
+    "noJourneysYet": "Noch keine Reisen",
+    "startFromProgress": "Starten Sie eine virtuelle Reise von der Fortschrittsseite, um Ihr Abenteuer zu beginnen!",
+    "complete": "Abgeschlossen",
+    "inProgress": "In Bearbeitung"
   },
   "certificates": {
     "title": "Zertifikate",

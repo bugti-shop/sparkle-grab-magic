@@ -3192,7 +3192,11 @@
     "tasksCount": "{{count}} 个任务",
     "badges": "旅程徽章",
     "shareBadge": "分享徽章",
-    "shareError": "分享徽章失败"
+    "shareError": "分享徽章失败",
+    "noJourneysYet": "还没有旅程",
+    "startFromProgress": "从进度页面开始一段虚拟旅程，开始你的冒险！",
+    "complete": "已完成",
+    "inProgress": "进行中"
   },
   "certificates": {
     "title": "证书",

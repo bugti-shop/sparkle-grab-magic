@@ -3192,7 +3192,11 @@
     "tasksCount": "{{count}} tareas",
     "badges": "Insignias de viaje",
     "shareBadge": "Compartir insignia",
-    "shareError": "Error al compartir insignia"
+    "shareError": "Error al compartir insignia",
+    "noJourneysYet": "Aún no hay viajes",
+    "startFromProgress": "¡Inicia un viaje virtual desde la página de Progreso para comenzar tu aventura!",
+    "complete": "Completado",
+    "inProgress": "En progreso"
   },
   "certificates": {
     "title": "Certificados",

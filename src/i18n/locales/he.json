@@ -3174,7 +3174,11 @@
     "tasksCount": "{{count}} משימות",
     "badges": "תגי מסע",
     "shareBadge": "שתף תג",
-    "shareError": "שיתוף התג נכשל"
+    "shareError": "שיתוף התג נכשל",
+    "noJourneysYet": "אין עדיין מסעות",
+    "startFromProgress": "התחילו מסע וירטואלי מדף ההתקדמות כדי להתחיל את ההרפתקה!",
+    "complete": "הושלם",
+    "inProgress": "בתהליך"
   },
   "certificates": {
     "title": "תעודות",

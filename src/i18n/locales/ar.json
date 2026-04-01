@@ -3279,7 +3279,11 @@
     "tasksCount": "{{count}} مهمة",
     "badges": "شارات الرحلة",
     "shareBadge": "مشاركة الشارة",
-    "shareError": "فشل مشاركة الشارة"
+    "shareError": "فشل مشاركة الشارة",
+    "noJourneysYet": "لا توجد رحلات بعد",
+    "startFromProgress": "ابدأ رحلة افتراضية من صفحة التقدم لبدء مغامرتك!",
+    "complete": "مكتمل",
+    "inProgress": "قيد التقدم"
   },
   "certificates": {
     "title": "الشهادات",

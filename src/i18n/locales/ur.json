@@ -3156,7 +3156,11 @@
     "tasksCount": "{{count}} ٹاسک",
     "badges": "سفر کے بیجز",
     "shareBadge": "بیج شیئر کریں",
-    "shareError": "بیج شیئر کرنے میں ناکامی"
+    "shareError": "بیج شیئر کرنے میں ناکامی",
+    "noJourneysYet": "ابھی تک کوئی سفر نہیں",
+    "startFromProgress": "اپنی مہم شروع کرنے کے لیے پروگریس صفحے سے ایک ورچوئل سفر شروع کریں!",
+    "complete": "مکمل",
+    "inProgress": "جاری ہے"
   },
   "certificates": {
     "title": "سرٹیفکیٹس",

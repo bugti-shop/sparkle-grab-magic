@@ -3192,7 +3192,11 @@
     "tasksCount": "{{count}} görev",
     "badges": "Yolculuk rozetleri",
     "shareBadge": "Rozet paylaş",
-    "shareError": "Rozet paylaşılamadı"
+    "shareError": "Rozet paylaşılamadı",
+    "noJourneysYet": "Henüz yolculuk yok",
+    "startFromProgress": "Maceranıza başlamak için İlerleme sayfasından sanal bir yolculuk başlatın!",
+    "complete": "Tamamlandı",
+    "inProgress": "Devam ediyor"
   },
   "certificates": {
     "title": "Sertifikalar",
