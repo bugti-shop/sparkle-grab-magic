@@ -1,8 +1,4 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
-import { MentionDropdown, MentionItem } from './MentionDropdown';
-import { MentionRenderer } from './MentionRenderer';
-import { useMention } from '@/hooks/useMention';
-import { hasMentions } from '@/utils/mentionUtils';
 import { saveTaskMedia, makeTaskMediaRef, deleteTaskMedia, parseTaskMediaRef } from '@/utils/taskMediaStorage';
 import { useTranslation } from 'react-i18next';
 import { TodoItem, Priority, Folder, Note, RepeatType, ColoredTag, TimeTracking, TaskStatus, LocationReminder, TaskAttachment, EscalationTiming } from '@/types/note';
