@@ -5,6 +5,7 @@ import { m as motion, AnimatePresence } from 'framer-motion';
 import { ALL_JOURNEYS, startJourney } from '@/utils/virtualJourneyStorage';
 import { ArrowLeft, Camera, User, Check, PenLine, CheckCircle2, CalendarDays, Target, Lightbulb, Bell, BarChart3, Star, Trophy, FlaskConical, Link, Monitor, Rocket, Heart, TrendingUp, Brain, Zap, Palette, Save, Trash2, BookOpen, Briefcase, Activity, Sparkles, MapPin, Plus, Folder as FolderIcon, Gift, Info } from 'lucide-react';
 import appLogo from '@/assets/app-logo.webp';
+import readyMascot from '@/assets/ready-mascot.png';
 import { MemoryRouter } from 'react-router-dom';
 
 import { loadTodoItems, saveTodoItems } from '@/utils/todoItemsStorage';
