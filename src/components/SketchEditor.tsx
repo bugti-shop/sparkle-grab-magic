@@ -7992,7 +7992,7 @@ export const SketchEditor = memo(({ initialData, onChange, onImageExport, classN
                         if (onCollabLayerEvent) onCollabLayerEvent('rename', { layerId: layer.id, layerName: newName.trim() });
                       }
                     }}
-                    title="Double-click to rename"
+                    title={t('sketch.doubleClickRename', 'Double-click to rename')}
                   >{layer.name}</span>
                   <div className="flex gap-0.5">
                     {ri < layers.length - 1 && (
