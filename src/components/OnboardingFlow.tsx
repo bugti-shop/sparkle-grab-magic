@@ -5,7 +5,7 @@ import { m as motion, AnimatePresence } from 'framer-motion';
 import { ALL_JOURNEYS, startJourney } from '@/utils/virtualJourneyStorage';
 import { ArrowLeft, Camera, User, Check, PenLine, CheckCircle2, CalendarDays, Target, Lightbulb, Bell, BarChart3, Star, Trophy, FlaskConical, Link, Monitor, Rocket, Heart, TrendingUp, Brain, Zap, Palette, Save, Trash2, BookOpen, Briefcase, Activity, Sparkles, MapPin, Plus, Folder as FolderIcon, Gift, Info, Unlock, Crown } from 'lucide-react';
 import appLogo from '@/assets/app-logo.webp';
-import readyMascot from '@/assets/ready-mascot.png';
+
 import { MemoryRouter } from 'react-router-dom';
 
 import { loadTodoItems, saveTodoItems } from '@/utils/todoItemsStorage';
@@ -1556,7 +1556,7 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
               <h3 className="text-[17px] font-bold text-[#1a1a1a] font-['Nunito'] leading-tight mb-1">How do I cancel<br />my subscription?</h3>
               <p className="text-[13px] text-[#5a6065] font-['Nunito_Sans'] leading-relaxed max-w-[200px]">Visit our Help Center for step-by-step instructions on how to cancel your Flowist subscription.</p>
             </div>
-            <img src={readyMascot} alt="" width={160} height={160} className="absolute right-2 -bottom-2 pointer-events-none" loading="lazy" />
+            
           </motion.div>
         </div>
         <div className="px-6 pb-6 pt-2" style={{ paddingBottom: 'max(env(safe-area-inset-bottom, 0px), 24px)' }}>
