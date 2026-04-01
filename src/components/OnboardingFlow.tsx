@@ -1609,10 +1609,10 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
         <div className="flex-1 flex flex-col px-6 pt-4 overflow-y-auto pb-4">
           <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}>
             <span className="text-3xl mb-2 block">🧭</span>
-            <h1 className="text-[24px] font-black text-[#1a1a1a] font-['Nunito'] tracking-tight leading-tight">Choose Your Adventure</h1>
+            <h1 className="text-[24px] font-black text-[#1a1a1a] font-['Nunito'] tracking-tight leading-tight">{t('onboarding.chooseAdventure')}</h1>
           </motion.div>
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.1 }} className="text-[13px] text-[#767b7e] font-['Nunito_Sans'] mb-5">
-            Complete tasks to travel the world! Pick a journey to start.
+            {t('onboarding.chooseAdventureSubtitle')}
           </motion.p>
 
           <div className="space-y-3">
