@@ -16,7 +16,7 @@ import { useNavigate } from 'react-router-dom';
 import { AppLogo } from '@/components/AppLogo';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { useDarkMode } from '@/hooks/useDarkMode';
-import { clearPendingMentionNavigation, getPendingMentionNavigation } from '@/hooks/useMentionNavigation';
+
 import { useTranslation } from 'react-i18next';
 import { useNotes } from '@/contexts/NotesContext';
 
