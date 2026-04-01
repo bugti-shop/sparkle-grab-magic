@@ -15,6 +15,7 @@ interface StreakDay1ScreenProps {
 }
 
 export const StreakDay1Screen = ({ userName, onContinue }: StreakDay1ScreenProps) => {
+  const { t } = useTranslation();
   const { data, completedToday, weekData, recordTaskCompletion } = useStreak({ autoCheck: true });
   const [streakStarted, setStreakStarted] = useState(false);
 
