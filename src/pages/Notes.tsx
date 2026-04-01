@@ -89,31 +89,6 @@ const Notes = () => {
     });
   }, [showTagManager]);
 
-  // Handle mention-navigate: open a specific note by id
-  useEffect(() => {
-    const openMentionedNote = (id: string) => {
-      const note = notes.find(n => n.id === id);
-      if (!note) return false;
-
-      setSelectedNote(note);
-      setIsEditorOpen(true);
-      clearPendingMentionNavigation();
-      return true;
-    };
-
-    const handler = (e: CustomEvent<{ id: string }>) => {
-      openMentionedNote(e.detail.id);
-    };
-
-    window.addEventListener('open-note', handler as EventListener);
-
-    const pendingMention = getPendingMentionNavigation();
-    if (pendingMention?.type === 'note') {
-      openMentionedNote(pendingMention.id);
-    }
-
-    return () => window.removeEventListener('open-note', handler as EventListener);
-  }, [notes]);
 
   const handleSaveNote = useCallback((note: Note) => {
     setNotes(prevNotes => {

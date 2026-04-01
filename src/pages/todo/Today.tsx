@@ -153,30 +153,6 @@ const Today = () => {
     updateSubtask, deleteSubtask,
   } = actions;
 
-  // Handle mention-navigate: open a specific task by id
-  useEffect(() => {
-    const openMentionedTask = (id: string) => {
-      const task = items.find(t => t.id === id);
-      if (!task) return false;
-
-      setSelectedTask(task);
-      clearPendingMentionNavigation();
-      return true;
-    };
-
-    const handler = (e: CustomEvent<{ id: string }>) => {
-      openMentionedTask(e.detail.id);
-    };
-
-    window.addEventListener('open-task', handler as EventListener);
-
-    const pendingMention = getPendingMentionNavigation();
-    if (pendingMention?.type === 'task') {
-      openMentionedTask(pendingMention.id);
-    }
-
-    return () => window.removeEventListener('open-task', handler as EventListener);
-  }, [items, setSelectedTask]);
 
   // ── Voice playback (extracted hook) ──
   const voice = useVoicePlayback();
