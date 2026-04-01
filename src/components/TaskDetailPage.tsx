@@ -1,8 +1,4 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
-import { MentionDropdown, MentionItem } from './MentionDropdown';
-import { MentionRenderer } from './MentionRenderer';
-import { useMention } from '@/hooks/useMention';
-import { hasMentions } from '@/utils/mentionUtils';
 import { saveTaskMedia, makeTaskMediaRef, deleteTaskMedia, parseTaskMediaRef } from '@/utils/taskMediaStorage';
 import { useTranslation } from 'react-i18next';
 import { TodoItem, Priority, Folder, Note, RepeatType, ColoredTag, TimeTracking, TaskStatus, LocationReminder, TaskAttachment, EscalationTiming } from '@/types/note';
@@ -131,15 +127,6 @@ export const TaskDetailPage = ({
   const [descText, setDescText] = useState(task?.description || '');
   const [isEditingDesc, setIsEditingDesc] = useState(false);
 
-  const descMention = useMention({
-    text: descText,
-    setText: (t) => { setDescText(t); onUpdate({ ...task!, description: t }); },
-    inputRef: descriptionRef as React.RefObject<HTMLTextAreaElement>,
-  });
-
-  const handleMentionNavigate = useCallback((type: 'note' | 'task', id: string) => {
-    window.dispatchEvent(new CustomEvent('mention-navigate', { detail: { type, id } }));
-  }, []);
 
   useEffect(() => {
     if (task) {
@@ -1266,7 +1253,6 @@ export const TaskDetailPage = ({
             <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
               <FileText className="h-4 w-4" />
               {t('taskDetail.description')}
-              <span className="text-xs text-muted-foreground/60 ml-auto">Type @notes or @tasks to mention</span>
             </div>
             {isEditingDesc || !descText ? (
               <div className="relative">
@@ -1277,30 +1263,18 @@ export const TaskDetailPage = ({
                     setDescText(e.target.value);
                     onUpdate({ ...task, description: e.target.value });
                   }}
-                  onInput={() => descMention.checkForMention()}
                   onFocus={() => setIsEditingDesc(true)}
                   onBlur={() => setTimeout(() => setIsEditingDesc(false), 200)}
                   placeholder={t('taskDetail.descriptionPlaceholder')}
                   className="w-full min-h-[120px] p-3 rounded-xl bg-muted/30 border border-border/50 resize-none text-sm placeholder:text-muted-foreground/50 focus:outline-none focus:ring-2 focus:ring-primary/20"
                 />
-                <MentionDropdown
-                  isOpen={descMention.mentionOpen}
-                  mentionType={descMention.mentionType}
-                  query={descMention.mentionQuery}
-                  position={descMention.dropdownPos}
-                  onSelect={descMention.handleMentionSelect}
-                  onClose={descMention.closeMention}
-                />
               </div>
             ) : (
               <div
                 onClick={() => setIsEditingDesc(true)}
-                className="w-full min-h-[60px] p-3 rounded-xl bg-muted/30 border border-border/50 text-sm cursor-text"
+                className="w-full min-h-[60px] p-3 rounded-xl bg-muted/30 border border-border/50 text-sm cursor-text whitespace-pre-wrap"
               >
-                <MentionRenderer
-                  text={descText}
-                  onMentionClick={handleMentionNavigate}
-                />
+                {descText}
               </div>
             )}
           </div>

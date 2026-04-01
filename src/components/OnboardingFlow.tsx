@@ -345,7 +345,7 @@ const OnboardingFolderCreation = ({ type, folders, setFolders, progressPercent, 
             className="flex flex-col items-center justify-center py-8 opacity-40"
           >
             <FolderIcon className="h-10 w-10 text-[#ccc] mb-2" />
-            <p className="text-[13px] text-[#aaa]">No folders yet — create one above!</p>
+            <p className="text-[13px] text-[#aaa]">{t('onboarding.noFoldersEmpty')}</p>
           </motion.div>
         )}
       </div>
@@ -699,12 +699,12 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
 
   // Translated option arrays (must be inside component to access t())
   const tGoalOptions = useMemo(() => [
-    'For Notes Taking',
-    'For Task Management',
-    'For Sketch Book',
-    'For Coding',
-    'For Personal Info Savings',
-  ], []);
+    t('onboarding.goalNoteTaking'),
+    t('onboarding.goalTaskManagement'),
+    t('onboarding.goalSketchBook'),
+    t('onboarding.goalCoding'),
+    t('onboarding.goalPersonalInfo'),
+  ], [t]);
 
   const tSourceOptions = useMemo(() => [
     t('onboarding.sourceInstagram'),
@@ -1488,7 +1488,7 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
             animate={{ opacity: 1, y: 0 }}
             className="text-[28px] font-black text-[#1a1a1a] font-['Nunito'] tracking-tight text-center mb-1"
           >
-            Your Streak Certificate 🔥
+            {t('onboarding.certificateTitle')}
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -1496,7 +1496,7 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
             transition={{ delay: 0.1 }}
             className="text-[13px] text-[#767b7e] font-['Nunito_Sans'] text-center mb-5"
           >
-            Share your consistency with the world!
+            {t('onboarding.certificateSubtitle')}
           </motion.p>
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
@@ -1520,7 +1520,7 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
             style={{ backgroundColor: '#333333', color: '#ffffff', boxShadow: '0 8px 0 0 #000000' }}
             whileTap={{ scale: 0.97 }}
           >
-            Continue
+            {t('onboarding.continue')}
           </motion.button>
         </div>
       </div>
@@ -1531,10 +1531,10 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
   // ============ READY TO START JOURNEY SCREEN ============
   if (showReadyScreen) {
     const featureItems = [
-      { icon: <Unlock size={16} strokeWidth={2} />, title: 'Unlock All Features', desc: 'Dark mode, templates, sync, and more' },
-      { icon: <Bell size={16} strokeWidth={2} />, title: 'Unlimited Everything', desc: 'Unlimited folders, sections, and views' },
-      { icon: <Crown size={16} strokeWidth={2} />, title: 'Pro Member', desc: 'Get access to all current and future features' },
-      { icon: <Gift size={16} strokeWidth={2} />, title: '8 Days Free Trial', desc: 'Try all Pro features free for 8 days' },
+      { icon: <Unlock size={16} strokeWidth={2} />, title: t('onboarding.readyUnlockAll'), desc: t('onboarding.readyUnlockAllDesc') },
+      { icon: <Bell size={16} strokeWidth={2} />, title: t('onboarding.readyUnlimited'), desc: t('onboarding.readyUnlimitedDesc') },
+      { icon: <Crown size={16} strokeWidth={2} />, title: t('onboarding.readyProMember'), desc: t('onboarding.readyProMemberDesc') },
+      { icon: <Gift size={16} strokeWidth={2} />, title: t('onboarding.readyFreeTrial'), desc: t('onboarding.readyFreeTrialDesc') },
     ];
     return (
       <div className="fixed inset-0 z-[300] flex flex-col bg-white" style={{ paddingTop: 'env(safe-area-inset-top, 0px)', paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}>
@@ -1545,7 +1545,7 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
         </div>
         <div className="flex-1 overflow-y-auto px-6 pt-2 pb-4">
           <motion.h1 initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="text-[32px] font-black text-[#1a1a1a] font-['Nunito'] tracking-tight text-center leading-tight mb-8">
-            Ready to start your{'\n'}journey?
+            {t('onboarding.readyTitle')}
           </motion.h1>
           <div className="flex flex-col items-start mx-auto w-80 relative">
             <div className="absolute left-[10.5px] top-[20px] bottom-[20px] w-[11px] rounded-b-full" style={{ background: 'hsl(var(--primary) / 0.2)' }} />
@@ -1561,18 +1561,18 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
           </div>
           <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7 }} className="mt-8 rounded-2xl p-5 relative overflow-hidden flex items-end" style={{ backgroundColor: '#e8faf3', minHeight: '140px' }}>
             <div className="flex-1">
-              <h3 className="text-[17px] font-bold text-[#1a1a1a] font-['Nunito'] leading-tight mb-1">How do I cancel<br />my subscription?</h3>
-              <p className="text-[13px] text-[#5a6065] font-['Nunito_Sans'] leading-relaxed max-w-[200px]">Visit our Help Center for step-by-step instructions on how to cancel your Flowist subscription.</p>
+              <h3 className="text-[17px] font-bold text-[#1a1a1a] font-['Nunito'] leading-tight mb-1">{t('onboarding.readyCancelTitle')}</h3>
+              <p className="text-[13px] text-[#5a6065] font-['Nunito_Sans'] leading-relaxed max-w-[200px]">{t('onboarding.readyCancelDesc')}</p>
             </div>
             
           </motion.div>
         </div>
         <div className="px-6 pb-6 pt-2" style={{ paddingBottom: 'max(env(safe-area-inset-bottom, 0px), 24px)' }}>
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.7 }} className="text-center text-[13px] font-medium mb-3" style={{ color: 'hsl(0 0% 45.1%)' }}>
-            🔓 No Commitment, cancel anytime
+            {t('onboarding.noCommitment')}
           </motion.p>
           <motion.button initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8 }} onClick={async () => { setShowReadyScreen(false); await setSetting('onboarding_completed', true); await setSetting('onboarding_progress_state', null); onComplete(); setTimeout(() => openPaywall(), 300); }} className="w-full py-4 rounded-2xl text-[17px] font-bold" style={{ backgroundColor: '#1a1a1a', color: '#ffffff', boxShadow: '0 8px 0 0 #000000' }} whileTap={{ scale: 0.97 }}>
-            Continue
+            {t('onboarding.continue')}
           </motion.button>
         </div>
       </div>
@@ -1609,10 +1609,10 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
         <div className="flex-1 flex flex-col px-6 pt-4 overflow-y-auto pb-4">
           <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}>
             <span className="text-3xl mb-2 block">🧭</span>
-            <h1 className="text-[24px] font-black text-[#1a1a1a] font-['Nunito'] tracking-tight leading-tight">Choose Your Adventure</h1>
+            <h1 className="text-[24px] font-black text-[#1a1a1a] font-['Nunito'] tracking-tight leading-tight">{t('onboarding.chooseAdventure')}</h1>
           </motion.div>
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.1 }} className="text-[13px] text-[#767b7e] font-['Nunito_Sans'] mb-5">
-            Complete tasks to travel the world! Pick a journey to start.
+            {t('onboarding.chooseAdventureSubtitle')}
           </motion.p>
 
           <div className="space-y-3">
@@ -1989,13 +1989,13 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
         {step === 30 && (
           <motion.div key="step30" initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -40 }} transition={{ duration: 0.15 }} className="flex-1 flex flex-col px-6 pt-6 overflow-y-auto">
             <motion.h1 initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.2, delay: 0.05 }} className="text-[32px] font-black text-[#1a1a1a] font-['Nunito'] tracking-tight text-left leading-tight mb-2">
-              {`What's your biggest frustration using ${selectedPreviousApp}?`}
+              {t('onboarding.frustrationTitle', { app: selectedPreviousApp })}
             </motion.h1>
             <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.1 }} className="text-[14px] text-[#767b7e] mb-6">
-              This helps us show you how Flowist does it better.
+              {t('onboarding.frustrationSubtitle')}
             </motion.p>
             {renderSingleSelect(
-              ['Too slow', 'Too expensive', 'Lacks features I need', 'Too complicated', 'Bad mobile experience', 'Other'],
+              [t('onboarding.frustTooSlow'), t('onboarding.frustTooExpensive'), t('onboarding.frustLacksFeatures'), t('onboarding.frustTooComplicated'), t('onboarding.frustBadMobile'), t('onboarding.frustOther')],
               selectedFrustration,
               (val: string) => { triggerSelectionHaptic(); setSelectedFrustration(selectedFrustration === val ? null : val); }
             )}
@@ -2005,13 +2005,13 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
         {step === 31 && (
           <motion.div key="step31" initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -40 }} transition={{ duration: 0.15 }} className="flex-1 flex flex-col px-6 pt-6 overflow-y-auto">
             <motion.h1 initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.2, delay: 0.05 }} className="text-[32px] font-black text-[#1a1a1a] font-['Nunito'] tracking-tight text-left leading-tight mb-2">
-              How do you prefer to view your tasks?
+              {t('onboarding.taskViewTitle')}
             </motion.h1>
             <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.1 }} className="text-[14px] text-[#767b7e] mb-6">
-              We'll set up your default view based on this.
+              {t('onboarding.taskViewSubtitle')}
             </motion.p>
             {renderSingleSelect(
-              ['Daily list', 'Kanban board', 'Progress Board', 'Priority Board'],
+              [t('onboarding.taskViewDaily'), t('onboarding.taskViewKanban'), t('onboarding.taskViewProgress'), t('onboarding.taskViewPriority')],
               selectedTaskView,
               (val: string) => { triggerSelectionHaptic(); setSelectedTaskView(selectedTaskView === val ? null : val); }
             )}
@@ -2021,22 +2021,22 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
         {step === 32 && (
           <motion.div key="step32" initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -40 }} transition={{ duration: 0.15 }} className="flex-1 flex flex-col px-6 pt-6 overflow-y-auto">
             <motion.h1 initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.2, delay: 0.05 }} className="text-[32px] font-black text-[#1a1a1a] font-['Nunito'] tracking-tight text-left leading-tight mb-2">
-              Do you work across multiple devices?
+              {t('onboarding.devicesTitle')}
             </motion.h1>
             <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.1 }} className="text-[14px] text-[#767b7e] mb-6">
-              Select all that apply.
+              {t('onboarding.devicesSubtitle')}
             </motion.p>
             {renderMultiSelect(
-              ['iPhone', 'iPad', 'Mac', 'Android', 'Windows', 'Single device only'],
+              [t('onboarding.deviceIPhone'), t('onboarding.deviceIPad'), t('onboarding.deviceMac'), t('onboarding.deviceAndroid'), t('onboarding.deviceWindows'), t('onboarding.deviceSingle')],
               selectedDevices,
               (val: string) => {
                 triggerSelectionHaptic();
                 setSelectedDevices(prev => {
                   const next = new Set(prev);
-                  if (val === 'Single device only') {
+                  if (val === t('onboarding.deviceSingle')) {
                     return next.has(val) ? new Set() : new Set([val]);
                   }
-                  next.delete('Single device only');
+                  next.delete(t('onboarding.deviceSingle'));
                   next.has(val) ? next.delete(val) : next.add(val);
                   return next;
                 });
@@ -2048,13 +2048,13 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
         {step === 33 && (
           <motion.div key="step33" initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -40 }} transition={{ duration: 0.15 }} className="flex-1 flex flex-col px-6 pt-6 overflow-y-auto">
             <motion.h1 initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.2, delay: 0.05 }} className="text-[32px] font-black text-[#1a1a1a] font-['Nunito'] tracking-tight text-left leading-tight mb-2">
-              How important is offline access?
+              {t('onboarding.offlineTitle')}
             </motion.h1>
             <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.1 }} className="text-[14px] text-[#767b7e] mb-6">
-              Flowist works fully offline — just making sure it matters to you.
+              {t('onboarding.offlineSubtitle')}
             </motion.p>
             {renderSingleSelect(
-              ["Critical, I'm often offline", 'Nice to have', "Doesn't matter"],
+              [t('onboarding.offlineCritical'), t('onboarding.offlineNice'), t('onboarding.offlineNoMatter')],
               selectedOffline,
               (val: string) => { triggerSelectionHaptic(); setSelectedOffline(selectedOffline === val ? null : val); }
             )}
@@ -2064,13 +2064,13 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
         {step === 34 && (
           <motion.div key="step34" initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -40 }} transition={{ duration: 0.15 }} className="flex-1 flex flex-col px-6 pt-6 overflow-y-auto">
             <motion.h1 initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.2, delay: 0.05 }} className="text-[32px] font-black text-[#1a1a1a] font-['Nunito'] tracking-tight text-left leading-tight mb-2">
-              How often do you end the day with unfinished tasks?
+              {t('onboarding.unfinishedTitle')}
             </motion.h1>
             <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.1 }} className="text-[14px] text-[#767b7e] mb-6">
-              No judgment — we're here to help.
+              {t('onboarding.unfinishedSubtitle')}
             </motion.p>
             {renderSingleSelect(
-              ['Everyday', 'Sometimes', 'Rarely'],
+              [t('onboarding.unfinishedEveryday'), t('onboarding.unfinishedSometimes'), t('onboarding.unfinishedRarely')],
               selectedUnfinished,
               (val: string) => { triggerSelectionHaptic(); setSelectedUnfinished(selectedUnfinished === val ? null : val); }
             )}
@@ -2080,13 +2080,13 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
         {step === 35 && (
           <motion.div key="step35" initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -40 }} transition={{ duration: 0.15 }} className="flex-1 flex flex-col px-6 pt-6 overflow-y-auto">
             <motion.h1 initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.2, delay: 0.05 }} className="text-[32px] font-black text-[#1a1a1a] font-['Nunito'] tracking-tight text-left leading-tight mb-2">
-              Which of these slow you down the most?
+              {t('onboarding.slowdownTitle')}
             </motion.h1>
             <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.1 }} className="text-[14px] text-[#767b7e] mb-6">
-              Pick the one that hits hardest.
+              {t('onboarding.slowdownSubtitle')}
             </motion.p>
             {renderSingleSelect(
-              ['Switching between too many apps', 'Paying for too many subscriptions', 'Losing work when switching'],
+              [t('onboarding.slowdownApps'), t('onboarding.slowdownSubscriptions'), t('onboarding.slowdownLosingWork')],
               selectedSlowdown,
               (val: string) => { triggerSelectionHaptic(); setSelectedSlowdown(selectedSlowdown === val ? null : val); }
             )}
@@ -2147,13 +2147,13 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
         {step === 36 && (
           <motion.div key="step36" initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -40 }} transition={{ duration: 0.15 }} className="flex-1 flex flex-col px-6 pt-6 overflow-y-auto">
             <motion.h1 initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.2, delay: 0.05 }} className="text-[32px] font-black text-[#1a1a1a] font-['Nunito'] tracking-tight text-left leading-tight mb-2">
-              Why do most productivity apps stop working for you after a few weeks?
+              {t('onboarding.whyFailTitle')}
             </motion.h1>
             <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.1 }} className="text-[14px] text-[#767b7e] mb-6">
-              Be honest — Flowist is built to fix this.
+              {t('onboarding.whyFailSubtitle')}
             </motion.p>
             {renderSingleSelect(
-              ['I forgot to open them', "They're too complex to maintain", "They don't fit how I actually think"],
+              [t('onboarding.whyFailForgot'), t('onboarding.whyFailComplex'), t('onboarding.whyFailDontFit')],
               selectedWhyFail,
               (val: string) => { triggerSelectionHaptic(); setSelectedWhyFail(selectedWhyFail === val ? null : val); }
             )}
