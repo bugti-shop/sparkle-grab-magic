@@ -971,14 +971,14 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
     else if (step === 24) setStep(31); // back from journey → task view
     else if (step === 29) setStep(24); // back from adventure begins → journey
     else if (step === 32) setStep(selectedJourneyId ? 29 : 24); // back from devices → adventure or journey
-    else if (step === 33) setStep(32); // back from offline → devices
-     else if (step === 5) setStep(33); // back from folders → offline
+    else if (step === 33) setStep(10); // back from offline → sketch
+    else if (step === 10) setStep(32); // back from sketch → devices
+    else if (step === 5) setStep(33); // back from folders → offline
     else if (step === 34) setStep(5); // back from unfinished → folders
     else if (step === 35) setStep(34); // back from slowdown → unfinished
     else if (step === 36) setStep(35); // back from why fail → slowdown
     else if (step === 6) setStep(36); // back from note → why fail
-    else if (step === 10) setStep(6); // back from sketch → create note
-    else if (step === 13) setStep(10); // back from INFO → sketch
+    else if (step === 13) setStep(6); // back from INFO → note (sketch removed from here)
     else if (step === 14) setStep(13); // back from task → INFO
     else if (step === 25) setStep(14); // back from showcase → task
   }, [step, selectedJourneyId]);
