@@ -167,6 +167,7 @@ export const RichTextEditor = ({
   const [mentionQuery, setMentionQuery] = useState('');
   const [mentionPos, setMentionPos] = useState({ top: 0, left: 0 });
   const mentionTriggerRef = useRef<MentionTrigger | null>(null);
+  const mentionPreview = useMentionPreview();
   
   // Active formatting states
   const [activeStates, setActiveStates] = useState({
