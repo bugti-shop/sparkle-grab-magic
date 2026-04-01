@@ -29,8 +29,9 @@ export const DailyChallenges = () => {
     const handleComplete = (e: CustomEvent<{ challenge: DailyChallenge }>) => {
       setCompletedChallenge(e.detail.challenge);
       
-      // Play celebration sound
+      // Play celebration sound and haptic
       playChallengeCompleteSound();
+      triggerTripleHeavyHaptic();
       
       setTimeout(() => setCompletedChallenge(null), 3000);
       loadData();
