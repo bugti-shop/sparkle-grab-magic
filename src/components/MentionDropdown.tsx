@@ -184,20 +184,20 @@ export const MentionDropdown = ({
 
       if (e.key === 'ArrowDown') {
         e.preventDefault();
-        setSelectedIndex((prev) => Math.min(prev + 1, filteredItems.length - 1));
+        setSelectedIndex((prev) => Math.min(prev + 1, allSelectableItems.length - 1));
       } else if (e.key === 'ArrowUp') {
         e.preventDefault();
         setSelectedIndex((prev) => Math.max(prev - 1, 0));
-      } else if ((e.key === 'Enter' || e.key === 'Tab') && filteredItems.length > 0) {
+      } else if ((e.key === 'Enter' || e.key === 'Tab') && allSelectableItems.length > 0) {
         e.preventDefault();
         e.stopPropagation();
-        onSelect(filteredItems[selectedIndex]);
+        handleSelect(allSelectableItems[selectedIndex]);
       } else if (e.key === 'Escape') {
         e.preventDefault();
         onClose();
       }
     },
-    [isOpen, filteredItems, selectedIndex, onSelect, onClose]
+    [isOpen, allSelectableItems, selectedIndex, handleSelect, onClose]
   );
 
   useEffect(() => {
