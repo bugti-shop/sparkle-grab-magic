@@ -1572,7 +1572,7 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
             {t('onboarding.noCommitment')}
           </motion.p>
           <motion.button initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8 }} onClick={async () => { setShowReadyScreen(false); await setSetting('onboarding_completed', true); await setSetting('onboarding_progress_state', null); onComplete(); setTimeout(() => openPaywall(), 300); }} className="w-full py-4 rounded-2xl text-[17px] font-bold" style={{ backgroundColor: '#1a1a1a', color: '#ffffff', boxShadow: '0 8px 0 0 #000000' }} whileTap={{ scale: 0.97 }}>
-            Continue
+            {t('onboarding.continue')}
           </motion.button>
         </div>
       </div>
