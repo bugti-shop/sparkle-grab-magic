@@ -1207,63 +1207,6 @@ export const RichTextEditor = ({
     }
   };
 
-  // Handle @mention selection in contentEditable
-  const handleMentionSelect = useCallback((item: MentionItem) => {
-    const trigger = mentionTriggerRef.current;
-    if (!trigger || !editorRef.current) return;
-
-    const selection = window.getSelection();
-    if (!selection || selection.rangeCount === 0) return;
-
-    // Find the text node with the @trigger and replace it
-    const walker = document.createTreeWalker(editorRef.current, NodeFilter.SHOW_TEXT);
-    let node: Text | null;
-    while ((node = walker.nextNode() as Text | null)) {
-      const text = node.textContent || '';
-      const triggerPattern = trigger.searchText;
-      const triggerIdx = text.toLowerCase().lastIndexOf(triggerPattern.toLowerCase());
-      if (triggerIdx === -1) continue;
-
-      // Calculate end of trigger text (including query)
-      const triggerEnd = triggerIdx + triggerPattern.length;
-
-      const before = text.substring(0, triggerIdx);
-      const after = text.substring(Math.min(triggerEnd, text.length));
-
-      // Create mention HTML element
-      const mentionSpan = document.createElement('span');
-      mentionSpan.className = 'mention-block';
-      mentionSpan.setAttribute('data-mention-type', item.type);
-      mentionSpan.setAttribute('data-mention-id', item.id);
-      mentionSpan.setAttribute('contenteditable', 'false');
-      mentionSpan.setAttribute('role', 'button');
-      mentionSpan.setAttribute('tabindex', '0');
-      const icon = item.type === 'note' ? '📝' : '✅';
-      const label = item.type === 'note' ? 'Note' : 'Task';
-      mentionSpan.innerHTML = `${icon} <span class="mention-label">${label}:</span> ${item.title}`;
-
-      // Replace text node
-      const beforeNode = document.createTextNode(before);
-      const afterNode = document.createTextNode(' ' + after);
-      const parent = node.parentNode!;
-      parent.insertBefore(beforeNode, node);
-      parent.insertBefore(mentionSpan, node);
-      parent.insertBefore(afterNode, node);
-      parent.removeChild(node);
-
-      // Move cursor after mention
-      const range = document.createRange();
-      range.setStartAfter(afterNode);
-      range.collapse(true);
-      selection.removeAllRanges();
-      selection.addRange(range);
-      break;
-    }
-
-    setMentionOpen(false);
-    mentionTriggerRef.current = null;
-    handleInput();
-  }, []);
 
   // Handle checklist insertion
   const handleChecklist = useCallback(() => {
