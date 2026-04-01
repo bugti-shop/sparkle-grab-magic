@@ -251,7 +251,7 @@ function PaywallVariantA({ logic }: { logic: ReturnType<typeof usePaywallLogic> 
           </button>
 
           <p className="text-[13px] font-medium text-center mt-3" style={{ color: 'hsl(0 0% 45.1%)' }}>
-            🔓 No Commitment, cancel anytime
+            🔓 {t('onboarding.noCommitment', 'No Commitment, cancel anytime')}
           </p>
 
           <PaywallFooter logic={logic} />

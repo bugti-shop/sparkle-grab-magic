@@ -108,7 +108,7 @@ export const StreakSocietyBadge = ({ streak, compact = false }: StreakSocietyBad
           {tier.name}
         </p>
         <p className="text-[10px] text-muted-foreground font-medium">
-          Streak Society · {currentStreak} days
+          {t('streak.societyDays', 'Streak Society · {{count}} days', { count: currentStreak })}
         </p>
       </div>
 

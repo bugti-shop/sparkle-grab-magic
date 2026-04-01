@@ -1410,7 +1410,7 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
         {!isTaskInputSheetOpen && (
           <div className="px-4 pb-2 pt-1 flex flex-col gap-1.5 relative z-50 bg-white" style={{ paddingBottom: 'env(safe-area-inset-bottom, 8px)' }}>
             <motion.button onClick={goNext} className="w-full py-3 rounded-2xl text-[17px] font-bold" style={{ backgroundColor: '#333333', color: '#ffffff', boxShadow: '0 8px 0 0 #000000' }} whileTap={{ scale: 0.97 }}>
-              {createdTasks.length > 0 ? `${t('onboarding.continue')} · ${createdTasks.length} task${createdTasks.length > 1 ? 's' : ''}` : t('onboarding.continue')}
+              {createdTasks.length > 0 ? `${t('onboarding.continue')} · ${createdTasks.length} ${t('common.tasks', 'tasks')}` : t('onboarding.continue')}
             </motion.button>
           </div>
         )}
