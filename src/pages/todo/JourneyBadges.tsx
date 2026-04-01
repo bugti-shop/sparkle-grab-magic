@@ -253,7 +253,7 @@ const JourneyBadges = () => {
                 {celebratingBadge.description}
               </motion.p>
               <motion.button initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }} onClick={() => setCelebratingBadge(null)} className="mt-2 text-xs text-muted-foreground">
-                Tap to continue
+                {t('common.tapToContinue', 'Tap to continue')}
               </motion.button>
             </motion.div>
           </motion.div>
