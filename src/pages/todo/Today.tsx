@@ -19,7 +19,7 @@ import { WaveformProgressBar } from '@/components/WaveformProgressBar';
 import { playCompletionSound } from '@/utils/taskSounds';
 import { TASK_CIRCLE, TASK_CHECK_ICON } from '@/utils/taskItemStyles';
 import { loadCustomSmartViews } from '@/utils/customSmartViews';
-import { clearPendingMentionNavigation, getPendingMentionNavigation } from '@/hooks/useMentionNavigation';
+
 
 // Extracted hooks and components
 import { useTodayState } from '@/hooks/useTodayState';
