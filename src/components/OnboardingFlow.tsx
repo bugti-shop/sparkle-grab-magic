@@ -866,7 +866,9 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
     } else if (step === 32) {
       if (selectedDevices.size === 0) return;
       await setSetting('onboarding_devices', Array.from(selectedDevices));
-      setStep(33); // → offline
+      setStep(10); // → sketch (moved here, after devices)
+    } else if (step === 10) {
+      setStep(33); // → offline (sketch now leads to offline)
     } else if (step === 33) {
       if (!selectedOffline) return;
       await setSetting('onboarding_offline', selectedOffline);
