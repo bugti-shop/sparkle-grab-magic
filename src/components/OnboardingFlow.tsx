@@ -1488,7 +1488,7 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
             animate={{ opacity: 1, y: 0 }}
             className="text-[28px] font-black text-[#1a1a1a] font-['Nunito'] tracking-tight text-center mb-1"
           >
-            Your Streak Certificate 🔥
+            {t('onboarding.certificateTitle')}
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -1496,7 +1496,7 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
             transition={{ delay: 0.1 }}
             className="text-[13px] text-[#767b7e] font-['Nunito_Sans'] text-center mb-5"
           >
-            Share your consistency with the world!
+            {t('onboarding.certificateSubtitle')}
           </motion.p>
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
