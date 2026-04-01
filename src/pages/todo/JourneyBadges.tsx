@@ -128,7 +128,7 @@ const JourneyBadges = () => {
       setTimeout(() => setShareConfetti(false), 3500);
     } catch (err) {
       if ((err as Error)?.message !== 'Share canceled') {
-        toast.error('Failed to share badge');
+        toast.error(t('journey.shareError', 'Failed to share badge'));
       }
     } finally {
       setIsSharing(false);
