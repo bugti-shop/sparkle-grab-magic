@@ -303,8 +303,8 @@ const JourneyBadges = () => {
         {allBadges.length === 0 && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="bg-card rounded-2xl p-8 border text-center">
             <Award className="h-12 w-12 text-muted-foreground/30 mx-auto mb-3" />
-            <h3 className="font-semibold text-sm text-muted-foreground">No badges yet</h3>
-            <p className="text-xs text-muted-foreground/70 mt-1">Start a virtual journey and complete milestones to earn badges!</p>
+            <h3 className="font-semibold text-sm text-muted-foreground">{t('journey.noBadgesYet', 'No badges yet')}</h3>
+            <p className="text-xs text-muted-foreground/70 mt-1">{t('journey.startJourneyForBadges', 'Start a virtual journey and complete milestones to earn badges!')}</p>
           </motion.div>
         )}
 
