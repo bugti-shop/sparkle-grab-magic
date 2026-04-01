@@ -21,6 +21,7 @@ const MIN_SIZE = 40;
 type HandleType = 'nw' | 'ne' | 'sw' | 'se';
 
 export const FloatingImageLayer = forwardRef<FloatingImageLayerHandle, FloatingImageLayerProps>(({ images, onChange, containerRef }, ref) => {
+  const { t } = useTranslation();
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [dragging, setDragging] = useState<{ id: string; startX: number; startY: number; origX: number; origY: number } | null>(null);
   const [resizing, setResizing] = useState<{ id: string; handle: HandleType; startX: number; startY: number; origX: number; origY: number; origW: number; origH: number } | null>(null);
