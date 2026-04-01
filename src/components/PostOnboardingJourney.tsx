@@ -67,7 +67,7 @@ export const PostOnboardingJourney = ({ onDismiss }: PostOnboardingJourneyProps)
               transition={{ delay: 0.6, duration: 0.5 }}
               className="text-white/60 text-sm font-['Nunito_Sans'] mt-2 mb-6"
             >
-              {journey.name} — {journey.totalTasks} {t('common.tasks', 'tasks')}
+              {t(`journey.${journey.id}.name`, journey.name)} — {journey.totalTasks} {t('common.tasks', 'tasks')}
             </motion.p>
 
             {/* Milestone path preview */}
