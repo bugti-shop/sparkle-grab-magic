@@ -484,9 +484,9 @@ const TodoSettings = () => {
                           const { clearDuplicateCalendarEvents } = await import('@/utils/systemCalendarSync');
                           const removed = await clearDuplicateCalendarEvents();
                           if (removed > 0) {
-                            toast.success(`🧹 Removed ${removed} duplicate event${removed > 1 ? 's' : ''}`);
+                            toast.success(`🧹 ${t('calendarSync.removedDuplicates', 'Removed {{count}} duplicate event(s)', { count: removed })}`);
                           } else {
-                            toast.success('✅ No duplicate events found');
+                            toast.success(`✅ ${t('calendarSync.noDuplicates', 'No duplicate events found')}`);
                           }
                         } catch (e) {
                           toast.error('Failed to clear duplicates');
