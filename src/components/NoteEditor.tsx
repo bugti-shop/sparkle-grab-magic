@@ -561,6 +561,7 @@ export const NoteEditor = ({ note, isOpen, onClose, onSave, defaultType = 'regul
   }, [buildCurrentNote, note, onSave, persistNoteToIndexedDB]);
 
   const handleSave = useCallback(async () => {
+    triggerTripleHeavyHaptic();
     await commitNote({ full: true });
   }, [commitNote]);
 

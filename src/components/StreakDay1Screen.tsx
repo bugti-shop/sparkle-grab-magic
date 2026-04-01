@@ -4,6 +4,7 @@ import { Flame, Check, ArrowRight, Sparkles } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useStreak } from '@/hooks/useStreak';
 import { StreakSocietyBadge } from '@/components/StreakSocietyBadge';
+import { triggerTripleHeavyHaptic } from '@/utils/haptics';
 
 const ONBOARDING_COLOR = '#3c78f0';
 

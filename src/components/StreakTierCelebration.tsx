@@ -16,6 +16,7 @@ export const StreakTierCelebration = () => {
       setTier(e.detail.tier);
       setShowConfetti(true);
       playChallengeCompleteSound();
+      triggerTripleHeavyHaptic();
       setTimeout(() => setShowConfetti(false), 6000);
     };
 

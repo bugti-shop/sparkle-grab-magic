@@ -83,7 +83,7 @@ export const TaskItem = memo(({
   const isBlocked = hasDependencies && !canComplete;
 
   const handleComplete = () => {
-    Haptics.impact({ style: ImpactStyle.Heavy }).catch(() => {});
+    triggerTripleHeavyHaptic();
     onUpdate(item.id, { completed: true });
   };
 

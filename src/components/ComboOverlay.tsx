@@ -33,6 +33,7 @@ export const ComboOverlay = () => {
     const handler = (e: CustomEvent<ComboEvent>) => {
       setComboData(e.detail);
       setVisible(true);
+      triggerTripleHeavyHaptic();
       // Auto-hide after 1.5s
       setTimeout(() => setVisible(false), 1500);
     };
