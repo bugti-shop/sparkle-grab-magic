@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import i18n from '@/i18n';
 import { m as motion, AnimatePresence } from 'framer-motion';
 import { ALL_JOURNEYS, startJourney } from '@/utils/virtualJourneyStorage';
-import { ArrowLeft, Camera, User, Check, PenLine, CheckCircle2, CalendarDays, Target, Lightbulb, Bell, BarChart3, Star, Trophy, FlaskConical, Link, Monitor, Rocket, Heart, TrendingUp, Brain, Zap, Palette, Save, Trash2, BookOpen, Briefcase, Activity, Sparkles, MapPin, Plus, Folder as FolderIcon } from 'lucide-react';
+import { ArrowLeft, Camera, User, Check, PenLine, CheckCircle2, CalendarDays, Target, Lightbulb, Bell, BarChart3, Star, Trophy, FlaskConical, Link, Monitor, Rocket, Heart, TrendingUp, Brain, Zap, Palette, Save, Trash2, BookOpen, Briefcase, Activity, Sparkles, MapPin, Plus, Folder as FolderIcon, Gift, Info } from 'lucide-react';
 import appLogo from '@/assets/app-logo.webp';
 import { MemoryRouter } from 'react-router-dom';
 
@@ -627,6 +627,7 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
   const [firstStepShown, setFirstStepShown] = useState(false);
   const [showStreakDay1, setShowStreakDay1] = useState(false);
   const [showOnboardingCertificate, setShowOnboardingCertificate] = useState(false);
+  const [showReadyScreen, setShowReadyScreen] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const { openPaywall } = useSubscription();
   
@@ -1504,10 +1505,7 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
           <motion.button
             onClick={async () => {
               setShowOnboardingCertificate(false);
-              await setSetting('onboarding_completed', true);
-              await setSetting('onboarding_progress_state', null);
-              onComplete();
-              setTimeout(() => openPaywall(), 300);
+              setShowReadyScreen(true);
             }}
             className="w-full py-3 rounded-2xl text-[17px] font-bold"
             style={{ backgroundColor: '#333333', color: '#ffffff', boxShadow: '0 8px 0 0 #000000' }}
@@ -1520,6 +1518,58 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
     );
   }
 
+
+  // ============ READY TO START JOURNEY SCREEN ============
+  if (showReadyScreen) {
+    const journeySteps = [
+      { icon: CheckCircle2, iconBg: '#e0f5ee', iconColor: '#1a1a1a', title: 'Install the app', description: 'You successfully created your profile.', completed: true },
+      { icon: Gift, iconBg: '#ccf5e6', iconColor: '#1a1a1a', title: 'Today', description: 'Select your subscription and reach your productivity goals even faster.', completed: false },
+      { icon: Bell, iconBg: '#f0f0f0', iconColor: '#1a1a1a', title: 'Shortly before renewal', description: "You'll receive a reminder for your upcoming subscription renewal.", completed: false },
+      { icon: Info, iconBg: '#f0f0f0', iconColor: '#1a1a1a', title: 'Renewal day', description: 'Your subscription will be renewed and you can continue your Flowist journey.', completed: false },
+    ];
+    return (
+      <div className="fixed inset-0 z-[300] flex flex-col bg-white" style={{ paddingTop: 'env(safe-area-inset-top, 0px)', paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}>
+        <div className="px-4 pt-3 pb-1">
+          <motion.button initial={{ opacity: 0 }} animate={{ opacity: 1 }} onClick={() => { setShowReadyScreen(false); setShowOnboardingCertificate(true); }} className="w-10 h-10 flex items-center justify-center">
+            <ArrowLeft size={22} color="#1a1a1a" />
+          </motion.button>
+        </div>
+        <div className="flex-1 overflow-y-auto px-6 pt-2 pb-4">
+          <motion.h1 initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="text-[32px] font-black text-[#1a1a1a] font-['Nunito'] tracking-tight text-center leading-tight mb-8">
+            Ready to start your{'\n'}journey?
+          </motion.h1>
+          <div className="relative pl-6">
+            <div className="absolute left-[19px] top-[20px] bottom-[20px] w-[3px] rounded-full bg-gradient-to-b from-[#4EEAB3] via-[#c8f7e6] to-[#e8e8e8]" />
+            <div className="flex flex-col gap-8">
+              {journeySteps.map((s, i) => {
+                const StepIcon = s.icon;
+                return (
+                  <motion.div key={i} initial={{ opacity: 0, x: -16 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2 + i * 0.12 }} className="flex items-start gap-4 relative">
+                    <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 z-10" style={{ backgroundColor: s.iconBg }}>
+                      {s.completed ? <CheckCircle2 size={20} color="#1a1a1a" strokeWidth={2.5} /> : <StepIcon size={18} color={s.iconColor} strokeWidth={2} />}
+                    </div>
+                    <div className="pt-1">
+                      <h3 className="text-[16px] font-bold text-[#1a1a1a] font-['Nunito'] leading-tight">{s.title}</h3>
+                      <p className="text-[14px] text-[#767b7e] font-['Nunito_Sans'] mt-1 leading-relaxed">{s.description}</p>
+                    </div>
+                  </motion.div>
+                );
+              })}
+            </div>
+          </div>
+          <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7 }} className="mt-8 rounded-2xl p-5 relative overflow-hidden" style={{ backgroundColor: '#e8faf3' }}>
+            <h3 className="text-[17px] font-bold text-[#1a1a1a] font-['Nunito'] leading-tight mb-1">How do I cancel<br />my subscription?</h3>
+            <p className="text-[13px] text-[#5a6065] font-['Nunito_Sans'] leading-relaxed max-w-[200px]">Visit our Help Center for step-by-step instructions on how to cancel your Flowist subscription.</p>
+          </motion.div>
+        </div>
+        <div className="px-6 pb-6 pt-2" style={{ paddingBottom: 'max(env(safe-area-inset-bottom, 0px), 24px)' }}>
+          <motion.button initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8 }} onClick={async () => { setShowReadyScreen(false); await setSetting('onboarding_completed', true); await setSetting('onboarding_progress_state', null); onComplete(); setTimeout(() => openPaywall(), 300); }} className="w-full py-4 rounded-2xl text-[17px] font-bold" style={{ backgroundColor: '#1a1a1a', color: '#ffffff', boxShadow: '0 8px 0 0 #000000' }} whileTap={{ scale: 0.97 }}>
+            Continue
+          </motion.button>
+        </div>
+      </div>
+    );
+  }
 
   // Journey selection screen (step 24)
   if (step === 24) {
@@ -1914,7 +1964,6 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
             {renderMultiSelect(tGoalOptions, selectedGoal, handleToggleGoal)}
           </motion.div>
         )}
-
 
 
         {step === 28 && (
