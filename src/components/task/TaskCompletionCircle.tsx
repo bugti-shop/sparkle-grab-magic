@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 import { Check as CheckIcon, Lock } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { Haptics, ImpactStyle } from '@capacitor/haptics';
+import { triggerTripleHeavyHaptic } from '@/utils/haptics';
 import { TASK_CIRCLE, TASK_CHECK_ICON } from '@/utils/taskItemStyles';
 import {
   Tooltip,
