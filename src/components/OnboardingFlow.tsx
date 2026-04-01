@@ -423,6 +423,7 @@ const OnboardingBatchTaskForm = ({ sections, folders, onAddTasks, onCancel }: {
   onAddTasks: (tasks: string[], sectionId?: string, folderId?: string, priority?: string, dueDate?: Date) => void;
   onCancel: () => void;
 }) => {
+  const { t } = useTranslation();
   const [text, setText] = useState('');
   const [selectedSection, setSelectedSection] = useState<string>('');
   const [selectedFolder, setSelectedFolder] = useState<string>('');
