@@ -50,6 +50,7 @@ export const AchievementBadges = ({ compact = false }: AchievementBadgesProps) =
       
       // Play sound
       playAchievementSound();
+      triggerTripleHeavyHaptic();
       
       // Achievement unlocked!
       
