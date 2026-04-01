@@ -126,7 +126,7 @@ export const StreakDay1Screen = ({ userName, onContinue }: StreakDay1ScreenProps
                   animate={{ opacity: 1, scale: 1 }}
                   className="text-xs font-bold text-warning mt-1"
                 >
-                  New Personal Best! 🎉
+                  {t('streak.newPersonalBest', 'New Personal Best! 🎉')}
                 </motion.p>
               )}
             </motion.div>
