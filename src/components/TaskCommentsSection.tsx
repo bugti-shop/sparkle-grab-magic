@@ -125,16 +125,7 @@ export const TaskCommentsSection = ({
                   <div className="flex items-start justify-between gap-2">
                     <div className="flex-1 min-w-0">
                       {comment.text && (
-                        hasMentions(comment.text) ? (
-                          <div className="text-sm whitespace-pre-wrap break-words">
-                            <MentionRenderer
-                              text={comment.text}
-                              onMentionClick={handleMentionNavigate}
-                            />
-                          </div>
-                        ) : (
                           <p className="text-sm whitespace-pre-wrap break-words">{comment.text}</p>
-                        )
                       )}
                     </div>
                     <button
