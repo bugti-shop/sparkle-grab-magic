@@ -631,7 +631,8 @@
     "exportedToWord": "ノートをWordにエクスポートしました",
     "exportedToMarkdown": "ノートをMarkdownにエクスポートしました",
     "restoreFromArchive": "アーカイブから復元",
-    "archiveNote": "ノートをアーカイブ"
+    "archiveNote": "ノートをアーカイブ",
+    "sketchDrawing": "スケッチ"
   },
   "tasks": {
     "title": "タスク",
@@ -2518,7 +2519,9 @@
     "syncError": "同期エラー",
     "syncInProgress": "同期中...",
     "synced": "同期済み",
-    "syncing": "同期中"
+    "syncing": "同期中",
+    "tapToReconnect": "タップして同期を再接続",
+    "reconnectSyncPrompt": "プロフィール → Googleでサインインして再接続"
   },
   "accessibility": {
     "goToPreviousPage": "前のページに移動",
@@ -3767,5 +3770,116 @@
     "intermediateDesc": "50個のタスクを完了し7日間のストリーク",
     "advancedDesc": "200個のタスクを完了し30日間のストリーク",
     "masterDesc": "500個のタスクを完了し100日間のストリーク"
+  },
+  "security": {
+    "passwordRecovery": "パスワード回復",
+    "verifyIdentity": "本人確認",
+    "resetPassword": "パスワードをリセット",
+    "securityQuestion": "セキュリティ質問",
+    "yourAnswer": "あなたの回答",
+    "newPassword": "新しいパスワード",
+    "confirmPassword": "パスワードを確認",
+    "enterYourAnswer": "回答を入力",
+    "enterNewPassword": "新しいパスワードを入力",
+    "confirmNewPassword": "新しいパスワードを確認",
+    "verifyAnswer": "回答を確認",
+    "answerVerified": "回答が確認されました！",
+    "incorrectAnswer": "回答が正しくありません。再度お試しください。",
+    "enterNewPasswordPrompt": "新しいパスワードを入力してください",
+    "passwordMinLength": "パスワードは4文字以上必要です",
+    "passwordsDoNotMatch": "パスワードが一致しません",
+    "passwordResetSuccess": "パスワードが正常にリセットされました！",
+    "noSecurityQuestion": "パスワード回復用のセキュリティ質問が設定されていません。",
+    "setupSecurityInSettings": "ロック解除後に非表示ノート設定でセキュリティ質問を設定できます。",
+    "enterNewPasswordBelow": "下に新しいパスワードを入力してください。",
+    "updateSecurityQuestion": "セキュリティ質問を更新",
+    "setupSecurityQuestion": "セキュリティ質問を設定",
+    "setupSecurityDesc": "パスワードを忘れた場合に備えてセキュリティ質問を設定してください。",
+    "selectAQuestion": "質問を選択",
+    "enterAnAnswer": "回答を入力",
+    "answerMinLength": "回答は2文字以上必要です",
+    "securityQuestionSaved": "セキュリティ質問が保存されました！",
+    "answerVerifyDesc": "この回答はパスワードを忘れた場合の本人確認に使用されます。",
+    "updateSecurityBtn": "セキュリティ質問を更新",
+    "saveSecurityBtn": "セキュリティ質問を保存",
+    "selectSecurityQuestion": "セキュリティ質問を選択してください",
+    "pleaseEnterAnswer": "回答を入力してください",
+    "motherMaidenName": "お母さんの旧姓は？",
+    "firstPetName": "最初のペットの名前は？",
+    "birthCity": "生まれた都市は？",
+    "favoriteMovie": "お気に入りの映画は？",
+    "elementarySchool": "小学校の名前は？",
+    "favoriteFood": "好きな食べ物は？"
+  },
+  "habits": {
+    "newHabit": "新しい習慣",
+    "name": "名前",
+    "icon": "アイコン",
+    "color": "色",
+    "frequency": "頻度",
+    "whichDays": "どの曜日？",
+    "targetStreak": "目標連続日数",
+    "dailyReminder": "毎日のリマインダー",
+    "remindMeAt": "リマインド時間",
+    "habitNamePlaceholder": "例：水を8杯飲む"
+  },
+  "tags": {
+    "createNewTag": "新しいタグを作成",
+    "tagName": "タグ名...",
+    "tagAlreadyExists": "タグは既に存在します！",
+    "tagCreated": "タグ \"{{name}}\" を作成しました！",
+    "tagDeleted": "タグを削除しました",
+    "tagUpdated": "タグを更新しました"
+  },
+  "smartViews": {
+    "enterName": "名前を入力してください",
+    "viewSaved": "ビュー \"{{name}}\" を保存しました！",
+    "viewDeleted": "スマートビューを削除しました",
+    "namePlaceholder": "例：今週の緊急"
+  },
+  "collab": {
+    "roomCreated": "ルームを作成しました！",
+    "failedToCreateRoom": "ルームの作成に失敗",
+    "enterValidCode": "有効なコードを入力してください",
+    "joinedAs": "{{role}}として参加しました！",
+    "roomNotFound": "ルームが見つかりません",
+    "codeCopied": "コードをコピーしました！",
+    "failedToCopy": "コピーに失敗",
+    "create": "作成",
+    "join": "参加",
+    "joinAs": "参加方法：",
+    "editor": "編集者",
+    "viewer": "閲覧者",
+    "roomCode": "ルームコード：",
+    "enterCode": "6桁のコードを入力",
+    "addedLayer": "{{name}}がレイヤーを追加しました",
+    "deletedLayer": "{{name}}がレイヤーを削除しました",
+    "collaborate": "コラボレーション"
+  },
+  "audio": {
+    "effectsApplied": "オーディオエフェクト適用済み！",
+    "effectsFailed": "エフェクトの適用に失敗、元のファイルを保存中"
+  },
+  "image": {
+    "selectImageFile": "画像ファイルを選択してください",
+    "imageTooLarge": "画像は10MB以下である必要があります"
+  },
+  "location": {
+    "enterLocation": "場所を入力...",
+    "addMapboxToken": "設定でMapboxトークンを追加して場所検索を有効にしてください",
+    "searchLocation": "リマインダーの場所を検索...",
+    "arrive": "到着",
+    "leave": "出発",
+    "radiusUnit": "{{radius}}m半径"
+  },
+  "theme": {
+    "editTheme": "テーマを編集",
+    "themeName": "テーマ名",
+    "themeNamePlaceholder": "マイカスタムテーマ",
+    "livePreview": "ライブプレビュー"
+  },
+  "versionHistory": {
+    "noHistory": "バージョン履歴はまだありません",
+    "changesSavedAuto": "変更は自動的に保存されます"
   }
 }

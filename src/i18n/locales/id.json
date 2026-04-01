@@ -575,7 +575,8 @@
     "exportedToWord": "Catatan diekspor ke Word",
     "exportedToMarkdown": "Catatan diekspor ke Markdown",
     "restoreFromArchive": "Pulihkan dari Arsip",
-    "archiveNote": "Arsipkan Catatan"
+    "archiveNote": "Arsipkan Catatan",
+    "sketchDrawing": "Gambar sketsa"
   },
   "tasks": {
     "title": "Tugas",
@@ -871,7 +872,13 @@
     "pleaseGrantAccess": "Harap berikan akses ke Google Kalender Anda untuk mengaktifkan sinkronisasi",
     "calendarAccessDenied": "Akses Kalender Ditolak",
     "calendarAccessRequired": "Akses kalender diperlukan untuk mengaktifkan sinkronisasi. Harap coba lagi.",
-    "dontAskAgain": "Jangan tanyakan lagi"
+    "dontAskAgain": "Jangan tanyakan lagi",
+    "syncing": "Menyinkronkan...",
+    "synced": "Tersinkron",
+    "syncError": "Kesalahan sinkronisasi",
+    "offline": "Offline",
+    "tapToReconnect": "Ketuk untuk menghubungkan kembali sinkronisasi",
+    "reconnectSyncPrompt": "Buka Profil → Masuk dengan Google untuk menghubungkan kembali"
   },
   "accessibility": {
     "goToPreviousPage": "Buka halaman sebelumnya",
@@ -3593,5 +3600,116 @@
     "intermediateDesc": "Selesaikan 50 tugas & streak 7 hari",
     "advancedDesc": "Selesaikan 200 tugas & streak 30 hari",
     "masterDesc": "Selesaikan 500 tugas & streak 100 hari"
+  },
+  "security": {
+    "passwordRecovery": "Pemulihan Kata Sandi",
+    "verifyIdentity": "Verifikasi Identitas Anda",
+    "resetPassword": "Atur Ulang Kata Sandi",
+    "securityQuestion": "Pertanyaan Keamanan",
+    "yourAnswer": "Jawaban Anda",
+    "newPassword": "Kata Sandi Baru",
+    "confirmPassword": "Konfirmasi Kata Sandi",
+    "enterYourAnswer": "Masukkan jawaban Anda",
+    "enterNewPassword": "Masukkan kata sandi baru",
+    "confirmNewPassword": "Konfirmasi kata sandi baru",
+    "verifyAnswer": "Verifikasi Jawaban",
+    "answerVerified": "Jawaban terverifikasi!",
+    "incorrectAnswer": "Jawaban salah. Silakan coba lagi.",
+    "enterNewPasswordPrompt": "Silakan masukkan kata sandi baru",
+    "passwordMinLength": "Kata sandi minimal 4 karakter",
+    "passwordsDoNotMatch": "Kata sandi tidak cocok",
+    "passwordResetSuccess": "Kata sandi berhasil diatur ulang!",
+    "noSecurityQuestion": "Belum ada pertanyaan keamanan yang diatur.",
+    "setupSecurityInSettings": "Anda dapat mengatur pertanyaan keamanan di pengaturan Catatan Tersembunyi setelah membuka kunci.",
+    "enterNewPasswordBelow": "Masukkan kata sandi baru Anda di bawah.",
+    "updateSecurityQuestion": "Perbarui Pertanyaan Keamanan",
+    "setupSecurityQuestion": "Atur Pertanyaan Keamanan",
+    "setupSecurityDesc": "Atur pertanyaan keamanan untuk memulihkan kata sandi Anda.",
+    "selectAQuestion": "Pilih pertanyaan",
+    "enterAnAnswer": "Masukkan jawaban Anda",
+    "answerMinLength": "Jawaban minimal 2 karakter",
+    "securityQuestionSaved": "Pertanyaan keamanan tersimpan!",
+    "answerVerifyDesc": "Jawaban ini akan digunakan untuk memverifikasi identitas Anda.",
+    "updateSecurityBtn": "Perbarui Pertanyaan Keamanan",
+    "saveSecurityBtn": "Simpan Pertanyaan Keamanan",
+    "selectSecurityQuestion": "Pilih pertanyaan keamanan",
+    "pleaseEnterAnswer": "Silakan masukkan jawaban",
+    "motherMaidenName": "Apa nama gadis ibu Anda?",
+    "firstPetName": "Apa nama hewan peliharaan pertama Anda?",
+    "birthCity": "Di kota mana Anda lahir?",
+    "favoriteMovie": "Apa film favorit Anda?",
+    "elementarySchool": "Apa nama sekolah dasar Anda?",
+    "favoriteFood": "Apa makanan favorit Anda?"
+  },
+  "habits": {
+    "newHabit": "Kebiasaan Baru",
+    "name": "Nama",
+    "icon": "Ikon",
+    "color": "Warna",
+    "frequency": "Frekuensi",
+    "whichDays": "Hari apa?",
+    "targetStreak": "Target beruntun (hari)",
+    "dailyReminder": "Pengingat Harian",
+    "remindMeAt": "Ingatkan saya pukul",
+    "habitNamePlaceholder": "mis. Minum 8 gelas air"
+  },
+  "tags": {
+    "createNewTag": "Buat Tag Baru",
+    "tagName": "Nama tag...",
+    "tagAlreadyExists": "Tag sudah ada!",
+    "tagCreated": "Tag \"{{name}}\" dibuat!",
+    "tagDeleted": "Tag dihapus",
+    "tagUpdated": "Tag diperbarui"
+  },
+  "smartViews": {
+    "enterName": "Masukkan nama",
+    "viewSaved": "Tampilan \"{{name}}\" tersimpan!",
+    "viewDeleted": "Tampilan pintar dihapus",
+    "namePlaceholder": "mis., Mendesak Minggu Ini"
+  },
+  "collab": {
+    "roomCreated": "Ruang dibuat!",
+    "failedToCreateRoom": "Gagal membuat ruang",
+    "enterValidCode": "Masukkan kode yang valid",
+    "joinedAs": "Bergabung sebagai {{role}}!",
+    "roomNotFound": "Ruang tidak ditemukan",
+    "codeCopied": "Kode disalin!",
+    "failedToCopy": "Gagal menyalin",
+    "create": "Buat",
+    "join": "Gabung",
+    "joinAs": "Gabung sebagai:",
+    "editor": "Editor",
+    "viewer": "Penonton",
+    "roomCode": "Kode Ruang:",
+    "enterCode": "Masukkan kode 6 digit",
+    "addedLayer": "{{name}} menambahkan layer",
+    "deletedLayer": "{{name}} menghapus layer",
+    "collaborate": "Kolaborasi"
+  },
+  "audio": {
+    "effectsApplied": "Efek audio diterapkan!",
+    "effectsFailed": "Gagal menerapkan efek, menyimpan asli"
+  },
+  "image": {
+    "selectImageFile": "Pilih file gambar",
+    "imageTooLarge": "Gambar harus kurang dari 10MB"
+  },
+  "location": {
+    "enterLocation": "Masukkan lokasi...",
+    "addMapboxToken": "Tambahkan token Mapbox di pengaturan untuk mengaktifkan pencarian lokasi",
+    "searchLocation": "Cari lokasi untuk pengingat...",
+    "arrive": "Tiba",
+    "leave": "Pergi",
+    "radiusUnit": "radius {{radius}}m"
+  },
+  "theme": {
+    "editTheme": "Edit Tema",
+    "themeName": "Nama Tema",
+    "themeNamePlaceholder": "Tema Kustom Saya",
+    "livePreview": "Pratinjau Langsung"
+  },
+  "versionHistory": {
+    "noHistory": "Belum ada riwayat versi",
+    "changesSavedAuto": "Perubahan akan disimpan otomatis"
   }
 }

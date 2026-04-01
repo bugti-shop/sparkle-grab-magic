@@ -631,7 +631,8 @@
     "exportedToWord": "笔记已导出到 Word",
     "exportedToMarkdown": "笔记已导出到 Markdown",
     "restoreFromArchive": "从归档恢复",
-    "archiveNote": "归档笔记"
+    "archiveNote": "归档笔记",
+    "sketchDrawing": "素描"
   },
   "tasks": {
     "title": "任务",
@@ -946,7 +947,9 @@
     "syncError": "同步错误",
     "syncInProgress": "正在同步...",
     "synced": "已同步",
-    "syncing": "同步中"
+    "syncing": "同步中",
+    "tapToReconnect": "点击重新连接同步",
+    "reconnectSyncPrompt": "前往个人资料 → 使用Google登录以重新连接"
   },
   "accessibility": {
     "goToPreviousPage": "转到上一页",
@@ -3767,5 +3770,116 @@
     "intermediateDesc": "完成50个任务并保持7天连续",
     "advancedDesc": "完成200个任务并保持30天连续",
     "masterDesc": "完成500个任务并保持100天连续"
+  },
+  "security": {
+    "passwordRecovery": "密码恢复",
+    "verifyIdentity": "验证您的身份",
+    "resetPassword": "重置密码",
+    "securityQuestion": "安全问题",
+    "yourAnswer": "您的答案",
+    "newPassword": "新密码",
+    "confirmPassword": "确认密码",
+    "enterYourAnswer": "输入您的答案",
+    "enterNewPassword": "输入新密码",
+    "confirmNewPassword": "确认新密码",
+    "verifyAnswer": "验证答案",
+    "answerVerified": "答案已验证！",
+    "incorrectAnswer": "答案不正确，请重试。",
+    "enterNewPasswordPrompt": "请输入新密码",
+    "passwordMinLength": "密码至少需要4个字符",
+    "passwordsDoNotMatch": "密码不匹配",
+    "passwordResetSuccess": "密码重置成功！",
+    "noSecurityQuestion": "尚未设置密码恢复的安全问题。",
+    "setupSecurityInSettings": "解锁后可在隐藏笔记设置中设置安全问题。",
+    "enterNewPasswordBelow": "在下方输入您的新密码。",
+    "updateSecurityQuestion": "更新安全问题",
+    "setupSecurityQuestion": "设置安全问题",
+    "setupSecurityDesc": "设置安全问题以便忘记密码时恢复。",
+    "selectAQuestion": "选择一个问题",
+    "enterAnAnswer": "输入您的答案",
+    "answerMinLength": "答案至少需要2个字符",
+    "securityQuestionSaved": "安全问题已保存！",
+    "answerVerifyDesc": "此答案将用于验证您的身份。",
+    "updateSecurityBtn": "更新安全问题",
+    "saveSecurityBtn": "保存安全问题",
+    "selectSecurityQuestion": "请选择一个安全问题",
+    "pleaseEnterAnswer": "请输入答案",
+    "motherMaidenName": "您母亲的娘家姓是什么？",
+    "firstPetName": "您第一只宠物叫什么名字？",
+    "birthCity": "您出生在哪个城市？",
+    "favoriteMovie": "您最喜欢的电影是什么？",
+    "elementarySchool": "您的小学叫什么名字？",
+    "favoriteFood": "您最喜欢的食物是什么？"
+  },
+  "habits": {
+    "newHabit": "新习惯",
+    "name": "名称",
+    "icon": "图标",
+    "color": "颜色",
+    "frequency": "频率",
+    "whichDays": "哪些天？",
+    "targetStreak": "目标连续天数",
+    "dailyReminder": "每日提醒",
+    "remindMeAt": "提醒我",
+    "habitNamePlaceholder": "例如：喝8杯水"
+  },
+  "tags": {
+    "createNewTag": "创建新标签",
+    "tagName": "标签名称...",
+    "tagAlreadyExists": "标签已存在！",
+    "tagCreated": "标签\"{{name}}\"已创建！",
+    "tagDeleted": "标签已删除",
+    "tagUpdated": "标签已更新"
+  },
+  "smartViews": {
+    "enterName": "请输入名称",
+    "viewSaved": "视图\"{{name}}\"已保存！",
+    "viewDeleted": "智能视图已删除",
+    "namePlaceholder": "例如，本周紧急"
+  },
+  "collab": {
+    "roomCreated": "房间已创建！",
+    "failedToCreateRoom": "创建房间失败",
+    "enterValidCode": "请输入有效代码",
+    "joinedAs": "已作为{{role}}加入！",
+    "roomNotFound": "未找到房间",
+    "codeCopied": "代码已复制！",
+    "failedToCopy": "复制失败",
+    "create": "创建",
+    "join": "加入",
+    "joinAs": "加入为：",
+    "editor": "编辑者",
+    "viewer": "查看者",
+    "roomCode": "房间代码：",
+    "enterCode": "输入6位代码",
+    "addedLayer": "{{name}}添加了一个图层",
+    "deletedLayer": "{{name}}删除了一个图层",
+    "collaborate": "协作"
+  },
+  "audio": {
+    "effectsApplied": "音频效果已应用！",
+    "effectsFailed": "应用效果失败，保存原始文件"
+  },
+  "image": {
+    "selectImageFile": "请选择图片文件",
+    "imageTooLarge": "图片必须小于10MB"
+  },
+  "location": {
+    "enterLocation": "输入位置...",
+    "addMapboxToken": "在设置中添加Mapbox令牌以启用位置搜索",
+    "searchLocation": "搜索提醒位置...",
+    "arrive": "到达",
+    "leave": "离开",
+    "radiusUnit": "{{radius}}米半径"
+  },
+  "theme": {
+    "editTheme": "编辑主题",
+    "themeName": "主题名称",
+    "themeNamePlaceholder": "我的自定义主题",
+    "livePreview": "实时预览"
+  },
+  "versionHistory": {
+    "noHistory": "暂无版本历史",
+    "changesSavedAuto": "更改将自动保存"
   }
 }

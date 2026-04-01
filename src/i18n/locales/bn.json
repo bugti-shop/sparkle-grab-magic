@@ -771,7 +771,8 @@
     "exportedToWord": "নোট Word-এ রপ্তানি করা হয়েছে",
     "exportedToMarkdown": "নোট Markdown-এ রপ্তানি করা হয়েছে",
     "restoreFromArchive": "আর্কাইভ থেকে পুনরুদ্ধার করুন",
-    "archiveNote": "নোট আর্কাইভ করুন"
+    "archiveNote": "নোট আর্কাইভ করুন",
+    "sketchDrawing": "স্কেচ আঁকা"
   },
   "tasks": {
     "title": "কাজ",
@@ -1182,7 +1183,11 @@
     "modifiedBy": "পরিবর্তনকারী",
     "acceptLocal": "স্থানীয় গ্রহণ",
     "acceptRemote": "দূরবর্তী গ্রহণ",
-    "manualMerge": "ম্যানুয়াল মার্জ"
+    "manualMerge": "ম্যানুয়াল মার্জ",
+    "synced": "সিঙ্ক হয়েছে",
+    "offline": "অফলাইন",
+    "tapToReconnect": "সিঙ্ক পুনরায় সংযোগ করতে ট্যাপ করুন",
+    "reconnectSyncPrompt": "প্রোফাইলে যান → Google দিয়ে সাইন ইন করুন"
   },
   "accessibility": {
     "goToPreviousPage": "পূর্ববর্তী পৃষ্ঠায় যান",
@@ -5126,5 +5131,116 @@
     "intermediateDesc": "৫০টি কাজ সম্পন্ন ও ৭ দিনের ধারা",
     "advancedDesc": "২০০টি কাজ সম্পন্ন ও ৩০ দিনের ধারা",
     "masterDesc": "৫০০টি কাজ সম্পন্ন ও ১০০ দিনের ধারা"
+  },
+  "security": {
+    "passwordRecovery": "পাসওয়ার্ড পুনরুদ্ধার",
+    "verifyIdentity": "আপনার পরিচয় যাচাই করুন",
+    "resetPassword": "পাসওয়ার্ড রিসেট করুন",
+    "securityQuestion": "নিরাপত্তা প্রশ্ন",
+    "yourAnswer": "আপনার উত্তর",
+    "newPassword": "নতুন পাসওয়ার্ড",
+    "confirmPassword": "পাসওয়ার্ড নিশ্চিত করুন",
+    "enterYourAnswer": "আপনার উত্তর লিখুন",
+    "enterNewPassword": "নতুন পাসওয়ার্ড লিখুন",
+    "confirmNewPassword": "নতুন পাসওয়ার্ড নিশ্চিত করুন",
+    "verifyAnswer": "উত্তর যাচাই করুন",
+    "answerVerified": "উত্তর যাচাই হয়েছে!",
+    "incorrectAnswer": "ভুল উত্তর। আবার চেষ্টা করুন।",
+    "enterNewPasswordPrompt": "অনুগ্রহ করে নতুন পাসওয়ার্ড লিখুন",
+    "passwordMinLength": "পাসওয়ার্ড কমপক্ষে ৪ অক্ষরের হতে হবে",
+    "passwordsDoNotMatch": "পাসওয়ার্ড মিলছে না",
+    "passwordResetSuccess": "পাসওয়ার্ড সফলভাবে রিসেট হয়েছে!",
+    "noSecurityQuestion": "পাসওয়ার্ড পুনরুদ্ধারের জন্য কোনো নিরাপত্তা প্রশ্ন সেট করা হয়নি।",
+    "setupSecurityInSettings": "আনলক করার পরে লুকানো নোটস সেটিংসে নিরাপত্তা প্রশ্ন সেট করতে পারবেন।",
+    "enterNewPasswordBelow": "নিচে আপনার নতুন পাসওয়ার্ড লিখুন।",
+    "updateSecurityQuestion": "নিরাপত্তা প্রশ্ন আপডেট করুন",
+    "setupSecurityQuestion": "নিরাপত্তা প্রশ্ন সেটআপ করুন",
+    "setupSecurityDesc": "পাসওয়ার্ড ভুলে গেলে পুনরুদ্ধারের জন্য নিরাপত্তা প্রশ্ন সেট করুন।",
+    "selectAQuestion": "একটি প্রশ্ন নির্বাচন করুন",
+    "enterAnAnswer": "আপনার উত্তর লিখুন",
+    "answerMinLength": "উত্তর কমপক্ষে ২ অক্ষরের হতে হবে",
+    "securityQuestionSaved": "নিরাপত্তা প্রশ্ন সংরক্ষিত!",
+    "answerVerifyDesc": "এই উত্তরটি আপনার পরিচয় যাচাইয়ের জন্য ব্যবহার করা হবে।",
+    "updateSecurityBtn": "নিরাপত্তা প্রশ্ন আপডেট করুন",
+    "saveSecurityBtn": "নিরাপত্তা প্রশ্ন সংরক্ষণ করুন",
+    "selectSecurityQuestion": "একটি নিরাপত্তা প্রশ্ন নির্বাচন করুন",
+    "pleaseEnterAnswer": "অনুগ্রহ করে একটি উত্তর লিখুন",
+    "motherMaidenName": "আপনার মায়ের বিয়ের আগের পদবী কী?",
+    "firstPetName": "আপনার প্রথম পোষা প্রাণীর নাম কী ছিল?",
+    "birthCity": "আপনি কোন শহরে জন্মগ্রহণ করেছেন?",
+    "favoriteMovie": "আপনার প্রিয় সিনেমা কোনটি?",
+    "elementarySchool": "আপনার প্রাথমিক বিদ্যালয়ের নাম কী ছিল?",
+    "favoriteFood": "আপনার প্রিয় খাবার কী?"
+  },
+  "habits": {
+    "newHabit": "নতুন অভ্যাস",
+    "name": "নাম",
+    "icon": "আইকন",
+    "color": "রঙ",
+    "frequency": "ফ্রিকোয়েন্সি",
+    "whichDays": "কোন দিনগুলো?",
+    "targetStreak": "লক্ষ্য ধারা (দিন)",
+    "dailyReminder": "দৈনিক রিমাইন্ডার",
+    "remindMeAt": "আমাকে মনে করিয়ে দিন",
+    "habitNamePlaceholder": "যেমন: ৮ গ্লাস পানি পান করুন"
+  },
+  "tags": {
+    "createNewTag": "নতুন ট্যাগ তৈরি করুন",
+    "tagName": "ট্যাগের নাম...",
+    "tagAlreadyExists": "ট্যাগ ইতিমধ্যে আছে!",
+    "tagCreated": "ট্যাগ \"{{name}}\" তৈরি হয়েছে!",
+    "tagDeleted": "ট্যাগ মুছে ফেলা হয়েছে",
+    "tagUpdated": "ট্যাগ আপডেট হয়েছে"
+  },
+  "smartViews": {
+    "enterName": "একটি নাম লিখুন",
+    "viewSaved": "ভিউ \"{{name}}\" সংরক্ষিত!",
+    "viewDeleted": "স্মার্ট ভিউ মুছে ফেলা হয়েছে",
+    "namePlaceholder": "যেমন, এই সপ্তাহে জরুরি"
+  },
+  "collab": {
+    "roomCreated": "রুম তৈরি হয়েছে!",
+    "failedToCreateRoom": "রুম তৈরি ব্যর্থ",
+    "enterValidCode": "একটি বৈধ কোড লিখুন",
+    "joinedAs": "{{role}} হিসাবে যোগদান!",
+    "roomNotFound": "রুম পাওয়া যায়নি",
+    "codeCopied": "কোড কপি হয়েছে!",
+    "failedToCopy": "কপি ব্যর্থ",
+    "create": "তৈরি করুন",
+    "join": "যোগ দিন",
+    "joinAs": "হিসাবে যোগ:",
+    "editor": "সম্পাদক",
+    "viewer": "দর্শক",
+    "roomCode": "রুম কোড:",
+    "enterCode": "৬ সংখ্যার কোড লিখুন",
+    "addedLayer": "{{name}} একটি স্তর যোগ করেছে",
+    "deletedLayer": "{{name}} একটি স্তর মুছেছে",
+    "collaborate": "সহযোগিতা"
+  },
+  "audio": {
+    "effectsApplied": "অডিও এফেক্ট প্রয়োগ হয়েছে!",
+    "effectsFailed": "এফেক্ট প্রয়োগ ব্যর্থ, মূল সংরক্ষণ করা হচ্ছে"
+  },
+  "image": {
+    "selectImageFile": "একটি ছবি ফাইল নির্বাচন করুন",
+    "imageTooLarge": "ছবি ১০MB এর কম হতে হবে"
+  },
+  "location": {
+    "enterLocation": "অবস্থান লিখুন...",
+    "addMapboxToken": "অবস্থান অনুসন্ধান সক্রিয় করতে সেটিংসে Mapbox টোকেন যোগ করুন",
+    "searchLocation": "রিমাইন্ডারের জন্য অবস্থান খুঁজুন...",
+    "arrive": "পৌঁছানো",
+    "leave": "চলে যাওয়া",
+    "radiusUnit": "{{radius}}মি ব্যাসার্ধ"
+  },
+  "theme": {
+    "editTheme": "থিম সম্পাদনা",
+    "themeName": "থিমের নাম",
+    "themeNamePlaceholder": "আমার কাস্টম থিম",
+    "livePreview": "লাইভ প্রিভিউ"
+  },
+  "versionHistory": {
+    "noHistory": "এখনো কোনো সংস্করণ ইতিহাস নেই",
+    "changesSavedAuto": "পরিবর্তন স্বয়ংক্রিয়ভাবে সংরক্ষিত হবে"
   }
 }

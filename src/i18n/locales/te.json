@@ -575,7 +575,8 @@
     "exportedToWord": "గమనిక Wordకు ఎగుమతి చేయబడింది",
     "exportedToMarkdown": "గమనిక Markdownకు ఎగుమతి చేయబడింది",
     "restoreFromArchive": "ఆర్కైవ్ నుండి పునరుద్ధరించండి",
-    "archiveNote": "గమనికను ఆర్కైవ్ చేయండి"
+    "archiveNote": "గమనికను ఆర్కైవ్ చేయండి",
+    "sketchDrawing": "స్కెచ్ డ్రాయింగ్"
   },
   "tasks": {
     "title": "పనులు",
@@ -871,7 +872,13 @@
     "pleaseGrantAccess": "సమన్వయాన్ని ప్రారంభించడానికి మీ Google క్యాలెండర్‌కు యాక్సెస్‌ను ఇవ్వండి",
     "calendarAccessDenied": "క్యాలెండర్ యాక్సెస్ నిరాకరించబడింది",
     "calendarAccessRequired": "సమన్వయాన్ని ప్రారంభించడానికి క్యాలెండర్ యాక్సెస్ అవసరం. దయచేసి మళ్ళీ ప్రయత్నించండి.",
-    "dontAskAgain": "నన్ను మళ్ళీ అడగవద్దు"
+    "dontAskAgain": "నన్ను మళ్ళీ అడగవద్దు",
+    "syncing": "సింక్ అవుతోంది...",
+    "synced": "సింక్ అయింది",
+    "syncError": "సింక్ లోపం",
+    "offline": "ఆఫ్‌లైన్",
+    "tapToReconnect": "సింక్ మళ్ళీ కనెక్ట్ చేయడానికి ట్యాప్ చేయండి",
+    "reconnectSyncPrompt": "ప్రొఫైల్‌కు వెళ్ళండి → Google తో సైన్ ఇన్ చేయండి"
   },
   "accessibility": {
     "goToPreviousPage": "మునుపటి పేజీకి వెళ్ళండి",
@@ -3593,5 +3600,116 @@
     "intermediateDesc": "50 పనులు పూర్తి చేసి 7-రోజుల వరుస",
     "advancedDesc": "200 పనులు పూర్తి చేసి 30-రోజుల వరుస",
     "masterDesc": "500 పనులు పూర్తి చేసి 100-రోజుల వరుస"
+  },
+  "security": {
+    "passwordRecovery": "పాస్‌వర్డ్ రికవరీ",
+    "verifyIdentity": "మీ గుర్తింపును ధృవీకరించండి",
+    "resetPassword": "పాస్‌వర్డ్ రీసెట్ చేయండి",
+    "securityQuestion": "భద్రతా ప్రశ్న",
+    "yourAnswer": "మీ సమాధానం",
+    "newPassword": "కొత్త పాస్‌వర్డ్",
+    "confirmPassword": "పాస్‌వర్డ్ నిర్ధారించండి",
+    "enterYourAnswer": "మీ సమాధానం నమోదు చేయండి",
+    "enterNewPassword": "కొత్త పాస్‌వర్డ్ నమోదు చేయండి",
+    "confirmNewPassword": "కొత్త పాస్‌వర్డ్ నిర్ధారించండి",
+    "verifyAnswer": "సమాధానం ధృవీకరించండి",
+    "answerVerified": "సమాధానం ధృవీకరించబడింది!",
+    "incorrectAnswer": "తప్పు సమాధానం. మళ్ళీ ప్రయత్నించండి.",
+    "enterNewPasswordPrompt": "దయచేసి కొత్త పాస్‌వర్డ్ నమోదు చేయండి",
+    "passwordMinLength": "పాస్‌వర్డ్ కనీసం 4 అక్షరాలు ఉండాలి",
+    "passwordsDoNotMatch": "పాస్‌వర్డ్‌లు సరిపోలడం లేదు",
+    "passwordResetSuccess": "పాస్‌వర్డ్ విజయవంతంగా రీసెట్ చేయబడింది!",
+    "noSecurityQuestion": "పాస్‌వర్డ్ రికవరీ కోసం భద్రతా ప్రశ్న సెట్ చేయబడలేదు.",
+    "setupSecurityInSettings": "అన్‌లాక్ చేసిన తర్వాత దాచిన నోట్స్ సెట్టింగ్‌లలో భద్రతా ప్రశ్న సెట్ చేయవచ్చు.",
+    "enterNewPasswordBelow": "క్రింద మీ కొత్త పాస్‌వర్డ్ నమోదు చేయండి.",
+    "updateSecurityQuestion": "భద్రతా ప్రశ్న నవీకరించండి",
+    "setupSecurityQuestion": "భద్రతా ప్రశ్న సెటప్ చేయండి",
+    "setupSecurityDesc": "పాస్‌వర్డ్ మరచిపోతే రికవరీ కోసం భద్రతా ప్రశ్న సెట్ చేయండి.",
+    "selectAQuestion": "ఒక ప్రశ్న ఎంచుకోండి",
+    "enterAnAnswer": "మీ సమాధానం నమోదు చేయండి",
+    "answerMinLength": "సమాధానం కనీసం 2 అక్షరాలు ఉండాలి",
+    "securityQuestionSaved": "భద్రతా ప్రశ్న సేవ్ చేయబడింది!",
+    "answerVerifyDesc": "ఈ సమాధానం మీ గుర్తింపును ధృవీకరించడానికి ఉపయోగించబడుతుంది.",
+    "updateSecurityBtn": "భద్రతా ప్రశ్న నవీకరించండి",
+    "saveSecurityBtn": "భద్రతా ప్రశ్న సేవ్ చేయండి",
+    "selectSecurityQuestion": "దయచేసి భద్రతా ప్రశ్న ఎంచుకోండి",
+    "pleaseEnterAnswer": "దయచేసి సమాధానం నమోదు చేయండి",
+    "motherMaidenName": "మీ తల్లి పెళ్ళికి ముందు ఇంటిపేరు ఏమిటి?",
+    "firstPetName": "మీ మొదటి పెంపుడు జంతువు పేరు ఏమిటి?",
+    "birthCity": "మీరు ఏ నగరంలో పుట్టారు?",
+    "favoriteMovie": "మీ ఇష్టమైన సినిమా ఏది?",
+    "elementarySchool": "మీ ప్రాథమిక పాఠశాల పేరు ఏమిటి?",
+    "favoriteFood": "మీ ఇష్టమైన ఆహారం ఏమిటి?"
+  },
+  "habits": {
+    "newHabit": "కొత్త అలవాటు",
+    "name": "పేరు",
+    "icon": "చిహ్నం",
+    "color": "రంగు",
+    "frequency": "తరచుదనం",
+    "whichDays": "ఏ రోజులు?",
+    "targetStreak": "లక్ష్య వరుస (రోజులు)",
+    "dailyReminder": "రోజువారీ రిమైండర్",
+    "remindMeAt": "నాకు గుర్తు చేయండి",
+    "habitNamePlaceholder": "ఉదా. 8 గ్లాసుల నీరు త్రాగండి"
+  },
+  "tags": {
+    "createNewTag": "కొత్త ట్యాగ్ సృష్టించండి",
+    "tagName": "ట్యాగ్ పేరు...",
+    "tagAlreadyExists": "ట్యాగ్ ఇప్పటికే ఉంది!",
+    "tagCreated": "ట్యాగ్ \"{{name}}\" సృష్టించబడింది!",
+    "tagDeleted": "ట్యాగ్ తొలగించబడింది",
+    "tagUpdated": "ట్యాగ్ నవీకరించబడింది"
+  },
+  "smartViews": {
+    "enterName": "దయచేసి పేరు నమోదు చేయండి",
+    "viewSaved": "వీక్షణ \"{{name}}\" సేవ్ చేయబడింది!",
+    "viewDeleted": "స్మార్ట్ వీక్షణ తొలగించబడింది",
+    "namePlaceholder": "ఉదా., ఈ వారం అత్యవసరం"
+  },
+  "collab": {
+    "roomCreated": "గది సృష్టించబడింది!",
+    "failedToCreateRoom": "గది సృష్టించడంలో విఫలం",
+    "enterValidCode": "చెల్లుబాటు అయ్యే కోడ్ నమోదు చేయండి",
+    "joinedAs": "{{role}} గా చేరారు!",
+    "roomNotFound": "గది కనుగొనబడలేదు",
+    "codeCopied": "కోడ్ కాపీ చేయబడింది!",
+    "failedToCopy": "కాపీ విఫలం",
+    "create": "సృష్టించు",
+    "join": "చేరు",
+    "joinAs": "గా చేరు:",
+    "editor": "ఎడిటర్",
+    "viewer": "వీక్షకుడు",
+    "roomCode": "గది కోడ్:",
+    "enterCode": "6 అంకెల కోడ్ నమోదు చేయండి",
+    "addedLayer": "{{name}} ఒక లేయర్ జోడించారు",
+    "deletedLayer": "{{name}} ఒక లేయర్ తొలగించారు",
+    "collaborate": "సహకారం"
+  },
+  "audio": {
+    "effectsApplied": "ఆడియో ఎఫెక్ట్‌లు అమలు చేయబడ్డాయి!",
+    "effectsFailed": "ఎఫెక్ట్‌లు అమలు చేయడంలో విఫలం, అసలైనది సేవ్ అవుతోంది"
+  },
+  "image": {
+    "selectImageFile": "దయచేసి ఒక చిత్ర ఫైల్ ఎంచుకోండి",
+    "imageTooLarge": "చిత్రం 10MB కంటే తక్కువగా ఉండాలి"
+  },
+  "location": {
+    "enterLocation": "స్థానం నమోదు చేయండి...",
+    "addMapboxToken": "స్థాన శోధన ప్రారంభించడానికి సెట్టింగ్‌లలో Mapbox టోకెన్ జోడించండి",
+    "searchLocation": "రిమైండర్ కోసం స్థానం శోధించండి...",
+    "arrive": "చేరుకోవడం",
+    "leave": "వెళ్ళడం",
+    "radiusUnit": "{{radius}}మీ వ్యాసార్థం"
+  },
+  "theme": {
+    "editTheme": "థీమ్ సవరించండి",
+    "themeName": "థీమ్ పేరు",
+    "themeNamePlaceholder": "నా కస్టమ్ థీమ్",
+    "livePreview": "ప్రత్యక్ష ప్రివ్యూ"
+  },
+  "versionHistory": {
+    "noHistory": "ఇంకా సంస్కరణ చరిత్ర లేదు",
+    "changesSavedAuto": "మార్పులు ఆటోమేటిక్‌గా సేవ్ అవుతాయి"
   }
 }

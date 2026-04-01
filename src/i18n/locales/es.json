@@ -631,7 +631,8 @@
     "exportedToWord": "Nota exportada a Word",
     "exportedToMarkdown": "Nota exportada a Markdown",
     "restoreFromArchive": "Restaurar del archivo",
-    "archiveNote": "Archivar nota"
+    "archiveNote": "Archivar nota",
+    "sketchDrawing": "Dibujo de boceto"
   },
   "tasks": {
     "title": "Tareas",
@@ -946,7 +947,9 @@
     "syncError": "Error de Sincronización",
     "syncInProgress": "Sincronizando...",
     "synced": "Sincronizado",
-    "syncing": "Sincronizando"
+    "syncing": "Sincronizando",
+    "tapToReconnect": "Toca para reconectar sincronización",
+    "reconnectSyncPrompt": "Ve a Perfil → Iniciar sesión con Google para reconectar"
   },
   "accessibility": {
     "goToPreviousPage": "Ir a la página anterior",
@@ -3767,5 +3770,116 @@
     "intermediateDesc": "Completa 50 tareas y racha de 7 días",
     "advancedDesc": "Completa 200 tareas y racha de 30 días",
     "masterDesc": "Completa 500 tareas y racha de 100 días"
+  },
+  "security": {
+    "passwordRecovery": "Recuperación de Contraseña",
+    "verifyIdentity": "Verifica Tu Identidad",
+    "resetPassword": "Restablecer Contraseña",
+    "securityQuestion": "Pregunta de Seguridad",
+    "yourAnswer": "Tu Respuesta",
+    "newPassword": "Nueva Contraseña",
+    "confirmPassword": "Confirmar Contraseña",
+    "enterYourAnswer": "Ingresa tu respuesta",
+    "enterNewPassword": "Ingresa nueva contraseña",
+    "confirmNewPassword": "Confirma nueva contraseña",
+    "verifyAnswer": "Verificar Respuesta",
+    "answerVerified": "¡Respuesta verificada!",
+    "incorrectAnswer": "Respuesta incorrecta. Intenta de nuevo.",
+    "enterNewPasswordPrompt": "Por favor ingresa una nueva contraseña",
+    "passwordMinLength": "La contraseña debe tener al menos 4 caracteres",
+    "passwordsDoNotMatch": "Las contraseñas no coinciden",
+    "passwordResetSuccess": "¡Contraseña restablecida exitosamente!",
+    "noSecurityQuestion": "No se ha configurado una pregunta de seguridad para la recuperación de contraseña.",
+    "setupSecurityInSettings": "Puedes configurar una pregunta de seguridad en la configuración de Notas Ocultas después de desbloquear.",
+    "enterNewPasswordBelow": "Ingresa tu nueva contraseña a continuación.",
+    "updateSecurityQuestion": "Actualizar Pregunta de Seguridad",
+    "setupSecurityQuestion": "Configurar Pregunta de Seguridad",
+    "setupSecurityDesc": "Configura una pregunta de seguridad para recuperar tu contraseña si la olvidas.",
+    "selectAQuestion": "Selecciona una pregunta",
+    "enterAnAnswer": "Ingresa tu respuesta",
+    "answerMinLength": "La respuesta debe tener al menos 2 caracteres",
+    "securityQuestionSaved": "¡Pregunta de seguridad guardada!",
+    "answerVerifyDesc": "Esta respuesta se usará para verificar tu identidad si olvidas tu contraseña.",
+    "updateSecurityBtn": "Actualizar Pregunta de Seguridad",
+    "saveSecurityBtn": "Guardar Pregunta de Seguridad",
+    "selectSecurityQuestion": "Por favor selecciona una pregunta de seguridad",
+    "pleaseEnterAnswer": "Por favor ingresa una respuesta",
+    "motherMaidenName": "¿Cuál es el apellido de soltera de tu madre?",
+    "firstPetName": "¿Cuál fue el nombre de tu primera mascota?",
+    "birthCity": "¿En qué ciudad naciste?",
+    "favoriteMovie": "¿Cuál es tu película favorita?",
+    "elementarySchool": "¿Cuál fue el nombre de tu escuela primaria?",
+    "favoriteFood": "¿Cuál es tu comida favorita?"
+  },
+  "habits": {
+    "newHabit": "Nuevo Hábito",
+    "name": "Nombre",
+    "icon": "Ícono",
+    "color": "Color",
+    "frequency": "Frecuencia",
+    "whichDays": "¿Qué días?",
+    "targetStreak": "Racha objetivo (días)",
+    "dailyReminder": "Recordatorio Diario",
+    "remindMeAt": "Recordarme a las",
+    "habitNamePlaceholder": "ej. Beber 8 vasos de agua"
+  },
+  "tags": {
+    "createNewTag": "Crear Nueva Etiqueta",
+    "tagName": "Nombre de etiqueta...",
+    "tagAlreadyExists": "¡La etiqueta ya existe!",
+    "tagCreated": "¡Etiqueta \"{{name}}\" creada!",
+    "tagDeleted": "Etiqueta eliminada",
+    "tagUpdated": "Etiqueta actualizada"
+  },
+  "smartViews": {
+    "enterName": "Por favor ingresa un nombre",
+    "viewSaved": "¡Vista \"{{name}}\" guardada!",
+    "viewDeleted": "Vista inteligente eliminada",
+    "namePlaceholder": "ej., Urgente Esta Semana"
+  },
+  "collab": {
+    "roomCreated": "¡Sala creada!",
+    "failedToCreateRoom": "Error al crear sala",
+    "enterValidCode": "Ingresa un código válido",
+    "joinedAs": "¡Unido como {{role}}!",
+    "roomNotFound": "Sala no encontrada",
+    "codeCopied": "¡Código copiado!",
+    "failedToCopy": "Error al copiar",
+    "create": "Crear",
+    "join": "Unirse",
+    "joinAs": "Unirse como:",
+    "editor": "Editor",
+    "viewer": "Espectador",
+    "roomCode": "Código de Sala:",
+    "enterCode": "Ingresa código de 6 dígitos",
+    "addedLayer": "{{name}} agregó una capa",
+    "deletedLayer": "{{name}} eliminó una capa",
+    "collaborate": "Colaborar"
+  },
+  "audio": {
+    "effectsApplied": "¡Efectos de audio aplicados!",
+    "effectsFailed": "Error al aplicar efectos, guardando original"
+  },
+  "image": {
+    "selectImageFile": "Por favor selecciona un archivo de imagen",
+    "imageTooLarge": "La imagen debe ser menor a 10MB"
+  },
+  "location": {
+    "enterLocation": "Ingresa ubicación...",
+    "addMapboxToken": "Agrega tu token de Mapbox en configuración para habilitar búsqueda de ubicación",
+    "searchLocation": "Buscar ubicación para recordatorio...",
+    "arrive": "Llegar",
+    "leave": "Salir",
+    "radiusUnit": "{{radius}}m de radio"
+  },
+  "theme": {
+    "editTheme": "Editar Tema",
+    "themeName": "Nombre del Tema",
+    "themeNamePlaceholder": "Mi Tema Personalizado",
+    "livePreview": "Vista Previa"
+  },
+  "versionHistory": {
+    "noHistory": "Sin historial de versiones aún",
+    "changesSavedAuto": "Los cambios se guardarán automáticamente"
   }
 }

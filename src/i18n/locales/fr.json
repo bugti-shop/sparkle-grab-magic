@@ -631,7 +631,8 @@
     "exportedToWord": "Note exportée vers Word",
     "exportedToMarkdown": "Note exportée vers Markdown",
     "restoreFromArchive": "Restaurer depuis l'Archive",
-    "archiveNote": "Archiver la Note"
+    "archiveNote": "Archiver la Note",
+    "sketchDrawing": "Dessin de croquis"
   },
   "tasks": {
     "title": "Tâches",
@@ -946,7 +947,9 @@
     "syncError": "Erreur de Synchronisation",
     "syncInProgress": "Synchronisation en cours...",
     "synced": "Synchronisé",
-    "syncing": "Synchronisation"
+    "syncing": "Synchronisation",
+    "tapToReconnect": "Appuyez pour reconnecter la synchronisation",
+    "reconnectSyncPrompt": "Allez dans Profil → Connectez-vous avec Google pour reconnecter"
   },
   "accessibility": {
     "goToPreviousPage": "Aller à la page précédente",
@@ -3767,5 +3770,116 @@
     "intermediateDesc": "Complétez 50 tâches et série de 7 jours",
     "advancedDesc": "Complétez 200 tâches et série de 30 jours",
     "masterDesc": "Complétez 500 tâches et série de 100 jours"
+  },
+  "security": {
+    "passwordRecovery": "Récupération du Mot de Passe",
+    "verifyIdentity": "Vérifiez Votre Identité",
+    "resetPassword": "Réinitialiser le Mot de Passe",
+    "securityQuestion": "Question de Sécurité",
+    "yourAnswer": "Votre Réponse",
+    "newPassword": "Nouveau Mot de Passe",
+    "confirmPassword": "Confirmer le Mot de Passe",
+    "enterYourAnswer": "Entrez votre réponse",
+    "enterNewPassword": "Entrez le nouveau mot de passe",
+    "confirmNewPassword": "Confirmez le nouveau mot de passe",
+    "verifyAnswer": "Vérifier la Réponse",
+    "answerVerified": "Réponse vérifiée !",
+    "incorrectAnswer": "Réponse incorrecte. Veuillez réessayer.",
+    "enterNewPasswordPrompt": "Veuillez entrer un nouveau mot de passe",
+    "passwordMinLength": "Le mot de passe doit contenir au moins 4 caractères",
+    "passwordsDoNotMatch": "Les mots de passe ne correspondent pas",
+    "passwordResetSuccess": "Mot de passe réinitialisé avec succès !",
+    "noSecurityQuestion": "Aucune question de sécurité n'a été configurée pour la récupération du mot de passe.",
+    "setupSecurityInSettings": "Vous pouvez configurer une question de sécurité dans les paramètres des Notes Cachées après déverrouillage.",
+    "enterNewPasswordBelow": "Entrez votre nouveau mot de passe ci-dessous.",
+    "updateSecurityQuestion": "Mettre à Jour la Question de Sécurité",
+    "setupSecurityQuestion": "Configurer la Question de Sécurité",
+    "setupSecurityDesc": "Configurez une question de sécurité pour récupérer votre mot de passe en cas d'oubli.",
+    "selectAQuestion": "Sélectionnez une question",
+    "enterAnAnswer": "Entrez votre réponse",
+    "answerMinLength": "La réponse doit contenir au moins 2 caractères",
+    "securityQuestionSaved": "Question de sécurité enregistrée !",
+    "answerVerifyDesc": "Cette réponse sera utilisée pour vérifier votre identité si vous oubliez votre mot de passe.",
+    "updateSecurityBtn": "Mettre à Jour la Question de Sécurité",
+    "saveSecurityBtn": "Enregistrer la Question de Sécurité",
+    "selectSecurityQuestion": "Veuillez sélectionner une question de sécurité",
+    "pleaseEnterAnswer": "Veuillez entrer une réponse",
+    "motherMaidenName": "Quel est le nom de jeune fille de votre mère ?",
+    "firstPetName": "Quel était le nom de votre premier animal ?",
+    "birthCity": "Dans quelle ville êtes-vous né(e) ?",
+    "favoriteMovie": "Quel est votre film préféré ?",
+    "elementarySchool": "Quel était le nom de votre école primaire ?",
+    "favoriteFood": "Quelle est votre nourriture préférée ?"
+  },
+  "habits": {
+    "newHabit": "Nouvelle Habitude",
+    "name": "Nom",
+    "icon": "Icône",
+    "color": "Couleur",
+    "frequency": "Fréquence",
+    "whichDays": "Quels jours ?",
+    "targetStreak": "Série cible (jours)",
+    "dailyReminder": "Rappel Quotidien",
+    "remindMeAt": "Me rappeler à",
+    "habitNamePlaceholder": "ex. Boire 8 verres d'eau"
+  },
+  "tags": {
+    "createNewTag": "Créer une Nouvelle Étiquette",
+    "tagName": "Nom de l'étiquette...",
+    "tagAlreadyExists": "L'étiquette existe déjà !",
+    "tagCreated": "Étiquette \"{{name}}\" créée !",
+    "tagDeleted": "Étiquette supprimée",
+    "tagUpdated": "Étiquette mise à jour"
+  },
+  "smartViews": {
+    "enterName": "Veuillez entrer un nom",
+    "viewSaved": "Vue \"{{name}}\" enregistrée !",
+    "viewDeleted": "Vue intelligente supprimée",
+    "namePlaceholder": "ex., Urgent Cette Semaine"
+  },
+  "collab": {
+    "roomCreated": "Salle créée !",
+    "failedToCreateRoom": "Échec de création de salle",
+    "enterValidCode": "Entrez un code valide",
+    "joinedAs": "Rejoint en tant que {{role}} !",
+    "roomNotFound": "Salle non trouvée",
+    "codeCopied": "Code copié !",
+    "failedToCopy": "Échec de la copie",
+    "create": "Créer",
+    "join": "Rejoindre",
+    "joinAs": "Rejoindre en tant que :",
+    "editor": "Éditeur",
+    "viewer": "Spectateur",
+    "roomCode": "Code de Salle :",
+    "enterCode": "Entrez le code à 6 chiffres",
+    "addedLayer": "{{name}} a ajouté un calque",
+    "deletedLayer": "{{name}} a supprimé un calque",
+    "collaborate": "Collaborer"
+  },
+  "audio": {
+    "effectsApplied": "Effets audio appliqués !",
+    "effectsFailed": "Échec d'application des effets, sauvegarde de l'original"
+  },
+  "image": {
+    "selectImageFile": "Veuillez sélectionner un fichier image",
+    "imageTooLarge": "L'image doit faire moins de 10 Mo"
+  },
+  "location": {
+    "enterLocation": "Entrer l'emplacement...",
+    "addMapboxToken": "Ajoutez votre jeton Mapbox dans les paramètres pour activer la recherche de lieu",
+    "searchLocation": "Rechercher un lieu pour rappel...",
+    "arrive": "Arriver",
+    "leave": "Partir",
+    "radiusUnit": "{{radius}}m de rayon"
+  },
+  "theme": {
+    "editTheme": "Modifier le Thème",
+    "themeName": "Nom du Thème",
+    "themeNamePlaceholder": "Mon Thème Personnalisé",
+    "livePreview": "Aperçu"
+  },
+  "versionHistory": {
+    "noHistory": "Pas encore d'historique",
+    "changesSavedAuto": "Les modifications seront enregistrées automatiquement"
   }
 }

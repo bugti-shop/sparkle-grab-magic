@@ -599,7 +599,8 @@
     "trashEmptyDesc": "حذف شدہ نوٹس یہاں دکھائی دیں گے",
     "unknown": "نامعلوم",
     "untitled": "بے عنوان",
-    "upcomingReminders": "آنے والے یاد دہانیاں"
+    "upcomingReminders": "آنے والے یاد دہانیاں",
+    "sketchDrawing": "خاکہ"
   },
   "tasks": {
     "title": "کام",
@@ -2517,7 +2518,9 @@
     "syncError": "ہم آہنگی خرابی",
     "syncInProgress": "ہم آہنگی جاری ہے...",
     "synced": "ہم آہنگ",
-    "syncing": "ہم آہنگی"
+    "syncing": "ہم آہنگی",
+    "tapToReconnect": "دوبارہ جوڑنے کے لیے ٹیپ کریں",
+    "reconnectSyncPrompt": "پروفائل پر جائیں ← Google سے سائن ان کریں"
   },
   "welcome": {
     "startJourney": "اپنا پیداواری سفر شروع کریں",
@@ -3767,5 +3770,116 @@
     "intermediateDesc": "50 کام مکمل کریں اور 7 دن کی سلسلہ",
     "advancedDesc": "200 کام مکمل کریں اور 30 دن کی سلسلہ",
     "masterDesc": "500 کام مکمل کریں اور 100 دن کی سلسلہ"
+  },
+  "security": {
+    "passwordRecovery": "پاس ورڈ کی بازیابی",
+    "verifyIdentity": "اپنی شناخت کی تصدیق کریں",
+    "resetPassword": "پاس ورڈ ری سیٹ کریں",
+    "securityQuestion": "سیکیورٹی سوال",
+    "yourAnswer": "آپ کا جواب",
+    "newPassword": "نیا پاس ورڈ",
+    "confirmPassword": "پاس ورڈ کی تصدیق کریں",
+    "enterYourAnswer": "اپنا جواب درج کریں",
+    "enterNewPassword": "نیا پاس ورڈ درج کریں",
+    "confirmNewPassword": "نئے پاس ورڈ کی تصدیق کریں",
+    "verifyAnswer": "جواب کی تصدیق کریں",
+    "answerVerified": "جواب کی تصدیق ہو گئی!",
+    "incorrectAnswer": "غلط جواب۔ دوبارہ کوشش کریں۔",
+    "enterNewPasswordPrompt": "براہ کرم نیا پاس ورڈ درج کریں",
+    "passwordMinLength": "پاس ورڈ کم از کم 4 حروف کا ہونا چاہیے",
+    "passwordsDoNotMatch": "پاس ورڈ مماثل نہیں ہیں",
+    "passwordResetSuccess": "پاس ورڈ کامیابی سے ری سیٹ ہو گیا!",
+    "noSecurityQuestion": "پاس ورڈ کی بازیابی کے لیے کوئی سیکیورٹی سوال مقرر نہیں کیا گیا۔",
+    "setupSecurityInSettings": "آپ انلاک کرنے کے بعد پوشیدہ نوٹس کی ترتیبات میں سیکیورٹی سوال مقرر کر سکتے ہیں۔",
+    "enterNewPasswordBelow": "نیچے اپنا نیا پاس ورڈ درج کریں۔",
+    "updateSecurityQuestion": "سیکیورٹی سوال اپ ڈیٹ کریں",
+    "setupSecurityQuestion": "سیکیورٹی سوال مقرر کریں",
+    "setupSecurityDesc": "اپنا پاس ورڈ بھولنے کی صورت میں بازیابی کے لیے سیکیورٹی سوال مقرر کریں۔",
+    "selectAQuestion": "ایک سوال منتخب کریں",
+    "enterAnAnswer": "اپنا جواب درج کریں",
+    "answerMinLength": "جواب کم از کم 2 حروف کا ہونا چاہیے",
+    "securityQuestionSaved": "سیکیورٹی سوال محفوظ ہو گیا!",
+    "answerVerifyDesc": "اگر آپ اپنا پاس ورڈ بھول جائیں تو یہ جواب آپ کی شناخت کی تصدیق کے لیے استعمال ہوگا۔",
+    "updateSecurityBtn": "سیکیورٹی سوال اپ ڈیٹ کریں",
+    "saveSecurityBtn": "سیکیورٹی سوال محفوظ کریں",
+    "selectSecurityQuestion": "براہ کرم ایک سیکیورٹی سوال منتخب کریں",
+    "pleaseEnterAnswer": "براہ کرم جواب درج کریں",
+    "motherMaidenName": "آپ کی والدہ کا شادی سے پہلے کا نام کیا ہے؟",
+    "firstPetName": "آپ کے پہلے پالتو جانور کا نام کیا تھا؟",
+    "birthCity": "آپ کس شہر میں پیدا ہوئے؟",
+    "favoriteMovie": "آپ کی پسندیدہ فلم کیا ہے؟",
+    "elementarySchool": "آپ کے پرائمری اسکول کا نام کیا تھا؟",
+    "favoriteFood": "آپ کا پسندیدہ کھانا کیا ہے؟"
+  },
+  "habits": {
+    "newHabit": "نئی عادت",
+    "name": "نام",
+    "icon": "آئیکن",
+    "color": "رنگ",
+    "frequency": "تکرار",
+    "whichDays": "کون سے دن؟",
+    "targetStreak": "ہدف سلسلہ (دن)",
+    "dailyReminder": "روزانہ یاد دہانی",
+    "remindMeAt": "مجھے یاد دلائیں",
+    "habitNamePlaceholder": "مثلاً 8 گلاس پانی پیئیں"
+  },
+  "tags": {
+    "createNewTag": "نیا ٹیگ بنائیں",
+    "tagName": "ٹیگ کا نام...",
+    "tagAlreadyExists": "ٹیگ پہلے سے موجود ہے!",
+    "tagCreated": "ٹیگ \"{{name}}\" بنا دیا گیا!",
+    "tagDeleted": "ٹیگ حذف ہو گیا",
+    "tagUpdated": "ٹیگ اپ ڈیٹ ہو گیا"
+  },
+  "smartViews": {
+    "enterName": "براہ کرم نام درج کریں",
+    "viewSaved": "ویو \"{{name}}\" محفوظ ہو گیا!",
+    "viewDeleted": "سمارٹ ویو حذف ہو گیا",
+    "namePlaceholder": "مثلاً، اس ہفتے فوری"
+  },
+  "collab": {
+    "roomCreated": "کمرہ بن گیا!",
+    "failedToCreateRoom": "کمرہ بنانے میں ناکامی",
+    "enterValidCode": "درست کوڈ درج کریں",
+    "joinedAs": "{{role}} کے طور پر شامل ہوئے!",
+    "roomNotFound": "کمرہ نہیں ملا",
+    "codeCopied": "کوڈ کاپی ہو گیا!",
+    "failedToCopy": "کاپی ناکام",
+    "create": "بنائیں",
+    "join": "شامل ہوں",
+    "joinAs": "بطور شامل ہوں:",
+    "editor": "ایڈیٹر",
+    "viewer": "ناظر",
+    "roomCode": "کمرے کا کوڈ:",
+    "enterCode": "6 ہندسوں کا کوڈ درج کریں",
+    "addedLayer": "{{name}} نے ایک تہہ شامل کی",
+    "deletedLayer": "{{name}} نے ایک تہہ حذف کی",
+    "collaborate": "تعاون"
+  },
+  "audio": {
+    "effectsApplied": "آڈیو اثرات لاگو ہو گئے!",
+    "effectsFailed": "اثرات لاگو کرنے میں ناکامی، اصل محفوظ ہو رہا ہے"
+  },
+  "image": {
+    "selectImageFile": "براہ کرم تصویر کی فائل منتخب کریں",
+    "imageTooLarge": "تصویر 10MB سے کم ہونی چاہیے"
+  },
+  "location": {
+    "enterLocation": "مقام درج کریں...",
+    "addMapboxToken": "مقام کی تلاش فعال کرنے کے لیے ترتیبات میں Mapbox ٹوکن شامل کریں",
+    "searchLocation": "یاد دہانی کے لیے مقام تلاش کریں...",
+    "arrive": "پہنچنا",
+    "leave": "جانا",
+    "radiusUnit": "{{radius}} میٹر دائرہ"
+  },
+  "theme": {
+    "editTheme": "تھیم تبدیل کریں",
+    "themeName": "تھیم کا نام",
+    "themeNamePlaceholder": "میرا اپنا تھیم",
+    "livePreview": "براہ راست پیش نظارہ"
+  },
+  "versionHistory": {
+    "noHistory": "ابھی کوئی ورژن ہسٹری نہیں",
+    "changesSavedAuto": "تبدیلیاں خودکار محفوظ ہوں گی"
   }
 }
