@@ -39,11 +39,11 @@ export const FloatingImageLayer = forwardRef<FloatingImageLayerHandle, FloatingI
     const file = e.target.files?.[0];
     if (!file) return;
     if (!file.type.startsWith('image/')) {
-      toast.error('Please select an image file');
+      toast.error(t('image.selectImageFile'));
       return;
     }
     if (file.size > 10 * 1024 * 1024) {
-      toast.error('Image must be less than 10MB');
+      toast.error(t('image.imageTooLarge'));
       return;
     }
 

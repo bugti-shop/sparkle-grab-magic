@@ -32,6 +32,7 @@ export const NoteVersionHistorySheet = ({
   noteId,
   onRestore,
 }: NoteVersionHistorySheetProps) => {
+  const { t } = useTranslation();
   const [versions, setVersions] = useState<NoteVersion[]>([]);
 
   // Hardware back button support - use 'sheet' priority to close sheet before navigation
@@ -68,8 +69,8 @@ export const NoteVersionHistorySheet = ({
           {versions.length === 0 ? (
             <div className="text-center py-12 text-muted-foreground">
               <History className="h-12 w-12 mx-auto mb-4 opacity-50" />
-              <p>No version history yet</p>
-              <p className="text-sm mt-1">Changes will be saved automatically</p>
+              <p>{t('versionHistory.noHistory')}</p>
+              <p className="text-sm mt-1">{t('versionHistory.changesSavedAuto')}</p>
             </div>
           ) : (
             <div className="space-y-2 pr-4">

@@ -41,6 +41,7 @@ export const ForgotPasswordSheet = ({
   onClose,
   onPasswordReset,
 }: ForgotPasswordSheetProps) => {
+  const { t } = useTranslation();
   const [step, setStep] = useState<'verify' | 'reset'>('verify');
   const [securityAnswer, setSecurityAnswer] = useState('');
   const [storedQuestion, setStoredQuestion] = useState<string | null>(null);
@@ -69,16 +70,16 @@ export const ForgotPasswordSheet = ({
     await triggerHaptic('heavy');
 
     if (!securityAnswer.trim()) {
-      toast.error('Please enter your answer');
+      toast.error(t('security.pleaseEnterAnswer'));
       return;
     }
 
     const isValid = await verifySecurityAnswer(securityAnswer);
     if (isValid) {
       setStep('reset');
-      toast.success('Answer verified!');
+      toast.success(t('security.answerVerified'));
     } else {
-      toast.error('Incorrect answer. Please try again.');
+      toast.error(t('security.incorrectAnswer'));
     }
   };
 
@@ -86,20 +87,20 @@ export const ForgotPasswordSheet = ({
     await triggerHaptic('heavy');
 
     if (!newPassword) {
-      toast.error('Please enter a new password');
+      toast.error(t('security.enterNewPasswordPrompt'));
       return;
     }
     if (newPassword.length < 4) {
-      toast.error('Password must be at least 4 characters');
+      toast.error(t('security.passwordMinLength'));
       return;
     }
     if (newPassword !== confirmPassword) {
-      toast.error('Passwords do not match');
+      toast.error(t('security.passwordsDoNotMatch'));
       return;
     }
 
     await setHiddenNotesPassword(newPassword);
-    toast.success('Password reset successfully!');
+    toast.success(t('security.passwordResetSuccess'));
     onPasswordReset();
     onClose();
   };
@@ -111,17 +112,17 @@ export const ForgotPasswordSheet = ({
           <SheetHeader className="mb-4">
             <SheetTitle className="flex items-center gap-2">
               <HelpCircle className="h-5 w-5 text-primary" />
-              Password Recovery
+              {t('security.passwordRecovery')}
             </SheetTitle>
           </SheetHeader>
 
           <div className="text-center py-8">
             <ShieldCheck className="h-16 w-16 mx-auto mb-4 text-muted-foreground opacity-50" />
             <p className="text-muted-foreground mb-4">
-              No security question has been set up for password recovery.
+              {t('security.noSecurityQuestion')}
             </p>
             <p className="text-sm text-muted-foreground">
-              You can set up a security question in the Hidden Notes settings after unlocking.
+              {t('security.setupSecurityInSettings')}
             </p>
           </div>
 
@@ -141,12 +142,12 @@ export const ForgotPasswordSheet = ({
             {step === 'verify' ? (
               <>
                 <HelpCircle className="h-5 w-5 text-primary" />
-                Verify Your Identity
+                {t('security.verifyIdentity')}
               </>
             ) : (
               <>
                 <KeyRound className="h-5 w-5 text-primary" />
-                Reset Password
+                {t('security.resetPassword')}
               </>
             )}
           </SheetTitle>
@@ -155,16 +156,16 @@ export const ForgotPasswordSheet = ({
         {step === 'verify' ? (
           <div className="space-y-6">
             <div className="space-y-2">
-              <Label className="text-sm text-muted-foreground">Security Question</Label>
+              <Label className="text-sm text-muted-foreground">{t('security.securityQuestion')}</Label>
               <p className="font-medium">{storedQuestion}</p>
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="security-answer">Your Answer</Label>
+              <Label htmlFor="security-answer">{t('security.yourAnswer')}</Label>
               <Input
                 id="security-answer"
                 type="text"
-                placeholder="Enter your answer"
+                placeholder={t('security.enterYourAnswer')}
                 value={securityAnswer}
                 onChange={(e) => setSecurityAnswer(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && handleVerifyAnswer()}
@@ -184,17 +185,17 @@ export const ForgotPasswordSheet = ({
         ) : (
           <div className="space-y-6">
             <p className="text-sm text-muted-foreground">
-              Enter your new password below.
+              {t('security.enterNewPasswordBelow')}
             </p>
 
             <div className="space-y-4">
               <div className="space-y-2">
-                <Label htmlFor="new-password">New Password</Label>
+                <Label htmlFor="new-password">{t('security.newPassword')}</Label>
                 <div className="relative">
                   <Input
                     id="new-password"
                     type={showPassword ? 'text' : 'password'}
-                    placeholder="Enter new password"
+                    placeholder={t('security.enterNewPassword')}
                     value={newPassword}
                     onChange={(e) => setNewPassword(e.target.value)}
                     className="pr-10 h-12"
@@ -210,11 +211,11 @@ export const ForgotPasswordSheet = ({
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="confirm-password">Confirm Password</Label>
+                <Label htmlFor="confirm-password">{t('security.confirmPassword')}</Label>
                 <Input
                   id="confirm-password"
                   type={showPassword ? 'text' : 'password'}
-                  placeholder="Confirm new password"
+                  placeholder={t('security.confirmNewPassword')}
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
                   onKeyDown={(e) => e.key === 'Enter' && handleResetPassword()}

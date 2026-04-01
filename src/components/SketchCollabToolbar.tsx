@@ -14,6 +14,7 @@ interface SketchCollabToolbarProps {
 }
 
 export const SketchCollabToolbar = ({ collaboration }: SketchCollabToolbarProps) => {
+  const { t } = useTranslation();
   const { isConnected, users, roomId, myRole, isRoomCreator, createRoom, joinExistingRoom, leave, changeUserRole } = collaboration;
   const { requireFeature } = useSubscription();
   const [loading, setLoading] = useState(false);
@@ -29,9 +30,9 @@ export const SketchCollabToolbar = ({ collaboration }: SketchCollabToolbarProps)
     setLoading(true);
     try {
       await createRoom();
-      toast.success('Room created!');
+      toast.success(t('collab.roomCreated'));
     } catch (e: any) {
-      toast.error(e.message || 'Failed to create room');
+      toast.error(e.message || t('collab.failedToCreateRoom'));
     } finally {
       setLoading(false);
     }
@@ -41,17 +42,17 @@ export const SketchCollabToolbar = ({ collaboration }: SketchCollabToolbarProps)
     if (!requireFeature('sketch_collab')) return;
     const code = joinCode.trim().toUpperCase();
     if (!code || code.length < 4) {
-      toast.error('Enter a valid room code');
+      toast.error(t('collab.enterValidCode'));
       return;
     }
     setJoining(true);
     try {
       await joinExistingRoom(code, joinRole);
-      toast.success(`Joined as ${joinRole}!`);
+      toast.success(t('collab.joinedAs', { role: joinRole }));
       setShowJoinInput(false);
       setJoinCode('');
     } catch (e: any) {
-      toast.error(e.message || 'Room not found');
+      toast.error(e.message || t('collab.roomNotFound'));
     } finally {
       setJoining(false);
     }
@@ -62,10 +63,10 @@ export const SketchCollabToolbar = ({ collaboration }: SketchCollabToolbarProps)
     try {
       await navigator.clipboard.writeText(roomId);
       setCopied(true);
-      toast.success('Code copied!');
+      toast.success(t('collab.codeCopied'));
       setTimeout(() => setCopied(false), 2000);
     } catch {
-      toast.error('Failed to copy');
+      toast.error(t('collab.failedToCopy'));
     }
   };
 
@@ -87,7 +88,7 @@ export const SketchCollabToolbar = ({ collaboration }: SketchCollabToolbarProps)
       <div className="flex flex-col border-b border-border">
         <div className="flex items-center gap-2 px-3 py-1.5 bg-muted/50">
           <Users className="w-4 h-4 text-muted-foreground" />
-          <span className="text-xs text-muted-foreground">Collaborate</span>
+          <span className="text-xs text-muted-foreground">{t('collab.collaborate', 'Collaborate')}</span>
           <div className="ml-auto flex items-center gap-1">
             <Button
               variant="ghost"
@@ -95,9 +96,7 @@ export const SketchCollabToolbar = ({ collaboration }: SketchCollabToolbarProps)
               onClick={() => setShowJoinInput(!showJoinInput)}
               className="h-7 text-xs gap-1.5"
             >
-              <UserPlus className="w-3.5 h-3.5" />
-              Join
-            </Button>
+              <UserPlus className="w-3.5 h-3.5" />{t('collab.join')}</Button>
             <Button
               variant="ghost"
               size="sm"
@@ -116,7 +115,7 @@ export const SketchCollabToolbar = ({ collaboration }: SketchCollabToolbarProps)
               <Input
                 value={joinCode}
                 onChange={(e) => setJoinCode(e.target.value.toUpperCase().slice(0, 6))}
-                placeholder="Enter 6-digit code"
+                placeholder={t('collab.enterCode')}
                 className="h-7 text-xs flex-1 font-mono tracking-widest text-center uppercase"
                 onKeyDown={(e) => e.key === 'Enter' && handleJoin()}
                 maxLength={6}
@@ -135,25 +134,21 @@ export const SketchCollabToolbar = ({ collaboration }: SketchCollabToolbarProps)
             </div>
             {/* Role selection */}
             <div className="flex items-center gap-1">
-              <span className="text-[10px] text-muted-foreground">Join as:</span>
+              <span className="text-[10px] text-muted-foreground">{t('collab.joinAs')}</span>
               <Button
                 variant={joinRole === 'editor' ? 'default' : 'ghost'}
                 size="sm"
                 onClick={() => setJoinRole('editor')}
                 className="h-6 text-[10px] gap-1 px-2"
               >
-                <Pencil className="w-3 h-3" />
-                Editor
-              </Button>
+                <Pencil className="w-3 h-3" />{t('collab.editor')}</Button>
               <Button
                 variant={joinRole === 'viewer' ? 'default' : 'ghost'}
                 size="sm"
                 onClick={() => setJoinRole('viewer')}
                 className="h-6 text-[10px] gap-1 px-2"
               >
-                <Eye className="w-3 h-3" />
-                Viewer
-              </Button>
+                <Eye className="w-3 h-3" />{t('collab.viewer')}</Button>
             </div>
           </div>
         )}
@@ -165,7 +160,7 @@ export const SketchCollabToolbar = ({ collaboration }: SketchCollabToolbarProps)
     <div className="flex flex-col border-b border-primary/20">
       {/* Room code display */}
       <div className="flex items-center justify-center gap-2 px-3 py-2 bg-primary/5">
-        <span className="text-[10px] text-muted-foreground uppercase">Room Code:</span>
+        <span className="text-[10px] text-muted-foreground uppercase">{t('collab.roomCode')}</span>
         <span className="font-mono text-sm font-bold tracking-[0.3em] text-primary">{roomId}</span>
         <Button variant="ghost" size="sm" onClick={handleCopyCode} className="h-6 w-6 p-0">
           {copied ? <Check className="w-3.5 h-3.5 text-green-500" /> : <Copy className="w-3.5 h-3.5" />}
@@ -179,11 +174,11 @@ export const SketchCollabToolbar = ({ collaboration }: SketchCollabToolbarProps)
       <div className="flex items-center justify-center gap-1.5 px-3 py-1 bg-primary/5">
         {myRole === 'viewer' ? (
           <span className="text-[10px] bg-muted px-2 py-0.5 rounded-full flex items-center gap-1">
-            <Eye className="w-3 h-3" /> Viewer (read-only)
+            <Eye className="w-3 h-3" /> {t('collab.viewer')}
           </span>
         ) : (
           <span className="text-[10px] bg-primary/10 text-primary px-2 py-0.5 rounded-full flex items-center gap-1">
-            <Pencil className="w-3 h-3" /> Editor
+            <Pencil className="w-3 h-3" /> {t('collab.editor')}
           </span>
         )}
         {isRoomCreator && (

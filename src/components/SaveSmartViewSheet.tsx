@@ -48,7 +48,7 @@ export const SaveSmartViewSheet = ({
 
   const handleSave = async () => {
     if (!name.trim()) {
-      toast.error('Please enter a name');
+      toast.error(t('smartViews.enterName'));
       return;
     }
 
@@ -59,7 +59,7 @@ export const SaveSmartViewSheet = ({
       filters: currentFilters,
     });
 
-    toast.success(`Smart View "${name.trim()}" saved!`);
+    toast.success(t('smartViews.viewSaved', { name: name.trim() }));
     setName('');
     setSelectedEmoji('📋');
     setSelectedColor('#3b82f6');
@@ -96,18 +96,18 @@ export const SaveSmartViewSheet = ({
 
           {/* Name input */}
           <div className="space-y-2">
-            <Label>Name</Label>
+            <Label>{t('habits.name')}</Label>
             <Input
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="e.g., Urgent This Week"
+              placeholder={t('smartViews.namePlaceholder')}
               autoFocus
             />
           </div>
 
           {/* Emoji picker */}
           <div className="space-y-2">
-            <Label>Icon</Label>
+            <Label>{t('habits.icon')}</Label>
             <div className="flex flex-wrap gap-2">
               {EMOJI_OPTIONS.map((emoji) => (
                 <button
@@ -127,7 +127,7 @@ export const SaveSmartViewSheet = ({
 
           {/* Color picker */}
           <div className="space-y-2">
-            <Label>Color</Label>
+            <Label>{t('habits.color')}</Label>
             <div className="flex flex-wrap gap-2">
               {COLOR_OPTIONS.map((color) => (
                 <button

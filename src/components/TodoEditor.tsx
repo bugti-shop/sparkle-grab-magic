@@ -59,7 +59,7 @@ export const TodoEditor = ({ items, onChange }: TodoEditorProps) => {
                 "flex-1 border-0 h-9 px-2 focus-visible:ring-0 bg-transparent text-base",
                 item.completed && "line-through text-muted-foreground"
               )}
-              placeholder="Add a task..."
+              placeholder={t('common.addTask')}
             />
             <Button
               variant="ghost"

@@ -45,7 +45,7 @@ export const TagManagementSheet = ({
     
     // Check duplicate
     if (tags.some(t => t.name.toLowerCase() === newTagName.trim().toLowerCase())) {
-      toast.error('Tag already exists!');
+      toast.error(t('tags.tagAlreadyExists'));
       return;
     }
 
@@ -55,13 +55,13 @@ export const TagManagementSheet = ({
     setNewTagIcon('');
     setNewTagColor(TAG_COLORS[Math.floor(Math.random() * TAG_COLORS.length)]);
     setShowCreateForm(false);
-    toast.success(`Tag "${tag.name}" created!`);
+    toast.success(t('tags.tagCreated', { name: tag.name }));
   };
 
   const handleDeleteTag = async (tagId: string) => {
     await deleteTag(tagId);
     setTags(prev => prev.filter(t => t.id !== tagId));
-    toast.success('Tag deleted');
+    toast.success(t('tags.tagDeleted'));
   };
 
   const handleUpdateTag = async (tagId: string) => {
@@ -72,7 +72,7 @@ export const TagManagementSheet = ({
     await saveTag(updated);
     setTags(prev => prev.map(t => t.id === tagId ? updated : t));
     setEditingTag(null);
-    toast.success('Tag updated');
+    toast.success(t('tags.tagUpdated'));
   };
 
   const toggleSelection = (tagId: string) => {
@@ -104,7 +104,7 @@ export const TagManagementSheet = ({
               onClick={() => setShowCreateForm(true)}
             >
               <Plus className="h-4 w-4" />
-              Create New Tag
+              {t('tags.createNewTag')}
             </Button>
           ) : (
             <div className="rounded-xl border border-border bg-card p-4 space-y-3">

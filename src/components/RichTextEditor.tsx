@@ -1840,7 +1840,7 @@ export const RichTextEditor = ({
           type="text"
           value={title}
           onChange={(e) => onTitleChange(e.target.value)}
-          placeholder="Title"
+          placeholder={t('editor.titlePlaceholder')}
           className="title-input"
           autoCapitalize="sentences"
           style={{ fontFamily, color: isStickyNote ? '#000000' : undefined }}

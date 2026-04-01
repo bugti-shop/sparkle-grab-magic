@@ -97,6 +97,7 @@ const defaultColors: CustomTheme['colors'] = {
 };
 
 export const CustomThemeSheet = ({ isOpen, onClose, onThemeSelect, activeCustomThemeId }: Props) => {
+  const { t } = useTranslation();
   const { toast } = useToast();
   const [customThemes, setCustomThemes] = useState<CustomTheme[]>([]);
   const [editingTheme, setEditingTheme] = useState<CustomTheme | null>(null);
@@ -168,10 +169,10 @@ export const CustomThemeSheet = ({ isOpen, onClose, onThemeSelect, activeCustomT
         <SheetContent side="bottom" className="h-[90vh] rounded-t-2xl p-0">
           <SheetHeader className="p-4 pb-2 border-b border-border">
             <div className="flex items-center justify-between">
-              <SheetTitle className="text-base">Edit Theme</SheetTitle>
+              <SheetTitle className="text-base">{t('theme.editTheme')}</SheetTitle>
               <div className="flex gap-2">
-                <Button variant="ghost" size="sm" onClick={() => setShowEditor(false)}>Cancel</Button>
-                <Button size="sm" onClick={handleSave}>Save</Button>
+                <Button variant="ghost" size="sm" onClick={() => setShowEditor(false)}>{t('common.cancel')}</Button>
+                <Button size="sm" onClick={handleSave}>{t('common.save')}</Button>
               </div>
             </div>
           </SheetHeader>
@@ -180,12 +181,12 @@ export const CustomThemeSheet = ({ isOpen, onClose, onThemeSelect, activeCustomT
             <div className="p-4 space-y-4">
               {/* Theme Name */}
               <div>
-                <label className="text-xs font-medium text-muted-foreground mb-1 block">Theme Name</label>
+                <label className="text-xs font-medium text-muted-foreground mb-1 block">{t('theme.themeName')}</label>
                 <Input
                   value={editingTheme.name}
                   onChange={(e) => setEditingTheme({ ...editingTheme, name: e.target.value })}
                   className="h-9"
-                  placeholder="My Custom Theme"
+                  placeholder={t('theme.themeNamePlaceholder')}
                 />
               </div>
 
@@ -198,7 +199,7 @@ export const CustomThemeSheet = ({ isOpen, onClose, onThemeSelect, activeCustomT
                     color: `hsl(${editingTheme.colors.foreground})`,
                   }}
                 >
-                  <div className="text-sm font-semibold">Live Preview</div>
+                  <div className="text-sm font-semibold">{t('theme.livePreview')}</div>
                   <div
                     className="rounded-lg p-3 space-y-2"
                     style={{

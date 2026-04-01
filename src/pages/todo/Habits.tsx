@@ -31,6 +31,7 @@ const DAY_NAMES = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 const Habits = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const [habits, setHabits] = useState<Habit[]>([]);
   const [showAddSheet, setShowAddSheet] = useState(false);
   const [showStatsSheet, setShowStatsSheet] = useState<Habit | null>(null);
@@ -273,22 +274,22 @@ const Habits = () => {
       <Sheet open={showAddSheet} onOpenChange={setShowAddSheet}>
         <SheetContent side="bottom" className="max-h-[85vh] overflow-y-auto rounded-t-2xl">
           <SheetHeader>
-            <SheetTitle>New Habit</SheetTitle>
+            <SheetTitle>{t('habits.newHabit')}</SheetTitle>
           </SheetHeader>
           <div className="space-y-5 pt-4 pb-6">
             <div>
-              <Label>Name</Label>
+              <Label>{t('habits.name')}</Label>
               <Input
                 value={newName}
                 onChange={(e) => setNewName(e.target.value)}
-                placeholder="e.g. Drink 8 glasses of water"
+                placeholder={t('habits.habitNamePlaceholder')}
                 className="mt-1.5"
               />
             </div>
 
             {/* Emoji picker */}
             <div>
-              <Label>Icon</Label>
+              <Label>{t('habits.icon')}</Label>
               <div className="flex flex-wrap gap-2 mt-1.5">
                 {HABIT_EMOJIS.map(e => (
                   <button
@@ -306,7 +307,7 @@ const Habits = () => {
 
             {/* Color picker */}
             <div>
-              <Label>Color</Label>
+              <Label>{t('habits.color')}</Label>
               <div className="flex gap-2 mt-1.5">
                 {HABIT_COLORS.map(c => (
                   <button
@@ -323,7 +324,7 @@ const Habits = () => {
 
             {/* Frequency */}
             <div>
-              <Label>Frequency</Label>
+              <Label>{t('habits.frequency')}</Label>
               <div className="flex gap-2 mt-1.5">
                 {(['daily', 'weekly'] as HabitFrequency[]).map(f => (
                   <button
@@ -344,7 +345,7 @@ const Habits = () => {
             {/* Weekly day picker */}
             {newFrequency === 'weekly' && (
               <div>
-                <Label>Which days?</Label>
+                <Label>{t('habits.whichDays')}</Label>
                 <div className="flex gap-1.5 mt-1.5">
                   {DAY_NAMES.map((name, i) => (
                     <button
@@ -369,7 +370,7 @@ const Habits = () => {
 
             {/* Target streak */}
             <div>
-              <Label>Target streak (days)</Label>
+              <Label>{t('habits.targetStreak')}</Label>
               <Input
                 type="number"
                 min={1}
@@ -385,7 +386,7 @@ const Habits = () => {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <Bell className="h-4 w-4 text-muted-foreground" />
-                  <Label>Daily Reminder</Label>
+                  <Label>{t('habits.dailyReminder')}</Label>
                 </div>
                 <Switch
                   checked={newReminderEnabled}
@@ -394,7 +395,7 @@ const Habits = () => {
               </div>
               {newReminderEnabled && (
                 <div className="mt-2">
-                  <Label className="text-xs text-muted-foreground">Remind me at</Label>
+                  <Label className="text-xs text-muted-foreground">{t('habits.remindMeAt')}</Label>
                   <Input
                     type="time"
                     value={newReminderTime}

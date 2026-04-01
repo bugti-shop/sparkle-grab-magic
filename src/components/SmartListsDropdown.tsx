@@ -180,7 +180,7 @@ export const SmartListsDropdown = ({
     e.stopPropagation();
     await deleteCustomSmartView(viewId);
     onCustomViewsChanged?.();
-    toast.success('Smart View deleted');
+    toast.success(t('smartViews.viewDeleted'));
   };
 
   return (
