@@ -64,7 +64,9 @@
     "tapEditName": "Appuyez sur Modifier pour ajouter votre nom",
     "section": "Section",
     "folder": "Dossier",
-    "dueDate": "Date d'échéance"
+    "dueDate": "Date d'échéance",
+    "sharing": "Partage...",
+    "deleteImage": "Supprimer l'image"
   },
   "folders": {
     "manageFolders": "Gérer les dossiers",
@@ -819,7 +821,8 @@
     "imageAdded": "Image Ajoutée",
     "hasDescription": "A une Description",
     "taskDescription": "Description de la Tâche",
-    "addMoreDetails": "Ajouter plus de détails sur cette tâche..."
+    "addMoreDetails": "Ajouter plus de détails sur cette tâche...",
+    "taskMoved": "Tâche déplacée"
   },
   "calendar": {
     "title": "Calendrier",
@@ -2510,7 +2513,12 @@
     "allDay": "Toute la journée",
     "tapToEnable": "Appuyez sur \"Synchroniser\" pour activer la synchronisation bidirectionnelle",
     "twoWayDesc": "Synchronisation bidirectionnelle entre votre app et le calendrier système",
-    "permissionDenied": "Autorisation de calendrier refusée"
+    "permissionDenied": "Autorisation de calendrier refusée",
+    "synced": "Synchronisé",
+    "alreadyInSync": "Déjà synchronisé",
+    "removedDuplicates": "{{count}} événement(s) en double supprimé(s)",
+    "noDuplicates": "Aucun événement en double trouvé",
+    "clearDuplicatesFailed": "Échec de la suppression des doublons"
   },
   "remindersPage": {
     "title": "Rappels",
@@ -3821,7 +3829,8 @@
     "priority": "Priorité",
     "folder": "Dossier",
     "search": "Rechercher",
-    "allTasks": "Toutes les tâches"
+    "allTasks": "Toutes les tâches",
+    "dateUpdated": "Date de tâche mise à jour"
   },
   "cert": {
     "beginner": "Débutant",
@@ -3923,7 +3932,8 @@
   },
   "audio": {
     "effectsApplied": "Effets audio appliqués !",
-    "effectsFailed": "Échec d'application des effets, sauvegarde de l'original"
+    "effectsFailed": "Échec d'application des effets, sauvegarde de l'original",
+    "processError": "Échec du traitement audio"
   },
   "image": {
     "selectImageFile": "Veuillez sélectionner un fichier image",
@@ -3946,5 +3956,10 @@
   "versionHistory": {
     "noHistory": "Pas encore d'historique",
     "changesSavedAuto": "Les modifications seront enregistrées automatiquement"
+  },
+  "progress": {
+    "notStarted": "Non commencé",
+    "inProgress": "En cours",
+    "almostDone": "Presque terminé"
   }
 }

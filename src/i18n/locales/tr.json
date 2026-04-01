@@ -64,7 +64,9 @@
     "tapEditName": "Adınızı eklemek için Düzenle'ye dokunun",
     "section": "Bölüm",
     "folder": "Klasör",
-    "dueDate": "Son tarih"
+    "dueDate": "Son tarih",
+    "sharing": "Paylaşılıyor...",
+    "deleteImage": "Resmi sil"
   },
   "folders": {
     "manageFolders": "Klasörleri Yönet",
@@ -819,7 +821,8 @@
     "imageAdded": "Görsel Eklendi",
     "hasDescription": "Açıklama Var",
     "taskDescription": "Görev Açıklaması",
-    "addMoreDetails": "Bu görev hakkında daha fazla ayrıntı ekleyin..."
+    "addMoreDetails": "Bu görev hakkında daha fazla ayrıntı ekleyin...",
+    "taskMoved": "Görev taşındı"
   },
   "calendar": {
     "title": "Takvim",
@@ -2347,7 +2350,12 @@
     "allDay": "Tüm gün",
     "tapToEnable": "Çift yönlü takvim senkronizasyonunu etkinleştirmek için \"Şimdi Senkronize Et\"e dokunun",
     "twoWayDesc": "Uygulamanız ile sistem takvimi arasında çift yönlü senkronizasyon",
-    "permissionDenied": "Takvim izni reddedildi"
+    "permissionDenied": "Takvim izni reddedildi",
+    "synced": "Senkronize edildi",
+    "alreadyInSync": "Zaten senkronize",
+    "removedDuplicates": "{{count}} yinelenen etkinlik kaldırıldı",
+    "noDuplicates": "Yinelenen etkinlik bulunamadı",
+    "clearDuplicatesFailed": "Yinelenenleri temizleme başarısız"
   },
   "remindersPage": {
     "title": "Hatırlatıcılar",
@@ -3821,7 +3829,8 @@
     "priority": "Öncelik",
     "folder": "Klasör",
     "search": "Ara",
-    "allTasks": "Tüm görevler"
+    "allTasks": "Tüm görevler",
+    "dateUpdated": "Görev tarihi güncellendi"
   },
   "cert": {
     "beginner": "Başlangıç",
@@ -3923,7 +3932,8 @@
   },
   "audio": {
     "effectsApplied": "Ses efektleri uygulandı!",
-    "effectsFailed": "Efektler uygulanamadı, orijinal kaydediliyor"
+    "effectsFailed": "Efektler uygulanamadı, orijinal kaydediliyor",
+    "processError": "Ses işleme başarısız"
   },
   "image": {
     "selectImageFile": "Lütfen bir resim dosyası seçin",
@@ -3946,5 +3956,10 @@
   "versionHistory": {
     "noHistory": "Henüz sürüm geçmişi yok",
     "changesSavedAuto": "Değişiklikler otomatik kaydedilecek"
+  },
+  "progress": {
+    "notStarted": "Başlamadı",
+    "inProgress": "Devam ediyor",
+    "almostDone": "Neredeyse bitti"
   }
 }

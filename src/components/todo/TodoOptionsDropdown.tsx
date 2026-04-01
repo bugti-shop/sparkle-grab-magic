@@ -190,7 +190,7 @@ export const TodoOptionsDropdown = ({
                         await deleteCustomSmartView(view.id);
                         loadCustomSmartViews().then(setCustomSmartViews);
                         if (activeCustomViewId === view.id) setActiveCustomViewId(null);
-                        toast.success('Smart View deleted');
+                        toast.success(t('smartViews.viewDeleted', 'Smart View deleted'));
                       }} className="opacity-0 group-hover:opacity-100 ml-auto p-1 hover:bg-destructive/10 rounded transition-opacity">
                         <Trash2 className="h-3 w-3 text-destructive" />
                       </button>

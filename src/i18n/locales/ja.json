@@ -64,7 +64,9 @@
     "tapEditName": "編集をタップして名前を追加",
     "section": "セクション",
     "folder": "フォルダ",
-    "dueDate": "期日"
+    "dueDate": "期日",
+    "sharing": "共有中...",
+    "deleteImage": "画像を削除"
   },
   "folders": {
     "manageFolders": "フォルダを管理",
@@ -819,7 +821,8 @@
     "imageAdded": "画像追加済み",
     "hasDescription": "説明あり",
     "taskDescription": "タスクの説明",
-    "addMoreDetails": "このタスクの詳細を追加..."
+    "addMoreDetails": "このタスクの詳細を追加...",
+    "taskMoved": "タスクを移動しました"
   },
   "calendar": {
     "title": "カレンダー",
@@ -2347,7 +2350,12 @@
     "allDay": "終日",
     "tapToEnable": "「今すぐ同期」をタップして双方向カレンダー同期を有効にする",
     "twoWayDesc": "アプリとシステムカレンダー間の双方向同期",
-    "permissionDenied": "カレンダーの権限が拒否されました"
+    "permissionDenied": "カレンダーの権限が拒否されました",
+    "synced": "同期済み",
+    "alreadyInSync": "すでに同期済み",
+    "removedDuplicates": "{{count}}件の重複イベントを削除",
+    "noDuplicates": "重複イベントは見つかりませんでした",
+    "clearDuplicatesFailed": "重複の削除に失敗"
   },
   "remindersPage": {
     "title": "リマインダー",
@@ -3821,7 +3829,8 @@
     "priority": "優先度",
     "folder": "フォルダ",
     "search": "検索",
-    "allTasks": "すべてのタスク"
+    "allTasks": "すべてのタスク",
+    "dateUpdated": "タスクの日付を更新しました"
   },
   "cert": {
     "beginner": "初心者",
@@ -3923,7 +3932,8 @@
   },
   "audio": {
     "effectsApplied": "オーディオエフェクト適用済み！",
-    "effectsFailed": "エフェクトの適用に失敗、元のファイルを保存中"
+    "effectsFailed": "エフェクトの適用に失敗、元のファイルを保存中",
+    "processError": "音声の処理に失敗"
   },
   "image": {
     "selectImageFile": "画像ファイルを選択してください",
@@ -3946,5 +3956,10 @@
   "versionHistory": {
     "noHistory": "バージョン履歴はまだありません",
     "changesSavedAuto": "変更は自動的に保存されます"
+  },
+  "progress": {
+    "notStarted": "未着手",
+    "inProgress": "進行中",
+    "almostDone": "もうすぐ完了"
   }
 }

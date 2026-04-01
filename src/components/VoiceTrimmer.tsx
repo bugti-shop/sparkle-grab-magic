@@ -341,7 +341,7 @@ export const VoiceTrimmer = ({ audioUrl, duration, onSave, onCancel }: VoiceTrim
       
     } catch (error) {
       console.error('Error processing audio:', error);
-      toast.error('Failed to process audio');
+      toast.error(t('audio.processError', 'Failed to process audio'));
       // Fallback - just save original
       onSave(audioUrl, Math.round(endTrim - startTrim));
     } finally {

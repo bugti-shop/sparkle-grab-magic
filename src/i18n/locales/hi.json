@@ -64,7 +64,9 @@
     "tapEditName": "अपना नाम जोड़ने के लिए संपादित करें पर टैप करें",
     "section": "अनुभाग",
     "folder": "फ़ोल्डर",
-    "dueDate": "नियत तारीख"
+    "dueDate": "नियत तारीख",
+    "sharing": "साझा हो रहा है...",
+    "deleteImage": "चित्र हटाएं"
   },
   "folders": {
     "manageFolders": "फ़ोल्डर प्रबंधित करें",
@@ -819,7 +821,8 @@
     "imageAdded": "छवि जोड़ी गई",
     "hasDescription": "विवरण है",
     "taskDescription": "कार्य विवरण",
-    "addMoreDetails": "इस कार्य के बारे में अधिक विवरण जोड़ें..."
+    "addMoreDetails": "इस कार्य के बारे में अधिक विवरण जोड़ें...",
+    "taskMoved": "कार्य स्थानांतरित"
   },
   "calendar": {
     "title": "कैलेंडर",
@@ -2510,7 +2513,12 @@
     "allDay": "पूरा दिन",
     "tapToEnable": "दो-तरफा कैलेंडर सिंक सक्षम करने के लिए \"अभी सिंक करें\" पर टैप करें",
     "twoWayDesc": "आपके ऐप और सिस्टम कैलेंडर के बीच दो-तरफा सिंक",
-    "permissionDenied": "कैलेंडर अनुमति अस्वीकृत"
+    "permissionDenied": "कैलेंडर अनुमति अस्वीकृत",
+    "synced": "समन्वयित",
+    "alreadyInSync": "पहले से समन्वयित",
+    "removedDuplicates": "{{count}} डुप्लिकेट इवेंट हटाए गए",
+    "noDuplicates": "कोई डुप्लिकेट इवेंट नहीं मिला",
+    "clearDuplicatesFailed": "डुप्लिकेट साफ़ करने में विफल"
   },
   "remindersPage": {
     "title": "रिमाइंडर",
@@ -2632,7 +2640,8 @@
     "priority": "प्राथमिकता",
     "folder": "फ़ोल्डर",
     "search": "खोजें",
-    "allTasks": "सभी कार्य"
+    "allTasks": "सभी कार्य",
+    "dateUpdated": "कार्य तिथि अपडेट की गई"
   },
   "codeEditor": {
     "untitledCode": "बिना शीर्षक कोड",
@@ -3923,7 +3932,8 @@
   },
   "audio": {
     "effectsApplied": "ऑडियो प्रभाव लागू!",
-    "effectsFailed": "प्रभाव लागू करने में विफल, मूल सहेजा जा रहा है"
+    "effectsFailed": "प्रभाव लागू करने में विफल, मूल सहेजा जा रहा है",
+    "processError": "ऑडियो प्रोसेस करने में विफल"
   },
   "image": {
     "selectImageFile": "कृपया एक छवि फ़ाइल चुनें",
@@ -3946,5 +3956,10 @@
   "versionHistory": {
     "noHistory": "अभी कोई संस्करण इतिहास नहीं",
     "changesSavedAuto": "परिवर्तन स्वचालित रूप से सहेजे जाएंगे"
+  },
+  "progress": {
+    "notStarted": "शुरू नहीं हुआ",
+    "inProgress": "प्रगति में",
+    "almostDone": "लगभग पूरा"
   }
 }

@@ -64,7 +64,9 @@
     "tapEditName": "اپنا نام شامل کرنے کے لیے ترمیم پر ٹیپ کریں",
     "section": "سیکشن",
     "folder": "فولڈر",
-    "dueDate": "مقررہ تاریخ"
+    "dueDate": "مقررہ تاریخ",
+    "sharing": "شیئر ہو رہا ہے...",
+    "deleteImage": "تصویر حذف کریں"
   },
   "folders": {
     "manageFolders": "فولڈرز کا انتظام کریں",
@@ -787,7 +789,8 @@
     "section": "سیکشن",
     "subtasks": "ذیلی ٹاسک",
     "tagColor": "ٹیگ رنگ",
-    "taskDescription": "ٹاسک تفصیل"
+    "taskDescription": "ٹاسک تفصیل",
+    "taskMoved": "ٹاسک منتقل ہو گیا"
   },
   "calendar": {
     "title": "کیلنڈر",
@@ -2198,7 +2201,12 @@
     "allDay": "پورا دن",
     "tapToEnable": "دو طرفہ مطابقت فعال کرنے کے لیے \"ابھی مطابقت کریں\" پر ٹیپ کریں",
     "twoWayDesc": "آپ کی ایپ اور سسٹم کیلنڈر کے درمیان دو طرفہ مطابقت",
-    "permissionDenied": "کیلنڈر کی اجازت مسترد کر دی گئی"
+    "permissionDenied": "کیلنڈر کی اجازت مسترد کر دی گئی",
+    "synced": "ہم آہنگ",
+    "alreadyInSync": "پہلے سے ہم آہنگ",
+    "removedDuplicates": "{{count}} ڈپلیکیٹ ایونٹ ہٹا دیے گئے",
+    "noDuplicates": "کوئی ڈپلیکیٹ ایونٹ نہیں ملا",
+    "clearDuplicatesFailed": "ڈپلیکیٹ صاف کرنے میں ناکامی"
   },
   "remindersPage": {
     "title": "یاد دہانیاں",
@@ -2320,7 +2328,8 @@
     "priority": "ترجیح",
     "folder": "فولڈر",
     "search": "تلاش",
-    "allTasks": "تمام کام"
+    "allTasks": "تمام کام",
+    "dateUpdated": "ٹاسک کی تاریخ اپڈیٹ ہو گئی"
   },
   "codeEditor": {
     "untitledCode": "بغیر عنوان کوڈ",
@@ -3923,7 +3932,8 @@
   },
   "audio": {
     "effectsApplied": "آڈیو اثرات لاگو ہو گئے!",
-    "effectsFailed": "اثرات لاگو کرنے میں ناکامی، اصل محفوظ ہو رہا ہے"
+    "effectsFailed": "اثرات لاگو کرنے میں ناکامی، اصل محفوظ ہو رہا ہے",
+    "processError": "آڈیو پروسیس کرنے میں ناکامی"
   },
   "image": {
     "selectImageFile": "براہ کرم تصویر کی فائل منتخب کریں",
@@ -3946,5 +3956,10 @@
   "versionHistory": {
     "noHistory": "ابھی کوئی ورژن ہسٹری نہیں",
     "changesSavedAuto": "تبدیلیاں خودکار محفوظ ہوں گی"
+  },
+  "progress": {
+    "notStarted": "شروع نہیں ہوا",
+    "inProgress": "جاری ہے",
+    "almostDone": "تقریباً مکمل"
   }
 }

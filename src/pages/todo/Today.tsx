@@ -642,7 +642,7 @@ const Today = () => {
                       else if (destGroup === 'timeline-nodate') newDate = undefined;
                       updateItem(taskId, { dueDate: newDate });
                       Haptics.impact({ style: ImpactStyle.Medium }).catch(() => {});
-                      toast.success('Task date updated');
+                      toast.success(t('todayPage.dateUpdated', 'Task date updated'));
                     }
                   }}
                   setOrderVersion={setOrderVersion}

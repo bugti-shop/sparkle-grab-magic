@@ -233,7 +233,7 @@ export const FloatingImageLayer = forwardRef<FloatingImageLayerHandle, FloatingI
                     <button
                       className="absolute -top-3 -right-3 h-6 w-6 rounded-full bg-destructive text-destructive-foreground flex items-center justify-center shadow-md z-10"
                       onClick={(e) => { e.stopPropagation(); handleDelete(img.id); }}
-                      title="Delete image"
+                      title={t('common.deleteImage', 'Delete image')}
                     >
                       <Trash2 className="h-3 w-3" />
                     </button>

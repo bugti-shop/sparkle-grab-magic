@@ -64,7 +64,9 @@
     "tapEditName": "Tocca Modifica per aggiungere il tuo nome",
     "section": "Sezione",
     "folder": "Cartella",
-    "dueDate": "Data di scadenza"
+    "dueDate": "Data di scadenza",
+    "sharing": "Condivisione...",
+    "deleteImage": "Elimina immagine"
   },
   "folders": {
     "manageFolders": "Gestisci cartelle",
@@ -819,7 +821,8 @@
     "imageAdded": "Immagine aggiunta",
     "hasDescription": "Ha descrizione",
     "taskDescription": "Descrizione attività",
-    "addMoreDetails": "Aggiungi più dettagli su questa attività..."
+    "addMoreDetails": "Aggiungi più dettagli su questa attività...",
+    "taskMoved": "Attività spostata"
   },
   "calendar": {
     "title": "Calendario",
@@ -2510,7 +2513,12 @@
     "allDay": "Tutto il giorno",
     "tapToEnable": "Tocca \"Sincronizza\" per attivare la sincronizzazione bidirezionale",
     "twoWayDesc": "Sincronizzazione bidirezionale tra la tua app e il calendario di sistema",
-    "permissionDenied": "Autorizzazione calendario negata"
+    "permissionDenied": "Autorizzazione calendario negata",
+    "synced": "Sincronizzato",
+    "alreadyInSync": "Già sincronizzato",
+    "removedDuplicates": "Rimossi {{count}} evento/i duplicato/i",
+    "noDuplicates": "Nessun evento duplicato trovato",
+    "clearDuplicatesFailed": "Impossibile eliminare i duplicati"
   },
   "remindersPage": {
     "title": "Promemoria",
@@ -3821,7 +3829,8 @@
     "priority": "Priorità",
     "folder": "Cartella",
     "search": "Cerca",
-    "allTasks": "Tutte le attività"
+    "allTasks": "Tutte le attività",
+    "dateUpdated": "Data attività aggiornata"
   },
   "cert": {
     "beginner": "Principiante",
@@ -3923,7 +3932,8 @@
   },
   "audio": {
     "effectsApplied": "Effetti audio applicati!",
-    "effectsFailed": "Applicazione effetti fallita, salvataggio originale"
+    "effectsFailed": "Applicazione effetti fallita, salvataggio originale",
+    "processError": "Impossibile elaborare l'audio"
   },
   "image": {
     "selectImageFile": "Seleziona un file immagine",
@@ -3946,5 +3956,10 @@
   "versionHistory": {
     "noHistory": "Nessuna cronologia versioni",
     "changesSavedAuto": "Le modifiche verranno salvate automaticamente"
+  },
+  "progress": {
+    "notStarted": "Non iniziato",
+    "inProgress": "In corso",
+    "almostDone": "Quasi finito"
   }
 }

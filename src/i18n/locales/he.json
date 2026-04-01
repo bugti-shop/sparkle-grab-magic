@@ -64,7 +64,9 @@
     "tapEditName": "הקש על עריכה כדי להוסיף את שמך",
     "section": "מדור",
     "folder": "תיקייה",
-    "dueDate": "תאריך יעד"
+    "dueDate": "תאריך יעד",
+    "sharing": "משתף...",
+    "deleteImage": "מחק תמונה"
   },
   "folders": {
     "manageFolders": "נהל תיקיות",
@@ -801,7 +803,8 @@
     "imageAdded": "תמונה נוספה",
     "hasDescription": "יש תיאור",
     "taskDescription": "תיאור משימה",
-    "addMoreDetails": "הוסף פרטים נוספים על משימה זו..."
+    "addMoreDetails": "הוסף פרטים נוספים על משימה זו...",
+    "taskMoved": "המשימה הועברה"
   },
   "calendar": {
     "title": "לוח שנה",
@@ -2492,7 +2495,12 @@
     "allDay": "כל היום",
     "tapToEnable": "לחץ \"סנכרן עכשיו\" כדי להפעיל סנכרון דו-כיווני",
     "twoWayDesc": "סנכרון דו-כיווני בין האפליקציה ללוח השנה של המכשיר",
-    "permissionDenied": "הרשאת לוח שנה נדחתה"
+    "permissionDenied": "הרשאת לוח שנה נדחתה",
+    "synced": "סונכרן",
+    "alreadyInSync": "כבר מסונכרן",
+    "removedDuplicates": "הוסרו {{count}} אירועים כפולים",
+    "noDuplicates": "לא נמצאו אירועים כפולים",
+    "clearDuplicatesFailed": "ניקוי הכפולות נכשל"
   },
   "remindersPage": {
     "title": "תזכורות",
@@ -3803,7 +3811,8 @@
     "priority": "עדיפות",
     "folder": "תיקייה",
     "search": "חיפוש",
-    "allTasks": "כל המשימות"
+    "allTasks": "כל המשימות",
+    "dateUpdated": "תאריך המשימה עודכן"
   },
   "cert": {
     "beginner": "מתחיל",
@@ -3905,7 +3914,8 @@
   },
   "audio": {
     "effectsApplied": "אפקטי שמע הוחלו!",
-    "effectsFailed": "החלת אפקטים נכשלה, שומר את המקור"
+    "effectsFailed": "החלת אפקטים נכשלה, שומר את המקור",
+    "processError": "עיבוד האודיו נכשל"
   },
   "image": {
     "selectImageFile": "בחר קובץ תמונה",
@@ -3928,5 +3938,10 @@
   "versionHistory": {
     "noHistory": "אין עדיין היסטוריית גרסאות",
     "changesSavedAuto": "שינויים יישמרו אוטומטית"
+  },
+  "progress": {
+    "notStarted": "לא התחיל",
+    "inProgress": "בתהליך",
+    "almostDone": "כמעט סיים"
   }
 }

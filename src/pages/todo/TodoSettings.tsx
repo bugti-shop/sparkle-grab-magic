@@ -469,9 +469,9 @@ const TodoSettings = () => {
                           if (result.pushed > 0) parts.push(`${result.pushed} pushed`);
                           if (result.pulled > 0) parts.push(`${result.pulled} new`);
                           if (result.updated > 0) parts.push(`${result.updated} updated`);
-                          toast.success(parts.length > 0 ? `📅 Synced: ${parts.join(', ')}` : '📅 Already in sync', { id: 'manual-sync' });
+                          toast.success(parts.length > 0 ? `📅 ${t('calendarSync.synced', 'Synced')}: ${parts.join(', ')}` : `📅 ${t('calendarSync.alreadyInSync', 'Already in sync')}`, { id: 'manual-sync' });
                         } catch (e) {
-                          toast.error('Sync failed', { id: 'manual-sync' });
+                          toast.error(t('calendarSync.syncFailed', 'Sync failed'), { id: 'manual-sync' });
                         }
                       }}
                     >
@@ -484,12 +484,12 @@ const TodoSettings = () => {
                           const { clearDuplicateCalendarEvents } = await import('@/utils/systemCalendarSync');
                           const removed = await clearDuplicateCalendarEvents();
                           if (removed > 0) {
-                            toast.success(`🧹 Removed ${removed} duplicate event${removed > 1 ? 's' : ''}`);
+                            toast.success(`🧹 ${t('calendarSync.removedDuplicates', 'Removed {{count}} duplicate event(s)', { count: removed })}`);
                           } else {
-                            toast.success('✅ No duplicate events found');
+                            toast.success(`✅ ${t('calendarSync.noDuplicates', 'No duplicate events found')}`);
                           }
                         } catch (e) {
-                          toast.error('Failed to clear duplicates');
+                          toast.error(t('calendarSync.clearDuplicatesFailed', 'Failed to clear duplicates'));
                         }
                       }}
                     >

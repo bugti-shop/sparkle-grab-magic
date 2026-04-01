@@ -79,7 +79,7 @@ export const KanbanView = ({
     });
     setOrderVersion(v => v + 1);
     Haptics.impact({ style: ImpactStyle.Medium }).catch(() => {});
-    toast.success('Task moved');
+    toast.success(t('tasks.taskMoved', 'Task moved'));
   };
 
   return (

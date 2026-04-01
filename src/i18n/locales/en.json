@@ -64,7 +64,9 @@
     "tasks": "tasks",
     "section": "Section",
     "folder": "Folder",
-    "dueDate": "Due Date"
+    "dueDate": "Due Date",
+    "sharing": "Sharing...",
+    "deleteImage": "Delete image"
   },
   "folders": {
     "manageFolders": "Manage Folders",
@@ -763,7 +765,8 @@
     "imageAdded": "Image Added",
     "hasDescription": "Has Description",
     "taskDescription": "Task Description",
-    "addMoreDetails": "Add more details about this task..."
+    "addMoreDetails": "Add more details about this task...",
+    "taskMoved": "Task moved"
   },
   "calendar": {
     "title": "Calendar",
@@ -2420,7 +2423,12 @@
     "allDay": "All Day",
     "tapToEnable": "Tap \"Sync Now\" to enable two-way calendar sync",
     "twoWayDesc": "Two-way sync between your app and system calendar",
-    "permissionDenied": "Calendar permission denied"
+    "permissionDenied": "Calendar permission denied",
+    "synced": "Synced",
+    "alreadyInSync": "Already in sync",
+    "removedDuplicates": "Removed {{count}} duplicate event(s)",
+    "noDuplicates": "No duplicate events found",
+    "clearDuplicatesFailed": "Failed to clear duplicates"
   },
   "remindersPage": {
     "title": "Reminders",
@@ -2529,7 +2537,8 @@
     "bulkReminderCleared": "Reminder cleared for {{count}} task(s)",
     "bulkRepeatSet": "Repeat set for {{count}} task(s)",
     "bulkSectionMoved": "Moved {{count}} task(s) to section",
-    "bulkStatusSet": "Status set for {{count}} task(s)"
+    "bulkStatusSet": "Status set for {{count}} task(s)",
+    "dateUpdated": "Task date updated"
   },
   "codeEditor": {
     "untitledCode": "Untitled Code",
@@ -3761,7 +3770,8 @@
   },
   "audio": {
     "effectsApplied": "Audio effects applied!",
-    "effectsFailed": "Failed to apply effects, saving original"
+    "effectsFailed": "Failed to apply effects, saving original",
+    "processError": "Failed to process audio"
   },
   "image": {
     "selectImageFile": "Please select an image file",
@@ -3784,5 +3794,10 @@
   "versionHistory": {
     "noHistory": "No version history yet",
     "changesSavedAuto": "Changes will be saved automatically"
+  },
+  "progress": {
+    "notStarted": "Not Started",
+    "inProgress": "In Progress",
+    "almostDone": "Almost Done"
   }
 }
