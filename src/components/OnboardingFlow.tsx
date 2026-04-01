@@ -1716,7 +1716,7 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
             transition={{ delay: 0.6, duration: 0.5 }}
             className="text-white/60 text-sm font-['Nunito_Sans'] mt-2 mb-6"
           >
-            {selectedJourney?.name} — {selectedJourney?.totalTasks} {t('common.tasks', 'tasks')}
+            {t(`journey.${selectedJourney?.id}.name`, selectedJourney?.name)} — {selectedJourney?.totalTasks} {t('common.tasks', 'tasks')}
           </motion.p>
 
           {/* Milestone path preview */}
