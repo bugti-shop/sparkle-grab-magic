@@ -3283,7 +3283,14 @@
     "noJourneysYet": "अभी तक कोई यात्रा नहीं",
     "startFromProgress": "अपना साहसिक कार्य शुरू करने के लिए प्रगति पृष्ठ से एक आभासी यात्रा शुरू करें!",
     "complete": "पूर्ण",
-    "inProgress": "प्रगति में"
+    "inProgress": "प्रगति में",
+    "milestonesLabel": "मील के पत्थर",
+    "journeyConquered": "🏆 यात्रा जीत ली!",
+    "newBadge": "🎖️ नया बैज!",
+    "badgeCollection": "बैज संग्रह",
+    "badgesEarned": "{{count}} बैज अर्जित",
+    "noBadgesYet": "अभी तक कोई बैज नहीं",
+    "startJourneyForBadges": "बैज कमाने के लिए एक आभासी यात्रा शुरू करें!"
   },
   "certificates": {
     "title": "प्रमाणपत्र",

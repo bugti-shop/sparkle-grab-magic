@@ -4391,7 +4391,14 @@
     "noJourneysYet": "এখনো কোনো যাত্রা নেই",
     "startFromProgress": "আপনার অভিযান শুরু করতে অগ্রগতি পৃষ্ঠা থেকে একটি ভার্চুয়াল যাত্রা শুরু করুন!",
     "complete": "সম্পন্ন",
-    "inProgress": "চলমান"
+    "inProgress": "চলমান",
+    "milestonesLabel": "মাইলফলক",
+    "journeyConquered": "🏆 যাত্রা জয়!",
+    "newBadge": "🎖️ নতুন ব্যাজ!",
+    "badgeCollection": "ব্যাজ সংগ্রহ",
+    "badgesEarned": "{{count}}টি ব্যাজ অর্জিত",
+    "noBadgesYet": "এখনো কোনো ব্যাজ নেই",
+    "startJourneyForBadges": "ব্যাজ অর্জন করতে একটি ভার্চুয়াল যাত্রা শুরু করুন!"
   },
   "certificates": {
     "title": "সার্টিফিকেট",

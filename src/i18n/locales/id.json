@@ -3171,7 +3171,14 @@
     "noJourneysYet": "Belum ada perjalanan",
     "startFromProgress": "Mulai perjalanan virtual dari halaman Kemajuan untuk memulai petualangan Anda!",
     "complete": "Selesai",
-    "inProgress": "Sedang berlangsung"
+    "inProgress": "Sedang berlangsung",
+    "milestonesLabel": "tonggak",
+    "journeyConquered": "🏆 Perjalanan Ditaklukkan!",
+    "newBadge": "🎖️ Lencana Baru!",
+    "badgeCollection": "Koleksi Lencana",
+    "badgesEarned": "{{count}} lencana diperoleh",
+    "noBadgesYet": "Belum ada lencana",
+    "startJourneyForBadges": "Mulai perjalanan virtual dan selesaikan tonggak untuk mendapatkan lencana!"
   },
   "certificates": {
     "title": "Sertifikat",

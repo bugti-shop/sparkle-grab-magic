@@ -3220,7 +3220,14 @@
     "noJourneysYet": "Пока нет путешествий",
     "startFromProgress": "Начните виртуальное путешествие со страницы Прогресс, чтобы начать приключение!",
     "complete": "Завершено",
-    "inProgress": "В процессе"
+    "inProgress": "В процессе",
+    "milestonesLabel": "вехи",
+    "journeyConquered": "🏆 Путешествие завершено!",
+    "newBadge": "🎖️ Новый значок!",
+    "badgeCollection": "Коллекция значков",
+    "badgesEarned": "{{count}} значков получено",
+    "noBadgesYet": "Пока нет значков",
+    "startJourneyForBadges": "Начните виртуальное путешествие и завершите вехи, чтобы заработать значки!"
   },
   "certificates": {
     "title": "Сертификаты",

@@ -3180,7 +3180,14 @@
     "noJourneysYet": "No journeys yet",
     "startFromProgress": "Start a virtual journey from the Progress page to begin your adventure!",
     "complete": "Complete",
-    "inProgress": "In Progress"
+    "inProgress": "In Progress",
+    "milestonesLabel": "milestones",
+    "journeyConquered": "🏆 Journey Conquered!",
+    "newBadge": "🎖️ New Badge!",
+    "badgeCollection": "Badge Collection",
+    "badgesEarned": "{{count}} badges earned",
+    "noBadgesYet": "No badges yet",
+    "startJourneyForBadges": "Start a virtual journey and complete milestones to earn badges!"
   },
   "certificates": {
     "title": "Certificates",

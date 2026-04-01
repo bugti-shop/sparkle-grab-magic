@@ -3154,7 +3154,14 @@
     "noJourneysYet": "இன்னும் பயணங்கள் இல்லை",
     "startFromProgress": "உங்கள் சாகசத்தைத் தொடங்க முன்னேற்ற பக்கத்திலிருந்து ஒரு மெய்நிகர் பயணத்தைத் தொடங்கவும்!",
     "complete": "நிறைவு",
-    "inProgress": "நடைபெறுகிறது"
+    "inProgress": "நடைபெறுகிறது",
+    "milestonesLabel": "மைல்கற்கள்",
+    "journeyConquered": "🏆 பயணம் வெற்றி!",
+    "newBadge": "🎖️ புதிய பேட்ஜ்!",
+    "badgeCollection": "பேட்ஜ் சேகரிப்பு",
+    "badgesEarned": "{{count}} பேட்ஜ்கள் பெறப்பட்டன",
+    "noBadgesYet": "இன்னும் பேட்ஜ்கள் இல்லை",
+    "startJourneyForBadges": "பேட்ஜ்களைப் பெற ஒரு மெய்நிகர் பயணத்தைத் தொடங்குங்கள்!"
   },
   "certificates": {
     "title": "சான்றிதழ்கள்",

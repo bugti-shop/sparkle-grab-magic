@@ -3196,7 +3196,14 @@
     "noJourneysYet": "Aún no hay viajes",
     "startFromProgress": "¡Inicia un viaje virtual desde la página de Progreso para comenzar tu aventura!",
     "complete": "Completado",
-    "inProgress": "En progreso"
+    "inProgress": "En progreso",
+    "milestonesLabel": "hitos",
+    "journeyConquered": "🏆 ¡Viaje conquistado!",
+    "newBadge": "🎖️ ¡Nueva insignia!",
+    "badgeCollection": "Colección de insignias",
+    "badgesEarned": "{{count}} insignias ganadas",
+    "noBadgesYet": "Aún no hay insignias",
+    "startJourneyForBadges": "¡Inicia un viaje virtual y completa hitos para ganar insignias!"
   },
   "certificates": {
     "title": "Certificados",

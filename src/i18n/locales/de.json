@@ -3196,7 +3196,14 @@
     "noJourneysYet": "Noch keine Reisen",
     "startFromProgress": "Starten Sie eine virtuelle Reise von der Fortschrittsseite, um Ihr Abenteuer zu beginnen!",
     "complete": "Abgeschlossen",
-    "inProgress": "In Bearbeitung"
+    "inProgress": "In Bearbeitung",
+    "milestonesLabel": "Meilensteine",
+    "journeyConquered": "🏆 Reise erobert!",
+    "newBadge": "🎖️ Neues Abzeichen!",
+    "badgeCollection": "Abzeichen-Sammlung",
+    "badgesEarned": "{{count}} Abzeichen verdient",
+    "noBadgesYet": "Noch keine Abzeichen",
+    "startJourneyForBadges": "Starten Sie eine virtuelle Reise und schließen Sie Meilensteine ab, um Abzeichen zu verdienen!"
   },
   "certificates": {
     "title": "Zertifikate",

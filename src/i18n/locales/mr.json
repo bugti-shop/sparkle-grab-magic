@@ -3153,7 +3153,14 @@
     "noJourneysYet": "अजून कोणताही प्रवास नाही",
     "startFromProgress": "तुमचे साहस सुरू करण्यासाठी प्रगती पृष्ठावरून आभासी प्रवास सुरू करा!",
     "complete": "पूर्ण",
-    "inProgress": "प्रगतीत"
+    "inProgress": "प्रगतीत",
+    "milestonesLabel": "मैलाचे दगड",
+    "journeyConquered": "🏆 प्रवास जिंकला!",
+    "newBadge": "🎖️ नवीन बॅज!",
+    "badgeCollection": "बॅज संग्रह",
+    "badgesEarned": "{{count}} बॅज मिळवले",
+    "noBadgesYet": "अजून बॅज नाहीत",
+    "startJourneyForBadges": "बॅज मिळवण्यासाठी आभासी प्रवास सुरू करा!"
   },
   "certificates": {
     "title": "प्रमाणपत्रे",
