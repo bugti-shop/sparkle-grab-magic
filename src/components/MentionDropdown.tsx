@@ -22,8 +22,38 @@ interface MentionDropdownProps {
   position?: { top: number; left: number };
   anchorRef?: React.RefObject<HTMLElement>;
 }
+const MentionItemButton = ({ item, index, selectedIndex, onSelect, setSelectedIndex }: {
+  item: MentionItem; index: number; selectedIndex: number;
+  onSelect: (item: MentionItem) => void; setSelectedIndex: (i: number) => void;
+}) => (
+  <button
+    onClick={() => onSelect(item)}
+    onMouseEnter={() => setSelectedIndex(index)}
+    className={cn(
+      'w-full flex items-start gap-2.5 px-3 py-2 text-left transition-colors',
+      index === selectedIndex ? 'bg-primary/10 text-foreground' : 'hover:bg-muted/50 text-foreground'
+    )}
+  >
+    <div className={cn(
+      'mt-0.5 flex-shrink-0 w-6 h-6 rounded-lg flex items-center justify-center',
+      item.type === 'note' ? 'bg-blue-100 dark:bg-blue-900/30' : 'bg-green-100 dark:bg-green-900/30'
+    )}>
+      {item.type === 'note' ? (
+        <FileText className="h-3.5 w-3.5 text-blue-600 dark:text-blue-400" />
+      ) : (
+        <CheckSquare className="h-3.5 w-3.5 text-green-600 dark:text-green-400" />
+      )}
+    </div>
+    <div className="flex-1 min-w-0">
+      <div className="text-sm font-medium truncate">{item.title}</div>
+      {item.preview && (
+        <div className="text-xs text-muted-foreground truncate mt-0.5">{item.preview}</div>
+      )}
+    </div>
+  </button>
+);
 
-export const MentionDropdown = ({
+
   isOpen,
   mentionType,
   query,
