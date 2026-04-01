@@ -588,7 +588,7 @@ const OnboardingBatchTaskForm = ({ sections, folders, onAddTasks, onCancel }: {
           }}
           whileTap={taskCount > 0 ? { scale: 0.97 } : undefined}
         >
-          {taskCount > 0 ? `Add ${taskCount} Task${taskCount > 1 ? 's' : ''}` : 'Add Tasks'}
+          {taskCount > 0 ? t('onboarding.addCountTasks', 'Add {{count}} Task(s)', { count: taskCount }) : t('onboarding.addTasks', 'Add Tasks')}
         </motion.button>
       </div>
     </div>
