@@ -115,7 +115,7 @@ export const StreakDay1Screen = ({ userName, onContinue }: StreakDay1ScreenProps
                 "text-lg font-medium",
                 completedToday ? "text-streak" : "text-muted-foreground"
               )}>
-                day streak
+                {t('streak.dayStreak', 'day streak')}
               </p>
               <div className="flex justify-center mt-2">
                 <StreakSocietyBadge streak={currentStreak} compact />
