@@ -9,10 +9,6 @@ import { format } from 'date-fns';
 import { toast } from 'sonner';
 import { Haptics, ImpactStyle } from '@capacitor/haptics';
 import { compressImage } from '@/utils/receiptStorage';
-import { MentionDropdown, MentionItem } from './MentionDropdown';
-import { MentionRenderer } from './MentionRenderer';
-import { useMention } from '@/hooks/useMention';
-import { hasMentions } from '@/utils/mentionUtils';
 
 interface TaskCommentsSectionProps {
   comments: TaskComment[];
