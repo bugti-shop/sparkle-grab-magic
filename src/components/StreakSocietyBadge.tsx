@@ -49,7 +49,7 @@ export const StreakSocietyBadge = ({ streak, compact = false }: StreakSocietyBad
           <span className="text-2xl opacity-40">🔒</span>
         </div>
         <p className="text-xs text-muted-foreground text-center">
-          Reach a 3-day streak to join the Streak Society
+          {t('streak.reachStreak', 'Reach a 3-day streak to join the Streak Society')}
         </p>
       </div>
     );
