@@ -104,7 +104,7 @@ export const PostOnboardingJourney = ({ onDismiss }: PostOnboardingJourneyProps)
                 className="mt-6 flex items-center gap-2 text-white/50 text-xs font-['Nunito_Sans']"
               >
                 <MapPin className="h-3.5 w-3.5" />
-                <span>{t('journey.firstStop', 'First stop')}: {firstMilestone.name}</span>
+                <span>{t('journey.firstStop', 'First stop')}: {t(`journey.${journey.id}.${firstMilestone.id}`, firstMilestone.name)}</span>
               </motion.div>
             )}
 

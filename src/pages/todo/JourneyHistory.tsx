@@ -181,9 +181,9 @@ const JourneyHistory = () => {
                       <div className="flex items-center gap-3 text-[10px] text-muted-foreground">
                         <span className="flex items-center gap-1">
                           <MapPin className="h-2.5 w-2.5" />
-                          {totalDone}/{totalJourneyTasks} tasks
+                          {totalDone}/{totalJourneyTasks} {t('common.tasks', 'tasks')}
                         </span>
-                        <span>{milestonesReached}/{journey.milestones.length} milestones</span>
+                        <span>{milestonesReached}/{journey.milestones.length} {t('journey.milestonesLabel', 'milestones')}</span>
                         {progress.completedAt && (
                           <span>{format(new Date(progress.completedAt), 'MMM d, yyyy')}</span>
                         )}

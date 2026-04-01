@@ -319,7 +319,7 @@ const JourneyBadges = () => {
               {filter === 'all' && (
                 <div className="flex items-center gap-2">
                   <span className="text-lg">{journey.emoji}</span>
-                  <h3 className="font-bold text-sm text-foreground">{journey.name}</h3>
+                  <h3 className="font-bold text-sm text-foreground">{t(`journey.${journey.id}.name`, journey.name)}</h3>
                   <span className="text-[10px] text-muted-foreground ml-auto">{badges.length} badge{badges.length !== 1 ? 's' : ''}</span>
                 </div>
               )}
