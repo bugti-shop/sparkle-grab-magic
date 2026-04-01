@@ -178,7 +178,7 @@ export const ForgotPasswordSheet = ({
                 {t('security.verifyAnswer')}
               </Button>
               <Button variant="ghost" onClick={onClose} className="w-full text-muted-foreground">
-                Cancel
+                {t('common.cancel')}
               </Button>
             </div>
           </div>
