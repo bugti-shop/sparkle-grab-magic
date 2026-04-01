@@ -152,6 +152,18 @@ const Today = () => {
     updateSubtask, deleteSubtask,
   } = actions;
 
+  // Handle mention-navigate: open a specific task by id
+  useEffect(() => {
+    const handler = (e: CustomEvent<{ id: string }>) => {
+      const task = items.find(t => t.id === e.detail.id);
+      if (task) {
+        setSelectedTask(task);
+      }
+    };
+    window.addEventListener('open-task', handler as EventListener);
+    return () => window.removeEventListener('open-task', handler as EventListener);
+  }, [items, setSelectedTask]);
+
   // ── Voice playback (extracted hook) ──
   const voice = useVoicePlayback();
   const { playingVoiceId, voiceProgress, voiceCurrentTime, voiceDuration, voicePlaybackSpeed, resolvedVoiceUrls, flatAudioRef } = voice;
