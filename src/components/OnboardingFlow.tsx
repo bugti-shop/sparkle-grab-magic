@@ -506,7 +506,7 @@ const OnboardingBatchTaskForm = ({ sections, folders, onAddTasks, onCancel }: {
 
       {/* Priority selector */}
       <div className="flex flex-col gap-1.5">
-        <span className="text-[12px] font-medium text-[#767b7e]">Priority</span>
+        <span className="text-[12px] font-medium text-[#767b7e]">{t('common.priority', 'Priority')}</span>
         <div className="flex gap-2">
           {priorityOptions.map(p => (
             <motion.button
