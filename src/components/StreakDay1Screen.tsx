@@ -178,7 +178,7 @@ export const StreakDay1Screen = ({ userName, onContinue }: StreakDay1ScreenProps
         >
           <Sparkles className="h-5 w-5 text-streak flex-shrink-0 mt-0.5" />
           <p className="text-sm text-foreground leading-relaxed">
-            Complete a task every day to build your streak. The longer you go, the more rewards you unlock!
+            {t('streak.motivationalHint', 'Complete a task every day to build your streak. The longer you go, the more rewards you unlock!')}
           </p>
         </motion.div>
       </div>
