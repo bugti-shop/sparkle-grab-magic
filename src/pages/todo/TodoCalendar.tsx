@@ -928,10 +928,13 @@ const TodoCalendar = () => {
     const inProgress = uncompletedTasks.filter(t => t.subtasks && t.subtasks.length > 0 && t.subtasks.some(st => st.completed) && t.subtasks.some(st => !st.completed));
     const almostDone = uncompletedTasks.filter(t => t.subtasks && t.subtasks.length > 0 && t.subtasks.filter(st => st.completed).length >= t.subtasks.length * 0.75 && t.subtasks.some(st => !st.completed));
 
+    const notStartedLabel = t('progress.notStarted', 'Not Started');
+    const inProgressLabel = t('progress.inProgress', 'In Progress');
+    const almostDoneLabel = t('progress.almostDone', 'Almost Done');
     const progressGroups = [
-      { id: 'cal-prog-notstarted', label: t('progress.notStarted', 'Not Started'), tasks: notStarted.filter(t => !inProgress.includes(t) && !almostDone.includes(t)), color: '#6b7280', percent: '0%' },
-      { id: 'cal-prog-inprogress', label: t('progress.inProgress', 'In Progress'), tasks: inProgress.filter(t => !almostDone.includes(t)), color: '#f59e0b', percent: '25-74%' },
-      { id: 'cal-prog-almostdone', label: t('progress.almostDone', 'Almost Done'), tasks: almostDone, color: '#10b981', percent: '75%+' },
+      { id: 'cal-prog-notstarted', label: notStartedLabel, tasks: notStarted.filter(t => !inProgress.includes(t) && !almostDone.includes(t)), color: '#6b7280', percent: '0%' },
+      { id: 'cal-prog-inprogress', label: inProgressLabel, tasks: inProgress.filter(t => !almostDone.includes(t)), color: '#f59e0b', percent: '25-74%' },
+      { id: 'cal-prog-almostdone', label: almostDoneLabel, tasks: almostDone, color: '#10b981', percent: '75%+' },
     ];
 
     return (
