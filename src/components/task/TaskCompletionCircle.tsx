@@ -47,8 +47,7 @@ export const TaskCompletionCircle = ({
     }
 
     setPendingComplete(true);
-    Haptics.impact({ style: ImpactStyle.Heavy }).catch(() => {});
-    setTimeout(() => Haptics.impact({ style: ImpactStyle.Heavy }).catch(() => {}), 100);
+    triggerTripleHeavyHaptic();
 
     pendingTimer.current = setTimeout(() => {
       setPendingComplete(false);
