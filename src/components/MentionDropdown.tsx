@@ -80,7 +80,19 @@ export const MentionDropdown = ({
   const [items, setItems] = useState<MentionItem[]>([]);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const [recentMentions, setRecentMentions] = useState<MentionItem[]>([]);
   const [dropdownPos, setDropdownPos] = useState(position || { top: 0, left: 0 });
+
+  // Load recent mentions
+  useEffect(() => {
+    if (isOpen) setRecentMentions(getRecentMentions());
+  }, [isOpen]);
+
+  // Wrap onSelect to save recent
+  const handleSelect = useCallback((item: MentionItem) => {
+    saveRecentMention(item);
+    onSelect(item);
+  }, [onSelect]);
 
   // Load data
   useEffect(() => {
