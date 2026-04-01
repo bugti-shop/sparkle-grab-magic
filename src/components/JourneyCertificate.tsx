@@ -1,4 +1,5 @@
 import { useState, useRef, useCallback, useEffect, lazy, Suspense } from 'react';
+import { useTranslation } from 'react-i18next';
 import { m as motion, AnimatePresence } from 'framer-motion';
 import { X, Share2, Copy, Check } from 'lucide-react';
 import { LazyConfetti as Confetti } from '@/components/LazyConfetti';
