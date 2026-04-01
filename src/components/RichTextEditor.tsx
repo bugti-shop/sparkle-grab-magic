@@ -3,6 +3,8 @@ import { useCallback, useRef, useState, useEffect } from 'react';
 import { compressImage, isCompressibleImage } from '@/utils/imageCompression';
 import { useTranslation } from 'react-i18next';
 import { MentionDropdown, MentionItem } from './MentionDropdown';
+import { MentionPreviewTooltip, useMentionPreview } from './MentionPreviewTooltip';
+import { AnimatePresence } from 'framer-motion';
 import { detectMentionTrigger, encodeMention, MentionTrigger } from '@/utils/mentionUtils';
 import { Button } from '@/components/ui/button';
 import {
