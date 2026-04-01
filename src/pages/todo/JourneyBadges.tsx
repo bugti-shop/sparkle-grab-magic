@@ -268,8 +268,8 @@ const JourneyBadges = () => {
               <Award className="h-5 w-5 text-primary" />
             </div>
             <div>
-              <h2 className="font-bold text-base">Badge Collection</h2>
-              <p className="text-xs text-muted-foreground">{allBadges.length} badges earned</p>
+              <h2 className="font-bold text-base">{t('journey.badgeCollection', 'Badge Collection')}</h2>
+              <p className="text-xs text-muted-foreground">{t('journey.badgesEarned', '{{count}} badges earned', { count: allBadges.length })}</p>
             </div>
           </div>
           <div className="flex gap-2 flex-wrap">
