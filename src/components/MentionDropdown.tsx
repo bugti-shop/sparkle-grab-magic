@@ -247,24 +247,38 @@ export const MentionDropdown = ({
           </div>
 
           {/* Items */}
-          {filteredItems.length === 0 ? (
+          {allSelectableItems.length === 0 ? (
             <div className="px-3 py-6 text-center text-sm text-muted-foreground">
               {query ? 'No matches found' : mentionType === 'all' ? 'No notes or tasks available' : `No ${mentionType} available`}
             </div>
           ) : (
             <div className="py-1">
+              {/* Recent mentions section */}
+              {filteredRecent.length > 0 && (
+                <>
+                  <div className="px-3 py-1.5 flex items-center gap-1.5 border-b border-border/50">
+                    <Clock className="h-3 w-3 text-muted-foreground" />
+                    <span className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">Recent</span>
+                  </div>
+                  {filteredRecent.map((item, index) => (
+                    <MentionItemButton key={`recent-${item.id}`} item={item} index={index} selectedIndex={selectedIndex} onSelect={handleSelect} setSelectedIndex={setSelectedIndex} />
+                  ))}
+                </>
+              )}
+
+              {/* Grouped notes & tasks */}
               {mentionType === 'all' ? (
                 <>
                   {(() => {
-                    const noteItems = filteredItems.filter(i => i.type === 'note');
-                    const taskItems = filteredItems.filter(i => i.type === 'task');
-                    let globalIndex = 0;
+                    const noteItems = nonRecentFiltered.filter(i => i.type === 'note');
+                    const taskItems = nonRecentFiltered.filter(i => i.type === 'task');
+                    let globalIndex = filteredRecent.length;
 
                     return (
                       <>
                         {noteItems.length > 0 && (
                           <>
-                            <div className="px-3 py-1.5 flex items-center gap-1.5 border-b border-border/50">
+                            <div className="px-3 py-1.5 flex items-center gap-1.5 border-b border-border/50 mt-1">
                               <FileText className="h-3 w-3 text-muted-foreground" />
                               <span className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">Notes</span>
                               <span className="text-[10px] text-muted-foreground/60 ml-auto">{noteItems.length}</span>
@@ -272,7 +286,7 @@ export const MentionDropdown = ({
                             {noteItems.slice(0, 10).map((item) => {
                               const idx = globalIndex++;
                               return (
-                                <MentionItemButton key={item.id} item={item} index={idx} selectedIndex={selectedIndex} onSelect={onSelect} setSelectedIndex={setSelectedIndex} />
+                                <MentionItemButton key={item.id} item={item} index={idx} selectedIndex={selectedIndex} onSelect={handleSelect} setSelectedIndex={setSelectedIndex} />
                               );
                             })}
                           </>
@@ -287,7 +301,7 @@ export const MentionDropdown = ({
                             {taskItems.slice(0, 10).map((item) => {
                               const idx = globalIndex++;
                               return (
-                                <MentionItemButton key={item.id} item={item} index={idx} selectedIndex={selectedIndex} onSelect={onSelect} setSelectedIndex={setSelectedIndex} />
+                                <MentionItemButton key={item.id} item={item} index={idx} selectedIndex={selectedIndex} onSelect={handleSelect} setSelectedIndex={setSelectedIndex} />
                               );
                             })}
                           </>
@@ -297,10 +311,12 @@ export const MentionDropdown = ({
                   })()}
                 </>
               ) : (
-                filteredItems.slice(0, 20).map((item, index) => (
-                  <MentionItemButton key={item.id} item={item} index={index} selectedIndex={selectedIndex} onSelect={onSelect} setSelectedIndex={setSelectedIndex} />
+                nonRecentFiltered.slice(0, 20).map((item, index) => (
+                  <MentionItemButton key={item.id} item={item} index={index + filteredRecent.length} selectedIndex={selectedIndex} onSelect={handleSelect} setSelectedIndex={setSelectedIndex} />
                 ))
               )}
+            </div>
+          )}
             </div>
           )}
         </motion.div>
