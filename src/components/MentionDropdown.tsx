@@ -152,6 +152,16 @@ export const MentionDropdown = ({
     item.title.toLowerCase().includes(query.toLowerCase())
   );
 
+  // Recent items that match query and exist in current items
+  const filteredRecent = !query
+    ? recentMentions.filter(r => items.some(i => i.id === r.id))
+    : recentMentions.filter(r => items.some(i => i.id === r.id) && r.title.toLowerCase().includes(query.toLowerCase()));
+
+  // All selectable items for keyboard nav: recent + filtered (excluding duplicates)
+  const recentIds = new Set(filteredRecent.map(r => r.id));
+  const nonRecentFiltered = filteredItems.filter(i => !recentIds.has(i.id));
+  const allSelectableItems = [...filteredRecent, ...nonRecentFiltered];
+
   // Reset selection on query change
   useEffect(() => {
     setSelectedIndex(0);
