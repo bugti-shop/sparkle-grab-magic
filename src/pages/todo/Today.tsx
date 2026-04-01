@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback, useMemo, startTransition, useDeferredValue, lazy, Suspense } from 'react';
+import { useState, useRef, useCallback, useMemo, useEffect, startTransition, useDeferredValue, lazy, Suspense } from 'react';
 import { useTranslation } from 'react-i18next';
 import { TodoItem, Priority, TaskSection, TaskStatus } from '@/types/note';
 import { Play, Pause, Repeat, Check, Trash2 as TrashIcon, Edit, Plus as PlusIcon, ArrowUpCircle, ArrowDownCircle, Move, History, TrendingUp, Flag, MapPin, Pin } from 'lucide-react';
