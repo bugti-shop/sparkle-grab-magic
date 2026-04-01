@@ -1641,7 +1641,7 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
                     <p className="text-[12px] text-[#767b7e] mt-0.5 leading-relaxed">{journey.description}</p>
                     <div className="flex items-center gap-3 mt-2">
                       <span className="text-[10px] text-[#767b7e] bg-[#f3f4f6] px-2 py-0.5 rounded-full">
-                        {journey.totalTasks} tasks
+                        {journey.totalTasks} {t('common.tasks', 'tasks')}
                       </span>
                       <span className="text-[10px] text-[#767b7e] bg-[#f3f4f6] px-2 py-0.5 rounded-full">
                         {t('onboarding.milestonesCount', { count: journey.milestones.length })}
