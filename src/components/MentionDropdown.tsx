@@ -53,7 +53,7 @@ const MentionItemButton = ({ item, index, selectedIndex, onSelect, setSelectedIn
   </button>
 );
 
-
+export const MentionDropdown = ({
   isOpen,
   mentionType,
   query,
