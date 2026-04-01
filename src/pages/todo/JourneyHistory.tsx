@@ -153,15 +153,15 @@ const JourneyHistory = () => {
                     <div className="flex-1 min-w-0">
                       {/* Title row */}
                       <div className="flex items-center gap-2 mb-1">
-                        <h4 className="font-bold text-sm truncate">{journey.name}</h4>
+                        <h4 className="font-bold text-sm truncate">{t(`journey.${journey.id}.name`, journey.name)}</h4>
                         {isComplete && (
                           <span className="text-[9px] bg-success/15 text-success px-1.5 py-0.5 rounded-full font-bold flex-shrink-0">
-                            ✓ Complete
+                            ✓ {t('journey.complete', 'Complete')}
                           </span>
                         )}
                         {!isComplete && (
                           <span className="text-[9px] bg-warning/15 text-warning px-1.5 py-0.5 rounded-full font-bold flex-shrink-0">
-                            In Progress
+                            {t('journey.inProgress', 'In Progress')}
                           </span>
                         )}
                       </div>
