@@ -1556,7 +1556,7 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
               <h3 className="text-[17px] font-bold text-[#1a1a1a] font-['Nunito'] leading-tight mb-1">How do I cancel<br />my subscription?</h3>
               <p className="text-[13px] text-[#5a6065] font-['Nunito_Sans'] leading-relaxed max-w-[200px]">Visit our Help Center for step-by-step instructions on how to cancel your Flowist subscription.</p>
             </div>
-            <img src={readyMascot} alt="" width={120} height={120} className="absolute right-2 bottom-0 pointer-events-none" loading="lazy" />
+            <img src={readyMascot} alt="" width={160} height={160} className="absolute right-2 -bottom-2 pointer-events-none" loading="lazy" />
           </motion.div>
         </div>
         <div className="px-6 pb-6 pt-2" style={{ paddingBottom: 'max(env(safe-area-inset-bottom, 0px), 24px)' }}>
