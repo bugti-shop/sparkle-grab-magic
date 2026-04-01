@@ -3744,7 +3744,8 @@
     "roomCode": "Room Code:",
     "enterCode": "Enter 6-digit code",
     "addedLayer": "{{name}} added a layer",
-    "deletedLayer": "{{name}} deleted a layer"
+    "deletedLayer": "{{name}} deleted a layer",
+    "typeMessage": "Type a message..."
   },
   "audio": {
     "effectsApplied": "Audio effects applied!",
