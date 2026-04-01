@@ -258,7 +258,7 @@ export const StreakConsistencyCertificate = ({ currentStreak, totalCompletions, 
             type="text"
             value={cardName}
             onChange={(e) => setCardName(e.target.value)}
-            placeholder="Enter your name"
+            placeholder={t('common.enterYourName', 'Enter your name')}
             maxLength={40}
             autoFocus
             className="w-full text-sm bg-muted rounded-lg px-3 py-2 border border-border focus:outline-none focus:ring-2 focus:ring-primary/40"
