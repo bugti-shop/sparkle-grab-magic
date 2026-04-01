@@ -109,9 +109,9 @@ const JourneyHistory = () => {
             className="bg-card rounded-2xl p-8 border text-center"
           >
             <Compass className="h-12 w-12 text-muted-foreground/30 mx-auto mb-3" />
-            <h3 className="font-semibold text-sm text-muted-foreground">No journeys yet</h3>
+            <h3 className="font-semibold text-sm text-muted-foreground">{t('journey.noJourneysYet', 'No journeys yet')}</h3>
             <p className="text-xs text-muted-foreground/70 mt-1">
-              Start a virtual journey from the Progress page to begin your adventure!
+              {t('journey.startFromProgress', 'Start a virtual journey from the Progress page to begin your adventure!')}
             </p>
           </motion.div>
         ) : (
