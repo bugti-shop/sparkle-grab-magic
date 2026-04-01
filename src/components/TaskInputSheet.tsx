@@ -1,6 +1,4 @@
 import { useState, useEffect, useRef, useMemo, useCallback } from 'react';
-import { MentionDropdown, MentionItem } from './MentionDropdown';
-import { useMention } from '@/hooks/useMention';
 import { useTranslation } from 'react-i18next';
 import { TodoItem, Priority, RepeatType, Folder, VoiceRecording, LocationReminder, TaskAttachment } from '@/types/note';
 import { TagManagementSheet } from '@/components/TagManagementSheet';
