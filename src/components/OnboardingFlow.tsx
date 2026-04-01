@@ -575,7 +575,7 @@ const OnboardingBatchTaskForm = ({ sections, folders, onAddTasks, onCancel }: {
       {/* Task count + Add button */}
       <div className="flex flex-col gap-2 pb-2" style={{ paddingBottom: 'max(env(safe-area-inset-bottom, 0px), 8px)' }}>
         {taskCount > 0 && (
-          <p className="text-[13px] text-[#767b7e] font-['Nunito_Sans'] text-center">{taskCount} task{taskCount > 1 ? 's' : ''} ready to add</p>
+          <p className="text-[13px] text-[#767b7e] font-['Nunito_Sans'] text-center">{t('onboarding.tasksReadyToAdd', '{{count}} task(s) ready to add', { count: taskCount })}</p>
         )}
         <motion.button
           onClick={handleAdd}
