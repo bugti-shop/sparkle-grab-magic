@@ -61,7 +61,10 @@
     "tasks": "задачи",
     "tags": "Теги",
     "enterYourName": "Введите ваше имя",
-    "tapEditName": "Нажмите «Изменить», чтобы добавить имя"
+    "tapEditName": "Нажмите «Изменить», чтобы добавить имя",
+    "section": "Раздел",
+    "folder": "Папка",
+    "dueDate": "Срок"
   },
   "folders": {
     "manageFolders": "Управление папками",
@@ -1145,7 +1148,9 @@
     "extractUrls": "Извлечь URL-адреса",
     "extractHashtags": "Извлечь хэштеги",
     "replaceContent": "Заменить содержимое",
-    "copyToClipboard": "Скопировать в буфер обмена"
+    "copyToClipboard": "Скопировать в буфер обмена",
+    "decrease": "Уменьшить",
+    "increase": "Увеличить"
   },
   "notePin": {
     "setPin": "Установить PIN",
@@ -3589,7 +3594,12 @@
       "objects": "Объекты",
       "symbols": "Символы",
       "animals": "Животные"
-    }
+    },
+    "addLayer": "Добавить слой",
+    "deleteLayer": "Удалить слой",
+    "doubleClickRename": "Дважды щёлкните для переименования",
+    "moveDown": "Переместить вниз",
+    "moveUp": "Переместить вверх"
   },
   "sketchVideo": {
     "invalidYoutubeUrl": "Неверный URL YouTube",

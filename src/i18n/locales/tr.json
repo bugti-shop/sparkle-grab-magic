@@ -61,7 +61,10 @@
     "tasks": "görev",
     "tags": "Etiketler",
     "enterYourName": "Adınızı girin",
-    "tapEditName": "Adınızı eklemek için Düzenle'ye dokunun"
+    "tapEditName": "Adınızı eklemek için Düzenle'ye dokunun",
+    "section": "Bölüm",
+    "folder": "Klasör",
+    "dueDate": "Son tarih"
   },
   "folders": {
     "manageFolders": "Klasörleri Yönet",
@@ -1004,7 +1007,9 @@
     "extractUrls": "URL'leri Çıkar",
     "extractHashtags": "Hashtag'leri Çıkar",
     "replaceContent": "İçeriği Değiştir",
-    "copyToClipboard": "Panoya Kopyala"
+    "copyToClipboard": "Panoya Kopyala",
+    "decrease": "Azalt",
+    "increase": "Artır"
   },
   "notePin": {
     "setPin": "PIN Ayarla",
@@ -3581,7 +3586,12 @@
     "pen": "Kalem",
     "pencil": "Kurşun Kalem",
     "textTool": "Metin Aracı",
-    "undo": "Geri Al"
+    "undo": "Geri Al",
+    "addLayer": "Katman ekle",
+    "deleteLayer": "Katmanı sil",
+    "doubleClickRename": "Yeniden adlandırmak için çift tıklayın",
+    "moveDown": "Aşağı taşı",
+    "moveUp": "Yukarı taşı"
   },
   "sketchVideo": {
     "invalidYoutubeUrl": "Geçersiz YouTube URL'si",

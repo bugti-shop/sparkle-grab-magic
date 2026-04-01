@@ -61,7 +61,10 @@
     "tasks": "משימות",
     "tags": "תגיות",
     "enterYourName": "הזן את שמך",
-    "tapEditName": "הקש על עריכה כדי להוסיף את שמך"
+    "tapEditName": "הקש על עריכה כדי להוסיף את שמך",
+    "section": "מדור",
+    "folder": "תיקייה",
+    "dueDate": "תאריך יעד"
   },
   "folders": {
     "manageFolders": "נהל תיקיות",
@@ -1149,7 +1152,9 @@
     "extractUrls": "חילוץ כתובות URL",
     "extractHashtags": "חילוץ האשטאגים",
     "replaceContent": "החלפת תוכן",
-    "copyToClipboard": "העתק ללוח"
+    "copyToClipboard": "העתק ללוח",
+    "decrease": "הקטן",
+    "increase": "הגדל"
   },
   "notePin": {
     "setPin": "הגדר PIN",
@@ -3563,7 +3568,12 @@
     "pen": "עט",
     "pencil": "עיפרון",
     "textTool": "כלי טקסט",
-    "undo": "בטל"
+    "undo": "בטל",
+    "addLayer": "הוסף שכבה",
+    "deleteLayer": "מחק שכבה",
+    "doubleClickRename": "לחץ פעמיים לשינוי שם",
+    "moveDown": "הזז למטה",
+    "moveUp": "הזז למעלה"
   },
   "sketchVideo": {
     "invalidYoutubeUrl": "קישור YouTube לא תקין",

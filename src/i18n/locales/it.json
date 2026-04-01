@@ -61,7 +61,10 @@
     "tasks": "attività",
     "tags": "Tag",
     "enterYourName": "Inserisci il tuo nome",
-    "tapEditName": "Tocca Modifica per aggiungere il tuo nome"
+    "tapEditName": "Tocca Modifica per aggiungere il tuo nome",
+    "section": "Sezione",
+    "folder": "Cartella",
+    "dueDate": "Data di scadenza"
   },
   "folders": {
     "manageFolders": "Gestisci cartelle",
@@ -1167,7 +1170,9 @@
     "extractUrls": "Estrai URL",
     "extractHashtags": "Estrai hashtag",
     "replaceContent": "Sostituisci contenuto",
-    "copyToClipboard": "Copia negli appunti"
+    "copyToClipboard": "Copia negli appunti",
+    "decrease": "Diminuisci",
+    "increase": "Aumenta"
   },
   "notePin": {
     "setPin": "Imposta PIN",
@@ -3581,7 +3586,12 @@
     "pen": "Penna",
     "pencil": "Matita",
     "textTool": "Strumento Testo",
-    "undo": "Annulla"
+    "undo": "Annulla",
+    "addLayer": "Aggiungi livello",
+    "deleteLayer": "Elimina livello",
+    "doubleClickRename": "Doppio clic per rinominare",
+    "moveDown": "Sposta giù",
+    "moveUp": "Sposta su"
   },
   "sketchVideo": {
     "invalidYoutubeUrl": "URL YouTube non valido",

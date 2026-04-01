@@ -61,7 +61,10 @@
     "tasks": "مهام",
     "tags": "العلامات",
     "enterYourName": "أدخل اسمك",
-    "tapEditName": "اضغط على تعديل لإضافة اسمك"
+    "tapEditName": "اضغط على تعديل لإضافة اسمك",
+    "section": "القسم",
+    "folder": "المجلد",
+    "dueDate": "تاريخ الاستحقاق"
   },
   "folders": {
     "manageFolders": "إدارة المجلدات",
@@ -1167,7 +1170,9 @@
     "extractUrls": "استخراج الروابط",
     "extractHashtags": "استخراج الهاشتاقات",
     "replaceContent": "استبدال المحتوى",
-    "copyToClipboard": "نسخ إلى الحافظة"
+    "copyToClipboard": "نسخ إلى الحافظة",
+    "decrease": "تقليل",
+    "increase": "زيادة"
   },
   "notePin": {
     "setPin": "تعيين PIN",
@@ -3667,7 +3672,12 @@
     "pen": "قلم",
     "pencil": "قلم رصاص",
     "textTool": "أداة النص",
-    "undo": "تراجع"
+    "undo": "تراجع",
+    "addLayer": "إضافة طبقة",
+    "deleteLayer": "حذف الطبقة",
+    "doubleClickRename": "انقر نقرًا مزدوجًا لإعادة التسمية",
+    "moveDown": "تحريك لأسفل",
+    "moveUp": "تحريك لأعلى"
   },
   "sketchVideo": {
     "invalidYoutubeUrl": "رابط يوتيوب غير صالح",

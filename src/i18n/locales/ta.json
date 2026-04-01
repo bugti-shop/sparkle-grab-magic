@@ -61,7 +61,10 @@
     "tasks": "பணிகள்",
     "tags": "குறிச்சொற்கள்",
     "enterYourName": "உங்கள் பெயரை உள்ளிடவும்",
-    "tapEditName": "உங்கள் பெயரைச் சேர்க்க திருத்து என்பதைத் தட்டவும்"
+    "tapEditName": "உங்கள் பெயரைச் சேர்க்க திருத்து என்பதைத் தட்டவும்",
+    "section": "பிரிவு",
+    "folder": "கோப்புறை",
+    "dueDate": "நிலுவை தேதி"
   },
   "folders": {
     "manageFolders": "கோப்புறைகளை நிர்வகி",
@@ -1078,7 +1081,9 @@
     "extractUrls": "URL களைப் பிரித்தெடு",
     "extractHashtags": "ஹேஷ்டேக்குகளைப் பிரித்தெடு",
     "replaceContent": "உள்ளடக்கத்தை மாற்று",
-    "copyToClipboard": "கிளிப்போர்டுக்கு நகலெடு"
+    "copyToClipboard": "கிளிப்போர்டுக்கு நகலெடு",
+    "decrease": "குறைக்கவும்",
+    "increase": "அதிகரிக்கவும்"
   },
   "notePin": {
     "setPin": "PIN அமை",
@@ -3523,7 +3528,12 @@
       "objects": "பொருட்கள்",
       "symbols": "குறியீடுகள்",
       "animals": "விலங்குகள்"
-    }
+    },
+    "addLayer": "அடுக்கு சேர்க்கவும்",
+    "deleteLayer": "அடுக்கை நீக்கவும்",
+    "doubleClickRename": "மறுபெயரிட இரட்டை கிளிக் செய்யவும்",
+    "moveDown": "கீழே நகர்த்தவும்",
+    "moveUp": "மேலே நகர்த்தவும்"
   },
   "sketchVideo": {
     "invalidYoutubeUrl": "தவறான YouTube URL",

@@ -61,7 +61,10 @@
     "tasks": "tugas",
     "tags": "Tag",
     "enterYourName": "Masukkan nama Anda",
-    "tapEditName": "Ketuk Edit untuk menambahkan nama Anda"
+    "tapEditName": "Ketuk Edit untuk menambahkan nama Anda",
+    "section": "Bagian",
+    "folder": "Folder",
+    "dueDate": "Tanggal jatuh tempo"
   },
   "folders": {
     "manageFolders": "Kelola Folder",
@@ -1096,7 +1099,9 @@
     "extractUrls": "Ekstrak URL",
     "extractHashtags": "Ekstrak Hashtag",
     "replaceContent": "Ganti Konten",
-    "copyToClipboard": "Salin ke Papan Klip"
+    "copyToClipboard": "Salin ke Papan Klip",
+    "decrease": "Kurangi",
+    "increase": "Tambah"
   },
   "notePin": {
     "setPin": "Atur PIN",
@@ -3540,7 +3545,12 @@
       "objects": "Objek",
       "symbols": "Simbol",
       "animals": "Hewan"
-    }
+    },
+    "addLayer": "Tambah lapisan",
+    "deleteLayer": "Hapus lapisan",
+    "doubleClickRename": "Klik dua kali untuk mengganti nama",
+    "moveDown": "Pindah ke bawah",
+    "moveUp": "Pindah ke atas"
   },
   "sketchVideo": {
     "invalidYoutubeUrl": "URL YouTube tidak valid",
