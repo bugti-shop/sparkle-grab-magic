@@ -448,7 +448,7 @@ const OnboardingBatchTaskForm = ({ sections, folders, onAddTasks, onCancel }: {
   return (
     <div className="flex flex-col gap-4 flex-1">
       <textarea
-        placeholder="Buy groceries&#10;Call dentist&#10;Finish report&#10;..."
+        placeholder={t('onboarding.taskPlaceholder', 'Buy groceries\nCall dentist\nFinish report\n...')}
         value={text}
         onChange={(e) => setText(e.target.value)}
         className="w-full min-h-[180px] resize-none rounded-2xl p-4 text-[15px] outline-none"
